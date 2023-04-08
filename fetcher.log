@@ -1,0 +1,125 @@
+[2023-04-09 00:27:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17632706]
+[2023-04-09 00:27:39] INFO root fetch - main [MainThread]: Found 26 changed packages
+[2023-04-09 00:27:39] INFO root fetch - processPackages [qiskit-quantier]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-09 00:27:39] INFO root fetch - processPackages [hubitatcontrol]: New version: [2.0.0] Old Version: [1.1.2]
+[2023-04-09 00:27:39] INFO root fetch - processPackages [marshmallow_api_utils]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-09 00:27:39] INFO root fetch - processPackages [desmos2python]: New version: [0.3.0] Old Version: [0.2.8]
+[2023-04-09 00:27:39] INFO root fetch - processPackages [datastructuresLionelHandEricM]: New version: [0.3] Old Version: [0.2]
+[2023-04-09 00:27:39] INFO root fetch - processPackages [qiskit-quantier]: Downloading https://files.pythonhosted.org/packages/7e/30/3740d354b8819a1f57e0cf8ede10b600a9c43593473d3faa97ddbd56f280/qiskit_quantier-0.4.0.tar.gz
+[2023-04-09 00:27:39] INFO root fetch - processPackages [datastructuresLionelHandEricM]: Downloading https://files.pythonhosted.org/packages/6e/d6/bcea200da5e73aed011e0836b68ba14e581af3f4705152ed14820957341d/datastructuresLionelHandEricM-0.2.tar.gz
+[2023-04-09 00:27:39] INFO root fetch - processPackages [hubitatcontrol]: Downloading https://files.pythonhosted.org/packages/b2/1a/9651fb64bb441e35f497c02f2f73751f97fff24dc59281180fd082667fa6/hubitatcontrol-1.1.2.tar.gz
+[2023-04-09 00:27:39] INFO root fetch - processPackages [desmos2python]: Downloading https://files.pythonhosted.org/packages/fb/41/69dcadbd5bd1c45ffda64ef3e19dcb2286eb458e006f4991e1e3fd128813/desmos2python-0.3.0.tar.gz
+[2023-04-09 00:27:39] INFO root fetch - processPackages [marshmallow_api_utils]: Downloading https://files.pythonhosted.org/packages/b4/04/64b936e29e95806ae933b672b122b92da04757f0750412bf3f8a35e57647/marshmallow_api_utils-0.2.0.tar.gz
+[2023-04-09 00:27:39] INFO root fetch - processPackages [desmos2python]: executing diffoscope
+[2023-04-09 00:27:39] INFO root fetch - processPackages [desmos2python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desmos2python-0.2.8.tar.gz tmp/desmos2python-0.3.0.tar.gz --markdown 20230409/d/desmos2python/0.2.8-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:40] INFO root fetch - processPackages [qiskit-quantier]: Downloading https://files.pythonhosted.org/packages/21/41/430d00a29a86c14ea0eb2119e7e6890d9468e873b9cbb86a8930670dc1ac/qiskit_quantier-0.5.0.tar.gz
+[2023-04-09 00:27:40] INFO root fetch - processPackages [datastructuresLionelHandEricM]: Downloading https://files.pythonhosted.org/packages/0a/42/8311ed89e37e40ca7c0919d9488a6aa5db749b674d472ad1564915eac5df/datastructuresLionelHandEricM-0.3.tar.gz
+[2023-04-09 00:27:40] INFO root fetch - processPackages [qiskit-quantier]: executing diffoscope
+[2023-04-09 00:27:40] INFO root fetch - processPackages [qiskit-quantier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit_quantier-0.4.0.tar.gz tmp/qiskit_quantier-0.5.0.tar.gz --markdown 20230409/q/qiskit-quantier/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:40] INFO root fetch - processPackages [datastructuresLionelHandEricM]: executing diffoscope
+[2023-04-09 00:27:40] INFO root fetch - processPackages [datastructuresLionelHandEricM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelHandEricM-0.2.tar.gz tmp/datastructuresLionelHandEricM-0.3.tar.gz --markdown 20230409/d/datastructuresLionelHandEricM/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-09 00:27:40] INFO root fetch - processPackages [hubitatcontrol]: Downloading https://files.pythonhosted.org/packages/5b/84/f00065c005878fba032c69f7a7cb6311f7e3523a1d9206c8b2857e69345b/hubitatcontrol-2.0.0.tar.gz
+[2023-04-09 00:27:40] INFO root fetch - processPackages [marshmallow_api_utils]: executing diffoscope
+[2023-04-09 00:27:40] INFO root fetch - processPackages [marshmallow_api_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marshmallow_api_utils-0.1.1.tar.gz tmp/marshmallow_api_utils-0.2.0.tar.gz --markdown 20230409/m/marshmallow_api_utils/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:40] INFO root fetch - processPackages [hubitatcontrol]: executing diffoscope
+[2023-04-09 00:27:40] INFO root fetch - processPackages [hubitatcontrol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hubitatcontrol-1.1.2.tar.gz tmp/hubitatcontrol-2.0.0.tar.gz --markdown 20230409/h/hubitatcontrol/1.1.2-2.0.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:41] INFO root fetch - processPackages [pactus]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-09 00:27:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:41] INFO root fetch - processPackages [orchestra-logger]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 00:27:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:41] INFO root fetch - processPackages [dxsp]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 00:27:41] INFO root fetch - processPackages [python-codicefiscale]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-04-09 00:27:41] INFO root fetch - processPackages [pactus]: Downloading https://files.pythonhosted.org/packages/96/35/34ded7d950eb42ed8e6b6693e0c95046321f10321d1489f1c1f427d393ab/pactus-0.2.0.tar.gz
+[2023-04-09 00:27:41] INFO root fetch - processPackages [orchestra-logger]: Downloading https://files.pythonhosted.org/packages/e2/81/229cb5ce715e041e89fec0e1ed577637492e4d81a7085d72129581441094/orchestra-logger-0.0.4.tar.gz
+[2023-04-09 00:27:41] INFO root fetch - processPackages [python-codicefiscale]: Downloading https://files.pythonhosted.org/packages/8b/59/8d0272f7e9a0be13aec65d34c8528d6bf03502cb72061d612d11b4525a5d/python-codicefiscale-0.7.1.tar.gz
+[2023-04-09 00:27:41] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/5e/e7/a05c0ba93de6c17dd761343647ec2a0f15822989b57ade31e8c4764abf35/dxsp-0.0.3.tar.gz
+[2023-04-09 00:27:41] INFO root fetch - processPackages [orchestra-logger]: Downloading https://files.pythonhosted.org/packages/39/f2/2c28879c2f6f824fe77b406d5878c077d3e7395f53b7ac92e794d2ab7cc8/orchestra-logger-0.0.5.tar.gz
+[2023-04-09 00:27:41] INFO root fetch - processPackages [orchestra-logger]: executing diffoscope
+[2023-04-09 00:27:41] INFO root fetch - processPackages [orchestra-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestra-logger-0.0.4.tar.gz tmp/orchestra-logger-0.0.5.tar.gz --markdown 20230409/o/orchestra-logger/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 00:27:41] INFO root fetch - processPackages [python-codicefiscale]: Downloading https://files.pythonhosted.org/packages/1a/22/59dcea4f688e3869e765e1d5ab1946653c23cba2ddcfc9a356dda9df5307/python-codicefiscale-0.8.0.tar.gz
+[2023-04-09 00:27:41] INFO root fetch - processPackages [pactus]: Downloading https://files.pythonhosted.org/packages/38/fb/83cb50e16a47999eccc62a66093703ac447c4517c8f75e3322a49e88cb07/pactus-0.3.0.tar.gz
+[2023-04-09 00:27:41] INFO root fetch - processPackages [pactus]: executing diffoscope
+[2023-04-09 00:27:41] INFO root fetch - processPackages [pactus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pactus-0.2.0.tar.gz tmp/pactus-0.3.0.tar.gz --markdown 20230409/p/pactus/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:41] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 00:27:41] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.2.tar.gz tmp/dxsp-0.0.3.tar.gz --markdown 20230409/d/dxsp/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 00:27:42] INFO root fetch - processPackages [python-codicefiscale]: executing diffoscope
+[2023-04-09 00:27:42] INFO root fetch - processPackages [python-codicefiscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-codicefiscale-0.7.1.tar.gz tmp/python-codicefiscale-0.8.0.tar.gz --markdown 20230409/p/python-codicefiscale/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:42] INFO root fetch - processPackages [orchestra-logger]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 00:27:42] ERROR root fetch - processPackages [SDGPT-bot]: Unable to get metadata: No such project 'SDGPT-bot'
+[2023-04-09 00:27:42] INFO root fetch - main [MainThread]: error
+[2023-04-09 00:27:42] INFO root fetch - processPackages [orchestra-logger]: executing diffoscope
+[2023-04-09 00:27:42] INFO root fetch - processPackages [orchestra-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestra-logger-0.0.4.tar.gz tmp/orchestra-logger-0.0.5.tar.gz --markdown 20230409/o/orchestra-logger/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 00:27:43] INFO root fetch - processPackages [qiskit-quantier]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-09 00:27:43] INFO root fetch - processPackages [qiskit-quantier]: executing diffoscope
+[2023-04-09 00:27:43] INFO root fetch - processPackages [qiskit-quantier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit_quantier-0.4.0.tar.gz tmp/qiskit_quantier-0.5.0.tar.gz --markdown 20230409/q/qiskit-quantier/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:43] INFO root fetch - processPackages [orchestra-logger]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 00:27:43] INFO root fetch - processPackages [orchestra-logger]: executing diffoscope
+[2023-04-09 00:27:43] INFO root fetch - processPackages [orchestra-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestra-logger-0.0.4.tar.gz tmp/orchestra-logger-0.0.5.tar.gz --markdown 20230409/o/orchestra-logger/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 00:27:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:43] INFO root fetch - processPackages [rexify]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-09 00:27:44] INFO root fetch - processPackages [rexify]: Downloading https://files.pythonhosted.org/packages/5a/e7/7c520a26b87e86ba1766ea810351aee36542b714af74c24c5761f3639501/rexify-0.1.6.tar.gz
+[2023-04-09 00:27:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:44] INFO root fetch - processPackages [datastructuresLionelHandEricM]: New version: [0.3] Old Version: [0.2]
+[2023-04-09 00:27:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:44] INFO root fetch - processPackages [datastructuresLionelHandEricM]: executing diffoscope
+[2023-04-09 00:27:44] INFO root fetch - processPackages [datastructuresLionelHandEricM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelHandEricM-0.2.tar.gz tmp/datastructuresLionelHandEricM-0.3.tar.gz --markdown 20230409/d/datastructuresLionelHandEricM/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-09 00:27:44] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-09 00:27:44] INFO root fetch - processPackages [rexify]: Downloading https://files.pythonhosted.org/packages/b1/95/2d0a3803d149c6c3224c8c71737611532b18f7a173b4271f39890c97ce6b/rexify-0.1.7.tar.gz
+[2023-04-09 00:27:44] INFO root fetch - processPackages [rexify]: executing diffoscope
+[2023-04-09 00:27:44] INFO root fetch - processPackages [rexify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rexify-0.1.6.tar.gz tmp/rexify-0.1.7.tar.gz --markdown 20230409/r/rexify/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-09 00:27:44] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-09 00:27:44] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230409/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-09 00:27:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:45] INFO root fetch - processPackages [openhasp-config-manager]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-09 00:27:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:45] INFO root fetch - processPackages [orchestra-logger]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 00:27:45] INFO root fetch - processPackages [orchestra-logger]: executing diffoscope
+[2023-04-09 00:27:45] INFO root fetch - processPackages [orchestra-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestra-logger-0.0.4.tar.gz tmp/orchestra-logger-0.0.5.tar.gz --markdown 20230409/o/orchestra-logger/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 00:27:45] INFO root fetch - processPackages [openhasp-config-manager]: Downloading https://files.pythonhosted.org/packages/19/49/3ec9dd9909fbacddeed0b0d77db436af721233e2dabc74340626b5230058/openhasp_config_manager-0.4.3.tar.gz
+[2023-04-09 00:27:45] INFO root fetch - processPackages [openhasp-config-manager]: executing diffoscope
+[2023-04-09 00:27:45] INFO root fetch - processPackages [openhasp-config-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhasp_config_manager-0.4.2.tar.gz tmp/openhasp_config_manager-0.4.3.tar.gz --markdown 20230409/o/openhasp-config-manager/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-09 00:27:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:46] WARNING root fetch - processPackages [zuela]: Skipping, unable to determine old version
+[2023-04-09 00:27:46] INFO root fetch - main [MainThread]: error
+[2023-04-09 00:27:46] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 00:27:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:46] INFO root fetch - processPackages [orchestra-logger]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 00:27:46] INFO root fetch - processPackages [orchestra-logger]: executing diffoscope
+[2023-04-09 00:27:46] INFO root fetch - processPackages [orchestra-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orchestra-logger-0.0.4.tar.gz tmp/orchestra-logger-0.0.5.tar.gz --markdown 20230409/o/orchestra-logger/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 00:27:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:46] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: Downloading https://files.pythonhosted.org/packages/5b/db/805518f48a8d0ce16b935e33e0a69d41e1bd0c3639cb3387d8587776b6c0/nonebot-plugin-SDGPT-0.0.4.tar.gz
+[2023-04-09 00:27:46] INFO root fetch - processPackages [hm-pyhelper]: New version: [0.8.9] Old Version: [0.8.13]
+[2023-04-09 00:27:46] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: executing diffoscope
+[2023-04-09 00:27:46] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-SDGPT-0.0.3.tar.gz tmp/nonebot-plugin-SDGPT-0.0.4.tar.gz --markdown 20230409/n/nonebot-plugin-SDGPT/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 00:27:46] INFO root fetch - processPackages [hm-pyhelper]: executing diffoscope
+[2023-04-09 00:27:46] INFO root fetch - processPackages [hm-pyhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hm_pyhelper-0.8.13.tar.gz tmp/hm_pyhelper-0.8.9.tar.gz --markdown 20230409/h/hm-pyhelper/0.8.13-0.8.9/diff.md --exclude *.pyd
+[2023-04-09 00:27:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:46] INFO root fetch - processPackages [rexify]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-09 00:27:46] INFO root fetch - processPackages [rexify]: executing diffoscope
+[2023-04-09 00:27:46] INFO root fetch - processPackages [rexify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rexify-0.1.6.tar.gz tmp/rexify-0.1.7.tar.gz --markdown 20230409/r/rexify/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-09 00:27:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:47] INFO root fetch - processPackages [moto]: New version: [4.1.7.dev9] Old Version: [4.1.7.dev8]
+[2023-04-09 00:27:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:47] INFO root fetch - processPackages [zuela]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-09 00:27:47] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-09 00:27:47] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.7.dev8.tar.gz tmp/moto-4.1.7.dev9.tar.gz --markdown 20230409/m/moto/4.1.7.dev8-4.1.7.dev9/diff.md --exclude *.pyd
+[2023-04-09 00:27:47] INFO root fetch - processPackages [zuela]: Downloading https://files.pythonhosted.org/packages/b6/02/2e381312bdcd370a21e3fb9b706f479b8420da8cdba4d7d6ed473d7ec7e5/zuela-0.1.0.tar.gz
+[2023-04-09 00:27:47] INFO root fetch - processPackages [zuela]: Downloading https://files.pythonhosted.org/packages/76/ec/a9f87995c5685c9286a342428aff12ed968465a9b5a0ffecb98f8e205365/zuela-0.2.0.tar.gz
+[2023-04-09 00:27:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:48] INFO root fetch - processPackages [zuela]: executing diffoscope
+[2023-04-09 00:27:48] INFO root fetch - processPackages [zuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuela-0.1.0.tar.gz tmp/zuela-0.2.0.tar.gz --markdown 20230409/z/zuela/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:48] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-09 00:27:48] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/7a/53/1459e32f6943488250f623718aeb560351a142d81c57a5fc8ef6b0dd1680/lnschema_core-0.8.1.tar.gz
+[2023-04-09 00:27:48] INFO root fetch - processPackages [lnschema_core]: Downloading https://files.pythonhosted.org/packages/39/cd/cc4d91db21934f66692bedcbdb15fc2c82698c7cc9d0288133e8fa2f5cee/lnschema_core-0.9.0.tar.gz
+[2023-04-09 00:27:48] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-04-09 00:27:48] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230409/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 00:27:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:27:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:28:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 00:28:18] INFO root fetch - main [MainThread]: success
