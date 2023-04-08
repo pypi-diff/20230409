@@ -372,3 +372,183 @@
 [2023-04-09 01:28:52] INFO root fetch - main [MainThread]: error
 [2023-04-09 01:28:53] INFO root fetch - main [MainThread]: success
 [2023-04-09 01:28:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:58:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17632959]
+[2023-04-09 01:59:00] INFO root fetch - main [MainThread]: Found 35 changed packages
+[2023-04-09 01:59:00] INFO root fetch - processPackages [naruno-api]: New version: [0.54.0] Old Version: [0.53.0]
+[2023-04-09 01:59:00] INFO root fetch - processPackages [naruno]: New version: [0.54.0] Old Version: [0.53.0]
+[2023-04-09 01:59:00] INFO root fetch - processPackages [naruno-gui]: New version: [0.54.0] Old Version: [0.53.0]
+[2023-04-09 01:59:00] INFO root fetch - processPackages [pyarmor.cli.core]: New version: [2.1.dev9] Old Version: [2.1.dev7]
+[2023-04-09 01:59:01] INFO root fetch - processPackages [pyarmor.cli]: New version: [8.1.dev9] Old Version: [8.1.dev8]
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-api]: Downloading https://files.pythonhosted.org/packages/14/16/560925948472a5b45899a1230abaeab5891faaa85c5f45cd06c20b09b1ca/naruno_api-0.53.0.tar.gz
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno]: Downloading https://files.pythonhosted.org/packages/d5/47/1ca0d3b0c59bba4ca484406221b75bb741a44259cce21509ae8ecf697dbf/naruno-0.53.0.tar.gz
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-gui]: Downloading https://files.pythonhosted.org/packages/6f/05/3a6eaa55458c304c18ce054079aba2d0cd629ce8d4d62d2bbca68fac3838/naruno_gui-0.53.0.tar.gz
+[2023-04-09 01:59:01] INFO root fetch - processPackages [pyarmor.cli]: Downloading https://files.pythonhosted.org/packages/98/d2/09298ce4d6cef5352be9b08542f215db3eaca30cc8c47e4b3da2933b7ab7/pyarmor.cli-8.1.dev8-py2.py3-none-any.whl
+[2023-04-09 01:59:01] INFO root fetch - processPackages [pyarmor.cli.core]: Downloading https://files.pythonhosted.org/packages/2b/d1/8f7d6500a457fcda40ad3be793c4108109b0d74b58620e5862a0ec230f81/pyarmor.cli.core-2.1.dev9-cp39-none-win_amd64.whl
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-gui]: Downloading https://files.pythonhosted.org/packages/2f/c3/35408912fde05837d8e3f4a499f59219895d0e684e5b154f6e79f044c139/naruno_gui-0.54.0.tar.gz
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-api]: Downloading https://files.pythonhosted.org/packages/9c/ba/b1052510c98f8829a554a64cf865bf62d7b35b9a820e05e8c32490accc1d/naruno_api-0.54.0.tar.gz
+[2023-04-09 01:59:01] INFO root fetch - processPackages [pyarmor.cli.core]: executing diffoscope
+[2023-04-09 01:59:01] INFO root fetch - processPackages [pyarmor.cli.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core-2.1.dev7-cp39-none-win_amd64.whl.zip tmp/pyarmor.cli.core-2.1.dev9-cp39-none-win_amd64.whl.zip --markdown 20230409/p/pyarmor.cli.core/2.1.dev7-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-gui]: executing diffoscope
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-api]: executing diffoscope
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_gui-0.53.0.tar.gz tmp/naruno_gui-0.54.0.tar.gz --markdown 20230409/n/naruno-gui/0.53.0-0.54.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_api-0.53.0.tar.gz tmp/naruno_api-0.54.0.tar.gz --markdown 20230409/n/naruno-api/0.53.0-0.54.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:01] INFO root fetch - processPackages [naruno]: Downloading https://files.pythonhosted.org/packages/0a/46/466675011697d4e6be5b0d4e3d09eceb317b9afade8d4c5cb3448736354b/naruno-0.54.0.tar.gz
+[2023-04-09 01:59:01] INFO root fetch - processPackages [pyarmor.cli]: Downloading https://files.pythonhosted.org/packages/36/0f/2cbd9db7733fefece616834452e24550d901511718d8890e4d9b080ccd9f/pyarmor.cli-8.1.dev9-py2.py3-none-any.whl
+[2023-04-09 01:59:02] INFO root fetch - processPackages [pyarmor.cli]: executing diffoscope
+[2023-04-09 01:59:02] INFO root fetch - processPackages [pyarmor.cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli-8.1.dev8-py2.py3-none-any.whl.zip tmp/pyarmor.cli-8.1.dev9-py2.py3-none-any.whl.zip --markdown 20230409/p/pyarmor.cli/8.1.dev8-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno]: executing diffoscope
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno-0.53.0.tar.gz tmp/naruno-0.54.0.tar.gz --markdown 20230409/n/naruno/0.53.0-0.54.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno-remote-app]: New version: [0.54.0] Old Version: [0.53.0]
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno-tests]: New version: [0.54.0] Old Version: [0.53.0]
+[2023-04-09 01:59:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:02] INFO root fetch - processPackages [wikidata-bot-framework]: New version: [7.2.0] Old Version: [7.1.0]
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno-tests]: Downloading https://files.pythonhosted.org/packages/cf/fd/616096a12e7f46a6540b9ee40fe00e022876e356de218ac5ef5c7c979259/naruno_tests-0.53.0.tar.gz
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno-remote-app]: Downloading https://files.pythonhosted.org/packages/3e/49/b1d1a469e10795a357ee55516d123c58e60ad312041df81e59dffbf26f11/naruno_remote_app-0.53.0.tar.gz
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno-tests]: Downloading https://files.pythonhosted.org/packages/24/66/aab9a05c7cb40d7edab52bae79f9b3019f47a8412d781ec964ed6741c141/naruno_tests-0.54.0.tar.gz
+[2023-04-09 01:59:02] INFO root fetch - processPackages [naruno-remote-app]: Downloading https://files.pythonhosted.org/packages/7a/a1/b93c7d5c1b50e88b354ac0cea2dc56523b1f97e32e98fb6887bd11e062fd/naruno_remote_app-0.54.0.tar.gz
+[2023-04-09 01:59:02] INFO root fetch - processPackages [wikidata-bot-framework]: Downloading https://files.pythonhosted.org/packages/7a/eb/71018bd0fda4b6da2140e989cc83cef759e25b89cd197bf92d7683001341/wikidata-bot-framework-7.2.0.tar.gz
+[2023-04-09 01:59:03] INFO root fetch - processPackages [naruno-tests]: executing diffoscope
+[2023-04-09 01:59:03] INFO root fetch - processPackages [naruno-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_tests-0.53.0.tar.gz tmp/naruno_tests-0.54.0.tar.gz --markdown 20230409/n/naruno-tests/0.53.0-0.54.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:03] INFO root fetch - processPackages [naruno-remote-app]: executing diffoscope
+[2023-04-09 01:59:03] INFO root fetch - processPackages [naruno-remote-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_remote_app-0.53.0.tar.gz tmp/naruno_remote_app-0.54.0.tar.gz --markdown 20230409/n/naruno-remote-app/0.53.0-0.54.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:03] INFO root fetch - processPackages [sefazetllib]: New version: [0.1.18] Old Version: [0.1.17]
+[2023-04-09 01:59:03] INFO root fetch - processPackages [wikidata-bot-framework]: executing diffoscope
+[2023-04-09 01:59:03] INFO root fetch - processPackages [wikidata-bot-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikidata-bot-framework-7.1.0.tar.gz tmp/wikidata-bot-framework-7.2.0.tar.gz --markdown 20230409/w/wikidata-bot-framework/7.1.0-7.2.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:03] INFO root fetch - processPackages [sefazetllib]: Downloading https://files.pythonhosted.org/packages/d1/75/859f5487aeeffbbb6fdce8a71b6131462332689b875ca8fbfe64b9777dbc/sefazetllib-0.1.18.tar.gz
+[2023-04-09 01:59:03] INFO root fetch - processPackages [sefazetllib]: executing diffoscope
+[2023-04-09 01:59:03] INFO root fetch - processPackages [sefazetllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sefazetllib-0.1.17.tar.gz tmp/sefazetllib-0.1.18.tar.gz --markdown 20230409/s/sefazetllib/0.1.17-0.1.18/diff.md --exclude *.pyd
+[2023-04-09 01:59:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:04] WARNING root fetch - processPackages [django-salted-api-tokens]: Skipping, unable to determine old version
+[2023-04-09 01:59:04] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:59:04] WARNING root fetch - processPackages [seurat]: Skipping, unable to determine old version
+[2023-04-09 01:59:04] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:59:04] INFO root fetch - processPackages [pyarmor.cli.runtime]: New version: [2.1.dev9] Old Version: [2.1.dev8]
+[2023-04-09 01:59:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:04] INFO root fetch - processPackages [localstack-plugin-persistence]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 01:59:04] INFO root fetch - processPackages [pyarmor.cli.runtime]: Downloading https://files.pythonhosted.org/packages/72/15/fed03ddb7b1a2e7a8a10b5bc6c60732b04c81292849483d20112f7b459c7/pyarmor.cli.runtime-2.1.dev8-cp39-none-any.whl
+[2023-04-09 01:59:04] INFO root fetch - processPackages [localstack-plugin-persistence]: Downloading https://files.pythonhosted.org/packages/7a/a2/233de9bf29db23f3243639d959625c43ae85dfc1f976fce8419241621d75/localstack-plugin-persistence-1.0.0.tar.gz
+[2023-04-09 01:59:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:04] INFO root fetch - processPackages [localstack-plugin-persistence]: Downloading https://files.pythonhosted.org/packages/4d/f5/cb52ee4a573b7946e3ccee7515cb7578082ce7dd46213db9c5eec01afbbe/localstack-plugin-persistence-1.0.1.tar.gz
+[2023-04-09 01:59:04] INFO root fetch - processPackages [autoname]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-04-09 01:59:04] INFO root fetch - processPackages [autoname]: Downloading https://files.pythonhosted.org/packages/a4/b5/690443c43edea5129ee4245c047827d9d33e600d272873c178e0d4fa6303/autoname-2.0.0.tar.gz
+[2023-04-09 01:59:04] INFO root fetch - processPackages [localstack-plugin-persistence]: executing diffoscope
+[2023-04-09 01:59:04] INFO root fetch - processPackages [localstack-plugin-persistence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-plugin-persistence-1.0.0.tar.gz tmp/localstack-plugin-persistence-1.0.1.tar.gz --markdown 20230409/l/localstack-plugin-persistence/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 01:59:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:04] INFO root fetch - processPackages [zibanu-django]: New version: [1.2.0a2] Old Version: [1.2.0a1]
+[2023-04-09 01:59:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:04] INFO root fetch - processPackages [zibanu-django]: Downloading https://files.pythonhosted.org/packages/ac/3c/e1281364a95b859fb81c288c8ed242903d25b79bfaa5c81424dae07f0cfd/zibanu-django-1.2.0a1.tar.gz
+[2023-04-09 01:59:04] INFO root fetch - processPackages [autoname]: Downloading https://files.pythonhosted.org/packages/80/2f/5263cc73cb71cdfc943a50b2111c4b0fdc941bb090b6183b4234ad447071/autoname-2.1.0.tar.gz
+[2023-04-09 01:59:04] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-09 01:59:05] INFO root fetch - processPackages [autoname]: executing diffoscope
+[2023-04-09 01:59:05] INFO root fetch - processPackages [autoname]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoname-2.0.0.tar.gz tmp/autoname-2.1.0.tar.gz --markdown 20230409/a/autoname/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:05] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-04-09 01:59:05] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230409/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-09 01:59:05] INFO root fetch - processPackages [zibanu-django]: Downloading https://files.pythonhosted.org/packages/c1/f2/99444d761be0435c6be694fd0a2f026a73a4ac5dfd6cc15f70fb20b0bf35/zibanu-django-1.2.0a2.tar.gz
+[2023-04-09 01:59:05] INFO root fetch - processPackages [zibanu-django]: executing diffoscope
+[2023-04-09 01:59:05] INFO root fetch - processPackages [zibanu-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibanu-django-1.2.0a1.tar.gz tmp/zibanu-django-1.2.0a2.tar.gz --markdown 20230409/z/zibanu-django/1.2.0a1-1.2.0a2/diff.md --exclude *.pyd
+[2023-04-09 01:59:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:05] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-09 01:59:05] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: executing diffoscope
+[2023-04-09 01:59:05] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_streamdeck_yaml-2023.4.8.tar.gz tmp/home_assistant_streamdeck_yaml-2023.4.9.tar.gz --markdown 20230409/h/home-assistant-streamdeck-yaml/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-09 01:59:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli]: New version: [8.1.dev9] Old Version: [8.1.dev8]
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli]: executing diffoscope
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli-8.1.dev8-py2.py3-none-any.whl.zip tmp/pyarmor.cli-8.1.dev9-py2.py3-none-any.whl.zip --markdown 20230409/p/pyarmor.cli/8.1.dev8-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-09 01:59:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli.core]: New version: [2.1.dev9] Old Version: [2.1.dev7]
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli.runtime]: Downloading https://files.pythonhosted.org/packages/df/a1/448ec9d21588a205f94722a91c5eddcf902cffefadcb36b6d29aa7b49e47/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli.core]: executing diffoscope
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core-2.1.dev7-cp39-none-win_amd64.whl.zip tmp/pyarmor.cli.core-2.1.dev9-cp39-none-win_amd64.whl.zip --markdown 20230409/p/pyarmor.cli.core/2.1.dev7-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-09 01:59:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli.runtime]: New version: [2.1.dev9] Old Version: [2.1.dev8]
+[2023-04-09 01:59:06] INFO root fetch - processPackages [pyarmor.cli.runtime]: Downloading https://files.pythonhosted.org/packages/df/a1/448ec9d21588a205f94722a91c5eddcf902cffefadcb36b6d29aa7b49e47/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl
+[2023-04-09 01:59:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:07] INFO root fetch - processPackages [zibanu-django]: New version: [1.2.0a2] Old Version: [1.2.0a1]
+[2023-04-09 01:59:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:07] INFO root fetch - processPackages [zibanu-django]: executing diffoscope
+[2023-04-09 01:59:07] INFO root fetch - processPackages [zibanu-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibanu-django-1.2.0a1.tar.gz tmp/zibanu-django-1.2.0a2.tar.gz --markdown 20230409/z/zibanu-django/1.2.0a1-1.2.0a2/diff.md --exclude *.pyd
+[2023-04-09 01:59:07] INFO root fetch - processPackages [cllm-data-curation]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 01:59:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:07] INFO root fetch - processPackages [moontour-common]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-09 01:59:07] INFO root fetch - processPackages [cllm-data-curation]: Downloading https://files.pythonhosted.org/packages/84/72/9e73880f520d8a055cdcf64ea5cc1d45c636e2d99081716bf4246bf92787/cllm-data-curation-0.1.2.tar.gz
+[2023-04-09 01:59:07] INFO root fetch - processPackages [moontour-common]: Downloading https://files.pythonhosted.org/packages/37/ed/ca71d2c2ad885def79dfdfa218e606bdfa5bce868fa8877344db0314da0f/moontour_common-1.0.8.tar.gz
+[2023-04-09 01:59:07] INFO root fetch - processPackages [cllm-data-curation]: executing diffoscope
+[2023-04-09 01:59:07] INFO root fetch - processPackages [cllm-data-curation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cllm-data-curation-0.1.1.tar.gz tmp/cllm-data-curation-0.1.2.tar.gz --markdown 20230409/c/cllm-data-curation/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 01:59:07] INFO root fetch - processPackages [moontour-common]: Downloading https://files.pythonhosted.org/packages/41/2b/37c0838600f84e673813e5dd8e0a142d0d99cd9ee0cd8001c9e7ce5ae7ed/moontour_common-1.0.9.tar.gz
+[2023-04-09 01:59:08] INFO root fetch - processPackages [moontour-common]: executing diffoscope
+[2023-04-09 01:59:08] INFO root fetch - processPackages [moontour-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moontour_common-1.0.8.tar.gz tmp/moontour_common-1.0.9.tar.gz --markdown 20230409/m/moontour-common/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-09 01:59:08] INFO root fetch - processPackages [pyarmor.cli.runtime]: executing diffoscope
+[2023-04-09 01:59:08] INFO root fetch - processPackages [pyarmor.cli.runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.runtime-2.1.dev8-cp39-none-any.whl.zip tmp/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl.zip --markdown 20230409/p/pyarmor.cli.runtime/2.1.dev8-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-09 01:59:08] INFO root fetch - processPackages [pyarmor.cli.runtime]: executing diffoscope
+[2023-04-09 01:59:08] INFO root fetch - processPackages [pyarmor.cli.runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.runtime-2.1.dev8-cp39-none-any.whl.zip tmp/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl.zip --markdown 20230409/p/pyarmor.cli.runtime/2.1.dev8-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-09 01:59:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:08] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-09 01:59:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:08] INFO root fetch - processPackages [sidetrek]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-09 01:59:08] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: Downloading https://files.pythonhosted.org/packages/94/fa/3ee103e460bc9a41ed83cc7e9e19f1561ce6e3e24444a20c5e6251e00eda/nonebot-plugin-SDGPT-0.0.8.tar.gz
+[2023-04-09 01:59:09] INFO root fetch - processPackages [sidetrek]: Downloading https://files.pythonhosted.org/packages/a6/8a/a6176d3f1012708b4ccaf2b4452150bbcc42bea315ff88ebacd209e69bb8/sidetrek-0.0.8.tar.gz
+[2023-04-09 01:59:09] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: executing diffoscope
+[2023-04-09 01:59:09] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-SDGPT-0.0.7.tar.gz tmp/nonebot-plugin-SDGPT-0.0.8.tar.gz --markdown 20230409/n/nonebot-plugin-SDGPT/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-09 01:59:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:09] INFO root fetch - processPackages [spectrometer-reading-plugin]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-09 01:59:09] INFO root fetch - processPackages [spectrometer-reading-plugin]: Downloading https://files.pythonhosted.org/packages/c5/90/55721db6e403d9c58a19150f9e6503564412d63edf0aff5e41c7c607c90f/spectrometer_reading_plugin-0.2.0-py3-none-any.whl
+[2023-04-09 01:59:09] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-04-09 01:59:09] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.7.tar.gz tmp/sidetrek-0.0.8.tar.gz --markdown 20230409/s/sidetrek/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-09 01:59:09] INFO root fetch - processPackages [spectrometer-reading-plugin]: Downloading https://files.pythonhosted.org/packages/f3/04/ec2af02404982ecc85648820f5d6736fa912483306774dd271ae8e28fdf0/spectrometer_reading_plugin-0.2.1-py3-none-any.whl
+[2023-04-09 01:59:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:09] INFO root fetch - processPackages [pyFileFixity]: New version: [3.0.8] Old Version: [3.0.7]
+[2023-04-09 01:59:09] INFO root fetch - processPackages [spectrometer-reading-plugin]: executing diffoscope
+[2023-04-09 01:59:09] INFO root fetch - processPackages [spectrometer-reading-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrometer_reading_plugin-0.2.0-py3-none-any.whl.zip tmp/spectrometer_reading_plugin-0.2.1-py3-none-any.whl.zip --markdown 20230409/s/spectrometer-reading-plugin/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-09 01:59:09] INFO root fetch - processPackages [pyFileFixity]: Downloading https://files.pythonhosted.org/packages/e3/b7/80fffcc5407868f1b4d4443f94614291b833fb74318c5b8e5fe40c0b9c43/pyFileFixity-3.0.7.tar.gz
+[2023-04-09 01:59:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:10] INFO root fetch - processPackages [aisdb]: New version: [1.5.8] Old Version: [1.5.0]
+[2023-04-09 01:59:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:10] INFO root fetch - processPackages [aisdb]: Downloading https://files.pythonhosted.org/packages/c2/3c/095186bc40a8665586a6f111bfee8d7c3f82eb40e36b594c3a3d0683d00c/aisdb-1.5.0-cp39-none-win_amd64.whl
+[2023-04-09 01:59:10] INFO root fetch - processPackages [pyFileFixity]: Downloading https://files.pythonhosted.org/packages/8b/7c/1800448528f36efe9a62118602268c98e9c90586432ade9ec3ca115d17ed/pyFileFixity-3.0.8.tar.gz
+[2023-04-09 01:59:10] WARNING root fetch - processPackages [kalkulator-sederhana]: Skipping, unable to determine old version
+[2023-04-09 01:59:10] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:59:10] INFO root fetch - processPackages [pyFileFixity]: executing diffoscope
+[2023-04-09 01:59:10] INFO root fetch - processPackages [pyFileFixity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFileFixity-3.0.7.tar.gz tmp/pyFileFixity-3.0.8.tar.gz --markdown 20230409/p/pyFileFixity/3.0.7-3.0.8/diff.md --exclude *.pyd
+[2023-04-09 01:59:10] INFO root fetch - processPackages [pyarmor]: New version: [8.1.dev9] Old Version: [8.1.dev7]
+[2023-04-09 01:59:10] INFO root fetch - processPackages [pyarmor]: Downloading https://files.pythonhosted.org/packages/cd/b6/f5383a3dc0cc04fc66bd49899776f2952b7ca87e7c655a2b57a49a433f83/pyarmor-8.1.dev9.zip
+[2023-04-09 01:59:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:10] INFO root fetch - processPackages [brainframe-apps]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-09 01:59:11] INFO root fetch - processPackages [brainframe-apps]: executing diffoscope
+[2023-04-09 01:59:11] INFO root fetch - processPackages [brainframe-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brainframe_apps-0.3.8.tar.gz tmp/brainframe_apps-0.3.9.tar.gz --markdown 20230409/b/brainframe-apps/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-09 01:59:11] INFO root fetch - processPackages [aisdb]: Downloading https://files.pythonhosted.org/packages/b4/01/adf8b7a155e8c55aea3c3fbff4f9469441d4b515f913c8b108657b955506/aisdb-1.5.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-09 01:59:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:11] INFO root fetch - processPackages [co2-reading-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 01:59:11] INFO root fetch - processPackages [co2-reading-plugin]: Downloading https://files.pythonhosted.org/packages/5a/33/2ad465bb551fbec31488913b3a3e4d68e549859309e83d9bc6d10b7f6189/co2_reading_plugin-0.1.1-py3-none-any.whl
+[2023-04-09 01:59:11] INFO root fetch - processPackages [co2-reading-plugin]: Downloading https://files.pythonhosted.org/packages/04/7d/9b53d8a2e08032a2f00151c1da961d154476c247be0e3e85fad170106755/co2_reading_plugin-0.1.2-py3-none-any.whl
+[2023-04-09 01:59:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:11] INFO root fetch - processPackages [pioreactor-logs2slack]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 01:59:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pygeckodriver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pioreactor-logs2slack]: Downloading https://files.pythonhosted.org/packages/ee/28/68682aa0d42b9490f80e1bb155110b6b023bb9cf95970ba7c2e0bcf152d9/pioreactor_logs2slack-0.1.1-py3-none-any.whl
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pygeckodriver]: Downloading https://files.pythonhosted.org/packages/7f/83/795a40c0129808b6ba6b1703c89499782f7f37da9d9a2b3f328a149a0311/pygeckodriver-0.8.0.tar.gz
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pyarmor]: executing diffoscope
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pyarmor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor-8.1.dev7.zip tmp/pyarmor-8.1.dev9.zip --markdown 20230409/p/pyarmor/8.1.dev7-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-09 01:59:12] INFO root fetch - processPackages [aisdb]: executing diffoscope
+[2023-04-09 01:59:12] INFO root fetch - processPackages [aisdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisdb-1.5.0-cp39-none-win_amd64.whl.zip tmp/aisdb-1.5.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230409/a/aisdb/1.5.0-1.5.8/diff.md --exclude *.pyd
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pioreactor-logs2slack]: Downloading https://files.pythonhosted.org/packages/0f/56/76d9d17fea9aed4465cf679f72ff52a82601a1399936a937ca6984a9c637/pioreactor_logs2slack-0.1.2-py3-none-any.whl
+[2023-04-09 01:59:12] INFO root fetch - processPackages [co2-reading-plugin]: executing diffoscope
+[2023-04-09 01:59:12] INFO root fetch - processPackages [co2-reading-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/co2_reading_plugin-0.1.1-py3-none-any.whl.zip tmp/co2_reading_plugin-0.1.2-py3-none-any.whl.zip --markdown 20230409/c/co2-reading-plugin/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pioreactor-logs2slack]: executing diffoscope
+[2023-04-09 01:59:12] INFO root fetch - processPackages [pioreactor-logs2slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pioreactor_logs2slack-0.1.1-py3-none-any.whl.zip tmp/pioreactor_logs2slack-0.1.2-py3-none-any.whl.zip --markdown 20230409/p/pioreactor-logs2slack/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 01:59:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:13] INFO root fetch - processPackages [mmcif]: New version: [0.81] Old Version: [0.80.1]
+[2023-04-09 01:59:13] INFO root fetch - processPackages [mmcif]: Downloading https://files.pythonhosted.org/packages/b0/62/a145b8f1e8d8aa53140b1776fcb57b4b2d880c3890e930676143b50d2800/mmcif-0.80.1.tar.gz
+[2023-04-09 01:59:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:14] INFO root fetch - processPackages [pygeckodriver]: Downloading https://files.pythonhosted.org/packages/46/14/7d1e9e71398908e21fcae0bf9b3226dfe104e7d325d0ef5b5d518e06e8a7/pygeckodriver-0.9.0.tar.gz
+[2023-04-09 01:59:14] INFO root fetch - processPackages [mmcif]: Downloading https://files.pythonhosted.org/packages/a0/8d/bf58b0501c92d2e3a9b6c3abc06e2fa1723229064b3da9cbe2a22036da8a/mmcif-0.81.tar.gz
+[2023-04-09 01:59:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:15] INFO root fetch - processPackages [mmcif]: executing diffoscope
+[2023-04-09 01:59:15] INFO root fetch - processPackages [mmcif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmcif-0.80.1.tar.gz tmp/mmcif-0.81.tar.gz --markdown 20230409/m/mmcif/0.80.1-0.81/diff.md --exclude *.pyd
+[2023-04-09 01:59:18] INFO root fetch - processPackages [pygeckodriver]: executing diffoscope
+[2023-04-09 01:59:18] INFO root fetch - processPackages [pygeckodriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeckodriver-0.8.0.tar.gz tmp/pygeckodriver-0.9.0.tar.gz --markdown 20230409/p/pygeckodriver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 01:59:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:59:43] INFO root fetch - main [MainThread]: success
