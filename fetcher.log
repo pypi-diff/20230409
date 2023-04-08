@@ -267,3 +267,108 @@
 [2023-04-09 00:58:38] INFO root fetch - main [MainThread]: success
 [2023-04-09 00:58:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 00:58:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17632878]
+[2023-04-09 01:28:46] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-09 01:28:47] INFO root fetch - processPackages [mindspore-dev]: New version: [2.0.0rc1.dev20230409] Old Version: [2.0.0.dev20230402]
+[2023-04-09 01:28:47] INFO root fetch - processPackages [zuela]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-09 01:28:47] INFO root fetch - processPackages [climalite]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-04-09 01:28:47] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230408] Old Version: [0.7.0b20230407]
+[2023-04-09 01:28:47] INFO root fetch - processPackages [flwr-nightly]: New version: [1.4.0.dev20230408] Old Version: [1.4.0.dev20230331]
+[2023-04-09 01:28:47] INFO root fetch - processPackages [mindspore-dev]: Downloading https://files.pythonhosted.org/packages/9c/95/6e53edea3ae352cc01d27c6c8ff0dd1152bd8c21fe751732d71931f66d1d/mindspore_dev-2.0.0.dev20230402-cp39-none-any.whl
+[2023-04-09 01:28:47] INFO root fetch - processPackages [climalite]: Downloading https://files.pythonhosted.org/packages/98/db/e6914dd9a94a15d1ca8622e7a714369b7d7160d9ab57bdb30f7c2dafa0eb/climalite-1.0.0.tar.gz
+[2023-04-09 01:28:47] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/7d/90/143c2d19e96410af2045e1f16473e678279eb183bb1469261067ee6c174a/flwr_nightly-1.4.0.dev20230331.tar.gz
+[2023-04-09 01:28:47] INFO root fetch - processPackages [zuela]: Downloading https://files.pythonhosted.org/packages/08/14/cb604a82845db365f3b1c8305a9e2967c13311ca8648bb789ae7a00aa74e/zuela-0.3.0.tar.gz
+[2023-04-09 01:28:47] INFO root fetch - processPackages [zuela]: executing diffoscope
+[2023-04-09 01:28:47] INFO root fetch - processPackages [zuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuela-0.2.0.tar.gz tmp/zuela-0.3.0.tar.gz --markdown 20230409/z/zuela/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 01:28:47] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/4c/2f/cbb97e5417f4281978c846af663a753019a21737142ff0cfcb8d450c7fce/tmnt-0.7.0b20230408.tar.gz
+[2023-04-09 01:28:47] INFO root fetch - processPackages [climalite]: Downloading https://files.pythonhosted.org/packages/5c/ed/04f016f9373ee555b80c22fc9b97d4820859596466ff7b0ca35365990f48/climalite-2.0.0.tar.gz
+[2023-04-09 01:28:47] INFO root fetch - processPackages [climalite]: executing diffoscope
+[2023-04-09 01:28:47] INFO root fetch - processPackages [climalite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climalite-1.0.0.tar.gz tmp/climalite-2.0.0.tar.gz --markdown 20230409/c/climalite/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-09 01:28:47] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-09 01:28:47] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230407.tar.gz tmp/tmnt-0.7.0b20230408.tar.gz --markdown 20230409/t/tmnt/0.7.0b20230407-0.7.0b20230408/diff.md --exclude *.pyd
+[2023-04-09 01:28:47] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/57/e5/c3b70f189e28abc501ed7992ff062f16dd2e8e82fc9f630677340940cfd1/flwr_nightly-1.4.0.dev20230408.tar.gz
+[2023-04-09 01:28:47] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-04-09 01:28:47] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.4.0.dev20230331.tar.gz tmp/flwr_nightly-1.4.0.dev20230408.tar.gz --markdown 20230409/f/flwr-nightly/1.4.0.dev20230331-1.4.0.dev20230408/diff.md --exclude *.pyd
+[2023-04-09 01:28:47] WARNING root fetch - processPackages [mindspore-dev]: Skipping package: exceeds size limit 245100301>=10485760
+[2023-04-09 01:28:47] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:28:47] INFO root fetch - processPackages [hao]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-04-09 01:28:48] INFO root fetch - processPackages [hao]: Downloading https://files.pythonhosted.org/packages/17/69/fb1ed565a2338e1820434f269f2d177e080721bb06eadd5906138f6beee5/hao-3.7.8.tar.gz
+[2023-04-09 01:28:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:48] INFO root fetch - processPackages [hao]: Downloading https://files.pythonhosted.org/packages/f3/18/39775cc0b33aff460c38ad911af0b5fdbf79bb65311de2b2d64f1e3591d5/hao-3.7.9.tar.gz
+[2023-04-09 01:28:48] INFO root fetch - processPackages [sspeedup]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-09 01:28:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:48] INFO root fetch - processPackages [pip-inside]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 01:28:48] INFO root fetch - processPackages [sspeedup]: Downloading https://files.pythonhosted.org/packages/48/53/7c505a0e308b8c76837bccc3d052180734fb7d4b6d2db74a283b4ac7fbee/sspeedup-0.5.0.tar.gz
+[2023-04-09 01:28:48] INFO root fetch - processPackages [hao]: executing diffoscope
+[2023-04-09 01:28:48] INFO root fetch - processPackages [hao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hao-3.7.8.tar.gz tmp/hao-3.7.9.tar.gz --markdown 20230409/h/hao/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-04-09 01:28:48] INFO root fetch - processPackages [sspeedup]: Downloading https://files.pythonhosted.org/packages/7f/bc/97c5be3e55f303e5c5a0c2197a078bee33281632611057b9b42dbbae2c8e/sspeedup-0.6.0.tar.gz
+[2023-04-09 01:28:48] INFO root fetch - processPackages [pip-inside]: Downloading https://files.pythonhosted.org/packages/d3/cc/9bb6c9f2e1c4e2f7965ffe44c641d8e763c9edbf489228ff87fc220fd19e/pip-inside-0.1.8.tar.gz
+[2023-04-09 01:28:48] INFO root fetch - processPackages [sspeedup]: executing diffoscope
+[2023-04-09 01:28:48] INFO root fetch - processPackages [sspeedup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sspeedup-0.5.0.tar.gz tmp/sspeedup-0.6.0.tar.gz --markdown 20230409/s/sspeedup/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-09 01:28:49] INFO root fetch - processPackages [pip-inside]: Downloading https://files.pythonhosted.org/packages/03/29/8da5b4e43dd72f20de380f015a3da26ad5d6903ca91d52f6707e3fff7ee9/pip-inside-0.1.9.tar.gz
+[2023-04-09 01:28:49] INFO root fetch - processPackages [pip-inside]: executing diffoscope
+[2023-04-09 01:28:49] INFO root fetch - processPackages [pip-inside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-inside-0.1.8.tar.gz tmp/pip-inside-0.1.9.tar.gz --markdown 20230409/p/pip-inside/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 01:28:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:49] INFO root fetch - processPackages [binsync]: New version: [3.6.0] Old Version: [3.5.9]
+[2023-04-09 01:28:49] INFO root fetch - processPackages [binsync]: Downloading https://files.pythonhosted.org/packages/7d/03/bf9e1af4daa0bc656d3590d5c2a0a7d41664698ae5c50487fc2552d54dbb/binsync-3.5.9.tar.gz
+[2023-04-09 01:28:49] INFO root fetch - processPackages [binsync]: Downloading https://files.pythonhosted.org/packages/41/ed/6955625418feda88463248efd6f96d8d07c9b8583ff33b756d7990f45186/binsync-3.6.0.tar.gz
+[2023-04-09 01:28:49] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-04-09 01:28:49] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.5.9.tar.gz tmp/binsync-3.6.0.tar.gz --markdown 20230409/b/binsync/3.5.9-3.6.0/diff.md --exclude *.pyd
+[2023-04-09 01:28:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:49] INFO root fetch - processPackages [daam]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 01:28:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:49] WARNING root fetch - processPackages [triple-quote-clean]: Skipping, unable to determine old version
+[2023-04-09 01:28:49] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:28:49] INFO root fetch - processPackages [pytest-html]: New version: [4.0.0rc4] Old Version: [4.0.0rc2]
+[2023-04-09 01:28:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:49] INFO root fetch - processPackages [satdigitalinvoice]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-04-09 01:28:50] INFO root fetch - processPackages [daam]: executing diffoscope
+[2023-04-09 01:28:50] INFO root fetch - processPackages [daam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daam-0.0.8.tar.gz tmp/daam-0.0.9.tar.gz --markdown 20230409/d/daam/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 01:28:50] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/44/28/c195539277a30a8e2c3837b756d89a42a82edc41d3bdd701d0e7b20c63db/satdigitalinvoice-2.0.6.tar.gz
+[2023-04-09 01:28:50] INFO root fetch - processPackages [pytest-html]: Downloading https://files.pythonhosted.org/packages/2f/6e/651539d53c657c7fc6ed865a23a7ae9f7ef7cb8e5d9e6563975f8ce7df15/pytest_html-4.0.0rc4.tar.gz
+[2023-04-09 01:28:50] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/cc/c9/f3f54856d1740b2ed76c96f60be238fed3e0915e14004bbb333610e03556/satdigitalinvoice-2.0.7.tar.gz
+[2023-04-09 01:28:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:50] INFO root fetch - processPackages [PRPlot]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-09 01:28:50] INFO root fetch - processPackages [PRPlot]: Downloading https://files.pythonhosted.org/packages/f7/c2/ce42a69573873ae6e6ecf6aba5c9b61c7fa0cabaf926b94977505bd3b448/PRPlot-0.0.7.tar.gz
+[2023-04-09 01:28:50] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-09 01:28:50] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-2.0.6.tar.gz tmp/satdigitalinvoice-2.0.7.tar.gz --markdown 20230409/s/satdigitalinvoice/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-04-09 01:28:50] INFO root fetch - processPackages [pytest-html]: executing diffoscope
+[2023-04-09 01:28:50] INFO root fetch - processPackages [pytest-html]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_html-4.0.0rc2.tar.gz tmp/pytest_html-4.0.0rc4.tar.gz --markdown 20230409/p/pytest-html/4.0.0rc2-4.0.0rc4/diff.md --exclude *.pyd
+[2023-04-09 01:28:50] INFO root fetch - processPackages [PRPlot]: Downloading https://files.pythonhosted.org/packages/c9/8a/1596b800b47eca65bb11cae10479532ae6649275c7800953849f9a80a414/PRPlot-0.0.8.tar.gz
+[2023-04-09 01:28:50] INFO root fetch - processPackages [PRPlot]: executing diffoscope
+[2023-04-09 01:28:50] INFO root fetch - processPackages [PRPlot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PRPlot-0.0.7.tar.gz tmp/PRPlot-0.0.8.tar.gz --markdown 20230409/P/PRPlot/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-09 01:28:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:51] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 01:28:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:51] INFO root fetch - processPackages [climalite]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-04-09 01:28:51] INFO root fetch - processPackages [climalite]: executing diffoscope
+[2023-04-09 01:28:51] INFO root fetch - processPackages [climalite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climalite-1.0.0.tar.gz tmp/climalite-2.0.0.tar.gz --markdown 20230409/c/climalite/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-09 01:28:51] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: Downloading https://files.pythonhosted.org/packages/e8/c0/d30ecf75f987d2de9e3ef23e3ee56aba99ffb14cf13fa521c8fd9113d4e8/nonebot-plugin-SDGPT-0.0.7.tar.gz
+[2023-04-09 01:28:51] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: executing diffoscope
+[2023-04-09 01:28:51] INFO root fetch - processPackages [nonebot-plugin-SDGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-SDGPT-0.0.6.tar.gz tmp/nonebot-plugin-SDGPT-0.0.7.tar.gz --markdown 20230409/n/nonebot-plugin-SDGPT/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 01:28:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:51] WARNING root fetch - processPackages [kalkulator-sederhana]: Skipping, unable to determine old version
+[2023-04-09 01:28:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:28:51] INFO root fetch - processPackages [valaw]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 01:28:52] INFO root fetch - processPackages [valaw]: Downloading https://files.pythonhosted.org/packages/27/0c/3ce0c3fa327437596491a7bef324a9ea44b81a6b1278406c2532e84dcb69/valaw-0.0.3.tar.gz
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:52] INFO root fetch - processPackages [valaw]: executing diffoscope
+[2023-04-09 01:28:52] INFO root fetch - processPackages [valaw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valaw-0.0.2.tar.gz tmp/valaw-0.0.3.tar.gz --markdown 20230409/v/valaw/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 01:28:52] INFO root fetch - processPackages [pyfracgen]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:52] WARNING root fetch - processPackages [discord-data-storage]: Skipping, unable to determine old version
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:28:52] WARNING root fetch - processPackages [Colors-and-Styles]: Skipping, unable to determine old version
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:28:52] WARNING root fetch - processPackages [sara-compis1-tools]: Skipping, unable to determine old version
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:52] INFO root fetch - processPackages [satdigitalinvoice]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-04-09 01:28:52] INFO root fetch - processPackages [pyfracgen]: Downloading https://files.pythonhosted.org/packages/eb/fa/64aa9ed885aaff72f24799b37407ddc90c35b76455d22a06931bd20b55ab/pyfracgen-0.0.8.tar.gz
+[2023-04-09 01:28:52] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-09 01:28:52] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-2.0.6.tar.gz tmp/satdigitalinvoice-2.0.7.tar.gz --markdown 20230409/s/satdigitalinvoice/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:52] WARNING root fetch - processPackages [pyfracgen]: Skipping package: exceeds size limit 13120851>=10485760
+[2023-04-09 01:28:52] INFO root fetch - main [MainThread]: error
+[2023-04-09 01:28:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 01:28:53] INFO root fetch - main [MainThread]: success
