@@ -3559,3 +3559,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:38:11] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:38:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:38:18] INFO root fetch - main [MainThread]: Store serial: [17635347]
+[2023-04-09 10:43:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635347]
+[2023-04-09 10:43:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 10:43:26] WARNING root fetch - processPackages [nutikacompile]: Skipping, unable to determine old version
+[2023-04-09 10:43:26] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:43:26] INFO root fetch - processPackages [ga-vqc]: New version: [0.0.51] Old Version: [0.0.50]
+[2023-04-09 10:43:26] INFO root fetch - processPackages [citros]: New version: [23.14.6] Old Version: [23.14.5]
+[2023-04-09 10:43:26] INFO root fetch - processPackages [pyzw]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-09 10:43:26] WARNING root fetch - processPackages [pyAPRiL]: Skipping, unable to determine old version
+[2023-04-09 10:43:26] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:43:26] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-04-09 10:43:26] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-04-09 10:43:26] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230409/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-04-09 10:43:26] WARNING root fetch - processPackages [gester]: Skipping, unable to determine old version
+[2023-04-09 10:43:26] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:43:26] INFO root fetch - processPackages [citros]: Downloading https://files.pythonhosted.org/packages/98/cb/4fb736382e2c64d57787d1891a05739cbef2970d3dc2054530db0fee033e/citros-23.14.6.tar.gz
+[2023-04-09 10:43:26] INFO root fetch - processPackages [ga-vqc]: Downloading https://files.pythonhosted.org/packages/53/b9/ff68542cb15b2649f54f25253aeb6aadb17e44dc7e34ec8eaf7dd65d7af2/ga_vqc-0.0.51.tar.gz
+[2023-04-09 10:43:26] INFO root fetch - processPackages [pyzw]: Downloading https://files.pythonhosted.org/packages/b9/fc/8814edff8effc75bb37fb44fa632581ed7bc8b3bfe167d7bb13f019cda8b/pyzw-0.0.6-py3-none-any.whl
+[2023-04-09 10:43:26] INFO root fetch - processPackages [ga-vqc]: executing diffoscope
+[2023-04-09 10:43:26] INFO root fetch - processPackages [ga-vqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ga_vqc-0.0.50.tar.gz tmp/ga_vqc-0.0.51.tar.gz --markdown 20230409/g/ga-vqc/0.0.50-0.0.51/diff.md --exclude *.pyd
+[2023-04-09 10:43:26] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 10:43:26] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.5.tar.gz tmp/citros-23.14.6.tar.gz --markdown 20230409/c/citros/23.14.5-23.14.6/diff.md --exclude *.pyd
+[2023-04-09 10:43:26] INFO root fetch - processPackages [pyzw]: executing diffoscope
+[2023-04-09 10:43:26] INFO root fetch - processPackages [pyzw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzw-0.0.5.tar.gz tmp/pyzw-0.0.6-py3-none-any.whl.zip --markdown 20230409/p/pyzw/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-09 10:43:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:43:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:43:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:43:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:43:37] INFO root fetch - main [MainThread]: Store serial: [17635371]
