@@ -2891,3 +2891,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:53:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:53:02] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:53:02] INFO root fetch - main [MainThread]: Store serial: [17634887]
+[2023-04-09 08:58:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634887]
+[2023-04-09 08:58:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 08:58:09] INFO root fetch - processPackages [hugg]: New version: [0.0.76] Old Version: [0.0.75]
+[2023-04-09 08:58:09] INFO root fetch - processPackages [astrodown]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 08:58:09] INFO root fetch - processPackages [python-office]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-09 08:58:09] INFO root fetch - processPackages [pohan]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 08:58:09] INFO root fetch - processPackages [jsonschema-gentypes]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-04-09 08:58:09] INFO root fetch - processPackages [astrodown]: Downloading https://files.pythonhosted.org/packages/37/98/4d22cfb748ff2e1dfffc6dfc29f3c7b9125c2b64facf4460b18d48f3c338/astrodown-0.1.8.tar.gz
+[2023-04-09 08:58:09] INFO root fetch - processPackages [pohan]: Downloading https://files.pythonhosted.org/packages/7b/fd/7c912716f05591950cdf0c19b51091894c8b7efb4c1f54873d5c5caaf8c7/pohan-0.0.4.tar.gz
+[2023-04-09 08:58:09] INFO root fetch - processPackages [python-office]: Downloading https://files.pythonhosted.org/packages/a0/4b/8c1321ca1c46528f1ae915930236489a848570a99176d11dd06a886d5e9a/python-office-0.3.9.tar.gz
+[2023-04-09 08:58:09] INFO root fetch - processPackages [pohan]: executing diffoscope
+[2023-04-09 08:58:09] INFO root fetch - processPackages [pohan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pohan-0.0.3.tar.gz tmp/pohan-0.0.4.tar.gz --markdown 20230409/p/pohan/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 08:58:09] INFO root fetch - processPackages [python-office]: executing diffoscope
+[2023-04-09 08:58:09] INFO root fetch - processPackages [python-office]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-office-0.3.8.tar.gz tmp/python-office-0.3.9.tar.gz --markdown 20230409/p/python-office/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-09 08:58:09] INFO root fetch - processPackages [jsonschema-gentypes]: Downloading https://files.pythonhosted.org/packages/55/bc/864f5b451b191e210c69e60faf91e8cf8a7bac5e6101dad3fd6665ae1a01/jsonschema_gentypes-1.7.2.tar.gz
+[2023-04-09 08:58:09] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/7e/80/aa547beb99d72122431d5c9a4b346eaa0e108e1ca4d720bf27def8e5ea70/hugg-0.0.76.tar.gz
+[2023-04-09 08:58:09] INFO root fetch - processPackages [jsonschema-gentypes]: executing diffoscope
+[2023-04-09 08:58:09] INFO root fetch - processPackages [jsonschema-gentypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonschema_gentypes-1.7.1.tar.gz tmp/jsonschema_gentypes-1.7.2.tar.gz --markdown 20230409/j/jsonschema-gentypes/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-04-09 08:58:09] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 08:58:09] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.75.tar.gz tmp/hugg-0.0.76.tar.gz --markdown 20230409/h/hugg/0.0.75-0.0.76/diff.md --exclude *.pyd
+[2023-04-09 08:58:10] INFO root fetch - processPackages [astrodown]: Downloading https://files.pythonhosted.org/packages/7c/9b/c7c4f8e401c55f4decf9045921cd949b676b370aff79e1e029e114aa0797/astrodown-0.1.9.tar.gz
+[2023-04-09 08:58:10] INFO root fetch - processPackages [astrodown]: executing diffoscope
+[2023-04-09 08:58:10] INFO root fetch - processPackages [astrodown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrodown-0.1.8.tar.gz tmp/astrodown-0.1.9.tar.gz --markdown 20230409/a/astrodown/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 08:58:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:58:10] INFO root fetch - processPackages [bingai]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-09 08:58:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:58:11] INFO root fetch - processPackages [dorsa-datetime]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 08:58:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:58:11] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/d3/88/b5654e08e722a4632af26fa22a40bd5aeb93f52047028edf86ccc523d8b8/bingai-1.1.0.tar.gz
+[2023-04-09 08:58:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:58:11] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 08:58:11] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-1.0.0.tar.gz tmp/bingai-1.1.0.tar.gz --markdown 20230409/b/bingai/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-09 08:58:11] INFO root fetch - processPackages [dorsa-datetime]: Downloading https://files.pythonhosted.org/packages/e8/0f/38f7e74b2983524ef99155c7bc2bd7c5a2bdb60b245630c8d0bdeb036348/dorsa_datetime-1.0.0.tar.gz
+[2023-04-09 08:58:11] INFO root fetch - processPackages [dorsa-datetime]: Downloading https://files.pythonhosted.org/packages/52/56/3f1a64b497ef9c24d5196a2f7933efd5f6b9c613d0ff0de787ba7e262b8d/dorsa_datetime-1.0.1.tar.gz
+[2023-04-09 08:58:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:58:11] INFO root fetch - processPackages [dorsa-datetime]: executing diffoscope
+[2023-04-09 08:58:11] INFO root fetch - processPackages [dorsa-datetime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorsa_datetime-1.0.0.tar.gz tmp/dorsa_datetime-1.0.1.tar.gz --markdown 20230409/d/dorsa-datetime/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 08:58:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:58:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:58:12] INFO root fetch - main [MainThread]: Store serial: [17634909]
