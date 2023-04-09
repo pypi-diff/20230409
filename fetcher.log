@@ -3953,3 +3953,23 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 11:20:25] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:20:27] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:20:27] INFO root fetch - main [MainThread]: Store serial: [17635584]
+[2023-04-09 11:25:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635584]
+[2023-04-09 11:25:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-09 11:25:35] INFO root fetch - processPackages [dankware]: New version: [3.3.4] Old Version: [3.3.3]
+[2023-04-09 11:25:35] INFO root fetch - processPackages [helios-opentelemetry-sdk]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-09 11:25:35] INFO root fetch - processPackages [UnityPy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-09 11:25:35] INFO root fetch - processPackages [helios-opentelemetry-sdk]: Downloading https://files.pythonhosted.org/packages/1b/58/244106c74aec91ff67570f8810e829ef94a0d3e7684992825c74bad4297f/helios-opentelemetry-sdk-1.0.8.tar.gz
+[2023-04-09 11:25:35] INFO root fetch - processPackages [dankware]: Downloading https://files.pythonhosted.org/packages/18/81/65491721527756f48ca011b7f0c4d5d37ffb19547e03ecfd0e572fd9307c/dankware-3.3.4.tar.gz
+[2023-04-09 11:25:35] INFO root fetch - processPackages [UnityPy]: Downloading https://files.pythonhosted.org/packages/f3/de/d7e485c609037e94fd2e03f9a700f09eccdddb3ef775fd406071a0eb3170/UnityPy-1.9.8.tar.gz
+[2023-04-09 11:25:35] INFO root fetch - processPackages [dankware]: executing diffoscope
+[2023-04-09 11:25:35] INFO root fetch - processPackages [dankware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dankware-3.3.3.tar.gz tmp/dankware-3.3.4.tar.gz --markdown 20230409/d/dankware/3.3.3-3.3.4/diff.md --exclude *.pyd
+[2023-04-09 11:25:35] INFO root fetch - processPackages [helios-opentelemetry-sdk]: Downloading https://files.pythonhosted.org/packages/01/19/02160d1da998c32692c25c360b677e53fc0179b7fad78e499a7767dcbbea/helios-opentelemetry-sdk-1.0.9.tar.gz
+[2023-04-09 11:25:36] INFO root fetch - processPackages [helios-opentelemetry-sdk]: executing diffoscope
+[2023-04-09 11:25:36] INFO root fetch - processPackages [helios-opentelemetry-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helios-opentelemetry-sdk-1.0.8.tar.gz tmp/helios-opentelemetry-sdk-1.0.9.tar.gz --markdown 20230409/h/helios-opentelemetry-sdk/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-09 11:25:36] INFO root fetch - processPackages [UnityPy]: Downloading https://files.pythonhosted.org/packages/19/ce/6a509e60952f5a718ca96ff7a6ac1eb961a20ae5cb015bfd27592ba21eff/UnityPy-1.9.9.tar.gz
+[2023-04-09 11:25:36] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:25:37] INFO root fetch - processPackages [UnityPy]: executing diffoscope
+[2023-04-09 11:25:37] INFO root fetch - processPackages [UnityPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnityPy-1.9.8.tar.gz tmp/UnityPy-1.9.9.tar.gz --markdown 20230409/U/UnityPy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-09 11:25:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:25:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:25:38] INFO root fetch - main [MainThread]: Store serial: [17635613]
