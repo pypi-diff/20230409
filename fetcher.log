@@ -4038,3 +4038,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 11:36:55] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:36:55] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:36:55] INFO root fetch - main [MainThread]: Store serial: [17635676]
+[2023-04-09 11:41:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635676]
+[2023-04-09 11:42:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 11:42:03] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-04-09 11:42:03] INFO root fetch - processPackages [django-passkeys]: New version: [1.0.0] Old Version: [0.8.0]
+[2023-04-09 11:42:04] INFO root fetch - processPackages [opsgenielib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 11:42:04] INFO root fetch - processPackages [robyn]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-09 11:42:04] INFO root fetch - processPackages [fake-bge-module-latest]: New version: [20230409] Old Version: [20230403]
+[2023-04-09 11:42:04] INFO root fetch - processPackages [django-passkeys]: Downloading https://files.pythonhosted.org/packages/fa/1f/61a349ecbf36c08150bdf75daa8bef6f95bf392199bf05eb479fcdf8e399/django-passkeys-0.8.0.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [opsgenielib]: Downloading https://files.pythonhosted.org/packages/76/09/1511f645309a4823a963801621cf0a77e970304e89870813f08fcc2c7bea/opsgenielib-0.0.8.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/1f/be/e6bfb6fc22bac2d99f3fddc6147bdec7041c349eb8f620bd6ea1fab0d1bb/hiddifypanel-3.0.3-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 11:42:04] INFO root fetch - processPackages [fake-bge-module-latest]: Downloading https://files.pythonhosted.org/packages/21/19/cbc9ab0c25d45c8c57dea6c3c3d75d9e08bd8f56db879c7fb509ae13252c/fake-bge-module-latest-20230403.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [robyn]: Downloading https://files.pythonhosted.org/packages/db/e8/d0c20074330916a3895c96c270b171a9247666e837b1deb1ff2efb953da5/robyn-0.8.1.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 11:42:04] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.2-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.3-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-04-09 11:42:04] INFO root fetch - processPackages [django-passkeys]: Downloading https://files.pythonhosted.org/packages/15/51/22406d357ac907e232b6247f879c0ed2c8da6f4b1c00110c5252eb5f6062/django-passkeys-1.0.0.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [django-passkeys]: executing diffoscope
+[2023-04-09 11:42:04] INFO root fetch - processPackages [django-passkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-passkeys-0.8.0.tar.gz tmp/django-passkeys-1.0.0.tar.gz --markdown 20230409/d/django-passkeys/0.8.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 11:42:04] INFO root fetch - processPackages [fake-bge-module-latest]: Downloading https://files.pythonhosted.org/packages/64/e9/0a7b388c64221f5a3e153a00e6dc49710f90d5cf13556fcac8e2e1f78666/fake-bge-module-latest-20230409.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [opsgenielib]: Downloading https://files.pythonhosted.org/packages/eb/f1/306f55a88b8fc398d3be7f1596d9471f8dd3408586bcde62e7b9543ea7d3/opsgenielib-0.0.9.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [fake-bge-module-latest]: executing diffoscope
+[2023-04-09 11:42:04] INFO root fetch - processPackages [fake-bge-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bge-module-latest-20230403.tar.gz tmp/fake-bge-module-latest-20230409.tar.gz --markdown 20230409/f/fake-bge-module-latest/20230403-20230409/diff.md --exclude *.pyd
+[2023-04-09 11:42:04] INFO root fetch - processPackages [robyn]: Downloading https://files.pythonhosted.org/packages/9e/05/799d2992e229948de022111c077e3db76a1ebca39c6bf7f3ab9043b7a8e3/robyn-0.9.0.tar.gz
+[2023-04-09 11:42:04] INFO root fetch - processPackages [opsgenielib]: executing diffoscope
+[2023-04-09 11:42:04] INFO root fetch - processPackages [opsgenielib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsgenielib-0.0.8.tar.gz tmp/opsgenielib-0.0.9.tar.gz --markdown 20230409/o/opsgenielib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 11:42:05] INFO root fetch - processPackages [robyn]: executing diffoscope
+[2023-04-09 11:42:05] INFO root fetch - processPackages [robyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robyn-0.8.1.tar.gz tmp/robyn-0.9.0.tar.gz --markdown 20230409/r/robyn/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 11:42:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:42:06] INFO root fetch - processPackages [pikvm-cli]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 11:42:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:42:06] INFO root fetch - processPackages [gester]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-09 11:42:06] INFO root fetch - processPackages [pikvm-cli]: Downloading https://files.pythonhosted.org/packages/ff/4b/af0c435349ddfc3d465c9957e1d094c1567c2f1f8ceda5a725a6bf55fd2f/pikvm-cli-1.0.0.tar.gz
+[2023-04-09 11:42:06] INFO root fetch - processPackages [gester]: Downloading https://files.pythonhosted.org/packages/d3/f4/82d0bddd1ebc9b2764e13d765bf42f1642f0b181c6fe5b51d3464e93ce07/gester-1.0.0.tar.gz
+[2023-04-09 11:42:06] INFO root fetch - processPackages [pikvm-cli]: Downloading https://files.pythonhosted.org/packages/8b/61/35aa5d49a930ade615bae8e2e71497a3312a5f366e04bf98a3ebc02fa357/pikvm-cli-1.0.1.tar.gz
+[2023-04-09 11:42:06] INFO root fetch - processPackages [pikvm-cli]: executing diffoscope
+[2023-04-09 11:42:06] INFO root fetch - processPackages [pikvm-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pikvm-cli-1.0.0.tar.gz tmp/pikvm-cli-1.0.1.tar.gz --markdown 20230409/p/pikvm-cli/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 11:42:06] INFO root fetch - processPackages [gester]: Downloading https://files.pythonhosted.org/packages/37/f0/7c11fbb36c50776c7843347af7306868f3ca9b2ace0875f98cbd4b40de4e/gester-1.1.0.tar.gz
+[2023-04-09 11:42:06] INFO root fetch - processPackages [gester]: executing diffoscope
+[2023-04-09 11:42:06] INFO root fetch - processPackages [gester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gester-1.0.0.tar.gz tmp/gester-1.1.0.tar.gz --markdown 20230409/g/gester/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-09 11:42:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:42:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:42:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:42:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:42:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:42:15] INFO root fetch - main [MainThread]: Store serial: [17635751]
