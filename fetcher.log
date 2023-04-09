@@ -3001,3 +3001,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:08:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:08:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:08:44] INFO root fetch - main [MainThread]: Store serial: [17634951]
+[2023-04-09 09:13:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634951]
+[2023-04-09 09:13:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-09 09:13:51] INFO root fetch - processPackages [hugg]: New version: [0.0.80] Old Version: [0.0.79]
+[2023-04-09 09:13:51] INFO root fetch - processPackages [pybind11-geobuf]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 09:13:52] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/7d/97/59514513041d16f45f21d84cb250954b855c4750ad7b989d83aefcb7910a/hugg-0.0.80.tar.gz
+[2023-04-09 09:13:52] INFO root fetch - processPackages [pybind11-geobuf]: Downloading https://files.pythonhosted.org/packages/fa/69/80425eca0e2b296ad2851feebe6b87c79328caa4248202df45450e33b1ad/pybind11_geobuf-0.1.0.tar.gz
+[2023-04-09 09:13:52] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 09:13:52] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.79.tar.gz tmp/hugg-0.0.80.tar.gz --markdown 20230409/h/hugg/0.0.79-0.0.80/diff.md --exclude *.pyd
+[2023-04-09 09:13:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:13:53] INFO root fetch - processPackages [pybind11-geobuf]: Downloading https://files.pythonhosted.org/packages/23/8d/1488c6bcae4b52a72ee1010271c07b3a9add751f676c566192cd007b76ca/pybind11_geobuf-0.1.1.tar.gz
+[2023-04-09 09:13:55] INFO root fetch - processPackages [pybind11-geobuf]: executing diffoscope
+[2023-04-09 09:13:55] INFO root fetch - processPackages [pybind11-geobuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybind11_geobuf-0.1.0.tar.gz tmp/pybind11_geobuf-0.1.1.tar.gz --markdown 20230409/p/pybind11-geobuf/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 09:14:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:14:43] INFO root fetch - main [MainThread]: Store serial: [17634984]
