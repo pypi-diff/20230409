@@ -9365,3 +9365,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:51:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:51:45] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:51:45] INFO root fetch - main [MainThread]: Store serial: [17639538]
+[2023-04-09 22:56:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639538]
+[2023-04-09 22:56:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 22:56:54] INFO root fetch - processPackages [t-money]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 22:56:54] INFO root fetch - processPackages [taskgen]: New version: [0.3.8] Old Version: [0.3.7.1]
+[2023-04-09 22:56:54] INFO root fetch - processPackages [dfimagetools]: New version: [20230409] Old Version: [20220312]
+[2023-04-09 22:56:54] INFO root fetch - processPackages [q2gui]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 22:56:54] INFO root fetch - processPackages [t-money]: Downloading https://files.pythonhosted.org/packages/f3/2c/cd9e16e644e765322392a1cfe97b035d3bcda726314fdba45b41b0ff631e/t_money-0.1.0.tar.gz
+[2023-04-09 22:56:54] INFO root fetch - processPackages [taskgen]: Downloading https://files.pythonhosted.org/packages/b0/87/a6fd77a4293b6b016490ed927ab97fcc4f832e4490cc6afdce4b7b1d5737/taskgen-0.3.7.1.tar.gz
+[2023-04-09 22:56:54] INFO root fetch - processPackages [dfimagetools]: Downloading https://files.pythonhosted.org/packages/e7/f3/6794da4f765d843cd0f508f36d4c26bbbd8fdf480f122db44c5a31756b9f/dfimagetools-20220312.tar.gz
+[2023-04-09 22:56:54] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/9a/a2/5eacaae9ddf4507f7a4ed7f51bad562d106fb13a8108e60650e7737d0cd6/q2gui-0.1.8.tar.gz
+[2023-04-09 22:56:54] INFO root fetch - processPackages [t-money]: Downloading https://files.pythonhosted.org/packages/22/c3/f90b7d1f846042bbf1ea4d75cb5ac3a4f96d6e72db2766a3050e677ff34a/t_money-0.1.1.tar.gz
+[2023-04-09 22:56:54] INFO root fetch - processPackages [t-money]: executing diffoscope
+[2023-04-09 22:56:54] INFO root fetch - processPackages [t-money]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t_money-0.1.0.tar.gz tmp/t_money-0.1.1.tar.gz --markdown 20230409/t/t-money/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 22:56:54] INFO root fetch - processPackages [dfimagetools]: Downloading https://files.pythonhosted.org/packages/80/bb/51332ed04e9388b0df349f51167c7de39e79001a6c9d8ff7c18b1cb8ab37/dfimagetools-20230409.tar.gz
+[2023-04-09 22:56:54] INFO root fetch - processPackages [dfimagetools]: executing diffoscope
+[2023-04-09 22:56:54] INFO root fetch - processPackages [dfimagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfimagetools-20220312.tar.gz tmp/dfimagetools-20230409.tar.gz --markdown 20230409/d/dfimagetools/20220312-20230409/diff.md --exclude *.pyd
+[2023-04-09 22:56:54] INFO root fetch - processPackages [taskgen]: Downloading https://files.pythonhosted.org/packages/6a/cc/12f7c3d6339cb4efa893ccf3511b52b7446e8e3196695bf45edc694a2944/taskgen-0.3.8.tar.gz
+[2023-04-09 22:56:54] INFO root fetch - processPackages [taskgen]: executing diffoscope
+[2023-04-09 22:56:54] INFO root fetch - processPackages [taskgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskgen-0.3.7.1.tar.gz tmp/taskgen-0.3.8.tar.gz --markdown 20230409/t/taskgen/0.3.7.1-0.3.8/diff.md --exclude *.pyd
+[2023-04-09 22:56:54] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/b5/70/466f2fbec4a72f00c6f07fdce89a2bfb0a1200b6742c61d2c09e405775c6/q2gui-0.1.9.tar.gz
+[2023-04-09 22:56:55] INFO root fetch - processPackages [q2gui]: executing diffoscope
+[2023-04-09 22:56:55] INFO root fetch - processPackages [q2gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2gui-0.1.8.tar.gz tmp/q2gui-0.1.9.tar.gz --markdown 20230409/q/q2gui/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 22:56:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:56:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:56:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:56:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:56:56] INFO root fetch - main [MainThread]: Store serial: [17639549]
