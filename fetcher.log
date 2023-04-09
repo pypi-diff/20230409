@@ -9503,3 +9503,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 23:17:43] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:17:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:17:44] INFO root fetch - main [MainThread]: Store serial: [17639611]
+[2023-04-09 23:22:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639611]
+[2023-04-09 23:22:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 23:22:51] INFO root fetch - processPackages [traceon]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-09 23:22:51] WARNING root fetch - processPackages [fastq-handler]: Skipping, unable to determine old version
+[2023-04-09 23:22:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 23:22:51] INFO root fetch - processPackages [sherlockpipe]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-09 23:22:51] INFO root fetch - processPackages [heartfelt-tools]: New version: [1.7.0] Old Version: [0.9.0]
+[2023-04-09 23:22:51] WARNING root fetch - processPackages [pypirand]: Skipping, unable to determine old version
+[2023-04-09 23:22:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 23:22:51] INFO root fetch - processPackages [traceon]: Downloading https://files.pythonhosted.org/packages/3b/5e/9829b0e5888ec0e9bcca1b06f83052825e4e1275fa2b7b939d9d603801ef/traceon-0.1.3.tar.gz
+[2023-04-09 23:22:51] INFO root fetch - processPackages [sherlockpipe]: Downloading https://files.pythonhosted.org/packages/46/3f/013fa1d25538474036ba7d400e78b06a89cd003c01a6c3f3e0a0aaa4a42a/sherlockpipe-0.9.6.tar.gz
+[2023-04-09 23:22:51] INFO root fetch - processPackages [heartfelt-tools]: Downloading https://files.pythonhosted.org/packages/b5/cd/edb531255d2321d5749327c8e87b982b1915a1af619f91b5bbf1990b928c/heartfelt_tools-1.7.0.tar.gz
+[2023-04-09 23:22:52] INFO root fetch - processPackages [heartfelt-tools]: executing diffoscope
+[2023-04-09 23:22:52] INFO root fetch - processPackages [heartfelt-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heartfelt_tools-0.9.0.tar.gz tmp/heartfelt_tools-1.7.0.tar.gz --markdown 20230409/h/heartfelt-tools/0.9.0-1.7.0/diff.md --exclude *.pyd
+[2023-04-09 23:22:52] INFO root fetch - processPackages [sherlockpipe]: Downloading https://files.pythonhosted.org/packages/04/d1/dcaf4b4f6fadabc4d5e9dbfb757378dbf810235e486f3eae3c57c7e6f88f/sherlockpipe-0.9.7.tar.gz
+[2023-04-09 23:22:52] INFO root fetch - processPackages [sherlockpipe]: executing diffoscope
+[2023-04-09 23:22:52] INFO root fetch - processPackages [sherlockpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlockpipe-0.9.6.tar.gz tmp/sherlockpipe-0.9.7.tar.gz --markdown 20230409/s/sherlockpipe/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-04-09 23:22:52] INFO root fetch - processPackages [traceon]: Downloading https://files.pythonhosted.org/packages/41/53/707ca8f063ad0b5a0faeabff1dc5f100df6a38866ada4134c46620f8325b/traceon-0.2.0.tar.gz
+[2023-04-09 23:22:52] INFO root fetch - processPackages [traceon]: executing diffoscope
+[2023-04-09 23:22:52] INFO root fetch - processPackages [traceon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceon-0.1.3.tar.gz tmp/traceon-0.2.0.tar.gz --markdown 20230409/t/traceon/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-09 23:22:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:22:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:22:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:22:54] INFO root fetch - main [MainThread]: Store serial: [17639632]
