@@ -7329,3 +7329,55 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 18:59:40] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:59:41] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:59:41] INFO root fetch - main [MainThread]: Store serial: [17638202]
+[2023-04-09 19:04:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638202]
+[2023-04-09 19:04:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 19:04:48] INFO root fetch - processPackages [proxy6api]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-04-09 19:04:48] INFO root fetch - processPackages [citros]: New version: [23.14.9] Old Version: [23.14.8]
+[2023-04-09 19:04:48] INFO root fetch - processPackages [q2db]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 19:04:48] INFO root fetch - processPackages [hugg]: New version: [0.0.87] Old Version: [0.0.86]
+[2023-04-09 19:04:48] INFO root fetch - processPackages [phidata]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-04-09 19:04:48] INFO root fetch - processPackages [q2db]: executing diffoscope
+[2023-04-09 19:04:48] INFO root fetch - processPackages [q2db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2db-0.1.8.tar.gz tmp/q2db-0.1.9.tar.gz --markdown 20230409/q/q2db/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 19:04:48] INFO root fetch - processPackages [citros]: Downloading https://files.pythonhosted.org/packages/4e/c2/f64954a40e762bb40a2bac15036e3c697ad7f96bc9a79def5abaabbff3fd/citros-23.14.9.tar.gz
+[2023-04-09 19:04:48] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/8f/4b/6f0d9837dff6f047ee961d0a96f00156586fb1ad1d3e2fb04b76e47f7708/hugg-0.0.87.tar.gz
+[2023-04-09 19:04:49] INFO root fetch - processPackages [proxy6api]: Downloading https://files.pythonhosted.org/packages/6b/68/3e029860868afd8c9d911f7cdcd7752282d380386c0b5692bc9b51e1ebb5/proxy6api-1.0.0.tar.gz
+[2023-04-09 19:04:49] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/78/c8/4afd92501afec92192bf74e4b16ced8af1500ab2f77ab1588b94a7e6c66d/phidata-1.5.6.tar.gz
+[2023-04-09 19:04:49] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 19:04:49] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.8.tar.gz tmp/citros-23.14.9.tar.gz --markdown 20230409/c/citros/23.14.8-23.14.9/diff.md --exclude *.pyd
+[2023-04-09 19:04:49] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 19:04:49] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.86.tar.gz tmp/hugg-0.0.87.tar.gz --markdown 20230409/h/hugg/0.0.86-0.0.87/diff.md --exclude *.pyd
+[2023-04-09 19:04:49] INFO root fetch - processPackages [proxy6api]: executing diffoscope
+[2023-04-09 19:04:49] INFO root fetch - processPackages [proxy6api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxy6api-0.1.2.tar.gz tmp/proxy6api-1.0.0.tar.gz --markdown 20230409/p/proxy6api/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 19:04:49] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2023-04-09 19:04:49] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-1.5.5.tar.gz tmp/phidata-1.5.6.tar.gz --markdown 20230409/p/phidata/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-04-09 19:04:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:04:50] INFO root fetch - processPackages [lcbuilder]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-09 19:04:50] INFO root fetch - processPackages [lcbuilder]: Downloading https://files.pythonhosted.org/packages/f4/7f/fe7e2a3a797ae2569375c4260501908dc35c2a523d3e7f89eb1769068c3a/lcbuilder-0.9.8.tar.gz
+[2023-04-09 19:04:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:04:50] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 19:04:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:04:50] INFO root fetch - processPackages [rebasin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 19:04:50] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 19:04:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:04:50] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-04-09 19:04:50] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 19:04:50] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:04:50] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 19:04:50] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 19:04:50] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 19:04:50] INFO root fetch - processPackages [rebasin]: Downloading https://files.pythonhosted.org/packages/ee/ec/472b833c31a87a2dde819c67a6501493f5b2e8fce70142675932e85f181d/rebasin-0.0.8.tar.gz
+[2023-04-09 19:04:50] INFO root fetch - processPackages [lcbuilder]: Downloading https://files.pythonhosted.org/packages/31/8f/6990e76cc8de8a1377d1e6653c8950226902239559275c6b11838d5cb379/lcbuilder-0.9.9.tar.gz
+[2023-04-09 19:04:50] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/b2/a0/37197fa6586fdd059225c7d49144a1f48cfe92d0ded55fb3fc11b1ae3052/hiddifypanel-3.0.6-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 19:04:50] INFO root fetch - processPackages [lcbuilder]: executing diffoscope
+[2023-04-09 19:04:50] INFO root fetch - processPackages [lcbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcbuilder-0.9.8.tar.gz tmp/lcbuilder-0.9.9.tar.gz --markdown 20230409/l/lcbuilder/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-09 19:04:51] INFO root fetch - processPackages [rebasin]: Downloading https://files.pythonhosted.org/packages/8c/bf/a5f0a0921ec6be3d6dc92653299b0a4d5d6e5d3796c7861c541e8bb874a7/rebasin-0.0.9.tar.gz
+[2023-04-09 19:04:51] INFO root fetch - processPackages [rebasin]: executing diffoscope
+[2023-04-09 19:04:51] INFO root fetch - processPackages [rebasin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rebasin-0.0.8.tar.gz tmp/rebasin-0.0.9.tar.gz --markdown 20230409/r/rebasin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 19:04:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:04:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:04:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:04:52] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 19:04:52] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.6-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-04-09 19:04:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:05:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:05:03] INFO root fetch - main [MainThread]: Store serial: [17638238]
