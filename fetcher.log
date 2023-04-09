@@ -7473,3 +7473,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:15:33] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:15:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:15:39] INFO root fetch - main [MainThread]: Store serial: [17638306]
+[2023-04-09 19:20:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638306]
+[2023-04-09 19:20:47] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 19:20:47] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-09 19:20:47] INFO root fetch - processPackages [heart-model]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 19:20:47] INFO root fetch - processPackages [afex-audit-trail]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 19:20:47] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-09 19:20:47] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-09 19:20:47] INFO root fetch - processPackages [afex-audit-trail]: Downloading https://files.pythonhosted.org/packages/a7/44/6171983811ba05b198f2a3b62ccd7a7b0f2c9868ea92850a9dad49572a2b/afex-audit-trail-0.1.1.tar.gz
+[2023-04-09 19:20:47] INFO root fetch - processPackages [heart-model]: Downloading https://files.pythonhosted.org/packages/fc/d0/b7c3577a6bafd25b233dcfdec8efe6b78e248437986c3b2405be6e19df40/heart-model-0.0.5.tar.gz
+[2023-04-09 19:20:47] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/b6/be/d1a981a4b726d8001e5999a4b961e0abcd3896fdb2bc2100c1618649ad01/PyMemoryEditor-1.4.1.tar.gz
+[2023-04-09 19:20:48] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-09 19:20:48] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230409/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-09 19:20:48] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-09 19:20:48] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230409/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-09 19:20:48] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-09 19:20:48] INFO root fetch - processPackages [afex-audit-trail]: Downloading https://files.pythonhosted.org/packages/fc/bf/babb7aa44c7402cf321d5586f406f209b8fd19d85e434f28e9bb4a273085/afex-audit-trail-0.1.2.tar.gz
+[2023-04-09 19:20:48] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.0.tar.gz tmp/PyMemoryEditor-1.4.1.tar.gz --markdown 20230409/P/PyMemoryEditor/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-09 19:20:48] INFO root fetch - processPackages [heart-model]: executing diffoscope
+[2023-04-09 19:20:48] INFO root fetch - processPackages [heart-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heart-model-0.0.4.tar.gz tmp/heart-model-0.0.5.tar.gz --markdown 20230409/h/heart-model/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 19:20:48] INFO root fetch - processPackages [afex-audit-trail]: executing diffoscope
+[2023-04-09 19:20:48] INFO root fetch - processPackages [afex-audit-trail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afex-audit-trail-0.1.1.tar.gz tmp/afex-audit-trail-0.1.2.tar.gz --markdown 20230409/a/afex-audit-trail/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:20:49] WARNING root fetch - processPackages [iconfinder]: Skipping, unable to determine old version
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:20:49] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:20:49] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 19:20:49] INFO root fetch - processPackages [citros]: New version: [23.14.9] Old Version: [23.14.8]
+[2023-04-09 19:20:49] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:20:49] WARNING root fetch - processPackages [90456984689490856]: Skipping, unable to determine old version
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:20:49] WARNING root fetch - processPackages [turbo-docs]: Skipping, unable to determine old version
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:20:49] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 19:20:49] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.8.tar.gz tmp/citros-23.14.9.tar.gz --markdown 20230409/c/citros/23.14.8-23.14.9/diff.md --exclude *.pyd
+[2023-04-09 19:20:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:20:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:20:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:20:50] INFO root fetch - main [MainThread]: Store serial: [17638340]
