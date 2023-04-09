@@ -6027,3 +6027,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:36:32] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:36:35] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:36:35] INFO root fetch - main [MainThread]: Store serial: [17637220]
+[2023-04-09 16:41:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637220]
+[2023-04-09 16:41:43] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-09 16:41:43] INFO root fetch - processPackages [ofscraper]: New version: [1.74] Old Version: [1.73]
+[2023-04-09 16:41:43] INFO root fetch - processPackages [flarespy]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-09 16:41:43] WARNING root fetch - processPackages [py-shiftmanager]: Skipping, unable to determine old version
+[2023-04-09 16:41:43] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:41:43] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 16:41:43] INFO root fetch - processPackages [xklb]: New version: [1.24.9] Old Version: [1.24.8]
+[2023-04-09 16:41:43] INFO root fetch - processPackages [langchain-utils]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 16:41:43] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-04-09 16:41:43] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.24.8.tar.gz tmp/xklb-1.24.9.tar.gz --markdown 20230409/x/xklb/1.24.8-1.24.9/diff.md --exclude *.pyd
+[2023-04-09 16:41:43] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 16:41:43] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 16:41:43] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/7a/6c/e72e49fd3faca08a4704b7c82ff083d40ea7d718fd0c327746e0ae2db000/flarespy-0.5.0.tar.gz
+[2023-04-09 16:41:43] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/96/4d/e40beb5c23a535bd1261545816f035440804d16d4adb005a33c176464feb/langchain_utils-0.1.1.tar.gz
+[2023-04-09 16:41:43] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/b6/60/e92cfcdb98554f84216039e44d0f84275ca05c82891742f49eae304fa17d/ofscraper-1.74.tar.gz
+[2023-04-09 16:41:43] INFO root fetch - processPackages [flarespy]: Downloading https://files.pythonhosted.org/packages/be/28/46b7f70aeee96e24f2745d9ce47804b6bcc8082a8930ede651989102d061/flarespy-0.5.1.tar.gz
+[2023-04-09 16:41:44] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2023-04-09 16:41:44] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-1.73.tar.gz tmp/ofscraper-1.74.tar.gz --markdown 20230409/o/ofscraper/1.73-1.74/diff.md --exclude *.pyd
+[2023-04-09 16:41:44] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-04-09 16:41:44] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.5.0.tar.gz tmp/flarespy-0.5.1.tar.gz --markdown 20230409/f/flarespy/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-09 16:41:44] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/09/09/0c37ec7d2057e9ec00c77eb4816cbde615061c9b9985dc76ba67c97a2971/langchain_utils-0.1.2.tar.gz
+[2023-04-09 16:41:44] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-09 16:41:44] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.1.1.tar.gz tmp/langchain_utils-0.1.2.tar.gz --markdown 20230409/l/langchain-utils/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 16:41:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:44] INFO root fetch - processPackages [spinecore]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-04-09 16:41:44] INFO root fetch - processPackages [spinecore]: Downloading https://files.pythonhosted.org/packages/6c/54/47ef559e43512ca118271a6463872eb1f79c968838fa86cec8531c47e732/spinecore-0.0.17.tar.gz
+[2023-04-09 16:41:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:45] INFO root fetch - processPackages [spinecore]: executing diffoscope
+[2023-04-09 16:41:45] INFO root fetch - processPackages [spinecore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spinecore-0.0.16.tar.gz tmp/spinecore-0.0.17.tar.gz --markdown 20230409/s/spinecore/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-04-09 16:41:45] INFO root fetch - processPackages [revChatGPT]: New version: [4.1.5] Old Version: [4.1.4]
+[2023-04-09 16:41:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:45] INFO root fetch - processPackages [aiva-core]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 16:41:45] INFO root fetch - processPackages [aiva-core]: Downloading https://files.pythonhosted.org/packages/95/ce/82e6ea0209b3ce52b590e045c84031633c49d0a823c0cfad2f03805f09f4/aiva_core-0.1.0.tar.gz
+[2023-04-09 16:41:45] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/8e/d5/6de1788e3464065302574ed7c997f2828e60aaaf8ecb5f0774dc5fc1583b/revChatGPT-4.1.5.tar.gz
+[2023-04-09 16:41:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:45] WARNING root fetch - processPackages [yunxiao]: Skipping, unable to determine old version
+[2023-04-09 16:41:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:41:45] WARNING root fetch - processPackages [phcmas1-calculator]: Skipping, unable to determine old version
+[2023-04-09 16:41:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:41:45] INFO root fetch - processPackages [hitchpylibrarytoolkit]: New version: [0.6.9] Old Version: [0.6.7]
+[2023-04-09 16:41:45] INFO root fetch - processPackages [hitchpylibrarytoolkit]: executing diffoscope
+[2023-04-09 16:41:45] INFO root fetch - processPackages [hitchpylibrarytoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchpylibrarytoolkit-0.6.7.tar.gz tmp/hitchpylibrarytoolkit-0.6.9.tar.gz --markdown 20230409/h/hitchpylibrarytoolkit/0.6.7-0.6.9/diff.md --exclude *.pyd
+[2023-04-09 16:41:45] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-09 16:41:45] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.1.4.tar.gz tmp/revChatGPT-4.1.5.tar.gz --markdown 20230409/r/revChatGPT/4.1.4-4.1.5/diff.md --exclude *.pyd
+[2023-04-09 16:41:45] INFO root fetch - processPackages [aiva-core]: Downloading https://files.pythonhosted.org/packages/52/1c/5858c528904c6acd372bf3a593248b983ca4d9d9315261033ce536f3e09c/aiva_core-0.1.1.tar.gz
+[2023-04-09 16:41:46] INFO root fetch - processPackages [aiva-core]: executing diffoscope
+[2023-04-09 16:41:46] INFO root fetch - processPackages [aiva-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiva_core-0.1.0.tar.gz tmp/aiva_core-0.1.1.tar.gz --markdown 20230409/a/aiva-core/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 16:41:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:41:47] INFO root fetch - main [MainThread]: Store serial: [17637262]
