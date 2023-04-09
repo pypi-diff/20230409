@@ -1225,3 +1225,135 @@ Traceback (most recent call last):
 libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139984594017824)
 
 [2023-04-09 03:01:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 03:31:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17633596]
+[2023-04-09 03:31:52] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-04-09 03:31:52] INFO root fetch - processPackages [cnd-cr]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 03:31:52] WARNING root fetch - processPackages [dash-component-editor]: Skipping, unable to determine old version
+[2023-04-09 03:31:52] INFO root fetch - main [MainThread]: error
+[2023-04-09 03:31:52] INFO root fetch - processPackages [fdlogger]: New version: [23.4.8] Old Version: [23.3.1]
+[2023-04-09 03:31:52] WARNING root fetch - processPackages [tomcru-jerry]: Skipping, unable to determine old version
+[2023-04-09 03:31:52] INFO root fetch - main [MainThread]: error
+[2023-04-09 03:31:52] INFO root fetch - processPackages [flet-core]: New version: [0.6.0.dev1294] Old Version: [0.6.0.dev1293]
+[2023-04-09 03:31:52] INFO root fetch - processPackages [flet-pyodide]: New version: [0.6.0.dev1294] Old Version: [0.6.0.dev1293]
+[2023-04-09 03:31:52] INFO root fetch - processPackages [flet]: New version: [0.6.0.dev1294] Old Version: [0.6.0.dev1293]
+[2023-04-09 03:31:52] INFO root fetch - processPackages [fdlogger]: Downloading https://files.pythonhosted.org/packages/b2/48/3e24e3df097a4364f41f61dddab6ebb81d7dc219f7b698b7be12f0ca167d/fdlogger-23.3.1.tar.gz
+[2023-04-09 03:31:53] INFO root fetch - processPackages [cnd-cr]: Downloading https://files.pythonhosted.org/packages/46/47/69f77e6b6d7866825d9d0ca8e2096238d76eeef1ab266b2448f7573ba15c/cnd_cr-0.1.2-py3-none-any.whl
+[2023-04-09 03:31:53] INFO root fetch - processPackages [cnd-cr]: executing diffoscope
+[2023-04-09 03:31:53] INFO root fetch - processPackages [cnd-cr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnd_cr-0.1.1-py3-none-any.whl.zip tmp/cnd_cr-0.1.2-py3-none-any.whl.zip --markdown 20230409/c/cnd-cr/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/f8/7d/a7b0ccb8381049fbebce10f5d1aa9d9290f20b1f0a46bcc48785273afad8/flet-0.6.0.dev1294.tar.gz
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/99/19/9741d53b3079d4b2dc9a670f539225ff3548639cbd726222165812bc06fc/flet_pyodide-0.6.0.dev1294.tar.gz
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/f5/7b/5d3c8eaca76f7ec7766e36171b8c5648d9d441bddf314cb5e4c41c552ba3/flet_core-0.6.0.dev1294.tar.gz
+[2023-04-09 03:31:53] INFO root fetch - processPackages [fdlogger]: Downloading https://files.pythonhosted.org/packages/14/5d/41a83523e197dabe89257ca916bef57cc5ec562e21f96c23eb83b8f6e213/fdlogger-23.4.8.tar.gz
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.6.0.dev1293.tar.gz tmp/flet_pyodide-0.6.0.dev1294.tar.gz --markdown 20230409/f/flet-pyodide/0.6.0.dev1293-0.6.0.dev1294/diff.md --exclude *.pyd
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.6.0.dev1293.tar.gz tmp/flet_core-0.6.0.dev1294.tar.gz --markdown 20230409/f/flet-core/0.6.0.dev1293-0.6.0.dev1294/diff.md --exclude *.pyd
+[2023-04-09 03:31:53] INFO root fetch - processPackages [fdlogger]: executing diffoscope
+[2023-04-09 03:31:53] INFO root fetch - processPackages [fdlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fdlogger-23.3.1.tar.gz tmp/fdlogger-23.4.8.tar.gz --markdown 20230409/f/fdlogger/23.3.1-23.4.8/diff.md --exclude *.pyd
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet]: executing diffoscope
+[2023-04-09 03:31:53] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.6.0.dev1293.tar.gz tmp/flet-0.6.0.dev1294.tar.gz --markdown 20230409/f/flet/0.6.0.dev1293-0.6.0.dev1294/diff.md --exclude *.pyd
+[2023-04-09 03:31:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:54] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-09 03:31:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:54] INFO root fetch - processPackages [pytheus]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 03:31:54] INFO root fetch - processPackages [pytheus]: Downloading https://files.pythonhosted.org/packages/e7/17/b998d12029dc27675fc8404ce7a1aeed9b6a7c08f87e204a693354b0967b/pytheus-0.0.4.tar.gz
+[2023-04-09 03:31:54] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-09 03:31:54] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230409/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-09 03:31:54] INFO root fetch - processPackages [pytheus]: Downloading https://files.pythonhosted.org/packages/f6/a7/d7ad32cda5eb00a82ee07c8cbd22be96cbf9d3417fcb32653129fd3c53c3/pytheus-0.0.5.tar.gz
+[2023-04-09 03:31:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:54] INFO root fetch - processPackages [pytheus]: executing diffoscope
+[2023-04-09 03:31:54] INFO root fetch - processPackages [pytheus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytheus-0.0.4.tar.gz tmp/pytheus-0.0.5.tar.gz --markdown 20230409/p/pytheus/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 03:31:54] WARNING root fetch - processPackages [TimeShow]: Skipping, unable to determine old version
+[2023-04-09 03:31:54] INFO root fetch - main [MainThread]: error
+[2023-04-09 03:31:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:55] INFO root fetch - processPackages [MetrPlot]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 03:31:55] INFO root fetch - processPackages [nannos]: New version: [2.5.3] Old Version: [2.5.0]
+[2023-04-09 03:31:55] INFO root fetch - processPackages [nannos]: Downloading https://files.pythonhosted.org/packages/ce/fd/cc13f12b3328778d00b4aaf790f33bda757f8629b33699933ea261ee1834/nannos-2.5.0.tar.gz
+[2023-04-09 03:31:55] INFO root fetch - processPackages [MetrPlot]: Downloading https://files.pythonhosted.org/packages/17/53/8520b7a51ee524f27ecbdc243b660d1da417f7fc6501cac29519bd6bb725/MetrPlot-0.0.3.tar.gz
+[2023-04-09 03:31:55] INFO root fetch - processPackages [MetrPlot]: executing diffoscope
+[2023-04-09 03:31:55] INFO root fetch - processPackages [MetrPlot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MetrPlot-0.0.2.tar.gz tmp/MetrPlot-0.0.3.tar.gz --markdown 20230409/M/MetrPlot/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 03:31:55] INFO root fetch - processPackages [nannos]: Downloading https://files.pythonhosted.org/packages/ca/4c/e8a7a728c02de31bce21006ed37af7456115b8e96d454d4488747d03bf45/nannos-2.5.3.tar.gz
+[2023-04-09 03:31:55] INFO root fetch - processPackages [nannos]: executing diffoscope
+[2023-04-09 03:31:55] INFO root fetch - processPackages [nannos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nannos-2.5.0.tar.gz tmp/nannos-2.5.3.tar.gz --markdown 20230409/n/nannos/2.5.0-2.5.3/diff.md --exclude *.pyd
+[2023-04-09 03:31:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:56] INFO root fetch - processPackages [ovos-bus-client]: New version: [0.0.3a9] Old Version: [0.0.3a8]
+[2023-04-09 03:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:56] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-09 03:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:56] WARNING root fetch - processPackages [zmqbus]: Skipping, unable to determine old version
+[2023-04-09 03:31:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 03:31:56] INFO root fetch - processPackages [bioregistry]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-09 03:31:56] INFO root fetch - processPackages [ovos-bus-client]: executing diffoscope
+[2023-04-09 03:31:56] INFO root fetch - processPackages [ovos-bus-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_bus_client-0.0.3a8-py3-none-any.whl.zip tmp/ovos_bus_client-0.0.3a9-py3-none-any.whl.zip --markdown 20230409/o/ovos-bus-client/0.0.3a8-0.0.3a9/diff.md --exclude *.pyd
+[2023-04-09 03:31:56] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-04-09 03:31:56] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230409/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-09 03:31:56] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/96/a1/18466b8cb836529d82d95181285f8811512ed715f2b7f232d6a59e27e59f/bioregistry-0.8.5.tar.gz
+[2023-04-09 03:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:56] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-09 03:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:56] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: executing diffoscope
+[2023-04-09 03:31:56] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_streamdeck_yaml-2023.4.8.tar.gz tmp/home_assistant_streamdeck_yaml-2023.4.9.tar.gz --markdown 20230409/h/home-assistant-streamdeck-yaml/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-09 03:31:56] INFO root fetch - processPackages [tuneflow-py]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-09 03:31:57] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/3f/c4/9c5bd8b21f9700ae434db8acd9f433890d7b0e3c9066ec01a5ec9be9c539/tuneflow-py-0.4.4.tar.gz
+[2023-04-09 03:31:57] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:57] INFO root fetch - processPackages [k-amino.py]: New version: [1.1.0] Old Version: [1.0.8]
+[2023-04-09 03:31:57] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:57] INFO root fetch - processPackages [tuneflow-py]: Downloading https://files.pythonhosted.org/packages/99/06/a6068f19401ef8f61c86b27d2b58653eff7e12eeba21d6a2e22a9951d182/tuneflow-py-0.4.5.tar.gz
+[2023-04-09 03:31:57] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-09 03:31:57] INFO root fetch - processPackages [k-amino.py]: Downloading https://files.pythonhosted.org/packages/0b/59/61a827c3b56a15ecdd9b66099aed2531eb29d32f8158094f9de6ee9229d2/k-amino.py-1.0.8.tar.gz
+[2023-04-09 03:31:57] INFO root fetch - processPackages [tuneflow-py]: executing diffoscope
+[2023-04-09 03:31:57] INFO root fetch - processPackages [tuneflow-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuneflow-py-0.4.4.tar.gz tmp/tuneflow-py-0.4.5.tar.gz --markdown 20230409/t/tuneflow-py/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-09 03:31:57] INFO root fetch - processPackages [k-amino.py]: Downloading https://files.pythonhosted.org/packages/e4/49/1a5b4dfb53ac184a54a2de141cb9255d7ac1ac6af4a3f3d7fc74c3421a82/k-amino.py-1.1.0.tar.gz
+[2023-04-09 03:31:57] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-04-09 03:31:57] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230409/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-09 03:31:57] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:57] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 03:31:58] INFO root fetch - processPackages [k-amino.py]: executing diffoscope
+[2023-04-09 03:31:58] INFO root fetch - processPackages [k-amino.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k-amino.py-1.0.8.tar.gz tmp/k-amino.py-1.1.0.tar.gz --markdown 20230409/k/k-amino.py/1.0.8-1.1.0/diff.md --exclude *.pyd
+[2023-04-09 03:31:58] INFO root fetch - processPackages [neon-homeassistant-skill]: Downloading https://files.pythonhosted.org/packages/43/f5/55b8a45285ba5562b4bd5610d412869df0c9524a80930f046427bd05f6fe/neon_homeassistant_skill-0.0.8.tar.gz
+[2023-04-09 03:31:58] INFO root fetch - processPackages [neon-homeassistant-skill]: Downloading https://files.pythonhosted.org/packages/ed/cd/d57fc3688c6ff44460374912e50042853099587df2b98373e338db8e1385/neon_homeassistant_skill-0.0.9.tar.gz
+[2023-04-09 03:31:58] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-04-09 03:31:58] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.8.4.tar.gz tmp/bioregistry-0.8.5.tar.gz --markdown 20230409/b/bioregistry/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-09 03:31:58] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2023-04-09 03:31:58] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20230409/n/neon-homeassistant-skill/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 03:31:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:58] WARNING root fetch - processPackages [sqlite-history]: Skipping, unable to determine old version
+[2023-04-09 03:31:58] INFO root fetch - main [MainThread]: error
+[2023-04-09 03:31:58] INFO root fetch - processPackages [fudgeo]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-09 03:31:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:58] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 03:31:59] INFO root fetch - processPackages [fudgeo]: Downloading https://files.pythonhosted.org/packages/d9/40/b870b5ee75ac30cd2fbcd07dc5257e119034240d62cd84a39ff419779aed/fudgeo-0.3.8-py3-none-any.whl
+[2023-04-09 03:31:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:31:59] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 03:31:59] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-04-09 03:31:59] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230409/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 03:31:59] INFO root fetch - processPackages [fudgeo]: Downloading https://files.pythonhosted.org/packages/69/37/d0cefc371f3ef8d441330bf4a742a33a1e32adc63e0a7f9863be7314a2bd/fudgeo-0.3.9-py3-none-any.whl
+[2023-04-09 03:31:59] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-04-09 03:31:59] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230409/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 03:31:59] INFO root fetch - processPackages [fudgeo]: executing diffoscope
+[2023-04-09 03:31:59] INFO root fetch - processPackages [fudgeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudgeo-0.3.8-py3-none-any.whl.zip tmp/fudgeo-0.3.9-py3-none-any.whl.zip --markdown 20230409/f/fudgeo/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-09 03:32:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:32:00] INFO root fetch - processPackages [tsidpy]: New version: [1.0.0.2] Old Version: [1.0.0.1]
+[2023-04-09 03:32:00] INFO root fetch - processPackages [tsidpy]: Downloading https://files.pythonhosted.org/packages/1c/ff/e66d637be8393546550bf05d9f51243b49c97314c4c8f233f73a3beb92e5/tsidpy-1.0.0.1.tar.gz
+[2023-04-09 03:32:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:32:00] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 03:32:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:32:00] INFO root fetch - processPackages [tsidpy]: Downloading https://files.pythonhosted.org/packages/dc/04/f6650fd2eb17a798e67688a69a1f94064acb74a75329e1d32c2c6cb65ea4/tsidpy-1.0.0.2.tar.gz
+[2023-04-09 03:32:00] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-09 03:32:00] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230409/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 03:32:00] INFO root fetch - processPackages [sweetrpg-model-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 03:32:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:32:00] INFO root fetch - processPackages [sweetrpg-model-core]: Downloading https://files.pythonhosted.org/packages/2b/a9/f6d12795fc3f52981f5476c74fd485c2b56fe1911b278640171d94d92bc1/sweetrpg-model-core-0.0.98.tar.gz
+[2023-04-09 03:32:00] INFO root fetch - processPackages [tsidpy]: executing diffoscope
+[2023-04-09 03:32:00] INFO root fetch - processPackages [tsidpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsidpy-1.0.0.1.tar.gz tmp/tsidpy-1.0.0.2.tar.gz --markdown 20230409/t/tsidpy/1.0.0.1-1.0.0.2/diff.md --exclude *.pyd
+[2023-04-09 03:32:00] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 03:32:00] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-09 03:32:00] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230409/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 03:32:01] INFO root fetch - processPackages [sweetrpg-model-core]: Downloading https://files.pythonhosted.org/packages/45/2f/72ea3ec101547d659b6522d0efd329d98807f3f70bd531b7c55e48836946/sweetrpg-model-core-0.0.99.tar.gz
+[2023-04-09 03:32:01] INFO root fetch - processPackages [sweetrpg-model-core]: executing diffoscope
+[2023-04-09 03:32:01] INFO root fetch - processPackages [sweetrpg-model-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-model-core-0.0.98.tar.gz tmp/sweetrpg-model-core-0.0.99.tar.gz --markdown 20230409/s/sweetrpg-model-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 03:32:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:32:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:32:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:32:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 03:33:06] INFO root fetch - main [MainThread]: success
