@@ -8856,3 +8856,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:47:36] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:47:36] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:47:36] INFO root fetch - main [MainThread]: Store serial: [17639128]
+[2023-04-09 21:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639128]
+[2023-04-09 21:52:43] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 21:52:43] WARNING root fetch - processPackages [captcha-solve-adapter]: Skipping, unable to determine old version
+[2023-04-09 21:52:43] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:52:43] INFO root fetch - processPackages [tg-odesli-bot]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-09 21:52:43] INFO root fetch - processPackages [curldl]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-09 21:52:43] INFO root fetch - processPackages [sigmaepsilon]: New version: [0.0.30] Old Version: [0.0.2b0]
+[2023-04-09 21:52:43] INFO root fetch - processPackages [takproto]: New version: [2.0.0] Old Version: [1.0.2]
+[2023-04-09 21:52:43] INFO root fetch - processPackages [hn2016-falwa]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-04-09 21:52:44] INFO root fetch - processPackages [sigmaepsilon]: Downloading https://files.pythonhosted.org/packages/41/02/6a98b533aca67c664fa94feddb510823787ae7875e0fe3cfda6f95e87058/sigmaepsilon-0.0.30.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [curldl]: Downloading https://files.pythonhosted.org/packages/d6/70/09b6a62bd491ed7c0adc908a72ccac108c574907ed7523c20b53d05cb97c/curldl-0.1.0.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [tg-odesli-bot]: Downloading https://files.pythonhosted.org/packages/0e/f5/1ddad9c3ad6ec12bb49a3b68546759a5ab2ed81dd3ebe9784dbd4ed2cc6c/tg_odesli_bot-0.3.0.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [takproto]: Downloading https://files.pythonhosted.org/packages/6d/e5/a2b5d6d773568972514c8900fcbc20a68b61fd3150068edc6f8c792c78e1/takproto-1.0.2.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [hn2016-falwa]: Downloading https://files.pythonhosted.org/packages/59/05/a897a1bb45b790532c0570aec75fca3dfe72fc1c1599865ca319c77cf100/hn2016_falwa-0.6.5.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [sigmaepsilon]: executing diffoscope
+[2023-04-09 21:52:44] INFO root fetch - processPackages [sigmaepsilon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmaepsilon-0.0.2b0.tar.gz tmp/sigmaepsilon-0.0.30.tar.gz --markdown 20230409/s/sigmaepsilon/0.0.2b0-0.0.30/diff.md --exclude *.pyd
+[2023-04-09 21:52:44] INFO root fetch - processPackages [curldl]: Downloading https://files.pythonhosted.org/packages/2a/c4/9868e12c0a28ffff8ddb1596a03ae09bc5b7f1763a36efba7b2e48b3adbf/curldl-1.0.0.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [tg-odesli-bot]: Downloading https://files.pythonhosted.org/packages/cc/41/aa22e13a8f0ae691930b1d4677a4af650a0544aea0bc13c46f048e1f6a66/tg_odesli_bot-0.3.1.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [takproto]: Downloading https://files.pythonhosted.org/packages/2d/b2/ac8acd79dd3c80eb3cb3936a02a71db2dae8aa582742d5c7970914c0e93e/takproto-2.0.0.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [hn2016-falwa]: Downloading https://files.pythonhosted.org/packages/2a/73/7b4ce7d305b4300b25381faf828c01dfd6676ee2f7805f209a1dfb9989b7/hn2016_falwa-0.6.6.tar.gz
+[2023-04-09 21:52:44] INFO root fetch - processPackages [tg-odesli-bot]: executing diffoscope
+[2023-04-09 21:52:44] INFO root fetch - processPackages [tg-odesli-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tg_odesli_bot-0.3.0.tar.gz tmp/tg_odesli_bot-0.3.1.tar.gz --markdown 20230409/t/tg-odesli-bot/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-09 21:52:44] INFO root fetch - processPackages [curldl]: executing diffoscope
+[2023-04-09 21:52:44] INFO root fetch - processPackages [curldl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curldl-0.1.0.tar.gz tmp/curldl-1.0.0.tar.gz --markdown 20230409/c/curldl/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 21:52:44] INFO root fetch - processPackages [takproto]: executing diffoscope
+[2023-04-09 21:52:44] INFO root fetch - processPackages [takproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/takproto-1.0.2.tar.gz tmp/takproto-2.0.0.tar.gz --markdown 20230409/t/takproto/1.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-04-09 21:52:44] INFO root fetch - processPackages [hn2016-falwa]: executing diffoscope
+[2023-04-09 21:52:44] INFO root fetch - processPackages [hn2016-falwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hn2016_falwa-0.6.5.tar.gz tmp/hn2016_falwa-0.6.6.tar.gz --markdown 20230409/h/hn2016-falwa/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-04-09 21:52:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:52:45] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-09 21:52:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:52:45] INFO root fetch - processPackages [DataStructuresLiamTheodore]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-09 21:52:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:52:45] INFO root fetch - processPackages [hitchpylibrarytoolkit]: New version: [0.6.9] Old Version: [0.6.7]
+[2023-04-09 21:52:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:52:46] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/34/83/2b84d073c20d1a5b410485d32895180899b42b0aa8b45c29955fa42bac24/hiddifypanel-3.0.9-cp39-cp39-manylinux2014_aarch64.whl
+[2023-04-09 21:52:46] INFO root fetch - processPackages [hitchpylibrarytoolkit]: executing diffoscope
+[2023-04-09 21:52:46] INFO root fetch - processPackages [hitchpylibrarytoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchpylibrarytoolkit-0.6.7.tar.gz tmp/hitchpylibrarytoolkit-0.6.9.tar.gz --markdown 20230409/h/hitchpylibrarytoolkit/0.6.7-0.6.9/diff.md --exclude *.pyd
+[2023-04-09 21:52:46] INFO root fetch - processPackages [DataStructuresLiamTheodore]: Downloading https://files.pythonhosted.org/packages/46/e3/134b865be651d5dcb4ce4ee5d6347c4683c25fb1717d0eda6c15ab0b7f70/DataStructuresLiamTheodore-1.0.1.tar.gz
+[2023-04-09 21:52:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:52:46] INFO root fetch - processPackages [DataStructuresLiamTheodore]: Downloading https://files.pythonhosted.org/packages/16/10/3709e9eea4d42eeaa3d1a9ab7d3ba8efc50d6cef13ddcd32c3bb892f6a75/DataStructuresLiamTheodore-1.0.2.tar.gz
+[2023-04-09 21:52:46] INFO root fetch - processPackages [DataStructuresLiamTheodore]: executing diffoscope
+[2023-04-09 21:52:46] INFO root fetch - processPackages [DataStructuresLiamTheodore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataStructuresLiamTheodore-1.0.1.tar.gz tmp/DataStructuresLiamTheodore-1.0.2.tar.gz --markdown 20230409/D/DataStructuresLiamTheodore/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 21:52:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:52:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:52:50] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 21:52:50] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.9-cp39-cp39-manylinux2014_aarch64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-09 21:53:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:53:00] INFO root fetch - main [MainThread]: Store serial: [17639168]
