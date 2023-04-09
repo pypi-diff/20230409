@@ -5050,3 +5050,28 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 14:11:40] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:11:40] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:11:40] INFO root fetch - main [MainThread]: Store serial: [17636449]
+[2023-04-09 14:16:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636449]
+[2023-04-09 14:16:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 14:16:48] INFO root fetch - processPackages [metaseg]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-09 14:16:48] INFO root fetch - processPackages [Goosu]: New version: [0.4] Old Version: [0.3]
+[2023-04-09 14:16:48] INFO root fetch - processPackages [f1-22-telemetry]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 14:16:48] INFO root fetch - processPackages [arrow-odbc]: New version: [1.0.0] Old Version: [0.3.9]
+[2023-04-09 14:16:48] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/dd/0d/415448255e5b82f79bf7a2dc614c3ea3c7f886ac4e3ea71ee8e1993efbc0/metaseg-0.3.5.tar.gz
+[2023-04-09 14:16:48] INFO root fetch - processPackages [arrow-odbc]: Downloading https://files.pythonhosted.org/packages/98/ec/084669f42f45996650df2122745c7ec95d900df577c3283dc1e48cd0f4c3/arrow_odbc-0.3.9.tar.gz
+[2023-04-09 14:16:48] INFO root fetch - processPackages [f1-22-telemetry]: Downloading https://files.pythonhosted.org/packages/c2/67/b3641041b84a8b869eee1dedaf97527f02a397f5e28db7b791b7cbe95ba0/f1_22_telemetry-0.1.1.tar.gz
+[2023-04-09 14:16:48] INFO root fetch - processPackages [Goosu]: Downloading https://files.pythonhosted.org/packages/6f/0c/64555d172f6cf586796ecde61391cec87849fcafab92272c5725bcd6ab28/Goosu-0.4.tar.gz
+[2023-04-09 14:16:48] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-09 14:16:48] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.3.4.tar.gz tmp/metaseg-0.3.5.tar.gz --markdown 20230409/m/metaseg/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-09 14:16:48] INFO root fetch - processPackages [Goosu]: executing diffoscope
+[2023-04-09 14:16:48] INFO root fetch - processPackages [Goosu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Goosu-0.3.tar.gz tmp/Goosu-0.4.tar.gz --markdown 20230409/G/Goosu/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-09 14:16:49] INFO root fetch - processPackages [f1-22-telemetry]: Downloading https://files.pythonhosted.org/packages/89/62/9920cc2bacbd408c0348d112b4b90178be1f74b76c4b238526bca5d6b40e/f1_22_telemetry-0.1.2.tar.gz
+[2023-04-09 14:16:49] INFO root fetch - processPackages [arrow-odbc]: Downloading https://files.pythonhosted.org/packages/55/3a/ea3ea81cc4c9a85eca3de294df2d16cc5b084f397c33e6de0fbb9c3c281b/arrow_odbc-1.0.0.tar.gz
+[2023-04-09 14:16:49] INFO root fetch - processPackages [f1-22-telemetry]: executing diffoscope
+[2023-04-09 14:16:49] INFO root fetch - processPackages [f1-22-telemetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/f1_22_telemetry-0.1.1.tar.gz tmp/f1_22_telemetry-0.1.2.tar.gz --markdown 20230409/f/f1-22-telemetry/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 14:16:49] INFO root fetch - processPackages [arrow-odbc]: executing diffoscope
+[2023-04-09 14:16:49] INFO root fetch - processPackages [arrow-odbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrow_odbc-0.3.9.tar.gz tmp/arrow_odbc-1.0.0.tar.gz --markdown 20230409/a/arrow-odbc/0.3.9-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 14:16:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:16:50] INFO root fetch - main [MainThread]: Store serial: [17636461]
