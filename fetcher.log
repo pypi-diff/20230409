@@ -6260,3 +6260,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:57:35] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:57:36] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:57:36] INFO root fetch - main [MainThread]: Store serial: [17637382]
+[2023-04-09 17:02:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637382]
+[2023-04-09 17:02:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 17:02:43] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.13.0.dev20230408] Old Version: [2.13.0.dev20230406]
+[2023-04-09 17:02:43] INFO root fetch - processPackages [data-warehouse-client]: New version: [3.0.0] Old Version: [2.0.9]
+[2023-04-09 17:02:43] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-04-09 17:02:43] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-09 17:02:43] WARNING root fetch - processPackages [phcmas1-ccc]: Skipping, unable to determine old version
+[2023-04-09 17:02:43] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:02:43] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/04/ba/c823e7f283679816e849de45e7b84f093cd25cab7dde53889c6a2af7d0a4/hiddifypanel-3.0.4-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 17:02:43] INFO root fetch - processPackages [data-warehouse-client]: Downloading https://files.pythonhosted.org/packages/90/9c/75dbcd69a0fda1800402ff6916d3a340ed8406fff1cd1afd9ceac5906a8b/data-warehouse-client-2.0.9.tar.gz
+[2023-04-09 17:02:44] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-04-09 17:02:44] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.13.0.dev20230406-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.13.0.dev20230408-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230409/t/tensorflow-text-nightly/2.13.0.dev20230406-2.13.0.dev20230408/diff.md --exclude *.pyd
+[2023-04-09 17:02:44] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-09 17:02:44] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230409/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-09 17:02:44] INFO root fetch - processPackages [data-warehouse-client]: Downloading https://files.pythonhosted.org/packages/a9/dd/ece05904276e467086e3f98c558c368b67e0923c321b65905a83ccb34d99/data-warehouse-client-3.0.0.tar.gz
+[2023-04-09 17:02:44] INFO root fetch - processPackages [data-warehouse-client]: executing diffoscope
+[2023-04-09 17:02:44] INFO root fetch - processPackages [data-warehouse-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-warehouse-client-2.0.9.tar.gz tmp/data-warehouse-client-3.0.0.tar.gz --markdown 20230409/d/data-warehouse-client/2.0.9-3.0.0/diff.md --exclude *.pyd
+[2023-04-09 17:02:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:02:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:02:47] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 17:02:47] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.3-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.4-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-04-09 17:02:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:02:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:02:58] INFO root fetch - main [MainThread]: Store serial: [17637405]
