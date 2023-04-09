@@ -6081,3 +6081,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:41:46] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:41:47] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:41:47] INFO root fetch - main [MainThread]: Store serial: [17637262]
+[2023-04-09 16:46:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637262]
+[2023-04-09 16:46:55] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 16:46:55] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 16:46:55] INFO root fetch - processPackages [sinacor-negs]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 16:46:55] WARNING root fetch - processPackages [cookiecutter-openedx-plugin]: Skipping, unable to determine old version
+[2023-04-09 16:46:55] INFO root fetch - processPackages [kyaah]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 16:46:55] INFO root fetch - processPackages [langchain-utils]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-09 16:46:55] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:46:55] WARNING root fetch - processPackages [unexpectation-handler]: Skipping, unable to determine old version
+[2023-04-09 16:46:55] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:46:55] INFO root fetch - processPackages [aspose-words-cloud]: New version: [23.3.0] Old Version: [23.2.0]
+[2023-04-09 16:46:55] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: Downloading https://files.pythonhosted.org/packages/90/84/9a735f7cea6ef526ffe4e9947a4fbda62a2e1df96f96e6cc1f7642152a5e/chatgpt_prompt_wrapper-0.0.3.tar.gz
+[2023-04-09 16:46:55] INFO root fetch - processPackages [sinacor-negs]: Downloading https://files.pythonhosted.org/packages/10/30/8c6fa9635e86fc96ba65cc861cd613cb359bba410ba6ddf3af4051fe93ab/sinacor_negs-0.0.5-py3-none-any.whl
+[2023-04-09 16:46:55] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/91/ff/1d44a92916e9f07b194225fd51869e09a9ac0bc549a519ced209bf947a47/langchain_utils-0.1.3.tar.gz
+[2023-04-09 16:46:55] INFO root fetch - processPackages [aspose-words-cloud]: Downloading https://files.pythonhosted.org/packages/93/64/67f3dc1f99deaecf0d3ef5d51aa4fa00270189c164a78309c0e093efe681/aspose-words-cloud-23.2.0.tar.gz
+[2023-04-09 16:46:55] INFO root fetch - processPackages [sinacor-negs]: executing diffoscope
+[2023-04-09 16:46:55] INFO root fetch - processPackages [sinacor-negs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinacor_negs-0.0.4.tar.gz tmp/sinacor_negs-0.0.5-py3-none-any.whl.zip --markdown 20230409/s/sinacor-negs/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 16:46:55] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: executing diffoscope
+[2023-04-09 16:46:55] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt_prompt_wrapper-0.0.2.tar.gz tmp/chatgpt_prompt_wrapper-0.0.3.tar.gz --markdown 20230409/c/chatgpt-prompt-wrapper/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 16:46:55] INFO root fetch - processPackages [kyaah]: Downloading https://files.pythonhosted.org/packages/ec/56/5e3e819bd814e5d55de229d3a402950c959eb45d25fa9e1323f1c2f24390/kyaah-0.1.9.tar.gz
+[2023-04-09 16:46:55] INFO root fetch - processPackages [kyaah]: executing diffoscope
+[2023-04-09 16:46:55] INFO root fetch - processPackages [kyaah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kyaah-0.1.8.tar.gz tmp/kyaah-0.1.9.tar.gz --markdown 20230409/k/kyaah/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 16:46:55] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-09 16:46:55] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.1.2.tar.gz tmp/langchain_utils-0.1.3.tar.gz --markdown 20230409/l/langchain-utils/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-09 16:46:56] INFO root fetch - processPackages [aspose-words-cloud]: Downloading https://files.pythonhosted.org/packages/e2/9c/a116537383a2843584667f1c13a3880df37386106e6fb95beb9e1ba0f6d0/aspose-words-cloud-23.3.0.tar.gz
+[2023-04-09 16:46:56] INFO root fetch - processPackages [aspose-words-cloud]: executing diffoscope
+[2023-04-09 16:46:56] INFO root fetch - processPackages [aspose-words-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aspose-words-cloud-23.2.0.tar.gz tmp/aspose-words-cloud-23.3.0.tar.gz --markdown 20230409/a/aspose-words-cloud/23.2.0-23.3.0/diff.md --exclude *.pyd
+[2023-04-09 16:46:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:46:56] INFO root fetch - processPackages [mc3]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-04-09 16:46:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:46:56] INFO root fetch - processPackages [mc3]: Downloading https://files.pythonhosted.org/packages/5c/6b/2c8b99e03cc7899e6f5be0d5e588153c940b0fa65c34845d227ab7b681a9/mc3-3.1.1.tar.gz
+[2023-04-09 16:46:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:46:56] INFO root fetch - processPackages [pyalpa]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-09 16:46:56] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-09 16:46:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:46:57] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: executing diffoscope
+[2023-04-09 16:46:57] INFO root fetch - processPackages [aws-cdk.asset-node-proxy-agent-v5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.98.tar.gz tmp/aws-cdk.asset-node-proxy-agent-v5-2.0.99.tar.gz --markdown 20230409/a/aws-cdk.asset-node-proxy-agent-v5/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-09 16:46:57] INFO root fetch - processPackages [pyalpa]: Downloading https://files.pythonhosted.org/packages/80/1c/332bcfd3a5f9cac2d922f653f5e278ef8857ae4903513aeaf5fa0be93c6e/pyalpa-0.5.1.tar.gz
+[2023-04-09 16:46:57] INFO root fetch - processPackages [mc3]: Downloading https://files.pythonhosted.org/packages/3c/4e/9fe11dcaa1a021028b2a2d7664c6c8a20e97efd1f872a610bc24a6c7a83f/mc3-3.1.2.tar.gz
+[2023-04-09 16:46:57] INFO root fetch - processPackages [pyalpa]: executing diffoscope
+[2023-04-09 16:46:57] INFO root fetch - processPackages [pyalpa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalpa-0.5.0.tar.gz tmp/pyalpa-0.5.1.tar.gz --markdown 20230409/p/pyalpa/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-09 16:46:57] INFO root fetch - processPackages [mc3]: executing diffoscope
+[2023-04-09 16:46:57] INFO root fetch - processPackages [mc3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mc3-3.1.1.tar.gz tmp/mc3-3.1.2.tar.gz --markdown 20230409/m/mc3/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-04-09 16:46:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:46:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:46:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:47:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:47:04] INFO root fetch - main [MainThread]: Store serial: [17637293]
