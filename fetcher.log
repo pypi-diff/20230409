@@ -2828,3 +2828,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:42:33] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:42:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:42:39] INFO root fetch - main [MainThread]: Store serial: [17634845]
+[2023-04-09 08:47:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634845]
+[2023-04-09 08:47:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 08:47:47] WARNING root fetch - processPackages [ceaser]: Skipping, unable to determine old version
+[2023-04-09 08:47:47] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:47:47] INFO root fetch - processPackages [mystring]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 08:47:47] INFO root fetch - processPackages [CustomGPT]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-09 08:47:47] INFO root fetch - processPackages [hds-stats]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 08:47:47] INFO root fetch - processPackages [backend-sqlalchemy]: New version: [0.1.4.dev1681023002] Old Version: [0.1.3]
+[2023-04-09 08:47:47] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2023-04-09 08:47:47] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.0.8.tar.gz tmp/mystring-0.0.9.tar.gz --markdown 20230409/m/mystring/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 08:47:47] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/45/f5/e6fff9b94e35e6f502113186777801cc0067f55d55b7d3015afa03718935/hds_stats-0.0.1-py3-none-any.whl
+[2023-04-09 08:47:47] INFO root fetch - processPackages [CustomGPT]: Downloading https://files.pythonhosted.org/packages/4e/c1/988f343967bf686cf01dd25b2c1ead7db2ec401b9e42d2ac00e6eac2eaf5/CustomGPT-0.1.3.tar.gz
+[2023-04-09 08:47:47] INFO root fetch - processPackages [backend-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/41/2b/30ed9142955e9cfe9d0bd926c66ede690e4392124cc8a11b0e9d3f035116/backend_sqlalchemy-0.1.4.dev1681023002.tar.gz
+[2023-04-09 08:47:47] INFO root fetch - processPackages [CustomGPT]: executing diffoscope
+[2023-04-09 08:47:47] INFO root fetch - processPackages [CustomGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomGPT-0.1.2.tar.gz tmp/CustomGPT-0.1.3.tar.gz --markdown 20230409/C/CustomGPT/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-09 08:47:47] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/d0/43/f9cfec44ab2e9e5947757781d45e3e84674c08f0bf1eb8f63aeb7f2e32ff/hds_stats-0.0.2-py3-none-any.whl
+[2023-04-09 08:47:47] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-09 08:47:47] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds_stats-0.0.1-py3-none-any.whl.zip tmp/hds_stats-0.0.2-py3-none-any.whl.zip --markdown 20230409/h/hds-stats/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 08:47:47] INFO root fetch - processPackages [backend-sqlalchemy]: executing diffoscope
+[2023-04-09 08:47:47] INFO root fetch - processPackages [backend-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend_sqlalchemy-0.1.3.tar.gz tmp/backend_sqlalchemy-0.1.4.dev1681023002.tar.gz --markdown 20230409/b/backend-sqlalchemy/0.1.3-0.1.4.dev1681023002/diff.md --exclude *.pyd
+[2023-04-09 08:47:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:47:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:47:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:47:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:47:50] INFO root fetch - main [MainThread]: Store serial: [17634865]
