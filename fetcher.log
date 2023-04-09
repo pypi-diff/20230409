@@ -2551,3 +2551,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:06:04] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:06:06] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:06:06] INFO root fetch - main [MainThread]: Store serial: [17634699]
+[2023-04-09 08:11:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634699]
+[2023-04-09 08:11:13] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 08:11:13] INFO root fetch - processPackages [nlterm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 08:11:13] WARNING root fetch - processPackages [kwenta]: Skipping, unable to determine old version
+[2023-04-09 08:11:13] INFO root fetch - processPackages [pynocaptcha]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-04-09 08:11:13] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:11:13] WARNING root fetch - processPackages [much-needed-py-package]: Skipping, unable to determine old version
+[2023-04-09 08:11:13] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:11:13] INFO root fetch - processPackages [pybgpkit]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-09 08:11:13] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-09 08:11:13] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-09 08:11:13] INFO root fetch - processPackages [pybgpkit]: Downloading https://files.pythonhosted.org/packages/b9/7c/b533d3847e89f1b0f25a52bca95e781aca0753235680b74e1456fba540cf/pybgpkit-0.4.1.tar.gz
+[2023-04-09 08:11:13] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-09 08:11:13] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230409/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-09 08:11:13] INFO root fetch - processPackages [pynocaptcha]: Downloading https://files.pythonhosted.org/packages/b0/b6/d11f362b08ea7905b060c607ad5375291ff70ce7c13ab7f97b97024c5f92/pynocaptcha-1.3.8.tar.gz
+[2023-04-09 08:11:13] INFO root fetch - processPackages [nlterm]: Downloading https://files.pythonhosted.org/packages/47/f6/9c373e628fe74210edceb4488a5dec9181962a171948f08132a5ab6376cc/nlterm-0.0.4.tar.gz
+[2023-04-09 08:11:14] INFO root fetch - processPackages [Jlab]: Downloading https://files.pythonhosted.org/packages/fa/3e/32d71787edae05b219b476dd39839ffb17efb97aaeb221f98cbcba3cce0f/Jlab-1.1.8.tar.gz
+[2023-04-09 08:11:14] INFO root fetch - processPackages [pynocaptcha]: executing diffoscope
+[2023-04-09 08:11:14] INFO root fetch - processPackages [pynocaptcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynocaptcha-1.3.7.tar.gz tmp/pynocaptcha-1.3.8.tar.gz --markdown 20230409/p/pynocaptcha/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-04-09 08:11:14] INFO root fetch - processPackages [nlterm]: executing diffoscope
+[2023-04-09 08:11:14] INFO root fetch - processPackages [nlterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlterm-0.0.3.tar.gz tmp/nlterm-0.0.4.tar.gz --markdown 20230409/n/nlterm/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 08:11:14] INFO root fetch - processPackages [pybgpkit]: Downloading https://files.pythonhosted.org/packages/93/5d/db35a022496476f6adc7e278052daafecb4bc91da25e22786ff2fecd4ad8/pybgpkit-0.4.2.tar.gz
+[2023-04-09 08:11:14] INFO root fetch - processPackages [Jlab]: Downloading https://files.pythonhosted.org/packages/ac/66/0597393cb75d6bf1c5b7558e5044e2658b628fee443c2e839df2ac8944b4/Jlab-1.1.9.tar.gz
+[2023-04-09 08:11:14] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-04-09 08:11:14] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230409/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-09 08:11:14] INFO root fetch - processPackages [pybgpkit]: executing diffoscope
+[2023-04-09 08:11:14] INFO root fetch - processPackages [pybgpkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybgpkit-0.4.1.tar.gz tmp/pybgpkit-0.4.2.tar.gz --markdown 20230409/p/pybgpkit/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-09 08:11:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:15] INFO root fetch - processPackages [nonebot-plugin-eventmonitor]: New version: [0.1.5] Old Version: [0.1.3]
+[2023-04-09 08:11:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:15] INFO root fetch - processPackages [selenextra]: New version: [0.3] Old Version: [0.2]
+[2023-04-09 08:11:15] INFO root fetch - processPackages [nonebot-plugin-eventmonitor]: Downloading https://files.pythonhosted.org/packages/1a/82/ef4ee8286f91e7b413a15dd54de7656cd92ede6b7d2c6418d1f035bbc15d/nonebot_plugin_eventmonitor-0.1.3.tar.gz
+[2023-04-09 08:11:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:15] INFO root fetch - processPackages [colorir]: New version: [2.0.0] Old Version: [1.3.9]
+[2023-04-09 08:11:15] INFO root fetch - processPackages [selenextra]: Downloading https://files.pythonhosted.org/packages/a1/22/7acf09b7589e610c7c449cb2074b7ebed465a8da156842a61fc0ef943ffc/selenextra-0.2.tar.gz
+[2023-04-09 08:11:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:15] INFO root fetch - processPackages [nonebot-plugin-eventmonitor]: Downloading https://files.pythonhosted.org/packages/82/05/d0b9eda37f2be2ee0148f674ed2b104d16cceee75c1509d4b425d6f69479/nonebot_plugin_eventmonitor-0.1.5.tar.gz
+[2023-04-09 08:11:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:15] INFO root fetch - processPackages [nonebot-plugin-eventmonitor]: executing diffoscope
+[2023-04-09 08:11:15] INFO root fetch - processPackages [nonebot-plugin-eventmonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_eventmonitor-0.1.3.tar.gz tmp/nonebot_plugin_eventmonitor-0.1.5.tar.gz --markdown 20230409/n/nonebot-plugin-eventmonitor/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2023-04-09 08:11:15] INFO root fetch - processPackages [colorir]: Downloading https://files.pythonhosted.org/packages/be/d7/4a2098228ff6117d471a5827c39ba5756b5dba40c568daa98689301021fd/colorir-1.3.9.tar.gz
+[2023-04-09 08:11:15] INFO root fetch - processPackages [selenextra]: Downloading https://files.pythonhosted.org/packages/47/89/6ad0e897e9ce1ac25d9c4cd6cc413b8de21b06ff4b5b6a1be7d51574937c/selenextra-0.3.tar.gz
+[2023-04-09 08:11:15] INFO root fetch - processPackages [selenextra]: executing diffoscope
+[2023-04-09 08:11:15] INFO root fetch - processPackages [selenextra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenextra-0.2.tar.gz tmp/selenextra-0.3.tar.gz --markdown 20230409/s/selenextra/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-09 08:11:15] INFO root fetch - processPackages [colorir]: Downloading https://files.pythonhosted.org/packages/87/62/2bbc1a31c856ef587cba9fd78570caab1447f412eb6c4c784d06ccaa8e41/colorir-2.0.0.tar.gz
+[2023-04-09 08:11:15] INFO root fetch - processPackages [colorir]: executing diffoscope
+[2023-04-09 08:11:15] INFO root fetch - processPackages [colorir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorir-1.3.9.tar.gz tmp/colorir-2.0.0.tar.gz --markdown 20230409/c/colorir/1.3.9-2.0.0/diff.md --exclude *.pyd
+[2023-04-09 08:11:16] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:16] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:11:17] INFO root fetch - main [MainThread]: Store serial: [17634730]
