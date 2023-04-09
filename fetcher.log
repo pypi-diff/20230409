@@ -7381,3 +7381,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:04:52] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:05:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:05:03] INFO root fetch - main [MainThread]: Store serial: [17638238]
+[2023-04-09 19:10:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638238]
+[2023-04-09 19:10:11] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 19:10:11] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-09 19:10:11] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-09 19:10:11] INFO root fetch - processPackages [surquest-fastapi-utils]: New version: [0.2.0rc1] Old Version: [0.1.1rc1]
+[2023-04-09 19:10:11] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.7] Old Version: [3.0.5]
+[2023-04-09 19:10:11] INFO root fetch - processPackages [Winfo]: New version: [0.0.2.4] Old Version: [0.0.2.3]
+[2023-04-09 19:10:11] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-09 19:10:11] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230409/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-09 19:10:11] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/14/3f/5ef7f0c149f9c279210ca4bc8b0a88128f185efe2943a2369d38a6d69e06/CircleBlock-1.0.7.tar.gz
+[2023-04-09 19:10:11] INFO root fetch - processPackages [surquest-fastapi-utils]: Downloading https://files.pythonhosted.org/packages/34/a2/13e27094003293ab6222d5145246ae61a51117877d38abaf76e6ccda46ce/surquest_fastapi_utils-0.1.1rc1.tar.gz
+[2023-04-09 19:10:11] INFO root fetch - processPackages [Winfo]: Downloading https://files.pythonhosted.org/packages/3e/5d/f5912de67a46efcbc0bc00f2cd7a787af368e02e39850c50eb68db1ee114/Winfo-0.0.2.4.tar.gz
+[2023-04-09 19:10:11] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/12/8b/3c169107cfd5592682c2af40528c73667ca920b646d147ddf27bd90c2e1c/hiddifypanel-3.0.7-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 19:10:11] INFO root fetch - processPackages [Winfo]: executing diffoscope
+[2023-04-09 19:10:11] INFO root fetch - processPackages [Winfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Winfo-0.0.2.3.tar.gz tmp/Winfo-0.0.2.4.tar.gz --markdown 20230409/W/Winfo/0.0.2.3-0.0.2.4/diff.md --exclude *.pyd
+[2023-04-09 19:10:11] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-09 19:10:11] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.6.tar.gz tmp/CircleBlock-1.0.7.tar.gz --markdown 20230409/C/CircleBlock/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-09 19:10:11] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 19:10:11] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.7-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.5-3.0.7/diff.md --exclude *.pyd
+[2023-04-09 19:10:12] INFO root fetch - processPackages [surquest-fastapi-utils]: Downloading https://files.pythonhosted.org/packages/9e/d6/c03abe067bff55ce597bfc2fcf57c71cb1538881add729cda187f38aacb5/surquest_fastapi_utils-0.2.0rc1.tar.gz
+[2023-04-09 19:10:12] INFO root fetch - processPackages [surquest-fastapi-utils]: executing diffoscope
+[2023-04-09 19:10:12] INFO root fetch - processPackages [surquest-fastapi-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surquest_fastapi_utils-0.1.1rc1.tar.gz tmp/surquest_fastapi_utils-0.2.0rc1.tar.gz --markdown 20230409/s/surquest-fastapi-utils/0.1.1rc1-0.2.0rc1/diff.md --exclude *.pyd
+[2023-04-09 19:10:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:10:12] INFO root fetch - processPackages [tscausalinference]: New version: [0.2.0.8] Old Version: [0.2.0.7]
+[2023-04-09 19:10:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:10:13] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 19:10:13] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 19:10:13] INFO root fetch - processPackages [tscausalinference]: Downloading https://files.pythonhosted.org/packages/25/51/cd66bfaa93196b09c77f7106f96aa7c9401b6650824c7c6340d97f2c3ca8/tscausalinference-0.2.0.7.tar.gz
+[2023-04-09 19:10:13] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 19:10:13] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:10:13] INFO root fetch - processPackages [shell-gpt]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-09 19:10:13] WARNING root fetch - processPackages [tscausalinference]: Skipping package: exceeds size limit 17890415>=10485760
+[2023-04-09 19:10:13] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:10:13] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 19:10:13] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 19:10:13] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 19:10:13] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:10:13] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/6b/08/4179f70803c7f1d6d6da3309d9506a38d52ab4d476e2484b3f83965149f1/shell_gpt-0.8.6.tar.gz
+[2023-04-09 19:10:13] INFO root fetch - processPackages [shell-gpt]: executing diffoscope
+[2023-04-09 19:10:13] INFO root fetch - processPackages [shell-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell_gpt-0.8.5.tar.gz tmp/shell_gpt-0.8.6.tar.gz --markdown 20230409/s/shell-gpt/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-09 19:10:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:10:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:10:20] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:10:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:10:21] INFO root fetch - main [MainThread]: Store serial: [17638271]
