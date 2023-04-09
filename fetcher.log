@@ -8608,3 +8608,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:04:55] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:04:57] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:04:57] INFO root fetch - main [MainThread]: Store serial: [17638887]
+[2023-04-09 21:10:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638887]
+[2023-04-09 21:10:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 21:10:04] INFO root fetch - processPackages [noisegrad]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 21:10:04] INFO root fetch - processPackages [ulid-transform]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-09 21:10:05] INFO root fetch - processPackages [hat-aio]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-04-09 21:10:05] INFO root fetch - processPackages [httpdate]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-09 21:10:05] WARNING root fetch - processPackages [webhookie]: Skipping, unable to determine old version
+[2023-04-09 21:10:05] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:10:05] INFO root fetch - processPackages [noisegrad]: Downloading https://files.pythonhosted.org/packages/67/ad/b397663d6a6adf58d5914b9a0a48f403cfef743f3ad37c1dc5d799d5926e/noisegrad-0.0.1.tar.gz
+[2023-04-09 21:10:05] INFO root fetch - processPackages [ulid-transform]: Downloading https://files.pythonhosted.org/packages/a5/2b/7ea237e0ae2df183af093a8ccff63ffe454527f24a5eee3c5b4958415100/ulid_transform-0.6.0.tar.gz
+[2023-04-09 21:10:05] INFO root fetch - processPackages [django-muid]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-09 21:10:05] INFO root fetch - processPackages [hat-aio]: Downloading https://files.pythonhosted.org/packages/3b/05/0fd14208f3aeeccb599c3b268f011994430a54cc390d159be226a0e5b2eb/hat_aio-0.7.6-cp38.cp39.cp310.cp311-none-any.whl
+[2023-04-09 21:10:05] INFO root fetch - processPackages [httpdate]: Downloading https://files.pythonhosted.org/packages/fb/04/2b616e38151a10346f7991b5efb94ea42d275d64970eb97c5a761cf36e71/httpdate-1.1.0.tar.gz
+[2023-04-09 21:10:05] INFO root fetch - processPackages [django-muid]: Downloading https://files.pythonhosted.org/packages/74/b8/d4b296eda44e85983c1bdb60a502588f2a5a237f6cf038537a84deecc066/django-muid-1.0.4.tar.gz
+[2023-04-09 21:10:05] INFO root fetch - processPackages [ulid-transform]: Downloading https://files.pythonhosted.org/packages/c0/54/cba9be3fc45b609c2e97f8ddc31e00fc0bcfe74b9613276b32834ba6ad98/ulid_transform-0.6.1.tar.gz
+[2023-04-09 21:10:05] INFO root fetch - processPackages [noisegrad]: Downloading https://files.pythonhosted.org/packages/65/b7/7752e8d7abf32902fda8b33e1afe6b1a55556b05cc8fc2e8bba328b0b39d/noisegrad-0.0.2.tar.gz
+[2023-04-09 21:10:05] INFO root fetch - processPackages [hat-aio]: Downloading https://files.pythonhosted.org/packages/5b/7c/8ed3f6ed2eae61e5b3822f215cd686bc5085175c694db5848e947531b888/hat_aio-0.7.7-cp38.cp39.cp310.cp311-none-any.whl
+[2023-04-09 21:10:05] INFO root fetch - processPackages [httpdate]: Downloading https://files.pythonhosted.org/packages/5d/8b/d7b18d45eeee13964c4bda9eb2dd7921fa9cd3ae4f9d1373eaff8b753dd0/httpdate-1.2.0.tar.gz
+[2023-04-09 21:10:05] INFO root fetch - processPackages [hat-aio]: executing diffoscope
+[2023-04-09 21:10:05] INFO root fetch - processPackages [hat-aio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_aio-0.7.6-cp38.cp39.cp310.cp311-none-any.whl.zip tmp/hat_aio-0.7.7-cp38.cp39.cp310.cp311-none-any.whl.zip --markdown 20230409/h/hat-aio/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-04-09 21:10:05] INFO root fetch - processPackages [ulid-transform]: executing diffoscope
+[2023-04-09 21:10:05] INFO root fetch - processPackages [ulid-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ulid_transform-0.6.0.tar.gz tmp/ulid_transform-0.6.1.tar.gz --markdown 20230409/u/ulid-transform/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-09 21:10:05] INFO root fetch - processPackages [django-muid]: executing diffoscope
+[2023-04-09 21:10:05] INFO root fetch - processPackages [django-muid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-muid-1.0.3.tar.gz tmp/django-muid-1.0.4.tar.gz --markdown 20230409/d/django-muid/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-09 21:10:05] INFO root fetch - processPackages [noisegrad]: executing diffoscope
+[2023-04-09 21:10:05] INFO root fetch - processPackages [noisegrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noisegrad-0.0.1.tar.gz tmp/noisegrad-0.0.2.tar.gz --markdown 20230409/n/noisegrad/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 21:10:05] INFO root fetch - processPackages [httpdate]: executing diffoscope
+[2023-04-09 21:10:05] INFO root fetch - processPackages [httpdate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpdate-1.1.0.tar.gz tmp/httpdate-1.2.0.tar.gz --markdown 20230409/h/httpdate/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-09 21:10:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:06] INFO root fetch - processPackages [Data-Cdvst]: New version: [1.2] Old Version: [1.1]
+[2023-04-09 21:10:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:06] INFO root fetch - processPackages [ulid-transform]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-09 21:10:06] INFO root fetch - processPackages [Data-Cdvst]: executing diffoscope
+[2023-04-09 21:10:06] INFO root fetch - processPackages [Data-Cdvst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Data_Cdvst-1.1.tar.gz tmp/Data_Cdvst-1.2.tar.gz --markdown 20230409/D/Data-Cdvst/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-09 21:10:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:06] INFO root fetch - processPackages [q2db]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 21:10:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:07] INFO root fetch - processPackages [q2db]: executing diffoscope
+[2023-04-09 21:10:07] INFO root fetch - processPackages [q2db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2db-0.1.8.tar.gz tmp/q2db-0.1.9.tar.gz --markdown 20230409/q/q2db/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 21:10:07] INFO root fetch - processPackages [ulid-transform]: Downloading https://files.pythonhosted.org/packages/c9/49/c41cbff71f53b7da33e7f0fe696361eadfe5f2d24b86c421c4ee378a5894/ulid_transform-0.6.2.tar.gz
+[2023-04-09 21:10:07] INFO root fetch - processPackages [ulid-transform]: executing diffoscope
+[2023-04-09 21:10:07] INFO root fetch - processPackages [ulid-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ulid_transform-0.6.1.tar.gz tmp/ulid_transform-0.6.2.tar.gz --markdown 20230409/u/ulid-transform/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-09 21:10:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:10:08] INFO root fetch - main [MainThread]: Store serial: [17638915]
