@@ -8588,3 +8588,23 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:59:46] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:59:46] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:59:46] INFO root fetch - main [MainThread]: Store serial: [17638862]
+[2023-04-09 21:04:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638862]
+[2023-04-09 21:04:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 21:04:53] WARNING root fetch - processPackages [testvideo12345]: Skipping, unable to determine old version
+[2023-04-09 21:04:53] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:04:53] WARNING root fetch - processPackages [hookiweb]: Skipping, unable to determine old version
+[2023-04-09 21:04:53] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:04:53] INFO root fetch - processPackages [django-muid]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 21:04:53] INFO root fetch - processPackages [citros]: New version: [23.14.9] Old Version: [23.14.8]
+[2023-04-09 21:04:53] INFO root fetch - processPackages [cowboe]: New version: [1.0.8.9] Old Version: [1.0.8.8]
+[2023-04-09 21:04:54] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 21:04:54] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.8.tar.gz tmp/citros-23.14.9.tar.gz --markdown 20230409/c/citros/23.14.8-23.14.9/diff.md --exclude *.pyd
+[2023-04-09 21:04:54] INFO root fetch - processPackages [cowboe]: executing diffoscope
+[2023-04-09 21:04:54] INFO root fetch - processPackages [cowboe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cowboe-1.0.8.8.tar.gz tmp/cowboe-1.0.8.9.tar.gz --markdown 20230409/c/cowboe/1.0.8.8-1.0.8.9/diff.md --exclude *.pyd
+[2023-04-09 21:04:54] INFO root fetch - processPackages [django-muid]: Downloading https://files.pythonhosted.org/packages/76/2f/54facc8076539972b4ff56292670278eda2d007425a29404b26953bbb89e/django-muid-1.0.3.tar.gz
+[2023-04-09 21:04:54] INFO root fetch - processPackages [django-muid]: executing diffoscope
+[2023-04-09 21:04:54] INFO root fetch - processPackages [django-muid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-muid-1.0.2.tar.gz tmp/django-muid-1.0.3.tar.gz --markdown 20230409/d/django-muid/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 21:04:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:04:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:04:57] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:04:57] INFO root fetch - main [MainThread]: Store serial: [17638887]
