@@ -9457,3 +9457,49 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 23:12:26] INFO root fetch - processPackages [tornado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tornado-6.2b2.tar.gz tmp/tornado-6.3b1.tar.gz --markdown 20230409/t/tornado/6.2b2-6.3b1/diff.md --exclude *.pyd
 [2023-04-09 23:12:31] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:12:31] INFO root fetch - main [MainThread]: Store serial: [17639591]
+[2023-04-09 23:17:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639591]
+[2023-04-09 23:17:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 23:17:40] INFO root fetch - processPackages [cpggen]: New version: [0.8.0] Old Version: [0.7.2]
+[2023-04-09 23:17:40] INFO root fetch - processPackages [canvasdl]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-09 23:17:40] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 23:17:40] INFO root fetch - processPackages [poonia]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 23:17:40] INFO root fetch - processPackages [canvasdl]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-09 23:17:40] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 23:17:40] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 23:17:40] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/ba/bd/9c5462c0fd4d789acfb94e24db131e3de9b61cf0aa234e4240fbdc23421e/cpggen-0.8.0.tar.gz
+[2023-04-09 23:17:40] INFO root fetch - processPackages [canvasdl]: Downloading https://files.pythonhosted.org/packages/e4/2b/99a1a5c60e83a824952565cb33559f53b798105c49e4b40ac205c5973078/canvasdl-1.4.8.tar.gz
+[2023-04-09 23:17:40] INFO root fetch - processPackages [canvasdl]: Downloading https://files.pythonhosted.org/packages/e4/2b/99a1a5c60e83a824952565cb33559f53b798105c49e4b40ac205c5973078/canvasdl-1.4.8.tar.gz
+[2023-04-09 23:17:40] INFO root fetch - processPackages [poonia]: Downloading https://files.pythonhosted.org/packages/c0/9a/d2fa5b974fa18c1244709a14876136ce2e769b9dccea53484d9374d9c2fa/poonia-0.1.8.tar.gz
+[2023-04-09 23:17:40] INFO root fetch - processPackages [cpggen]: executing diffoscope
+[2023-04-09 23:17:40] INFO root fetch - processPackages [cpggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpggen-0.7.2.tar.gz tmp/cpggen-0.8.0.tar.gz --markdown 20230409/c/cpggen/0.7.2-0.8.0/diff.md --exclude *.pyd
+[2023-04-09 23:17:40] INFO root fetch - processPackages [canvasdl]: Downloading https://files.pythonhosted.org/packages/14/c5/42f0066fee4d9e268cc0235c67a76c6dd67cef837c3aae59022a1c83d3b7/canvasdl-1.4.9.tar.gz
+[2023-04-09 23:17:40] INFO root fetch - processPackages [canvasdl]: Downloading https://files.pythonhosted.org/packages/14/c5/42f0066fee4d9e268cc0235c67a76c6dd67cef837c3aae59022a1c83d3b7/canvasdl-1.4.9.tar.gz
+[2023-04-09 23:17:40] INFO root fetch - processPackages [poonia]: Downloading https://files.pythonhosted.org/packages/09/db/c75f9a2a193bcbbbbad0543dba1745517caa715e67629b7828fd529e22ee/poonia-0.1.9.tar.gz
+[2023-04-09 23:17:41] INFO root fetch - processPackages [canvasdl]: executing diffoscope
+[2023-04-09 23:17:41] INFO root fetch - processPackages [canvasdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasdl-1.4.8.tar.gz tmp/canvasdl-1.4.9.tar.gz --markdown 20230409/c/canvasdl/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-09 23:17:41] INFO root fetch - processPackages [canvasdl]: executing diffoscope
+[2023-04-09 23:17:41] INFO root fetch - processPackages [canvasdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasdl-1.4.8.tar.gz tmp/canvasdl-1.4.9.tar.gz --markdown 20230409/c/canvasdl/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-09 23:17:41] INFO root fetch - processPackages [poonia]: executing diffoscope
+[2023-04-09 23:17:41] INFO root fetch - processPackages [poonia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poonia-0.1.8.tar.gz tmp/poonia-0.1.9.tar.gz --markdown 20230409/p/poonia/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 23:17:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:41] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304092118] Old Version: [1.0.202304081004]
+[2023-04-09 23:17:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:41] INFO root fetch - processPackages [Flask-BigApp]: New version: [2023.1.8.4] Old Version: [2023.1.8.3]
+[2023-04-09 23:17:41] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/4b/dd/9364ad28d189935bf0a4aa2358c11d82f47918260921a4141a867875ed9f/mb_pytorch-1.0.202304092118-py3-none-any.whl
+[2023-04-09 23:17:41] INFO root fetch - processPackages [Flask-BigApp]: Downloading https://files.pythonhosted.org/packages/34/bb/6e380f7a7162c10d6484fe058a1f2d89b3d92d3d26c462df88a962c0d9c4/Flask-BigApp-2023.1.8.3.tar.gz
+[2023-04-09 23:17:41] INFO root fetch - processPackages [Flask-BigApp]: Downloading https://files.pythonhosted.org/packages/1a/93/49c868956140d7cd927a388221de1f261c4b0a937fa0f5448fc688ddbb5b/Flask-BigApp-2023.1.8.4.tar.gz
+[2023-04-09 23:17:41] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-09 23:17:41] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304081004-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304092118-py3-none-any.whl.zip --markdown 20230409/m/mb-pytorch/1.0.202304081004-1.0.202304092118/diff.md --exclude *.pyd
+[2023-04-09 23:17:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:42] INFO root fetch - processPackages [hyundai-kia-connect-api]: New version: [3.1.8] Old Version: [3.1.7]
+[2023-04-09 23:17:42] INFO root fetch - processPackages [Flask-BigApp]: executing diffoscope
+[2023-04-09 23:17:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:42] INFO root fetch - processPackages [Flask-BigApp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-BigApp-2023.1.8.3.tar.gz tmp/Flask-BigApp-2023.1.8.4.tar.gz --markdown 20230409/F/Flask-BigApp/2023.1.8.3-2023.1.8.4/diff.md --exclude *.pyd
+[2023-04-09 23:17:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:42] INFO root fetch - processPackages [hyundai-kia-connect-api]: Downloading https://files.pythonhosted.org/packages/11/16/60ab7b2009c313d461a39dab7e2b7da440becd08f355897ed0837dc69dd4/hyundai_kia_connect_api-3.1.8.tar.gz
+[2023-04-09 23:17:42] INFO root fetch - processPackages [hyundai-kia-connect-api]: executing diffoscope
+[2023-04-09 23:17:42] INFO root fetch - processPackages [hyundai-kia-connect-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyundai_kia_connect_api-3.1.7.tar.gz tmp/hyundai_kia_connect_api-3.1.8.tar.gz --markdown 20230409/h/hyundai-kia-connect-api/3.1.7-3.1.8/diff.md --exclude *.pyd
+[2023-04-09 23:17:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:17:44] INFO root fetch - main [MainThread]: Store serial: [17639611]
