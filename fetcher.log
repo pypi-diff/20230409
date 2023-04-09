@@ -5957,3 +5957,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:26:10] INFO root fetch - processPackages [nonebot-plugin-tts-gal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_tts_gal-0.3.8.tar.gz tmp/nonebot_plugin_tts_gal-0.3.9.tar.gz --markdown 20230409/n/nonebot-plugin-tts-gal/0.3.8-0.3.9/diff.md --exclude *.pyd
 [2023-04-09 16:26:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:26:12] INFO root fetch - main [MainThread]: Store serial: [17637146]
+[2023-04-09 16:31:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637146]
+[2023-04-09 16:31:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 16:31:19] INFO root fetch - processPackages [pyalpa]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-09 16:31:19] INFO root fetch - processPackages [esse3-student]: New version: [3.6.0] Old Version: [3.4.0]
+[2023-04-09 16:31:19] INFO root fetch - processPackages [vajirayana]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 16:31:19] INFO root fetch - processPackages [typer-to-textual]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-04-09 16:31:19] INFO root fetch - processPackages [acr122u-websocket]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-09 16:31:19] INFO root fetch - processPackages [vajirayana]: Downloading https://files.pythonhosted.org/packages/56/63/f17178a2d0033ec3382b8ba55669e7718c807de35f4576056513d82dce61/vajirayana-0.0.1.tar.gz
+[2023-04-09 16:31:19] INFO root fetch - processPackages [esse3-student]: Downloading https://files.pythonhosted.org/packages/59/91/3b94283e2374eb931a419df11c29943f862f14ffe977631298d7e775fbdb/esse3_student-3.4.0.tar.gz
+[2023-04-09 16:31:19] INFO root fetch - processPackages [acr122u-websocket]: Downloading https://files.pythonhosted.org/packages/65/56/1134cd51efe50b5412da9fa008ec0e0280a302a21c2258208f0888f41db9/acr122u-websocket-1.1.1.tar.gz
+[2023-04-09 16:31:19] INFO root fetch - processPackages [typer-to-textual]: Downloading https://files.pythonhosted.org/packages/97/ac/a2c0905eb73045b2c78f0e2e96376e78f8ab8f2fdbdb5ad8ace96de247f6/typer_to_textual-2.4.0.tar.gz
+[2023-04-09 16:31:19] INFO root fetch - processPackages [pyalpa]: Downloading https://files.pythonhosted.org/packages/ce/e3/c92fb14ebb6590085e4311f05b65772546190d4ae1eed9cfb40e92b68672/pyalpa-0.5.0.tar.gz
+[2023-04-09 16:31:20] INFO root fetch - processPackages [acr122u-websocket]: executing diffoscope
+[2023-04-09 16:31:20] INFO root fetch - processPackages [acr122u-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acr122u-websocket-1.1.0.tar.gz tmp/acr122u-websocket-1.1.1.tar.gz --markdown 20230409/a/acr122u-websocket/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-09 16:31:20] INFO root fetch - processPackages [pyalpa]: executing diffoscope
+[2023-04-09 16:31:20] INFO root fetch - processPackages [pyalpa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalpa-0.4.0.tar.gz tmp/pyalpa-0.5.0.tar.gz --markdown 20230409/p/pyalpa/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-09 16:31:20] INFO root fetch - processPackages [vajirayana]: Downloading https://files.pythonhosted.org/packages/78/48/76bc023e5b7f03ec614f03ac8ae045c1b0f571c850c2659f37a4a7c9472b/vajirayana-0.0.2.tar.gz
+[2023-04-09 16:31:20] INFO root fetch - processPackages [esse3-student]: Downloading https://files.pythonhosted.org/packages/6d/4f/0198cd19082e30dd6dbdfc9d6d60c64b265ecc9e9c88fe0e7e787d131c46/esse3_student-3.6.0.tar.gz
+[2023-04-09 16:31:20] INFO root fetch - processPackages [typer-to-textual]: Downloading https://files.pythonhosted.org/packages/c4/9f/8ac0e2ae6db76300aa3f09e3732064295952bcebc48a3d346df0efa1ebf3/typer_to_textual-2.5.0.tar.gz
+[2023-04-09 16:31:20] INFO root fetch - processPackages [vajirayana]: executing diffoscope
+[2023-04-09 16:31:20] INFO root fetch - processPackages [vajirayana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vajirayana-0.0.1.tar.gz tmp/vajirayana-0.0.2.tar.gz --markdown 20230409/v/vajirayana/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 16:31:20] INFO root fetch - processPackages [typer-to-textual]: executing diffoscope
+[2023-04-09 16:31:20] INFO root fetch - processPackages [esse3-student]: executing diffoscope
+[2023-04-09 16:31:20] INFO root fetch - processPackages [esse3-student]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esse3_student-3.4.0.tar.gz tmp/esse3_student-3.6.0.tar.gz --markdown 20230409/e/esse3-student/3.4.0-3.6.0/diff.md --exclude *.pyd
+[2023-04-09 16:31:20] INFO root fetch - processPackages [typer-to-textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typer_to_textual-2.4.0.tar.gz tmp/typer_to_textual-2.5.0.tar.gz --markdown 20230409/t/typer-to-textual/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-04-09 16:31:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:21] INFO root fetch - processPackages [knowledge-graph]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 16:31:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:21] INFO root fetch - processPackages [dequeai]: New version: [0.690] Old Version: [0.688]
+[2023-04-09 16:31:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:21] INFO root fetch - processPackages [rustimport]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-09 16:31:21] INFO root fetch - processPackages [knowledge-graph]: Downloading https://files.pythonhosted.org/packages/47/90/475dd8feb480ff2b78563036de729dc01cbf5b25b2ac993862c1e62c8e47/knowledge-graph-0.0.8.tar.gz
+[2023-04-09 16:31:21] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/e9/36/f98e97eed68dd1752b6cc0b7294850778f33f32cc071ff772ee5dc94945b/dequeai-0.690.tar.gz
+[2023-04-09 16:31:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:21] INFO root fetch - processPackages [dequeai]: executing diffoscope
+[2023-04-09 16:31:21] INFO root fetch - processPackages [dequeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dequeai-0.688.tar.gz tmp/dequeai-0.690.tar.gz --markdown 20230409/d/dequeai/0.688-0.690/diff.md --exclude *.pyd
+[2023-04-09 16:31:21] INFO root fetch - processPackages [rustimport]: Downloading https://files.pythonhosted.org/packages/ea/d1/a468a7c600d66b422193ba49cb7a0cdc01520cffe76c08f1fdd763a9d104/rustimport-1.2.4.tar.gz
+[2023-04-09 16:31:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:21] INFO root fetch - processPackages [knowledge-graph]: Downloading https://files.pythonhosted.org/packages/9c/cf/8eb769891bf4b0813c7674ef29fbcd29b2c6cd65fec1ce5091bab2354116/knowledge-graph-0.0.9.tar.gz
+[2023-04-09 16:31:22] INFO root fetch - processPackages [rustimport]: executing diffoscope
+[2023-04-09 16:31:22] INFO root fetch - processPackages [rustimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustimport-1.2.3.tar.gz tmp/rustimport-1.2.4.tar.gz --markdown 20230409/r/rustimport/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-09 16:31:22] INFO root fetch - processPackages [knowledge-graph]: executing diffoscope
+[2023-04-09 16:31:22] INFO root fetch - processPackages [knowledge-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledge-graph-0.0.8.tar.gz tmp/knowledge-graph-0.0.9.tar.gz --markdown 20230409/k/knowledge-graph/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 16:31:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:31:23] INFO root fetch - main [MainThread]: Store serial: [17637178]
