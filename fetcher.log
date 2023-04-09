@@ -7743,3 +7743,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:41:38] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:41:41] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:41:41] INFO root fetch - main [MainThread]: Store serial: [17638483]
+[2023-04-09 19:46:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638483]
+[2023-04-09 19:46:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 19:46:49] INFO root fetch - processPackages [ninjapie]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-09 19:46:49] WARNING root fetch - processPackages [glue-helper-lib]: Skipping, unable to determine old version
+[2023-04-09 19:46:49] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:46:49] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 19:46:49] INFO root fetch - processPackages [heart-model]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 19:46:49] INFO root fetch - processPackages [solvation-analysis]: New version: [0.3.3a0] Old Version: [0.3.2]
+[2023-04-09 19:46:49] INFO root fetch - processPackages [desmos2python]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-09 19:46:49] INFO root fetch - processPackages [ninjapie]: Downloading https://files.pythonhosted.org/packages/e6/42/018266ae90e7b9f2379613cc96769963ff1b97e762252dd7ac8a73caa59d/ninjapie-1.0.1.tar.gz
+[2023-04-09 19:46:49] INFO root fetch - processPackages [solvation-analysis]: Downloading https://files.pythonhosted.org/packages/9f/10/52ba97ec5510c215102361b2ddcaec46968f7a8d50f80cd257c9ccc7ab56/solvation-analysis-0.3.2.tar.gz
+[2023-04-09 19:46:49] INFO root fetch - processPackages [desmos2python]: Downloading https://files.pythonhosted.org/packages/f7/d3/ce821fd255a22c6848a59b67d49f5680a50979c0c32ade517cef60829cc2/desmos2python-0.3.4.tar.gz
+[2023-04-09 19:46:49] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 19:46:49] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 19:46:49] INFO root fetch - processPackages [heart-model]: Downloading https://files.pythonhosted.org/packages/8f/5f/7c32e834a66489909ce7dc9eabf147ad259491bc324ac39fddec63212046/heart-model-0.0.7.tar.gz
+[2023-04-09 19:46:49] INFO root fetch - processPackages [heart-model]: executing diffoscope
+[2023-04-09 19:46:49] INFO root fetch - processPackages [heart-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heart-model-0.0.6.tar.gz tmp/heart-model-0.0.7.tar.gz --markdown 20230409/h/heart-model/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 19:46:49] INFO root fetch - processPackages [ninjapie]: Downloading https://files.pythonhosted.org/packages/43/5b/6af9fd33c6dbaf6062ae4003d07ca135d199c4308da7aaf6c007cc6cb035/ninjapie-1.0.2.tar.gz
+[2023-04-09 19:46:50] INFO root fetch - processPackages [ninjapie]: executing diffoscope
+[2023-04-09 19:46:50] INFO root fetch - processPackages [ninjapie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ninjapie-1.0.1.tar.gz tmp/ninjapie-1.0.2.tar.gz --markdown 20230409/n/ninjapie/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 19:46:50] INFO root fetch - processPackages [desmos2python]: executing diffoscope
+[2023-04-09 19:46:50] INFO root fetch - processPackages [desmos2python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desmos2python-0.3.3.tar.gz tmp/desmos2python-0.3.4.tar.gz --markdown 20230409/d/desmos2python/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-09 19:46:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:46:50] INFO root fetch - processPackages [llama-llm]: New version: [0.0.9] Old Version: [0.0.8.post2]
+[2023-04-09 19:46:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:46:51] INFO root fetch - processPackages [llama-llm]: Downloading https://files.pythonhosted.org/packages/cb/33/cba51332bc9a38e535c33bbbbd4abed1437d43c32c04ba67c265f58c2e6a/llama-llm-0.0.8.post2.tar.gz
+[2023-04-09 19:46:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:46:51] INFO root fetch - processPackages [llama-llm]: Downloading https://files.pythonhosted.org/packages/76/63/9363a5125139b0e2b26f9447e8caa1f1259168795fbdb64c47cd6793ba6f/llama_llm-0.0.9-py3-none-any.whl
+[2023-04-09 19:46:51] INFO root fetch - processPackages [llama-llm]: executing diffoscope
+[2023-04-09 19:46:51] INFO root fetch - processPackages [llama-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-llm-0.0.8.post2.tar.gz tmp/llama_llm-0.0.9-py3-none-any.whl.zip --markdown 20230409/l/llama-llm/0.0.8.post2-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 19:46:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:46:53] INFO root fetch - processPackages [solvation-analysis]: Downloading https://files.pythonhosted.org/packages/a7/90/602caff59a855a57e5362383d10304e643030e768b70a824f3bf1de0bc39/solvation-analysis-0.3.3a0.tar.gz
+[2023-04-09 19:46:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:46:56] INFO root fetch - processPackages [solvation-analysis]: executing diffoscope
+[2023-04-09 19:46:56] INFO root fetch - processPackages [solvation-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solvation-analysis-0.3.2.tar.gz tmp/solvation-analysis-0.3.3a0.tar.gz --markdown 20230409/s/solvation-analysis/0.3.2-0.3.3a0/diff.md --exclude *.pyd
+[2023-04-09 19:46:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:46:59] INFO root fetch - main [MainThread]: Store serial: [17638505]
