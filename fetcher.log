@@ -9123,3 +9123,43 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:19:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:19:16] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:19:16] INFO root fetch - main [MainThread]: Store serial: [17639382]
+[2023-04-09 22:24:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639382]
+[2023-04-09 22:24:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 22:24:24] INFO root fetch - processPackages [defog]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-09 22:24:24] INFO root fetch - processPackages [pypdf]: New version: [3.7.1] Old Version: [3.7.0]
+[2023-04-09 22:24:24] WARNING root fetch - processPackages [Image-clustering]: Skipping, unable to determine old version
+[2023-04-09 22:24:24] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:24:24] INFO root fetch - processPackages [tensorscout]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-09 22:24:24] INFO root fetch - processPackages [profyle]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:24:24] INFO root fetch - processPackages [RegionProposalGenerator]: New version: [2.1.0] Old Version: [2.0.8]
+[2023-04-09 22:24:24] INFO root fetch - processPackages [defog]: Downloading https://files.pythonhosted.org/packages/87/e8/5a15d483ae5d3383ccd70078fae7b28d2522217766e59237dbf84b7b20b8/defog-0.9.1.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/78/e1/0898f38ec38f7035d27184a45206e017e40a45b01c1c3f01d2678313a88b/pypdf-3.7.0.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [tensorscout]: Downloading https://files.pythonhosted.org/packages/11/45/c3ddcc45532e8eec94a3ad4d9aa3f9da012983ad6277f3be1f1a008bfdff/tensorscout-2.3.0.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [profyle]: Downloading https://files.pythonhosted.org/packages/13/e8/29c96dfdadf52b2ea023470e229066227002bb2ac5ceb985fedf994d0a31/profyle-0.0.8.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [RegionProposalGenerator]: Downloading https://files.pythonhosted.org/packages/b6/ef/35d7e90e006cf9af3a18e42ceaf663d2b4f80a8b9e04b72b763daa2f8ec0/RegionProposalGenerator-2.0.8.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [tensorscout]: executing diffoscope
+[2023-04-09 22:24:24] INFO root fetch - processPackages [tensorscout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorscout-2.2.0.tar.gz tmp/tensorscout-2.3.0.tar.gz --markdown 20230409/t/tensorscout/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-09 22:24:24] INFO root fetch - processPackages [defog]: Downloading https://files.pythonhosted.org/packages/a7/30/76e85c431f8a525f9d7ea55f0f7acc629a6284f97ce86075abfb2019d42c/defog-0.9.2.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/ef/2a/55d48c9aa674dbdf1232f9047737fd251003364d6b0c6b4f6dcdc9124bf6/pypdf-3.7.1.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [defog]: executing diffoscope
+[2023-04-09 22:24:24] INFO root fetch - processPackages [defog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/defog-0.9.1.tar.gz tmp/defog-0.9.2.tar.gz --markdown 20230409/d/defog/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-09 22:24:24] INFO root fetch - processPackages [profyle]: Downloading https://files.pythonhosted.org/packages/08/ce/92c447024855c1b61a283a97f606dc9f3705fb0f14e28208627666ed29bd/profyle-0.0.9.tar.gz
+[2023-04-09 22:24:24] INFO root fetch - processPackages [RegionProposalGenerator]: Downloading https://files.pythonhosted.org/packages/6f/17/274c081644aef3e57885f6f3fd7b9b1b43bbf7dc507da5d74336c678787e/RegionProposalGenerator-2.1.0.tar.gz
+[2023-04-09 22:24:25] INFO root fetch - processPackages [pypdf]: executing diffoscope
+[2023-04-09 22:24:25] INFO root fetch - processPackages [pypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypdf-3.7.0.tar.gz tmp/pypdf-3.7.1.tar.gz --markdown 20230409/p/pypdf/3.7.0-3.7.1/diff.md --exclude *.pyd
+[2023-04-09 22:24:25] INFO root fetch - processPackages [profyle]: executing diffoscope
+[2023-04-09 22:24:25] INFO root fetch - processPackages [profyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profyle-0.0.8.tar.gz tmp/profyle-0.0.9.tar.gz --markdown 20230409/p/profyle/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:24:25] INFO root fetch - processPackages [RegionProposalGenerator]: executing diffoscope
+[2023-04-09 22:24:25] INFO root fetch - processPackages [RegionProposalGenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RegionProposalGenerator-2.0.8.tar.gz tmp/RegionProposalGenerator-2.1.0.tar.gz --markdown 20230409/R/RegionProposalGenerator/2.0.8-2.1.0/diff.md --exclude *.pyd
+[2023-04-09 22:24:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:24:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:24:26] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-09 22:24:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:24:26] INFO root fetch - processPackages [nextcloudtalkbot]: Downloading https://files.pythonhosted.org/packages/f8/d4/3c07520442d6bad50f38c85c2642c5963d0014f33aa0df8daedc4b3b34eb/nextcloudtalkbot-0.0.3.tar.gz
+[2023-04-09 22:24:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:24:26] INFO root fetch - processPackages [nextcloudtalkbot]: Downloading https://files.pythonhosted.org/packages/d4/c4/6661e3d508f50221fca0a2822d10dfe52598a88457ed96d7ee51197cdffb/nextcloudtalkbot-0.0.5-py3-none-any.whl
+[2023-04-09 22:24:26] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-09 22:24:26] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.3.tar.gz tmp/nextcloudtalkbot-0.0.5-py3-none-any.whl.zip --markdown 20230409/n/nextcloudtalkbot/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 22:24:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:24:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:24:28] INFO root fetch - main [MainThread]: Store serial: [17639402]
