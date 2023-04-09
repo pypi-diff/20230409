@@ -8529,3 +8529,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:49:26] INFO root fetch - processPackages [geetiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geetiles-0.1.3.tar.gz tmp/geetiles-0.1.4.tar.gz --markdown 20230409/g/geetiles/0.1.3-0.1.4/diff.md --exclude *.pyd
 [2023-04-09 20:49:28] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:49:28] INFO root fetch - main [MainThread]: Store serial: [17638820]
+[2023-04-09 20:54:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638820]
+[2023-04-09 20:54:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 20:54:35] INFO root fetch - processPackages [killprocess-cli]: New version: [0.3] Old Version: [0.2]
+[2023-04-09 20:54:35] INFO root fetch - processPackages [secimport]: New version: [0.7.0] Old Version: [0.6.4]
+[2023-04-09 20:54:35] INFO root fetch - processPackages [cpcloud]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 20:54:35] INFO root fetch - processPackages [django-muid]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-09 20:54:35] INFO root fetch - processPackages [killprocess-cli]: Downloading https://files.pythonhosted.org/packages/54/be/47f43d2546330c3e3572c989735b610b9e16c87dc06ed981dd6ae494c5e3/killprocess_cli-0.2.tar.gz
+[2023-04-09 20:54:35] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/85/40/3c2b5551906be4e1cf33e1ba811d356539a7b3973c0f4e44285eb57f4cd5/secimport-0.6.4.tar.gz
+[2023-04-09 20:54:35] INFO root fetch - processPackages [django-muid]: Downloading https://files.pythonhosted.org/packages/da/2d/98fd044ed0b1066b6306a90919284b3d8290de5bc266b1dc8272755edbe9/django-muid-1.0.1.tar.gz
+[2023-04-09 20:54:35] INFO root fetch - processPackages [cpcloud]: Downloading https://files.pythonhosted.org/packages/40/24/00f3736ca198618164c13e9ca52cca61eeeefc1eed3a835e1b5195acbdf3/cpcloud-0.0.3-py3-none-any.whl
+[2023-04-09 20:54:35] INFO root fetch - processPackages [killprocess-cli]: Downloading https://files.pythonhosted.org/packages/22/56/fab8faafc70b3a7996ba13fd487dbf2967db330a711654d1840c3e7a1b5f/killprocess_cli-0.3.tar.gz
+[2023-04-09 20:54:35] INFO root fetch - processPackages [secimport]: Downloading https://files.pythonhosted.org/packages/1e/a1/92e229a320b8aa0164abb2453eb304f545a3b9b4acc81d73a514a5c09d66/secimport-0.7.0.tar.gz
+[2023-04-09 20:54:36] INFO root fetch - processPackages [cpcloud]: executing diffoscope
+[2023-04-09 20:54:36] INFO root fetch - processPackages [cpcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpcloud-0.0.2-py3-none-any.whl.zip tmp/cpcloud-0.0.3-py3-none-any.whl.zip --markdown 20230409/c/cpcloud/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 20:54:36] INFO root fetch - processPackages [django-muid]: Downloading https://files.pythonhosted.org/packages/92/28/57ec59eeed5fd97086f6a9c683f71810968c37a1c118670058180940591c/django-muid-1.0.2.tar.gz
+[2023-04-09 20:54:36] INFO root fetch - processPackages [killprocess-cli]: executing diffoscope
+[2023-04-09 20:54:36] INFO root fetch - processPackages [killprocess-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/killprocess_cli-0.2.tar.gz tmp/killprocess_cli-0.3.tar.gz --markdown 20230409/k/killprocess-cli/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-09 20:54:36] INFO root fetch - processPackages [secimport]: executing diffoscope
+[2023-04-09 20:54:36] INFO root fetch - processPackages [secimport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secimport-0.6.4.tar.gz tmp/secimport-0.7.0.tar.gz --markdown 20230409/s/secimport/0.6.4-0.7.0/diff.md --exclude *.pyd
+[2023-04-09 20:54:36] INFO root fetch - processPackages [django-muid]: executing diffoscope
+[2023-04-09 20:54:36] INFO root fetch - processPackages [django-muid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-muid-1.0.1.tar.gz tmp/django-muid-1.0.2.tar.gz --markdown 20230409/d/django-muid/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 20:54:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:54:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:54:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:54:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:54:37] INFO root fetch - main [MainThread]: Store serial: [17638832]
