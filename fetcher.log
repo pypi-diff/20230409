@@ -2408,3 +2408,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 07:29:53] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:29:53] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:29:53] INFO root fetch - main [MainThread]: Store serial: [17634545]
+[2023-04-09 07:34:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634545]
+[2023-04-09 07:35:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 07:35:01] INFO root fetch - processPackages [python-switchbot]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-04-09 07:35:01] INFO root fetch - processPackages [langful]: New version: [0.2] Old Version: [0.19]
+[2023-04-09 07:35:01] INFO root fetch - processPackages [usda]: New version: [0.0.20] Old Version: [0.0.19]
+[2023-04-09 07:35:01] INFO root fetch - processPackages [ckip-transformers]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-09 07:35:01] INFO root fetch - processPackages [python-switchbot]: Downloading https://files.pythonhosted.org/packages/4c/e1/568dc0a4766badf0114470930ad99e6a544a4c18c6224f8948337ca75fff/python-switchbot-2.3.0.tar.gz
+[2023-04-09 07:35:01] INFO root fetch - processPackages [langful]: Downloading https://files.pythonhosted.org/packages/55/04/c22ca4ec58a5385bafc5da7dd5ecc57b9bc5431663c38325dd12d579a9e6/langful-0.19-py2.py3-none-any.whl
+[2023-04-09 07:35:01] INFO root fetch - processPackages [usda]: Downloading https://files.pythonhosted.org/packages/50/94/80a0b840e0f6eb0f3aecc4ca989c8de635de6eb2459b077158eadd48db2e/usda-0.0.20.tar.gz
+[2023-04-09 07:35:01] INFO root fetch - processPackages [ckip-transformers]: Downloading https://files.pythonhosted.org/packages/07/34/932db15e4a7c55af4e14a21eea2201a222b50c1d9f7ca64ce149e3878372/ckip-transformers-0.3.2.tar.gz
+[2023-04-09 07:35:01] INFO root fetch - processPackages [usda]: executing diffoscope
+[2023-04-09 07:35:01] INFO root fetch - processPackages [usda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usda-0.0.19.tar.gz tmp/usda-0.0.20.tar.gz --markdown 20230409/u/usda/0.0.19-0.0.20/diff.md --exclude *.pyd
+[2023-04-09 07:35:01] INFO root fetch - processPackages [langful]: Downloading https://files.pythonhosted.org/packages/de/14/7020a0bd3efdc6351da71a2fed3876fcdf30c8c75b1adf64d0cfab074287/langful-0.2-py2.py3-none-any.whl
+[2023-04-09 07:35:01] INFO root fetch - processPackages [python-switchbot]: Downloading https://files.pythonhosted.org/packages/89/4b/987b4d6652a0eb4202c4c6c366f2836f8d25e638b58fe8a0ff942b097773/python-switchbot-2.3.1.tar.gz
+[2023-04-09 07:35:01] INFO root fetch - processPackages [python-switchbot]: executing diffoscope
+[2023-04-09 07:35:01] INFO root fetch - processPackages [python-switchbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-switchbot-2.3.0.tar.gz tmp/python-switchbot-2.3.1.tar.gz --markdown 20230409/p/python-switchbot/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-04-09 07:35:01] INFO root fetch - processPackages [ckip-transformers]: Downloading https://files.pythonhosted.org/packages/a3/f8/a8ae2f4266ffd12188595d3494e8ac70e487e167bb566936978e10a611db/ckip-transformers-0.3.3.tar.gz
+[2023-04-09 07:35:01] INFO root fetch - processPackages [langful]: executing diffoscope
+[2023-04-09 07:35:01] INFO root fetch - processPackages [langful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langful-0.19-py2.py3-none-any.whl.zip tmp/langful-0.2-py2.py3-none-any.whl.zip --markdown 20230409/l/langful/0.19-0.2/diff.md --exclude *.pyd
+[2023-04-09 07:35:02] INFO root fetch - processPackages [ckip-transformers]: executing diffoscope
+[2023-04-09 07:35:02] INFO root fetch - processPackages [ckip-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckip-transformers-0.3.2.tar.gz tmp/ckip-transformers-0.3.3.tar.gz --markdown 20230409/c/ckip-transformers/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-09 07:35:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:35:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:35:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:35:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:35:03] INFO root fetch - main [MainThread]: Store serial: [17634556]
