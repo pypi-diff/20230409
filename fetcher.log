@@ -5075,3 +5075,31 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 14:16:50] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:16:50] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:16:50] INFO root fetch - main [MainThread]: Store serial: [17636461]
+[2023-04-09 14:21:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636461]
+[2023-04-09 14:21:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 14:21:57] INFO root fetch - processPackages [reacher]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-09 14:21:57] WARNING root fetch - processPackages [print-colors]: Skipping, unable to determine old version
+[2023-04-09 14:21:57] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:21:57] WARNING root fetch - processPackages [hpc-utils]: Skipping, unable to determine old version
+[2023-04-09 14:21:57] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:21:57] INFO root fetch - processPackages [DonatelloPyzza]: New version: [1.6] Old Version: [1.5.9]
+[2023-04-09 14:21:57] INFO root fetch - processPackages [openwillis]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-09 14:21:57] INFO root fetch - processPackages [xchembku]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-04-09 14:21:58] INFO root fetch - processPackages [openwillis]: Downloading https://files.pythonhosted.org/packages/5c/1b/3f106da80b6a56cf455c9d784839f6252f8438ce1c51f467a6398bd61076/openwillis-0.4.2.tar.gz
+[2023-04-09 14:21:58] INFO root fetch - processPackages [reacher]: Downloading https://files.pythonhosted.org/packages/5e/c3/b3550788930d9507ead1d73a6536b7a32f71bc9270e4ef1d2ba9995b20fe/reacher-0.3.5-py2.py3-none-any.whl
+[2023-04-09 14:21:58] INFO root fetch - processPackages [DonatelloPyzza]: Downloading https://files.pythonhosted.org/packages/8e/ca/051bbb445b1bab23530e0e933207fd2192473418da4a4f5b1a5b275f231a/donatellopyzza-1.6.tar.gz
+[2023-04-09 14:21:58] INFO root fetch - processPackages [xchembku]: Downloading https://files.pythonhosted.org/packages/17/9c/9797762f52eb06d083e05ec0ec926011f1dc82f5e2c631401184f2298ea2/xchembku-1.0.2.tar.gz
+[2023-04-09 14:21:58] INFO root fetch - processPackages [reacher]: executing diffoscope
+[2023-04-09 14:21:58] INFO root fetch - processPackages [reacher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reacher-0.3.4-py2.py3-none-any.whl.zip tmp/reacher-0.3.5-py2.py3-none-any.whl.zip --markdown 20230409/r/reacher/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-09 14:21:58] INFO root fetch - processPackages [DonatelloPyzza]: executing diffoscope
+[2023-04-09 14:21:58] INFO root fetch - processPackages [DonatelloPyzza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donatellopyzza-1.5.9.tar.gz tmp/donatellopyzza-1.6.tar.gz --markdown 20230409/D/DonatelloPyzza/1.5.9-1.6/diff.md --exclude *.pyd
+[2023-04-09 14:21:58] INFO root fetch - processPackages [openwillis]: Downloading https://files.pythonhosted.org/packages/a1/f0/d90bf683d7e63a85a7c9e285a0efa2914ce1ac94c7808018bd918b404a05/openwillis-0.4.3.tar.gz
+[2023-04-09 14:21:58] INFO root fetch - processPackages [xchembku]: executing diffoscope
+[2023-04-09 14:21:58] INFO root fetch - processPackages [xchembku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xchembku-1.0.0.tar.gz tmp/xchembku-1.0.2.tar.gz --markdown 20230409/x/xchembku/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 14:21:58] INFO root fetch - processPackages [openwillis]: executing diffoscope
+[2023-04-09 14:21:58] INFO root fetch - processPackages [openwillis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openwillis-0.4.2.tar.gz tmp/openwillis-0.4.3.tar.gz --markdown 20230409/o/openwillis/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-09 14:21:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:21:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:22:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:22:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:22:01] INFO root fetch - main [MainThread]: Store serial: [17636483]
