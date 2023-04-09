@@ -9443,3 +9443,17 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 23:07:15] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:07:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:07:17] INFO root fetch - main [MainThread]: Store serial: [17639577]
+[2023-04-09 23:12:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639577]
+[2023-04-09 23:12:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-09 23:12:25] INFO root fetch - processPackages [tornado]: New version: [6.3b1] Old Version: [6.2b2]
+[2023-04-09 23:12:25] INFO root fetch - processPackages [pibooth-stillimage-camera]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-09 23:12:25] INFO root fetch - processPackages [tornado]: Downloading https://files.pythonhosted.org/packages/62/94/bc31a73a9c09815e2b5d9dbe391ab01f0d14b3d39449ec09cfecda5ee630/tornado-6.2b2.tar.gz
+[2023-04-09 23:12:25] INFO root fetch - processPackages [pibooth-stillimage-camera]: Downloading https://files.pythonhosted.org/packages/a1/4e/0425891510d15290670ea1e256822433a14f74c7e343d0af7169995eb5c8/pibooth-stillimage-camera-0.1.4.tar.gz
+[2023-04-09 23:12:25] INFO root fetch - processPackages [pibooth-stillimage-camera]: executing diffoscope
+[2023-04-09 23:12:25] INFO root fetch - processPackages [pibooth-stillimage-camera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibooth-stillimage-camera-0.1.3.tar.gz tmp/pibooth-stillimage-camera-0.1.4.tar.gz --markdown 20230409/p/pibooth-stillimage-camera/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 23:12:26] INFO root fetch - processPackages [tornado]: Downloading https://files.pythonhosted.org/packages/41/2c/ebb4c417eb82d1d9b9666875d051a9fce6ff1e0fe5d3e93019b94c61d29d/tornado-6.3b1.tar.gz
+[2023-04-09 23:12:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:12:26] INFO root fetch - processPackages [tornado]: executing diffoscope
+[2023-04-09 23:12:26] INFO root fetch - processPackages [tornado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tornado-6.2b2.tar.gz tmp/tornado-6.3b1.tar.gz --markdown 20230409/t/tornado/6.2b2-6.3b1/diff.md --exclude *.pyd
+[2023-04-09 23:12:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:12:31] INFO root fetch - main [MainThread]: Store serial: [17639591]
