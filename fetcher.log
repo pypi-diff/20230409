@@ -7563,3 +7563,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:26:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:26:01] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:26:01] INFO root fetch - main [MainThread]: Store serial: [17638376]
+[2023-04-09 19:31:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638376]
+[2023-04-09 19:31:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-09 19:31:08] INFO root fetch - processPackages [napari-sam]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 19:31:08] INFO root fetch - processPackages [hyt-gpt]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-09 19:31:08] WARNING root fetch - processPackages [dictDigUtils]: Skipping, unable to determine old version
+[2023-04-09 19:31:08] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:31:08] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.1] Old Version: [0.9]
+[2023-04-09 19:31:09] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 19:31:09] INFO root fetch - processPackages [desmos2python]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-09 19:31:09] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 19:31:09] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 19:31:09] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:31:09] INFO root fetch - processPackages [random-ip-generator]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-09 19:31:09] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/94/f3/2b8669c3cd8da64d692d9336aad1f3b133012e3d870fe9d1ff8f8d1f4686/napari-sam-0.1.8.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/1c/e1/3ed691bd59cdfe6e9ba820af4d4edce71b71d0341a8c08acd3a42576c6d3/hyt-gpt-0.2.3.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [desmos2python]: Downloading https://files.pythonhosted.org/packages/06/59/41f993d16a8ecfee7347ede30b89dbd27c618f894809572de32093ca1c8d/desmos2python-0.3.3.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [random-ip-generator]: Downloading https://files.pythonhosted.org/packages/58/92/95775a3aff35fd924588ec9443ba9f57f885a606ac160388d2f24591a1a0/random-ip-generator-0.1.2.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/0c/45/008e43e1bfce6a48da3395527eae26ae2b50c90e8f86dd09ff6fdb82b286/symbolicmode-0.9.1.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [hyt-gpt]: Downloading https://files.pythonhosted.org/packages/4c/40/b07997890020ed3c5544a9e1f0cd375c0b4108af33c824f19d89b3f1087d/hyt-gpt-0.2.4.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/a6/13/881a6341aa60f3d3d690da10c6202ba696c9001012b3c76f1d24047507db/napari-sam-0.1.9.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [napari-sam]: executing diffoscope
+[2023-04-09 19:31:09] INFO root fetch - processPackages [napari-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-sam-0.1.8.tar.gz tmp/napari-sam-0.1.9.tar.gz --markdown 20230409/n/napari-sam/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 19:31:09] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-09 19:31:09] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.tar.gz tmp/symbolicmode-0.9.1.tar.gz --markdown 20230409/s/symbolicmode/0.9-0.9.1/diff.md --exclude *.pyd
+[2023-04-09 19:31:09] INFO root fetch - processPackages [random-ip-generator]: Downloading https://files.pythonhosted.org/packages/ea/32/7cbc7935f8768c9437a99c16c8b5fd5a30b0c478a31afec73794bdbc0230/random-ip-generator-0.1.3.tar.gz
+[2023-04-09 19:31:09] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-04-09 19:31:09] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.2.3.tar.gz tmp/hyt-gpt-0.2.4.tar.gz --markdown 20230409/h/hyt-gpt/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-09 19:31:09] INFO root fetch - processPackages [desmos2python]: executing diffoscope
+[2023-04-09 19:31:09] INFO root fetch - processPackages [desmos2python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desmos2python-0.3.2.tar.gz tmp/desmos2python-0.3.3.tar.gz --markdown 20230409/d/desmos2python/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-09 19:31:10] INFO root fetch - processPackages [random-ip-generator]: executing diffoscope
+[2023-04-09 19:31:10] INFO root fetch - processPackages [random-ip-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/random-ip-generator-0.1.2.tar.gz tmp/random-ip-generator-0.1.3.tar.gz --markdown 20230409/r/random-ip-generator/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-09 19:31:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:10] INFO root fetch - processPackages [robotcode-debugger]: New version: [0.33.0] Old Version: [0.32.3]
+[2023-04-09 19:31:10] INFO root fetch - processPackages [robotcode-robot]: New version: [0.33.0] Old Version: [0.32.3]
+[2023-04-09 19:31:10] INFO root fetch - processPackages [robotcode-analyze]: New version: [0.33.0] Old Version: [0.32.3]
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-debugger]: Downloading https://files.pythonhosted.org/packages/b0/c9/babd37af1033ae241973874d84258d69e951ce98febfbccc80335a21bf8b/robotcode_debugger-0.33.0-py3-none-any.whl
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-robot]: Downloading https://files.pythonhosted.org/packages/dc/28/879855a8768981ff99f26c7eb196faf05ae6ea063e2f4918d3ead5e9a486/robotcode_robot-0.33.0.tar.gz
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-analyze]: Downloading https://files.pythonhosted.org/packages/42/b4/454175bfc3804cbe81e3ca89a819e7d7d0cff9804b8aeb322da043be2b77/robotcode_analyze-0.33.0.tar.gz
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-debugger]: executing diffoscope
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-debugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_debugger-0.32.3.tar.gz tmp/robotcode_debugger-0.33.0-py3-none-any.whl.zip --markdown 20230409/r/robotcode-debugger/0.32.3-0.33.0/diff.md --exclude *.pyd
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-robot]: executing diffoscope
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_robot-0.32.3.tar.gz tmp/robotcode_robot-0.33.0.tar.gz --markdown 20230409/r/robotcode-robot/0.32.3-0.33.0/diff.md --exclude *.pyd
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-analyze]: executing diffoscope
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-analyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_analyze-0.32.3.tar.gz tmp/robotcode_analyze-0.33.0.tar.gz --markdown 20230409/r/robotcode-analyze/0.32.3-0.33.0/diff.md --exclude *.pyd
+[2023-04-09 19:31:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:11] INFO root fetch - processPackages [robotcode-runner]: New version: [0.33.0] Old Version: [0.32.3]
+[2023-04-09 19:31:12] INFO root fetch - processPackages [robotcode-runner]: Downloading https://files.pythonhosted.org/packages/53/23/7020bf590b8e9a54ad081ccef2d733727d828713ed0677680f0224f236da/robotcode_runner-0.33.0.tar.gz
+[2023-04-09 19:31:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:12] INFO root fetch - processPackages [robotcode-jsonrpc2]: New version: [0.33.0] Old Version: [0.32.3]
+[2023-04-09 19:31:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:12] INFO root fetch - processPackages [robotcode-runner]: executing diffoscope
+[2023-04-09 19:31:12] INFO root fetch - processPackages [robotcode-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_runner-0.32.3.tar.gz tmp/robotcode_runner-0.33.0.tar.gz --markdown 20230409/r/robotcode-runner/0.32.3-0.33.0/diff.md --exclude *.pyd
+[2023-04-09 19:31:12] INFO root fetch - processPackages [robotcode-jsonrpc2]: Downloading https://files.pythonhosted.org/packages/45/08/e7a5f7abb9dfcf5bed72d6339fb754576add1235bc684a4be1f0d5d229de/robotcode_jsonrpc2-0.33.0-py3-none-any.whl
+[2023-04-09 19:31:13] INFO root fetch - processPackages [robotcode-jsonrpc2]: executing diffoscope
+[2023-04-09 19:31:13] INFO root fetch - processPackages [robotcode-jsonrpc2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_jsonrpc2-0.32.3.tar.gz tmp/robotcode_jsonrpc2-0.33.0-py3-none-any.whl.zip --markdown 20230409/r/robotcode-jsonrpc2/0.32.3-0.33.0/diff.md --exclude *.pyd
+[2023-04-09 19:31:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:31:15] INFO root fetch - main [MainThread]: Store serial: [17638406]
