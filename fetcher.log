@@ -8905,3 +8905,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:52:50] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.9-cp39-cp39-manylinux2014_aarch64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.8-3.0.9/diff.md --exclude *.pyd
 [2023-04-09 21:53:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:53:00] INFO root fetch - main [MainThread]: Store serial: [17639168]
+[2023-04-09 21:58:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639168]
+[2023-04-09 21:58:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 21:58:08] INFO root fetch - processPackages [cryptographyComplements]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-09 21:58:08] INFO root fetch - processPackages [tts-arranger]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 21:58:08] INFO root fetch - processPackages [zuela]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-09 21:58:08] INFO root fetch - processPackages [paper-qa]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-09 21:58:08] WARNING root fetch - processPackages [img-scrapper]: Skipping, unable to determine old version
+[2023-04-09 21:58:08] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:58:08] INFO root fetch - processPackages [DataStructuresLiamTheodore]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 21:58:08] INFO root fetch - processPackages [paper-qa]: Downloading https://files.pythonhosted.org/packages/e5/d2/3e429c4ead13b7f4fa7f9c1e5199879c53b377d4d101a47b8694360531d5/paper-qa-0.1.0.tar.gz
+[2023-04-09 21:58:09] INFO root fetch - processPackages [zuela]: Downloading https://files.pythonhosted.org/packages/23/1b/640ee501798bf163506055d44e65080a5ba328350d5be03d7becb8813912/zuela-0.5.0.tar.gz
+[2023-04-09 21:58:09] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/30/d2/a794af34dbe88c0f8065b05c2c7b118e3d6fc2c81fa175282eec6fc7bd99/tts_arranger-0.0.5.tar.gz
+[2023-04-09 21:58:09] INFO root fetch - processPackages [cryptographyComplements]: Downloading https://files.pythonhosted.org/packages/6d/37/1b7e24f500b37e33aef5f4387d3425fb5fcbbf6a1ac0ef4f9f98847b2202/cryptographyComplements-0.2.5.tar.gz
+[2023-04-09 21:58:09] INFO root fetch - processPackages [DataStructuresLiamTheodore]: Downloading https://files.pythonhosted.org/packages/1f/5e/e7d39314ec2da84800cee0ed381eca73718928d7625fb75a5815bf6609d6/DataStructuresLiamTheodore-1.0.3.tar.gz
+[2023-04-09 21:58:09] INFO root fetch - processPackages [zuela]: executing diffoscope
+[2023-04-09 21:58:09] INFO root fetch - processPackages [paper-qa]: Downloading https://files.pythonhosted.org/packages/b4/f1/73cc94497a759747c3ec3e49455bedcd6c4e011c0120d8b634814aa5e43f/paper-qa-1.0.0.tar.gz
+[2023-04-09 21:58:09] INFO root fetch - processPackages [zuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuela-0.4.0.tar.gz tmp/zuela-0.5.0.tar.gz --markdown 20230409/z/zuela/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-09 21:58:09] INFO root fetch - processPackages [DataStructuresLiamTheodore]: executing diffoscope
+[2023-04-09 21:58:09] INFO root fetch - processPackages [DataStructuresLiamTheodore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataStructuresLiamTheodore-1.0.2.tar.gz tmp/DataStructuresLiamTheodore-1.0.3.tar.gz --markdown 20230409/D/DataStructuresLiamTheodore/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 21:58:09] INFO root fetch - processPackages [cryptographyComplements]: executing diffoscope
+[2023-04-09 21:58:09] INFO root fetch - processPackages [cryptographyComplements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptographyComplements-0.2.4.tar.gz tmp/cryptographyComplements-0.2.5.tar.gz --markdown 20230409/c/cryptographyComplements/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-09 21:58:09] INFO root fetch - processPackages [tts-arranger]: executing diffoscope
+[2023-04-09 21:58:09] INFO root fetch - processPackages [tts-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tts_arranger-0.0.4.tar.gz tmp/tts_arranger-0.0.5.tar.gz --markdown 20230409/t/tts-arranger/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 21:58:10] INFO root fetch - processPackages [paper-qa]: executing diffoscope
+[2023-04-09 21:58:10] INFO root fetch - processPackages [paper-qa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-qa-0.1.0.tar.gz tmp/paper-qa-1.0.0.tar.gz --markdown 20230409/p/paper-qa/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 21:58:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:58:10] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 21:58:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:58:10] WARNING root fetch - processPackages [KMClusterIMG]: Skipping, unable to determine old version
+[2023-04-09 21:58:10] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:58:10] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 21:58:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:58:10] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: executing diffoscope
+[2023-04-09 21:58:10] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-crudrouter-mongodb-0.0.1.tar.gz tmp/fastapi-crudrouter-mongodb-0.0.2.tar.gz --markdown 20230409/f/fastapi-crudrouter-mongodb/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 21:58:10] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/6e/02/b62c43753db71f5d9f38ae7283b794e6f74a68fb4ed705d99cefd2253532/spotPython-0.0.8.tar.gz
+[2023-04-09 21:58:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:58:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:58:12] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/4b/fe/e18dc9bcd7946a695352c3bdf34b95776e2ad6d970f7a8b6ff4368e7e2fe/spotPython-0.0.9.tar.gz
+[2023-04-09 21:58:13] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-04-09 21:58:13] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230409/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 21:58:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:58:18] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:58:18] INFO root fetch - main [MainThread]: Store serial: [17639205]
