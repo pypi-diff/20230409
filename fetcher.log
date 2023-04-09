@@ -8066,3 +8066,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:28:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:28:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:28:39] INFO root fetch - main [MainThread]: Store serial: [17638714]
+[2023-04-09 20:33:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638714]
+[2023-04-09 20:33:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 20:33:47] WARNING root fetch - processPackages [DataStructuresTheodoreLiam]: Skipping, unable to determine old version
+[2023-04-09 20:33:47] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:33:47] INFO root fetch - processPackages [mss]: New version: [8.0.1] Old Version: [8.0.0]
+[2023-04-09 20:33:47] INFO root fetch - processPackages [socialmediaextractor]: New version: [0.3] Old Version: [0.2]
+[2023-04-09 20:33:47] WARNING root fetch - processPackages [django-muid]: Skipping, unable to determine old version
+[2023-04-09 20:33:47] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:33:47] INFO root fetch - processPackages [citros]: New version: [23.14.9] Old Version: [23.14.8]
+[2023-04-09 20:33:47] INFO root fetch - processPackages [ediri-scaleway]: New version: [2.16.2] Old Version: [2.16.0]
+[2023-04-09 20:33:47] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 20:33:47] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.8.tar.gz tmp/citros-23.14.9.tar.gz --markdown 20230409/c/citros/23.14.8-23.14.9/diff.md --exclude *.pyd
+[2023-04-09 20:33:47] INFO root fetch - processPackages [mss]: Downloading https://files.pythonhosted.org/packages/8e/cd/854ef091ef0e66d429baf38a365e3445800994d0c1ea56089b22f06128ea/mss-8.0.1.tar.gz
+[2023-04-09 20:33:47] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/33/00/3e89ec6b7b8329c6f3e1b7a2f6e2f22b2b1be672cec03f83a14d02582b70/ediri_scaleway-2.16.0.tar.gz
+[2023-04-09 20:33:47] INFO root fetch - processPackages [socialmediaextractor]: Downloading https://files.pythonhosted.org/packages/ba/1a/a6737f81b1531c1b5fb863a1226e08ac9d6586700de05de534a14ca7f257/socialmediaextractor-0.3.tar.gz
+[2023-04-09 20:33:47] INFO root fetch - processPackages [mss]: executing diffoscope
+[2023-04-09 20:33:47] INFO root fetch - processPackages [mss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mss-8.0.0.tar.gz tmp/mss-8.0.1.tar.gz --markdown 20230409/m/mss/8.0.0-8.0.1/diff.md --exclude *.pyd
+[2023-04-09 20:33:47] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/1d/f2/d79f51b152a898b7cc4feb861b5ce715a0bb48f5432ec6ccd8cddbc6c8e0/ediri_scaleway-2.16.2.tar.gz
+[2023-04-09 20:33:47] INFO root fetch - processPackages [socialmediaextractor]: executing diffoscope
+[2023-04-09 20:33:47] INFO root fetch - processPackages [socialmediaextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socialmediaextractor-0.2.tar.gz tmp/socialmediaextractor-0.3.tar.gz --markdown 20230409/s/socialmediaextractor/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-09 20:33:47] INFO root fetch - processPackages [ediri-scaleway]: executing diffoscope
+[2023-04-09 20:33:47] INFO root fetch - processPackages [ediri-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_scaleway-2.16.0.tar.gz tmp/ediri_scaleway-2.16.2.tar.gz --markdown 20230409/e/ediri-scaleway/2.16.0-2.16.2/diff.md --exclude *.pyd
+[2023-04-09 20:33:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:33:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:33:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:33:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:33:49] INFO root fetch - main [MainThread]: Store serial: [17638746]
