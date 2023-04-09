@@ -9194,3 +9194,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:29:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:29:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:29:39] INFO root fetch - main [MainThread]: Store serial: [17639422]
+[2023-04-09 22:34:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639422]
+[2023-04-09 22:34:52] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 22:34:52] INFO root fetch - processPackages [openhasp-config-manager]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-09 22:34:52] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 22:34:52] INFO root fetch - processPackages [kurzgesagt]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-09 22:34:52] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:34:52] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-09 22:34:52] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-04-09 22:34:52] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230409/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:34:52] INFO root fetch - processPackages [openhasp-config-manager]: Downloading https://files.pythonhosted.org/packages/cf/62/14e566493afb46c98e88ef7ff2e550e20ae0061cbf0e17c622d79adf83bb/openhasp_config_manager-0.4.4.tar.gz
+[2023-04-09 22:34:52] INFO root fetch - processPackages [openhasp-config-manager]: executing diffoscope
+[2023-04-09 22:34:52] INFO root fetch - processPackages [openhasp-config-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhasp_config_manager-0.4.3.tar.gz tmp/openhasp_config_manager-0.4.4.tar.gz --markdown 20230409/o/openhasp-config-manager/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-09 22:34:52] INFO root fetch - processPackages [nextcloudtalkbot]: Downloading https://files.pythonhosted.org/packages/4c/93/852c3265164ba6676f199b3c4fc3c8a42b347651593a090667a4bba4f2e6/nextcloudtalkbot-0.0.7.tar.gz
+[2023-04-09 22:34:52] INFO root fetch - processPackages [kurzgesagt]: Downloading https://files.pythonhosted.org/packages/ff/a3/a23af5352eb3cae5b10aa0d8963b0bf69eddb02ba93276a5e5e0b9c0be38/kurzgesagt-1.1.1.tar.gz
+[2023-04-09 22:34:52] INFO root fetch - processPackages [kurzgesagt]: executing diffoscope
+[2023-04-09 22:34:52] INFO root fetch - processPackages [kurzgesagt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kurzgesagt-1.1.0.tar.gz tmp/kurzgesagt-1.1.1.tar.gz --markdown 20230409/k/kurzgesagt/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-09 22:34:52] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-09 22:34:52] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230409/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-09 22:34:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:34:53] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-09 22:34:53] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.6.tar.gz tmp/nextcloudtalkbot-0.0.7.tar.gz --markdown 20230409/n/nextcloudtalkbot/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 22:34:53] WARNING root fetch - processPackages [vectordbs]: Skipping, unable to determine old version
+[2023-04-09 22:34:53] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:34:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:34:53] INFO root fetch - processPackages [py-unused-deps]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-09 22:34:53] INFO root fetch - processPackages [propan]: New version: [0.0.8.9] Old Version: [0.0.8.8]
+[2023-04-09 22:34:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:34:54] INFO root fetch - processPackages [py-unused-deps]: Downloading https://files.pythonhosted.org/packages/c3/f4/37b8ca3367399ac27c8c3812e0131b4a19e57a0d7f29885a412e67c9bd10/py-unused-deps-0.2.0.tar.gz
+[2023-04-09 22:34:54] INFO root fetch - processPackages [ogre-python]: New version: [13.6.4] Old Version: [13.6.3]
+[2023-04-09 22:34:54] INFO root fetch - processPackages [propan]: executing diffoscope
+[2023-04-09 22:34:54] INFO root fetch - processPackages [propan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propan-0.0.8.8.tar.gz tmp/propan-0.0.8.9.tar.gz --markdown 20230409/p/propan/0.0.8.8-0.0.8.9/diff.md --exclude *.pyd
+[2023-04-09 22:34:54] INFO root fetch - processPackages [ogre-python]: Downloading https://files.pythonhosted.org/packages/0b/ac/adb6ef0bd91e33b411e08131be98b04624d749c6891e5d4742b3d6e29c8a/ogre_python-13.6.3-cp310-cp310-win_amd64.whl
+[2023-04-09 22:34:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:34:54] INFO root fetch - processPackages [py-unused-deps]: Downloading https://files.pythonhosted.org/packages/fd/a0/b974f388c2eceec188367c18013a1e8aaea0a6bb831c58cb7823151bb240/py-unused-deps-0.2.1.tar.gz
+[2023-04-09 22:34:54] INFO root fetch - processPackages [py-unused-deps]: executing diffoscope
+[2023-04-09 22:34:54] INFO root fetch - processPackages [py-unused-deps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-unused-deps-0.2.0.tar.gz tmp/py-unused-deps-0.2.1.tar.gz --markdown 20230409/p/py-unused-deps/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-09 22:34:54] WARNING root fetch - processPackages [ogre-python]: Skipping package: exceeds size limit 12209673>=10485760
+[2023-04-09 22:34:54] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:34:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:34:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:34:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:34:55] INFO root fetch - main [MainThread]: Store serial: [17639448]
