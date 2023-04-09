@@ -6435,3 +6435,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:24:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:24:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:24:18] INFO root fetch - main [MainThread]: Store serial: [17637517]
+[2023-04-09 17:29:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637517]
+[2023-04-09 17:29:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 17:29:26] WARNING root fetch - processPackages [pymfx4]: Skipping, unable to determine old version
+[2023-04-09 17:29:26] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:29:26] INFO root fetch - processPackages [lazylinop]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-09 17:29:26] INFO root fetch - processPackages [blinker]: New version: [1.6.1] Old Version: [1.6]
+[2023-04-09 17:29:26] INFO root fetch - processPackages [env-canada]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-09 17:29:26] INFO root fetch - processPackages [importlib-metadata]: New version: [6.2.1] Old Version: [6.2.0]
+[2023-04-09 17:29:26] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 17:29:26] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 17:29:26] INFO root fetch - processPackages [blinker]: Downloading https://files.pythonhosted.org/packages/a4/04/16dd209be88bcda71710fab1344433031fc7d793925ca06bfd27986db8b3/blinker-1.6.tar.gz
+[2023-04-09 17:29:26] INFO root fetch - processPackages [lazylinop]: executing diffoscope
+[2023-04-09 17:29:26] INFO root fetch - processPackages [lazylinop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazylinop-1.0.8-py3-none-any.whl.zip tmp/lazylinop-1.0.9-py3-none-any.whl.zip --markdown 20230409/l/lazylinop/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-09 17:29:26] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 17:29:26] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:29:26] INFO root fetch - processPackages [antgo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 17:29:26] INFO root fetch - processPackages [importlib-metadata]: Downloading https://files.pythonhosted.org/packages/4b/fd/ea3ca048abb8534a847c3e5f59f6701a4eb1fd124556b14edeb506ec8986/importlib_metadata-6.2.1.tar.gz
+[2023-04-09 17:29:26] INFO root fetch - processPackages [blinker]: Downloading https://files.pythonhosted.org/packages/b2/83/418c03eaeed9f87eab0d5430f7e9d5248d8a7dd64d12b5ab9e5f674e7aa3/blinker-1.6.1.tar.gz
+[2023-04-09 17:29:26] INFO root fetch - processPackages [antgo]: Downloading https://files.pythonhosted.org/packages/cd/b4/977a60d61d644e8e98659446c7e67c6446f19840fc701891acf880196e73/antgo-0.0.8.tar.gz
+[2023-04-09 17:29:26] INFO root fetch - processPackages [importlib-metadata]: executing diffoscope
+[2023-04-09 17:29:26] INFO root fetch - processPackages [importlib-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importlib_metadata-6.2.0.tar.gz tmp/importlib_metadata-6.2.1.tar.gz --markdown 20230409/i/importlib-metadata/6.2.0-6.2.1/diff.md --exclude *.pyd
+[2023-04-09 17:29:26] INFO root fetch - processPackages [env-canada]: executing diffoscope
+[2023-04-09 17:29:26] INFO root fetch - processPackages [env-canada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/env_canada-0.5.8.tar.gz tmp/env_canada-0.5.9.tar.gz --markdown 20230409/e/env-canada/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-09 17:29:26] INFO root fetch - processPackages [blinker]: executing diffoscope
+[2023-04-09 17:29:26] INFO root fetch - processPackages [blinker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blinker-1.6.tar.gz tmp/blinker-1.6.1.tar.gz --markdown 20230409/b/blinker/1.6-1.6.1/diff.md --exclude *.pyd
+[2023-04-09 17:29:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:29:27] INFO root fetch - processPackages [spinelibs]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-04-09 17:29:27] INFO root fetch - processPackages [spinelibs]: Downloading https://files.pythonhosted.org/packages/3f/66/7e43ba177403fd51e277ea688b07407ff32a8b38d0dfe24745fa41b5d797/spinelibs-0.0.16.tar.gz
+[2023-04-09 17:29:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:29:27] INFO root fetch - processPackages [dgread]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-09 17:29:27] INFO root fetch - processPackages [spinelibs]: executing diffoscope
+[2023-04-09 17:29:27] INFO root fetch - processPackages [spinelibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spinelibs-0.0.15.tar.gz tmp/spinelibs-0.0.16.tar.gz --markdown 20230409/s/spinelibs/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-04-09 17:29:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:29:27] INFO root fetch - processPackages [dgread]: Downloading https://files.pythonhosted.org/packages/4e/cd/c4e1e3ef3a438d95844f856b247ca5cb307c3815b1a76d4d6d4de46b8e42/dgread-1.0.1.tar.gz
+[2023-04-09 17:29:28] INFO root fetch - processPackages [antgo]: Downloading https://files.pythonhosted.org/packages/a7/46/d8d90ea301845bc44b73740d89ffcd4987b80b77e1f338c8b1a61b36b922/antgo-0.0.9.tar.gz
+[2023-04-09 17:29:28] INFO root fetch - processPackages [dgread]: Downloading https://files.pythonhosted.org/packages/f0/50/5b6a258a73c4276ecc5b33b2fd04e3cbcfff3cfafe70c705c8f7e26ffd90/dgread-1.0.2.tar.gz
+[2023-04-09 17:29:28] INFO root fetch - processPackages [dgread]: executing diffoscope
+[2023-04-09 17:29:28] INFO root fetch - processPackages [dgread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgread-1.0.1.tar.gz tmp/dgread-1.0.2.tar.gz --markdown 20230409/d/dgread/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 17:29:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:29:29] INFO root fetch - processPackages [antgo]: executing diffoscope
+[2023-04-09 17:29:29] INFO root fetch - processPackages [antgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antgo-0.0.8.tar.gz tmp/antgo-0.0.9.tar.gz --markdown 20230409/a/antgo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 17:29:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:29:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:29:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:29:32] INFO root fetch - main [MainThread]: Store serial: [17637543]
