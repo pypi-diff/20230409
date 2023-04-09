@@ -2434,3 +2434,14 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 07:35:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:35:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:35:03] INFO root fetch - main [MainThread]: Store serial: [17634556]
+[2023-04-09 07:40:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634556]
+[2023-04-09 07:40:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-09 07:40:10] INFO root fetch - processPackages [django-enum]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-09 07:40:10] WARNING root fetch - processPackages [steamed-hams]: Skipping, unable to determine old version
+[2023-04-09 07:40:10] INFO root fetch - main [MainThread]: error
+[2023-04-09 07:40:11] INFO root fetch - processPackages [django-enum]: Downloading https://files.pythonhosted.org/packages/fa/ee/b46b0acdac2956ee4bad19db3dce6e74d18cb46497a169e4473cd93e5a59/django_enum-1.2.0.tar.gz
+[2023-04-09 07:40:11] INFO root fetch - processPackages [django-enum]: Downloading https://files.pythonhosted.org/packages/57/6b/d1cc5a44bde7af9886d4ad527bc39039b65423e00e1e26d16918fedc69f1/django_enum-1.2.1.tar.gz
+[2023-04-09 07:40:11] INFO root fetch - processPackages [django-enum]: executing diffoscope
+[2023-04-09 07:40:11] INFO root fetch - processPackages [django-enum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_enum-1.2.0.tar.gz tmp/django_enum-1.2.1.tar.gz --markdown 20230409/d/django-enum/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-09 07:40:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:40:12] INFO root fetch - main [MainThread]: Store serial: [17634566]
