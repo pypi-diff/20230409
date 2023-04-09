@@ -5199,3 +5199,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 14:32:28] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:32:28] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:32:28] INFO root fetch - main [MainThread]: Store serial: [17636593]
+[2023-04-09 14:37:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636593]
+[2023-04-09 14:37:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 14:37:36] INFO root fetch - processPackages [checkdigit]: New version: [1.0.0a0] Old Version: [0.5.0]
+[2023-04-09 14:37:36] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 14:37:36] WARNING root fetch - processPackages [print-colors]: Skipping, unable to determine old version
+[2023-04-09 14:37:36] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:37:36] INFO root fetch - processPackages [ievv-opensource]: New version: [9.2.0] Old Version: [9.1.6]
+[2023-04-09 14:37:36] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.8.0.dev20230408] Old Version: [0.8.0.dev20230407]
+[2023-04-09 14:37:36] INFO root fetch - processPackages [pyxk]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-09 14:37:36] INFO root fetch - processPackages [checkdigit]: Downloading https://files.pythonhosted.org/packages/4a/56/20c586918b2c4c12549bca8ddf2c23a238b9ad58d20d392724deb8034d9a/checkdigit-0.5.0.tar.gz
+[2023-04-09 14:37:36] INFO root fetch - processPackages [ievv-opensource]: executing diffoscope
+[2023-04-09 14:37:36] INFO root fetch - processPackages [ievv-opensource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ievv_opensource-9.1.6.tar.gz tmp/ievv_opensource-9.2.0.tar.gz --markdown 20230409/i/ievv-opensource/9.1.6-9.2.0/diff.md --exclude *.pyd
+[2023-04-09 14:37:36] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-04-09 14:37:36] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.8.0.dev20230407.tar.gz tmp/tensorcircuit-nightly-0.8.0.dev20230408.tar.gz --markdown 20230409/t/tensorcircuit-nightly/0.8.0.dev20230407-0.8.0.dev20230408/diff.md --exclude *.pyd
+[2023-04-09 14:37:36] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: Downloading https://files.pythonhosted.org/packages/13/99/8b916669266b5764e3b8438ff8dc0f603c9a7991f205c0cf54196ee8d429/chatgpt_prompt_wrapper-0.0.1.tar.gz
+[2023-04-09 14:37:36] INFO root fetch - processPackages [pyxk]: Downloading https://files.pythonhosted.org/packages/99/07/b50e31fdf3e4b3a86437277e178fb85e88fb080114c7e1a30111c6248bef/pyxk-0.5.1.tar.gz
+[2023-04-09 14:37:36] INFO root fetch - processPackages [pyxk]: executing diffoscope
+[2023-04-09 14:37:36] INFO root fetch - processPackages [pyxk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxk-0.5.0.tar.gz tmp/pyxk-0.5.1.tar.gz --markdown 20230409/p/pyxk/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-09 14:37:36] INFO root fetch - processPackages [checkdigit]: Downloading https://files.pythonhosted.org/packages/d8/7c/4b6fd9f2300e3bc74138c11d81b82627ccc4f8efdc4aee36e56aec5c4749/checkdigit-1.0.0a0.tar.gz
+[2023-04-09 14:37:36] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: Downloading https://files.pythonhosted.org/packages/8e/e0/1e991113e0506b50747d35b296360a287a61cc53062e5f8a8d8ea2e9d083/chatgpt_prompt_wrapper-0.0.2.tar.gz
+[2023-04-09 14:37:36] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: executing diffoscope
+[2023-04-09 14:37:36] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt_prompt_wrapper-0.0.1.tar.gz tmp/chatgpt_prompt_wrapper-0.0.2.tar.gz --markdown 20230409/c/chatgpt-prompt-wrapper/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 14:37:36] INFO root fetch - processPackages [checkdigit]: executing diffoscope
+[2023-04-09 14:37:36] INFO root fetch - processPackages [checkdigit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkdigit-0.5.0.tar.gz tmp/checkdigit-1.0.0a0.tar.gz --markdown 20230409/c/checkdigit/0.5.0-1.0.0a0/diff.md --exclude *.pyd
+[2023-04-09 14:37:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:37:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:37:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:37:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:37:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:37:38] INFO root fetch - main [MainThread]: Store serial: [17636615]
