@@ -7906,3 +7906,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:02:44] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230409/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
 [2023-04-09 20:02:47] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:02:47] INFO root fetch - main [MainThread]: Store serial: [17638599]
+[2023-04-09 20:07:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638599]
+[2023-04-09 20:07:54] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 20:07:54] INFO root fetch - processPackages [jupyter-server-fileid]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-09 20:07:54] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 20:07:54] INFO root fetch - processPackages [ovos-vad-plugin-webrtcvad]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2023-04-09 20:07:54] WARNING root fetch - processPackages [socialmediaextractor]: Skipping, unable to determine old version
+[2023-04-09 20:07:54] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:07:54] INFO root fetch - processPackages [pyMetaModel]: New version: [0.3.0] Old Version: [0.2.7]
+[2023-04-09 20:07:54] WARNING root fetch - processPackages [HomePay.Core]: Skipping, unable to determine old version
+[2023-04-09 20:07:54] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:07:54] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 20:07:54] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 20:07:54] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 20:07:54] INFO root fetch - processPackages [jupyter-server-fileid]: Downloading https://files.pythonhosted.org/packages/15/d3/fc6511f561f38c8d589e0243790bcd15fc66d21e1f4dd861c27a0788b483/jupyter_server_fileid-0.8.0.tar.gz
+[2023-04-09 20:07:54] INFO root fetch - processPackages [ovos-vad-plugin-webrtcvad]: Downloading https://files.pythonhosted.org/packages/a7/73/48ae102469299656e1b785ba88494e75cb6336efb4e71745db213896cc95/ovos-vad-plugin-webrtcvad-0.0.1a1.tar.gz
+[2023-04-09 20:07:54] INFO root fetch - processPackages [pyMetaModel]: Downloading https://files.pythonhosted.org/packages/4c/ed/e9b38d38e507552ebe24eb112b80cba5e13b89b2477cfa1cef3fb1fe4c20/pymetamodel-0.2.7.tar.gz
+[2023-04-09 20:07:54] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-09 20:07:54] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.0.98.tar.gz tmp/wizata-dsapi-0.0.99.tar.gz --markdown 20230409/w/wizata-dsapi/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 20:07:55] INFO root fetch - processPackages [jupyter-server-fileid]: Downloading https://files.pythonhosted.org/packages/a2/c9/ab2b6bd9a5508cb2d4e126ae8e84c110f5fbeb2f08b8f78952c2183ef57e/jupyter_server_fileid-0.9.0.tar.gz
+[2023-04-09 20:07:55] INFO root fetch - processPackages [jupyter-server-fileid]: executing diffoscope
+[2023-04-09 20:07:55] INFO root fetch - processPackages [jupyter-server-fileid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_server_fileid-0.8.0.tar.gz tmp/jupyter_server_fileid-0.9.0.tar.gz --markdown 20230409/j/jupyter-server-fileid/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 20:07:55] INFO root fetch - processPackages [ovos-vad-plugin-webrtcvad]: Downloading https://files.pythonhosted.org/packages/2d/b9/4c5238e775044d09492d7e2356c311442c9bf0f5345fec2edf4dd30b0909/ovos-vad-plugin-webrtcvad-0.0.1a2.tar.gz
+[2023-04-09 20:07:55] INFO root fetch - processPackages [pyMetaModel]: Downloading https://files.pythonhosted.org/packages/a6/05/7dad4c99da2b58550b53aebdba73c9b1a352e357b115a45043703f2eda36/pymetamodel-0.3.0.tar.gz
+[2023-04-09 20:07:55] INFO root fetch - processPackages [pyMetaModel]: executing diffoscope
+[2023-04-09 20:07:55] INFO root fetch - processPackages [pyMetaModel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymetamodel-0.2.7.tar.gz tmp/pymetamodel-0.3.0.tar.gz --markdown 20230409/p/pyMetaModel/0.2.7-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 20:07:55] INFO root fetch - processPackages [ovos-vad-plugin-webrtcvad]: executing diffoscope
+[2023-04-09 20:07:55] INFO root fetch - processPackages [ovos-vad-plugin-webrtcvad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-vad-plugin-webrtcvad-0.0.1a1.tar.gz tmp/ovos-vad-plugin-webrtcvad-0.0.1a2.tar.gz --markdown 20230409/o/ovos-vad-plugin-webrtcvad/0.0.1a1-0.0.1a2/diff.md --exclude *.pyd
+[2023-04-09 20:07:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:07:55] INFO root fetch - processPackages [dearwatson]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-09 20:07:55] INFO root fetch - processPackages [dearwatson]: executing diffoscope
+[2023-04-09 20:07:55] INFO root fetch - processPackages [dearwatson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearwatson-0.5.8.tar.gz tmp/dearwatson-0.5.9.tar.gz --markdown 20230409/d/dearwatson/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-09 20:07:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:07:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:07:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:07:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:07:57] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:07:57] INFO root fetch - main [MainThread]: Store serial: [17638627]
