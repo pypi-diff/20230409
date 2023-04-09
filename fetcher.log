@@ -5766,3 +5766,34 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 15:59:34] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:00:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:00:03] INFO root fetch - main [MainThread]: Store serial: [17637022]
+[2023-04-09 16:05:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637022]
+[2023-04-09 16:05:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 16:05:12] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 16:05:12] INFO root fetch - processPackages [dequeai]: New version: [0.688] Old Version: [0.686]
+[2023-04-09 16:05:12] WARNING root fetch - processPackages [qtpy-frameless-window]: Skipping, unable to determine old version
+[2023-04-09 16:05:12] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:05:12] INFO root fetch - processPackages [nonebot-desktop-wing]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-09 16:05:12] INFO root fetch - processPackages [nexus-pcv]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-09 16:05:12] INFO root fetch - processPackages [bigtree]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-09 16:05:12] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 16:05:12] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 16:05:12] INFO root fetch - processPackages [nonebot-desktop-wing]: Downloading https://files.pythonhosted.org/packages/79/1d/281ec959f6429c39ed2820a0c7ef95f0e70ccfe9508abb6f73454215e69f/nonebot-desktop-wing-0.2.0.tar.gz
+[2023-04-09 16:05:12] INFO root fetch - processPackages [nexus-pcv]: Downloading https://files.pythonhosted.org/packages/2c/a4/8df2514ed2e9c9da57f3fd51179d24696328f6b6f5e2aaa873e8355a1925/nexus_pcv-0.1.3.tar.gz
+[2023-04-09 16:05:12] INFO root fetch - processPackages [bigtree]: Downloading https://files.pythonhosted.org/packages/47/8c/eccaac2faa24f73b050705f8e75a37ee907721582232c36340e299dbc615/bigtree-0.9.1.tar.gz
+[2023-04-09 16:05:13] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/88/64/3d48651ee96b5ef92efc461062f37c4b2ef62b91f3c5ceea1685f3249990/dequeai-0.688.tar.gz
+[2023-04-09 16:05:13] INFO root fetch - processPackages [nonebot-desktop-wing]: executing diffoscope
+[2023-04-09 16:05:13] INFO root fetch - processPackages [nonebot-desktop-wing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-wing-0.1.4.tar.gz tmp/nonebot-desktop-wing-0.2.0.tar.gz --markdown 20230409/n/nonebot-desktop-wing/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-09 16:05:13] INFO root fetch - processPackages [nexus-pcv]: Downloading https://files.pythonhosted.org/packages/ab/43/ac9744a11217d67e356d85c9c5834e4a7590e5f7eb5aa0cd615102063550/nexus_pcv-0.1.4.tar.gz
+[2023-04-09 16:05:13] INFO root fetch - processPackages [dequeai]: executing diffoscope
+[2023-04-09 16:05:13] INFO root fetch - processPackages [dequeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dequeai-0.686.tar.gz tmp/dequeai-0.688.tar.gz --markdown 20230409/d/dequeai/0.686-0.688/diff.md --exclude *.pyd
+[2023-04-09 16:05:13] INFO root fetch - processPackages [bigtree]: Downloading https://files.pythonhosted.org/packages/b6/d2/11a9563943f08c7626c787c7d4d33f2397b7bacd11170bc3f39097c27bfd/bigtree-0.9.2.tar.gz
+[2023-04-09 16:05:13] INFO root fetch - processPackages [nexus-pcv]: executing diffoscope
+[2023-04-09 16:05:13] INFO root fetch - processPackages [nexus-pcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus_pcv-0.1.3.tar.gz tmp/nexus_pcv-0.1.4.tar.gz --markdown 20230409/n/nexus-pcv/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 16:05:13] INFO root fetch - processPackages [bigtree]: executing diffoscope
+[2023-04-09 16:05:13] INFO root fetch - processPackages [bigtree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigtree-0.9.1.tar.gz tmp/bigtree-0.9.2.tar.gz --markdown 20230409/b/bigtree/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-09 16:05:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:05:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:05:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:05:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:05:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:05:15] INFO root fetch - main [MainThread]: Store serial: [17637041]
