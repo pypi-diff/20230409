@@ -3999,3 +3999,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 11:30:48] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:31:43] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:31:43] INFO root fetch - main [MainThread]: Store serial: [17635654]
+[2023-04-09 11:36:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635654]
+[2023-04-09 11:36:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 11:36:51] INFO root fetch - processPackages [pyFileFixity]: New version: [3.1.0] Old Version: [3.0.8]
+[2023-04-09 11:36:51] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 11:36:51] INFO root fetch - processPackages [bugs-chart.py]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 11:36:51] INFO root fetch - processPackages [mpai-cae-arp]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-09 11:36:51] INFO root fetch - processPackages [transmission-rpc]: New version: [4.2.0] Old Version: [4.1.5]
+[2023-04-09 11:36:51] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-09 11:36:51] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230409/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 11:36:51] INFO root fetch - processPackages [mpai-cae-arp]: Downloading https://files.pythonhosted.org/packages/a2/9a/5b5d3d16468f7399a40090294622f99dd4f4e1e005006974a1dd9ffd6daf/mpai_cae_arp-0.2.1.tar.gz
+[2023-04-09 11:36:51] INFO root fetch - processPackages [transmission-rpc]: Downloading https://files.pythonhosted.org/packages/6c/7f/24828c7e1554c8418cc6b59b3120257e76c5e4a2451efd6516444b287f9b/transmission_rpc-4.1.5.tar.gz
+[2023-04-09 11:36:51] INFO root fetch - processPackages [bugs-chart.py]: Downloading https://files.pythonhosted.org/packages/4c/1b/03554868444f7650b8899c143920da03d0db4c07f077de69bb6e9d575d69/bugs-chart.py-1.0.3.tar.gz
+[2023-04-09 11:36:51] INFO root fetch - processPackages [bugs-chart.py]: executing diffoscope
+[2023-04-09 11:36:51] INFO root fetch - processPackages [bugs-chart.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bugs-chart.py-1.0.2.tar.gz tmp/bugs-chart.py-1.0.3.tar.gz --markdown 20230409/b/bugs-chart.py/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 11:36:51] INFO root fetch - processPackages [pyFileFixity]: Downloading https://files.pythonhosted.org/packages/9d/3b/cb94577a198876fabcba7b24b515ae2f3b288a1ee58c0c5c004626cc1803/pyFileFixity-3.1.0.tar.gz
+[2023-04-09 11:36:51] INFO root fetch - processPackages [mpai-cae-arp]: Downloading https://files.pythonhosted.org/packages/1c/a0/919b6954365bdc6a5991e4db105e7ca4873d37feadf3d151c104d09b1910/mpai_cae_arp-0.2.2.tar.gz
+[2023-04-09 11:36:51] INFO root fetch - processPackages [pyFileFixity]: executing diffoscope
+[2023-04-09 11:36:51] INFO root fetch - processPackages [pyFileFixity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFileFixity-3.0.8.tar.gz tmp/pyFileFixity-3.1.0.tar.gz --markdown 20230409/p/pyFileFixity/3.0.8-3.1.0/diff.md --exclude *.pyd
+[2023-04-09 11:36:51] INFO root fetch - processPackages [transmission-rpc]: Downloading https://files.pythonhosted.org/packages/74/23/c7ee8bb5d9c8b3b7998f961580c5d4339215fb2d1b5b1d41d3e12bc120a1/transmission_rpc-4.2.0.tar.gz
+[2023-04-09 11:36:51] INFO root fetch - processPackages [mpai-cae-arp]: executing diffoscope
+[2023-04-09 11:36:51] INFO root fetch - processPackages [mpai-cae-arp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpai_cae_arp-0.2.1.tar.gz tmp/mpai_cae_arp-0.2.2.tar.gz --markdown 20230409/m/mpai-cae-arp/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-09 11:36:52] INFO root fetch - processPackages [transmission-rpc]: executing diffoscope
+[2023-04-09 11:36:52] INFO root fetch - processPackages [transmission-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transmission_rpc-4.1.5.tar.gz tmp/transmission_rpc-4.2.0.tar.gz --markdown 20230409/t/transmission-rpc/4.1.5-4.2.0/diff.md --exclude *.pyd
+[2023-04-09 11:36:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:36:52] INFO root fetch - processPackages [mpai-cae-arp]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-09 11:36:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:36:52] INFO root fetch - processPackages [mpai-cae-arp]: executing diffoscope
+[2023-04-09 11:36:52] INFO root fetch - processPackages [mpai-cae-arp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpai_cae_arp-0.2.1.tar.gz tmp/mpai_cae_arp-0.2.2.tar.gz --markdown 20230409/m/mpai-cae-arp/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-09 11:36:52] INFO root fetch - processPackages [fofpy]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-04-09 11:36:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:36:52] INFO root fetch - processPackages [fofpy]: Downloading https://files.pythonhosted.org/packages/63/13/8bac84191678b881f18fb6d349b6a5af7d6b71d8989575c513ca5ebdafc8/fofpy-1.0.7.tar.gz
+[2023-04-09 11:36:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:36:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:36:53] INFO root fetch - processPackages [fofpy]: Downloading https://files.pythonhosted.org/packages/18/d9/9b0d5597e7bb4e21474e6c9a0b369bc46c1d470f4205bbcd3a36a7bbfa74/fofpy-1.0.9.tar.gz
+[2023-04-09 11:36:54] INFO root fetch - processPackages [fofpy]: executing diffoscope
+[2023-04-09 11:36:54] INFO root fetch - processPackages [fofpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fofpy-1.0.7.tar.gz tmp/fofpy-1.0.9.tar.gz --markdown 20230409/f/fofpy/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-04-09 11:36:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:36:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:36:55] INFO root fetch - main [MainThread]: Store serial: [17635676]
