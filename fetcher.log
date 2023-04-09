@@ -5534,3 +5534,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 15:27:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:27:58] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:27:58] INFO root fetch - main [MainThread]: Store serial: [17636881]
+[2023-04-09 15:33:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636881]
+[2023-04-09 15:33:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 15:33:06] INFO root fetch - processPackages [gmn]: New version: [1.2.2] Old Version: [1.2.0]
+[2023-04-09 15:33:06] INFO root fetch - processPackages [nutikacompile]: New version: [0.11] Old Version: [0.10]
+[2023-04-09 15:33:06] INFO root fetch - processPackages [pteropy]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-09 15:33:06] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-09 15:33:06] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 15:33:06] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 15:33:06] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 15:33:06] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:33:07] INFO root fetch - processPackages [gmn]: Downloading https://files.pythonhosted.org/packages/b0/2e/606c7c4e5369b10ffd1aff1f26d2251a7da69ca36dee803ccc4a837c8edf/gmn-1.2.0-py3-none-any.whl
+[2023-04-09 15:33:07] INFO root fetch - processPackages [pteropy]: Downloading https://files.pythonhosted.org/packages/65/6a/7294932c954afafd8df548b42f9bbce47f3849c1419920cc1cfde09d2885/pteropy-0.1.6.tar.gz
+[2023-04-09 15:33:07] INFO root fetch - processPackages [nutikacompile]: Downloading https://files.pythonhosted.org/packages/03/dd/744ad4ee18a208d73aa07cf9127ed1813e89b52414fe97cb65acea94ded5/nutikacompile-0.10.tar.gz
+[2023-04-09 15:33:07] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/37/06/7d2de0f61d61cb9cc5db66a45ecebc8d27e78bd8d38729340ef298c4604e/CircleBlock-1.0.4.tar.gz
+[2023-04-09 15:33:07] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-09 15:33:07] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.3.tar.gz tmp/CircleBlock-1.0.4.tar.gz --markdown 20230409/C/CircleBlock/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-09 15:33:07] INFO root fetch - processPackages [nutikacompile]: Downloading https://files.pythonhosted.org/packages/24/b7/09474a6544a9b0c296634d8c5d87f856030f95d0ad51e5319571ae55d1c7/nutikacompile-0.11.tar.gz
+[2023-04-09 15:33:07] INFO root fetch - processPackages [pteropy]: Downloading https://files.pythonhosted.org/packages/78/b8/0f3ff9bf48ef71376c78cc24708bc62c2d4d8a29a9d0956eff86edc27a82/pteropy-0.1.7.tar.gz
+[2023-04-09 15:33:07] INFO root fetch - processPackages [nutikacompile]: executing diffoscope
+[2023-04-09 15:33:07] INFO root fetch - processPackages [nutikacompile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nutikacompile-0.10.tar.gz tmp/nutikacompile-0.11.tar.gz --markdown 20230409/n/nutikacompile/0.10-0.11/diff.md --exclude *.pyd
+[2023-04-09 15:33:07] INFO root fetch - processPackages [pteropy]: executing diffoscope
+[2023-04-09 15:33:07] INFO root fetch - processPackages [pteropy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pteropy-0.1.6.tar.gz tmp/pteropy-0.1.7.tar.gz --markdown 20230409/p/pteropy/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-09 15:33:07] INFO root fetch - processPackages [gmn]: Downloading https://files.pythonhosted.org/packages/1d/a1/a9aa14c53a2d534af3dd96904e3acce7a75e1c38a7d74eb9ab416a33100c/gmn-1.2.2.tar.gz
+[2023-04-09 15:33:07] INFO root fetch - processPackages [gmn]: executing diffoscope
+[2023-04-09 15:33:07] INFO root fetch - processPackages [gmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmn-1.2.0-py3-none-any.whl.zip tmp/gmn-1.2.2.tar.gz --markdown 20230409/g/gmn/1.2.0-1.2.2/diff.md --exclude *.pyd
+[2023-04-09 15:33:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:33:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:33:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:33:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:33:10] INFO root fetch - main [MainThread]: Store serial: [17636897]
