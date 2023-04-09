@@ -6362,3 +6362,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:13:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:13:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:13:18] INFO root fetch - main [MainThread]: Store serial: [17637473]
+[2023-04-09 17:18:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637473]
+[2023-04-09 17:18:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 17:18:26] INFO root fetch - processPackages [jacktrade]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 17:18:26] INFO root fetch - processPackages [bellek]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-04-09 17:18:26] INFO root fetch - processPackages [tf-gnns]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-09 17:18:26] WARNING root fetch - processPackages [stronger-password-package]: Skipping, unable to determine old version
+[2023-04-09 17:18:26] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:18:26] INFO root fetch - processPackages [arcade]: New version: [3.0.0.dev20] Old Version: [3.0.0.dev19]
+[2023-04-09 17:18:26] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-09 17:18:26] INFO root fetch - processPackages [tf-gnns]: Downloading https://files.pythonhosted.org/packages/75/8a/0ad159a4514022fc02094e34d50fb4988d6f2ea97e564d1739ca0773a38d/tf-gnns-0.1.4.tar.gz
+[2023-04-09 17:18:26] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ac/06/144bd29f618e19ed382e96167082193b7d03d805e7e46e5c8d179e78fb67/bellek-0.7.6.tar.gz
+[2023-04-09 17:18:26] INFO root fetch - processPackages [jacktrade]: Downloading https://files.pythonhosted.org/packages/73/c2/21ed3719f287fcf419940aa2849d3b7b3118af754e08e9c859ca7ba51ee6/jacktrade-0.1.0.tar.gz
+[2023-04-09 17:18:26] INFO root fetch - processPackages [arcade]: Downloading https://files.pythonhosted.org/packages/a7/49/3cdd60a44571d2422979655788d481380dacea708c3ce90114f33b033667/arcade-3.0.0.dev19.tar.gz
+[2023-04-09 17:18:26] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-09 17:18:26] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230409/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-09 17:18:26] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/22/5d/dbe0a558d7ca89a17ced5a582d30da17fb22ad2b56b079e6c5cee9ef5f66/bellek-0.7.7.tar.gz
+[2023-04-09 17:18:26] INFO root fetch - processPackages [jacktrade]: Downloading https://files.pythonhosted.org/packages/d8/4e/1db0af9eba493fb4dd95b9e36d169c795f8f9913aa1bd5b24818cf5660e9/jacktrade-0.1.1.tar.gz
+[2023-04-09 17:18:26] INFO root fetch - processPackages [jacktrade]: executing diffoscope
+[2023-04-09 17:18:26] INFO root fetch - processPackages [jacktrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jacktrade-0.1.0.tar.gz tmp/jacktrade-0.1.1.tar.gz --markdown 20230409/j/jacktrade/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 17:18:26] INFO root fetch - processPackages [tf-gnns]: Downloading https://files.pythonhosted.org/packages/ec/22/dd985799c88d72fe812161bbbdb92cbdc47812a737bf352aaea874b2e015/tf-gnns-0.1.5.tar.gz
+[2023-04-09 17:18:26] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2023-04-09 17:18:26] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.7.6.tar.gz tmp/bellek-0.7.7.tar.gz --markdown 20230409/b/bellek/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-04-09 17:18:26] INFO root fetch - processPackages [tf-gnns]: executing diffoscope
+[2023-04-09 17:18:26] INFO root fetch - processPackages [tf-gnns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf-gnns-0.1.4.tar.gz tmp/tf-gnns-0.1.5.tar.gz --markdown 20230409/t/tf-gnns/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-09 17:18:27] WARNING root fetch - processPackages [arcade]: Skipping package: exceeds size limit 38209943>=10485760
+[2023-04-09 17:18:27] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:18:27] INFO root fetch - processPackages [bellek]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-04-09 17:18:27] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2023-04-09 17:18:27] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.7.6.tar.gz tmp/bellek-0.7.7.tar.gz --markdown 20230409/b/bellek/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-04-09 17:18:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:18:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:18:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:18:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:19:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:19:06] INFO root fetch - main [MainThread]: Store serial: [17637496]
