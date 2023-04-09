@@ -4172,3 +4172,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 12:03:07] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:03:07] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:03:07] INFO root fetch - main [MainThread]: Store serial: [17635840]
+[2023-04-09 12:08:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635840]
+[2023-04-09 12:08:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 12:08:14] WARNING root fetch - processPackages [PhanMemMMN]: Skipping, unable to determine old version
+[2023-04-09 12:08:14] WARNING root fetch - processPackages [niklibpy]: Skipping, unable to determine old version
+[2023-04-09 12:08:14] INFO root fetch - main [MainThread]: error
+[2023-04-09 12:08:14] INFO root fetch - main [MainThread]: error
+[2023-04-09 12:08:14] INFO root fetch - processPackages [pyC8]: New version: [1.0.0] Old Version: [0.9.6]
+[2023-04-09 12:08:14] INFO root fetch - processPackages [webtypy]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-09 12:08:14] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-04-09 12:08:15] INFO root fetch - processPackages [pyC8]: Downloading https://files.pythonhosted.org/packages/07/63/5fc3e24bcf9bac045ea7a1c2e8e10c7cfb564bc5f87c12857f5d64e326b9/pyC8-0.9.6.tar.gz
+[2023-04-09 12:08:15] INFO root fetch - processPackages [webtypy]: Downloading https://files.pythonhosted.org/packages/be/62/98ada5938e2bf8f03c573586ecb9d827e5eadb6f87e056870df60f8988ea/webtypy-0.1.4.tar.gz
+[2023-04-09 12:08:15] INFO root fetch - processPackages [dm-reverb-nightly]: Downloading https://files.pythonhosted.org/packages/b4/60/e92fdb2c772dd865b56f7c50bfc1c4bffe5431b4007700cd760900e7aaf2/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 12:08:15] INFO root fetch - processPackages [webtypy]: executing diffoscope
+[2023-04-09 12:08:15] INFO root fetch - processPackages [webtypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webtypy-0.1.3.tar.gz tmp/webtypy-0.1.4.tar.gz --markdown 20230409/w/webtypy/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 12:08:15] INFO root fetch - processPackages [pyC8]: Downloading https://files.pythonhosted.org/packages/a6/c4/a21b390e890887e5291e9ad3061a524901c104c149e97b78614cac07a83f/pyC8-1.0.0.tar.gz
+[2023-04-09 12:08:15] INFO root fetch - processPackages [pyC8]: executing diffoscope
+[2023-04-09 12:08:15] INFO root fetch - processPackages [pyC8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyC8-0.9.6.tar.gz tmp/pyC8-1.0.0.tar.gz --markdown 20230409/p/pyC8/0.9.6-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 12:08:16] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:08:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:08:18] INFO root fetch - processPackages [dm-reverb-nightly]: Downloading https://files.pythonhosted.org/packages/07/ba/e9ef4e61b606a17814023d4b0a99ebf04f48787449f89134eb770db70591/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 12:08:21] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-04-09 12:08:21] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-04-09 12:09:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:09:14] INFO root fetch - main [MainThread]: Store serial: [17635864]
