@@ -3015,3 +3015,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:13:55] INFO root fetch - processPackages [pybind11-geobuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybind11_geobuf-0.1.0.tar.gz tmp/pybind11_geobuf-0.1.1.tar.gz --markdown 20230409/p/pybind11-geobuf/0.1.0-0.1.1/diff.md --exclude *.pyd
 [2023-04-09 09:14:43] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:14:43] INFO root fetch - main [MainThread]: Store serial: [17634984]
+[2023-04-09 09:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634984]
+[2023-04-09 09:19:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-09 09:19:50] INFO root fetch - processPackages [daily-leet]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-09 09:19:50] INFO root fetch - processPackages [hugg]: New version: [0.0.81] Old Version: [0.0.80]
+[2023-04-09 09:19:50] INFO root fetch - processPackages [searchlogit]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-09 09:19:50] INFO root fetch - processPackages [daily-leet]: Downloading https://files.pythonhosted.org/packages/f1/c0/1b4ab5c7324ec9c80668999206c8a3d868337ed69e7694b6267648e4b855/daily_leet-0.2.5.tar.gz
+[2023-04-09 09:19:50] INFO root fetch - processPackages [searchlogit]: Downloading https://files.pythonhosted.org/packages/53/39/411d736500520df88732df372e4f142d60c169e4861169c442dd2f65d916/searchlogit-0.2.98.tar.gz
+[2023-04-09 09:19:50] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/16/fa/554450a28e2fcabefd6ee89fa4372f783bb721dae65036ad81c6b4411dab/hugg-0.0.81.tar.gz
+[2023-04-09 09:19:50] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 09:19:50] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.80.tar.gz tmp/hugg-0.0.81.tar.gz --markdown 20230409/h/hugg/0.0.80-0.0.81/diff.md --exclude *.pyd
+[2023-04-09 09:19:50] INFO root fetch - processPackages [searchlogit]: Downloading https://files.pythonhosted.org/packages/a5/53/b28f7ef402508baebb55a0e1a7c4c4d3dffb2a1f2296bc7dd54557cef767/searchlogit-0.2.99.tar.gz
+[2023-04-09 09:19:50] INFO root fetch - processPackages [daily-leet]: Downloading https://files.pythonhosted.org/packages/51/1e/ccdf388ee469753e1bba5c27a0477683d6812ed0858a8e54ad1268d2db84/daily_leet-0.2.6.tar.gz
+[2023-04-09 09:19:51] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-04-09 09:19:51] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.2.98.tar.gz tmp/searchlogit-0.2.99.tar.gz --markdown 20230409/s/searchlogit/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-09 09:19:51] INFO root fetch - processPackages [daily-leet]: executing diffoscope
+[2023-04-09 09:19:51] INFO root fetch - processPackages [daily-leet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daily_leet-0.2.5.tar.gz tmp/daily_leet-0.2.6.tar.gz --markdown 20230409/d/daily-leet/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-09 09:19:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:19:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:19:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:19:52] INFO root fetch - main [MainThread]: Store serial: [17634993]
