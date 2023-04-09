@@ -8093,3 +8093,32 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:33:48] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:33:49] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:33:49] INFO root fetch - main [MainThread]: Store serial: [17638746]
+[2023-04-09 20:38:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638746]
+[2023-04-09 20:38:56] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 20:38:56] WARNING root fetch - processPackages [katalytic-images]: Skipping, unable to determine old version
+[2023-04-09 20:38:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:38:56] WARNING root fetch - processPackages [django-muid]: Skipping, unable to determine old version
+[2023-04-09 20:38:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:38:56] WARNING root fetch - processPackages [require-package]: Skipping, unable to determine old version
+[2023-04-09 20:38:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:38:56] INFO root fetch - processPackages [pytestarch]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-09 20:38:56] WARNING root fetch - processPackages [awsslack]: Skipping, unable to determine old version
+[2023-04-09 20:38:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:38:56] INFO root fetch - processPackages [pmmutils]: New version: [0.5.0] Old Version: [0.4.3]
+[2023-04-09 20:38:56] WARNING root fetch - processPackages [cross-cal-resourcesat]: Skipping, unable to determine old version
+[2023-04-09 20:38:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:38:56] INFO root fetch - processPackages [mycroft-dinkum-listener]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2023-04-09 20:38:56] INFO root fetch - processPackages [pmmutils]: Downloading https://files.pythonhosted.org/packages/9b/2b/af861e80f53563143823c738bbc45614ebda936dc81583ff88d38f667338/pmmutils-0.4.3.tar.gz
+[2023-04-09 20:38:56] INFO root fetch - processPackages [pytestarch]: Downloading https://files.pythonhosted.org/packages/f2/46/1dd17d4dd862b5ba60a2ae803fe2310865e83774afe31ccbf5bfee969cc8/pytestarch-1.4.1.tar.gz
+[2023-04-09 20:38:57] INFO root fetch - processPackages [mycroft-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/c6/ff/7c6689e345d8b636347340b29c4dd44acbc4fe3bc6c6cebd274c37571669/mycroft_dinkum_listener-0.0.1a2-py3-none-any.whl
+[2023-04-09 20:38:57] INFO root fetch - processPackages [pytestarch]: executing diffoscope
+[2023-04-09 20:38:57] INFO root fetch - processPackages [pytestarch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytestarch-1.4.0.tar.gz tmp/pytestarch-1.4.1.tar.gz --markdown 20230409/p/pytestarch/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-09 20:38:57] INFO root fetch - processPackages [mycroft-dinkum-listener]: executing diffoscope
+[2023-04-09 20:38:57] INFO root fetch - processPackages [mycroft-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycroft_dinkum_listener-0.0.1a1-py3-none-any.whl.zip tmp/mycroft_dinkum_listener-0.0.1a2-py3-none-any.whl.zip --markdown 20230409/m/mycroft-dinkum-listener/0.0.1a1-0.0.1a2/diff.md --exclude *.pyd
+[2023-04-09 20:38:57] INFO root fetch - processPackages [pmmutils]: Downloading https://files.pythonhosted.org/packages/e9/8c/56a4b0995ffe5246154c8312db051388bf2b20b185f3e3d78e109db456e6/pmmutils-0.5.0.tar.gz
+[2023-04-09 20:38:57] INFO root fetch - processPackages [pmmutils]: executing diffoscope
+[2023-04-09 20:38:57] INFO root fetch - processPackages [pmmutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmmutils-0.4.3.tar.gz tmp/pmmutils-0.5.0.tar.gz --markdown 20230409/p/pmmutils/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2023-04-09 20:38:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:38:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:38:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:38:58] INFO root fetch - main [MainThread]: Store serial: [17638782]
