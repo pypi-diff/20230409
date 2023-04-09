@@ -8679,3 +8679,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:15:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:15:34] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:15:34] INFO root fetch - main [MainThread]: Store serial: [17638970]
+[2023-04-09 21:20:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638970]
+[2023-04-09 21:20:42] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 21:20:42] WARNING root fetch - processPackages [ENSF-338-Final-Project]: Skipping, unable to determine old version
+[2023-04-09 21:20:42] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:20:42] INFO root fetch - processPackages [bigdict]: New version: [22.5.29] Old Version: [21.4.11]
+[2023-04-09 21:20:42] WARNING root fetch - processPackages [kmeans-image-clustering]: Skipping, unable to determine old version
+[2023-04-09 21:20:42] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:20:42] INFO root fetch - processPackages [exbetapi]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-04-09 21:20:42] INFO root fetch - processPackages [polymesh]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 21:20:42] INFO root fetch - processPackages [now-lms]: New version: [0.0.1a220230409] Old Version: [0.0.1a220230326]
+[2023-04-09 21:20:42] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-09 21:20:42] INFO root fetch - processPackages [polymesh]: executing diffoscope
+[2023-04-09 21:20:42] INFO root fetch - processPackages [polymesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymesh-0.0.8.tar.gz tmp/polymesh-0.0.9.tar.gz --markdown 20230409/p/polymesh/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 21:20:42] INFO root fetch - processPackages [exbetapi]: Downloading https://files.pythonhosted.org/packages/30/44/2158a7af0c8c8d96b8660f2b06fecf390c85804eec958eeccc35e07879af/exbetapi-2.4.0.tar.gz
+[2023-04-09 21:20:42] INFO root fetch - processPackages [now-lms]: Downloading https://files.pythonhosted.org/packages/57/43/b415635e0c21a802c2cec1626c122d9f28dced869417b8b4fa397998bf71/now_lms-0.0.1a220230326.tar.gz
+[2023-04-09 21:20:42] INFO root fetch - processPackages [aind-data-schema]: Downloading https://files.pythonhosted.org/packages/f0/3d/4b855ccf3f1b8204c6d84b119d9c98b856c1659bfafe8aa893009a0e4d63/aind-data-schema-0.9.5.tar.gz
+[2023-04-09 21:20:43] INFO root fetch - processPackages [bigdict]: executing diffoscope
+[2023-04-09 21:20:43] INFO root fetch - processPackages [bigdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdict-21.4.11.tar.gz tmp/bigdict-22.5.29.tar.gz --markdown 20230409/b/bigdict/21.4.11-22.5.29/diff.md --exclude *.pyd
+[2023-04-09 21:20:43] INFO root fetch - processPackages [exbetapi]: Downloading https://files.pythonhosted.org/packages/b0/a5/52c57b48b721857734fde6030d3c8ae2896a8e304fbe3c0fb137e5292cf5/exbetapi-2.4.1.tar.gz
+[2023-04-09 21:20:43] INFO root fetch - processPackages [aind-data-schema]: Downloading https://files.pythonhosted.org/packages/42/51/6b230e8ca198de797130787e0cd5036fc8d11696d1c43a8c8c07152176e8/aind-data-schema-0.9.6.tar.gz
+[2023-04-09 21:20:43] INFO root fetch - processPackages [exbetapi]: executing diffoscope
+[2023-04-09 21:20:43] INFO root fetch - processPackages [exbetapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exbetapi-2.4.0.tar.gz tmp/exbetapi-2.4.1.tar.gz --markdown 20230409/e/exbetapi/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-04-09 21:20:43] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-04-09 21:20:43] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230409/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-09 21:20:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pibooth-stillimage-camera]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pibooth-stillimage-camera]: Downloading https://files.pythonhosted.org/packages/3d/30/3f6cbde54e609b69a25074fbac52afbbf13f84aab52aa7f30814be688bdd/pibooth-stillimage-camera-0.1.2.tar.gz
+[2023-04-09 21:20:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:20:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:20:44] INFO root fetch - processPackages [smartapp-sdk]: New version: [0.6.0] Old Version: [0.5.4]
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pymchelper]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pibooth-stillimage-camera]: Downloading https://files.pythonhosted.org/packages/2e/73/88fee4ce94094b34bed6a9ab9286a457b0304fca8d9f51ede8b06ab7652e/pibooth-stillimage-camera-0.1.3.tar.gz
+[2023-04-09 21:20:44] INFO root fetch - processPackages [smartapp-sdk]: Downloading https://files.pythonhosted.org/packages/d6/16/5192ea82672e248f54ee3f926bc0e158c02b5eb512703dda5970bd4649bd/smartapp_sdk-0.5.4.tar.gz
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pymchelper]: Downloading https://files.pythonhosted.org/packages/68/84/1337a715c3b826c2999060be7b960027bb59b4a0545fffbd3979505faf1e/pymchelper-2.4.0.tar.gz
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pibooth-stillimage-camera]: executing diffoscope
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pibooth-stillimage-camera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibooth-stillimage-camera-0.1.2.tar.gz tmp/pibooth-stillimage-camera-0.1.3.tar.gz --markdown 20230409/p/pibooth-stillimage-camera/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pymchelper]: Downloading https://files.pythonhosted.org/packages/62/c5/fac614bb5d398ea9b15889f46d76d41cad067f276ac91bd30cea24eb8d79/pymchelper-2.4.1.tar.gz
+[2023-04-09 21:20:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:20:44] INFO root fetch - processPackages [now-lms]: Downloading https://files.pythonhosted.org/packages/27/42/95b363363a287ce65ce00ac6d0e9209721e8b33c49925274280e4f1f5d5f/now_lms-0.0.1a220230409.tar.gz
+[2023-04-09 21:20:44] INFO root fetch - processPackages [smartapp-sdk]: Downloading https://files.pythonhosted.org/packages/93/0e/7d61231ee0485ded2cb69875ea305bc38272989158de140fe6674ca510b3/smartapp_sdk-0.6.0.tar.gz
+[2023-04-09 21:20:44] INFO root fetch - processPackages [smartapp-sdk]: executing diffoscope
+[2023-04-09 21:20:44] INFO root fetch - processPackages [smartapp-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartapp_sdk-0.5.4.tar.gz tmp/smartapp_sdk-0.6.0.tar.gz --markdown 20230409/s/smartapp-sdk/0.5.4-0.6.0/diff.md --exclude *.pyd
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pymchelper]: executing diffoscope
+[2023-04-09 21:20:44] INFO root fetch - processPackages [pymchelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymchelper-2.4.0.tar.gz tmp/pymchelper-2.4.1.tar.gz --markdown 20230409/p/pymchelper/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-04-09 21:20:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:20:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:20:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:20:47] INFO root fetch - processPackages [now-lms]: executing diffoscope
+[2023-04-09 21:20:47] INFO root fetch - processPackages [now-lms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/now_lms-0.0.1a220230326.tar.gz tmp/now_lms-0.0.1a220230409.tar.gz --markdown 20230409/n/now-lms/0.0.1a220230326-0.0.1a220230409/diff.md --exclude *.pyd
+[2023-04-09 21:21:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:21:48] INFO root fetch - main [MainThread]: Store serial: [17639007]
