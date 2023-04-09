@@ -2853,3 +2853,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:47:48] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:47:50] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:47:50] INFO root fetch - main [MainThread]: Store serial: [17634865]
+[2023-04-09 08:52:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634865]
+[2023-04-09 08:52:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 08:52:58] INFO root fetch - processPackages [mystring]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 08:52:58] INFO root fetch - processPackages [jarvis-ironman]: New version: [7.2.2] Old Version: [7.2.0]
+[2023-04-09 08:52:58] INFO root fetch - processPackages [flusso]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-09 08:52:58] INFO root fetch - processPackages [bingai]: New version: [1.0.0] Old Version: [0.0.7]
+[2023-04-09 08:52:58] INFO root fetch - processPackages [backend-sqlalchemy]: New version: [0.1.4.dev1681023002] Old Version: [0.1.4]
+[2023-04-09 08:52:58] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2023-04-09 08:52:58] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.0.8.tar.gz tmp/mystring-0.0.9.tar.gz --markdown 20230409/m/mystring/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 08:52:58] INFO root fetch - processPackages [backend-sqlalchemy]: Downloading https://files.pythonhosted.org/packages/ca/83/98f730cde963af1f7e02ffbe73773dbc53975d89d1f80b63ddb93472211a/backend_sqlalchemy-0.1.4.tar.gz
+[2023-04-09 08:52:58] INFO root fetch - processPackages [flusso]: Downloading https://files.pythonhosted.org/packages/26/b9/179f8b22975f1a7afb73d491710f56abd2751b118f695ad57d7af378742b/flusso-0.0.1.tar.gz
+[2023-04-09 08:52:58] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/54/ca/1b54e967a964b7f308ea0877ff0bb3da54c4566948ba2ddb64463659e71a/bingai-1.0.0.tar.gz
+[2023-04-09 08:52:58] INFO root fetch - processPackages [jarvis-ironman]: Downloading https://files.pythonhosted.org/packages/de/44/89319e5828850750a80d674ee200e954fb3795f2bbfdcc12e76782a77b6b/jarvis_ironman-7.2.0-py3-none-any.whl
+[2023-04-09 08:52:58] INFO root fetch - processPackages [backend-sqlalchemy]: executing diffoscope
+[2023-04-09 08:52:58] INFO root fetch - processPackages [backend-sqlalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backend_sqlalchemy-0.1.4.tar.gz tmp/backend_sqlalchemy-0.1.4.dev1681023002.tar.gz --markdown 20230409/b/backend-sqlalchemy/0.1.4-0.1.4.dev1681023002/diff.md --exclude *.pyd
+[2023-04-09 08:52:58] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 08:52:58] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-0.0.7.tar.gz tmp/bingai-1.0.0.tar.gz --markdown 20230409/b/bingai/0.0.7-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 08:52:58] INFO root fetch - processPackages [flusso]: Downloading https://files.pythonhosted.org/packages/80/ff/6922b53a286d8cd8ca4629b2b0a399a3fe78d2885d2c803271c5f38b6350/flusso-0.1.0.tar.gz
+[2023-04-09 08:52:58] INFO root fetch - processPackages [flusso]: executing diffoscope
+[2023-04-09 08:52:58] INFO root fetch - processPackages [flusso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flusso-0.0.1.tar.gz tmp/flusso-0.1.0.tar.gz --markdown 20230409/f/flusso/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-09 08:52:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:52:59] INFO root fetch - processPackages [ga-vqc]: New version: [0.0.50] Old Version: [0.0.49]
+[2023-04-09 08:52:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:52:59] WARNING root fetch - processPackages [explai]: Skipping, unable to determine old version
+[2023-04-09 08:52:59] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:52:59] INFO root fetch - processPackages [jarvis-ironman]: Downloading https://files.pythonhosted.org/packages/3f/3e/1c726c5fc04216cb5cee30520acffc517170c5f118384bb31d539e4eb7bb/jarvis_ironman-7.2.2-py3-none-any.whl
+[2023-04-09 08:52:59] WARNING root fetch - processPackages [explai]: Skipping, unable to determine old version
+[2023-04-09 08:52:59] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:52:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:52:59] INFO root fetch - processPackages [jarvis-ironman]: executing diffoscope
+[2023-04-09 08:52:59] INFO root fetch - processPackages [jarvis-ironman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_ironman-7.2.0-py3-none-any.whl.zip tmp/jarvis_ironman-7.2.2-py3-none-any.whl.zip --markdown 20230409/j/jarvis-ironman/7.2.0-7.2.2/diff.md --exclude *.pyd
+[2023-04-09 08:52:59] INFO root fetch - processPackages [ga-vqc]: Downloading https://files.pythonhosted.org/packages/05/bb/cc4b77ecca558490c5ca8193439d3223c2e8fb166c2392be68f9a56fba68/ga_vqc-0.0.50.tar.gz
+[2023-04-09 08:52:59] INFO root fetch - processPackages [ga-vqc]: executing diffoscope
+[2023-04-09 08:52:59] INFO root fetch - processPackages [ga-vqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ga_vqc-0.0.49.tar.gz tmp/ga_vqc-0.0.50.tar.gz --markdown 20230409/g/ga-vqc/0.0.49-0.0.50/diff.md --exclude *.pyd
+[2023-04-09 08:52:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:53:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:53:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:53:02] INFO root fetch - main [MainThread]: Store serial: [17634887]
