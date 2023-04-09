@@ -7426,3 +7426,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:10:20] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:10:21] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:10:21] INFO root fetch - main [MainThread]: Store serial: [17638271]
+[2023-04-09 19:15:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638271]
+[2023-04-09 19:15:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 19:15:29] INFO root fetch - processPackages [netexp]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 19:15:29] INFO root fetch - processPackages [synth-mapping-helper]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-09 19:15:29] WARNING root fetch - processPackages [MailMagician]: Skipping, unable to determine old version
+[2023-04-09 19:15:29] INFO root fetch - processPackages [mss]: New version: [8.0.0] Old Version: [7.0.1]
+[2023-04-09 19:15:29] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:15:29] INFO root fetch - processPackages [pythautomata]: New version: [0.9.1] Old Version: [0.8.1]
+[2023-04-09 19:15:29] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.8] Old Version: [3.0.7]
+[2023-04-09 19:15:29] INFO root fetch - processPackages [mss]: Downloading https://files.pythonhosted.org/packages/59/9a/121195642a219bbce975330dfa6236dc0d6bb1ef12fc01967eb7eb0e7d6a/mss-7.0.1.tar.gz
+[2023-04-09 19:15:29] INFO root fetch - processPackages [synth-mapping-helper]: Downloading https://files.pythonhosted.org/packages/07/6b/8ce8bc7bea71ffb256935c6e086d65fd37068257e48740cba8973948acce/synth_mapping_helper-1.0.2.tar.gz
+[2023-04-09 19:15:29] INFO root fetch - processPackages [pythautomata]: Downloading https://files.pythonhosted.org/packages/c6/f7/a62dc44221a1f44263554a2a53b660be2c3ea2ff3793bb13e92bd64a6006/pythautomata-0.8.1.tar.gz
+[2023-04-09 19:15:29] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/68/95/241053c268809138a49becb7d854b50c909fb43dd9e31e0b1c43a5df7efb/hiddifypanel-3.0.8-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 19:15:29] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 19:15:29] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.7-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.8-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.7-3.0.8/diff.md --exclude *.pyd
+[2023-04-09 19:15:30] INFO root fetch - processPackages [netexp]: executing diffoscope
+[2023-04-09 19:15:30] INFO root fetch - processPackages [netexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netexp-0.1.8.tar.gz tmp/netexp-0.1.9.tar.gz --markdown 20230409/n/netexp/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 19:15:30] INFO root fetch - processPackages [synth-mapping-helper]: Downloading https://files.pythonhosted.org/packages/39/df/8cffdb24ed1ee35fe5166d75579b0546d655fd2832b0af3f44d655faf45a/synth_mapping_helper-1.1.0.tar.gz
+[2023-04-09 19:15:30] INFO root fetch - processPackages [pythautomata]: Downloading https://files.pythonhosted.org/packages/0a/d9/88edc8f10b5c98402d3c49ad82fc0ef9210c3212a0a0a597dd8eb5588e57/pythautomata-0.9.1.tar.gz
+[2023-04-09 19:15:30] INFO root fetch - processPackages [synth-mapping-helper]: executing diffoscope
+[2023-04-09 19:15:30] INFO root fetch - processPackages [synth-mapping-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synth_mapping_helper-1.0.2.tar.gz tmp/synth_mapping_helper-1.1.0.tar.gz --markdown 20230409/s/synth-mapping-helper/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-09 19:15:30] INFO root fetch - processPackages [mss]: Downloading https://files.pythonhosted.org/packages/b1/09/18677dbc0b793a4d09e9057204b9dc6e791e41c16af7addb4f2f9a287e4e/mss-8.0.0.tar.gz
+[2023-04-09 19:15:30] INFO root fetch - processPackages [mss]: executing diffoscope
+[2023-04-09 19:15:30] INFO root fetch - processPackages [mss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mss-7.0.1.tar.gz tmp/mss-8.0.0.tar.gz --markdown 20230409/m/mss/7.0.1-8.0.0/diff.md --exclude *.pyd
+[2023-04-09 19:15:30] INFO root fetch - processPackages [pythautomata]: executing diffoscope
+[2023-04-09 19:15:30] INFO root fetch - processPackages [pythautomata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythautomata-0.8.1.tar.gz tmp/pythautomata-0.9.1.tar.gz --markdown 20230409/p/pythautomata/0.8.1-0.9.1/diff.md --exclude *.pyd
+[2023-04-09 19:15:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:31] INFO root fetch - processPackages [popgym]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-09 19:15:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:31] INFO root fetch - processPackages [spinecore]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-04-09 19:15:31] INFO root fetch - processPackages [popgym]: Downloading https://files.pythonhosted.org/packages/08/6d/4a17a3e41a3e01991dc9a96376465032f119c50331cc765ae19f9c9b5e5c/popgym-1.0.1.tar.gz
+[2023-04-09 19:15:31] INFO root fetch - processPackages [spinecore]: Downloading https://files.pythonhosted.org/packages/8f/e2/351d4b46283254c5c3b1ff844320578f45a1ddf03657ae5ca264f15f2900/spinecore-0.0.19.tar.gz
+[2023-04-09 19:15:31] INFO root fetch - processPackages [spinecore]: executing diffoscope
+[2023-04-09 19:15:31] INFO root fetch - processPackages [spinecore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spinecore-0.0.18.tar.gz tmp/spinecore-0.0.19.tar.gz --markdown 20230409/s/spinecore/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-04-09 19:15:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:31] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 19:15:31] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 19:15:31] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 19:15:31] INFO root fetch - processPackages [popgym]: Downloading https://files.pythonhosted.org/packages/0a/aa/3ab70bc8c6af7ee175f043e85bc37bcd28db1f5e6f0e0d2d65c5bfe5d54b/popgym-1.0.2.tar.gz
+[2023-04-09 19:15:31] INFO root fetch - processPackages [popgym]: executing diffoscope
+[2023-04-09 19:15:31] INFO root fetch - processPackages [popgym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popgym-1.0.1.tar.gz tmp/popgym-1.0.2.tar.gz --markdown 20230409/p/popgym/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 19:15:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:15:39] INFO root fetch - main [MainThread]: Store serial: [17638306]
