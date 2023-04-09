@@ -5170,3 +5170,32 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 14:27:13] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:27:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:27:17] INFO root fetch - main [MainThread]: Store serial: [17636573]
+[2023-04-09 14:32:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636573]
+[2023-04-09 14:32:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 14:32:25] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 14:32:25] INFO root fetch - processPackages [DRKApp]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-09 14:32:25] INFO root fetch - processPackages [syft]: New version: [0.8.0b6] Old Version: [0.8.0b5]
+[2023-04-09 14:32:25] INFO root fetch - processPackages [pybuc]: New version: [0.9.10] Old Version: [0.8.10]
+[2023-04-09 14:32:25] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 14:32:25] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-04-09 14:32:25] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.8.tar.gz tmp/hkkang_utils-0.1.9.tar.gz --markdown 20230409/h/hkkang-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 14:32:25] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-04-09 14:32:25] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.8.tar.gz tmp/hkkang_utils-0.1.9.tar.gz --markdown 20230409/h/hkkang-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 14:32:25] INFO root fetch - processPackages [DRKApp]: Downloading https://files.pythonhosted.org/packages/ce/ab/01379396cfb5718f732cb286ed9bf8c4d23eb8c7db44e21c00a25c4de83e/DRKApp-0.2.6.tar.gz
+[2023-04-09 14:32:25] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/73/79/e7edee536a970ea81c1b824567ad5384f0e79b0b81a813e2b3b783e3792c/syft-0.8.0b5.tar.gz
+[2023-04-09 14:32:25] INFO root fetch - processPackages [pybuc]: Downloading https://files.pythonhosted.org/packages/ff/a6/647d6e38a6519bf2966722e1789589d0e50eea7a6376967ab7afbc093f70/pybuc-0.8.10.tar.gz
+[2023-04-09 14:32:25] INFO root fetch - processPackages [DRKApp]: Downloading https://files.pythonhosted.org/packages/96/a0/49ef05b4bd3ed38186ee893e1bfafd6c3115594ac379c879f6bed8167b00/DRKApp-0.2.7.tar.gz
+[2023-04-09 14:32:26] INFO root fetch - processPackages [DRKApp]: executing diffoscope
+[2023-04-09 14:32:26] INFO root fetch - processPackages [DRKApp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DRKApp-0.2.6.tar.gz tmp/DRKApp-0.2.7.tar.gz --markdown 20230409/D/DRKApp/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-09 14:32:26] INFO root fetch - processPackages [pybuc]: Downloading https://files.pythonhosted.org/packages/36/ff/435775953f489894dbc63700890c9984ecc56774ee84cef35a35acadf8b2/pybuc-0.9.10.tar.gz
+[2023-04-09 14:32:26] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/fb/89/68ec46a102495c272ccf270aded1e547bf653ef16eb7f6119b1b2ca813c6/syft-0.8.0b6.tar.gz
+[2023-04-09 14:32:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:32:26] INFO root fetch - processPackages [syft]: executing diffoscope
+[2023-04-09 14:32:26] INFO root fetch - processPackages [syft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syft-0.8.0b5.tar.gz tmp/syft-0.8.0b6.tar.gz --markdown 20230409/s/syft/0.8.0b5-0.8.0b6/diff.md --exclude *.pyd
+[2023-04-09 14:32:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:32:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:32:27] INFO root fetch - processPackages [pybuc]: executing diffoscope
+[2023-04-09 14:32:27] INFO root fetch - processPackages [pybuc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybuc-0.8.10.tar.gz tmp/pybuc-0.9.10.tar.gz --markdown 20230409/p/pybuc/0.8.10-0.9.10/diff.md --exclude *.pyd
+[2023-04-09 14:32:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:32:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:32:28] INFO root fetch - main [MainThread]: Store serial: [17636593]
