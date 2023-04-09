@@ -3322,3 +3322,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:01:53] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:01:53] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:01:53] INFO root fetch - main [MainThread]: Store serial: [17635210]
+[2023-04-09 10:06:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635210]
+[2023-04-09 10:07:01] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-09 10:07:01] INFO root fetch - processPackages [Goosu]: New version: [0.3] Old Version: [0.2]
+[2023-04-09 10:07:01] INFO root fetch - processPackages [citros]: New version: [23.14.2] Old Version: [23.14.1]
+[2023-04-09 10:07:01] WARNING root fetch - processPackages [test-yolo]: Skipping, unable to determine old version
+[2023-04-09 10:07:01] INFO root fetch - processPackages [pycirclize]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-09 10:07:01] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230409] Old Version: [0.3.1.dev20230408]
+[2023-04-09 10:07:01] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:07:01] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230409] Old Version: [2.13.0.dev20230408]
+[2023-04-09 10:07:01] INFO root fetch - processPackages [Goosu]: Downloading https://files.pythonhosted.org/packages/87/df/f7afdd699ff9251b4af373f4ef72beeafe2049335727fa50f94ace18616c/Goosu-0.2.tar.gz
+[2023-04-09 10:07:01] INFO root fetch - processPackages [citros]: Downloading https://files.pythonhosted.org/packages/0a/f6/c39042eb66cddb18ba7b0a359ca98e6a20e604b658fc2c83e063e467e7a2/citros-23.14.1.tar.gz
+[2023-04-09 10:07:01] INFO root fetch - processPackages [pycirclize]: Downloading https://files.pythonhosted.org/packages/4e/f9/6b274f95db3f988865a916054962d491ca173f09bbe9762d2bd20bda59c2/pycirclize-0.3.0.tar.gz
+[2023-04-09 10:07:01] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/e1/a6/7f0cf744f2f3ae57e1c8baa0134ead0ea2db45984596108e4def38a49761/pyglove-0.3.1.dev20230409.tar.gz
+[2023-04-09 10:07:01] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/71/20/1e66e61372e566c5143550be421c148d0b26d7d3aa12bf11c1c4f8da0c52/tf_nightly_cpu-2.13.0.dev20230409-cp39-cp39-win_amd64.whl
+[2023-04-09 10:07:01] INFO root fetch - processPackages [Goosu]: Downloading https://files.pythonhosted.org/packages/e4/d5/a9113e56336997e04a2b7c1fe218f269241dc19b483433b34d7a1dae2e73/Goosu-0.3.tar.gz
+[2023-04-09 10:07:01] INFO root fetch - processPackages [citros]: Downloading https://files.pythonhosted.org/packages/52/8a/fd2c5e7d969b7d8ee7b741d91ba967db003b7e36409cf61b0ff658fd2f43/citros-23.14.2.tar.gz
+[2023-04-09 10:07:01] INFO root fetch - processPackages [pycirclize]: Downloading https://files.pythonhosted.org/packages/b9/ff/24d38b248a84c7b89ca26cd5d5a96795a099ca91f5e63c256b2fd52d2b65/pycirclize-0.3.1.tar.gz
+[2023-04-09 10:07:01] INFO root fetch - processPackages [Goosu]: executing diffoscope
+[2023-04-09 10:07:01] INFO root fetch - processPackages [Goosu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Goosu-0.2.tar.gz tmp/Goosu-0.3.tar.gz --markdown 20230409/G/Goosu/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-09 10:07:02] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-09 10:07:02] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230408-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230409-cp39-cp39-win_amd64.whl.zip --markdown 20230409/t/tf-nightly-cpu/2.13.0.dev20230408-2.13.0.dev20230409/diff.md --exclude *.pyd
+[2023-04-09 10:07:02] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 10:07:02] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.1.tar.gz tmp/citros-23.14.2.tar.gz --markdown 20230409/c/citros/23.14.1-23.14.2/diff.md --exclude *.pyd
+[2023-04-09 10:07:02] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-09 10:07:02] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230408.tar.gz tmp/pyglove-0.3.1.dev20230409.tar.gz --markdown 20230409/p/pyglove/0.3.1.dev20230408-0.3.1.dev20230409/diff.md --exclude *.pyd
+[2023-04-09 10:07:02] INFO root fetch - processPackages [pycirclize]: executing diffoscope
+[2023-04-09 10:07:02] INFO root fetch - processPackages [pycirclize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycirclize-0.3.0.tar.gz tmp/pycirclize-0.3.1.tar.gz --markdown 20230409/p/pycirclize/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-09 10:07:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:02] INFO root fetch - processPackages [vandal]: New version: [4.0.7] Old Version: [4.0.6]
+[2023-04-09 10:07:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:03] WARNING root fetch - processPackages [mini-set]: Skipping, unable to determine old version
+[2023-04-09 10:07:03] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:07:03] INFO root fetch - processPackages [EmailNotice]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 10:07:03] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/b6/18/63a08ee0f855febd4bac46d46a01d6525f2a4bd588646a67ba7bc0c7a928/vandal-4.0.7.tar.gz
+[2023-04-09 10:07:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:03] INFO root fetch - processPackages [Goosu]: New version: [0.3] Old Version: [0.2]
+[2023-04-09 10:07:03] INFO root fetch - processPackages [EmailNotice]: Downloading https://files.pythonhosted.org/packages/d4/a4/1250db1e36e7713b8369e6eddefc67cbc77fef90330ea4f453f5ee353fed/EmailNotice-1.0.0-py3-none-any.whl
+[2023-04-09 10:07:03] INFO root fetch - processPackages [Goosu]: executing diffoscope
+[2023-04-09 10:07:03] INFO root fetch - processPackages [Goosu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Goosu-0.2.tar.gz tmp/Goosu-0.3.tar.gz --markdown 20230409/G/Goosu/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-09 10:07:03] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 10:07:03] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.6.tar.gz tmp/vandal-4.0.7.tar.gz --markdown 20230409/v/vandal/4.0.6-4.0.7/diff.md --exclude *.pyd
+[2023-04-09 10:07:03] INFO root fetch - processPackages [EmailNotice]: Downloading https://files.pythonhosted.org/packages/fd/85/158b280c819fced421769f079be65d48df19c26de66c7cdf09f13d75c8b1/EmailNotice-1.0.1-py3-none-any.whl
+[2023-04-09 10:07:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:03] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-09 10:07:03] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-09 10:07:03] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-09 10:07:03] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:07:03] INFO root fetch - processPackages [EmailNotice]: executing diffoscope
+[2023-04-09 10:07:03] INFO root fetch - processPackages [EmailNotice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EmailNotice-1.0.0-py3-none-any.whl.zip tmp/EmailNotice-1.0.1-py3-none-any.whl.zip --markdown 20230409/E/EmailNotice/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 10:07:03] INFO root fetch - processPackages [diagralhomekit]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-09 10:07:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:04] INFO root fetch - processPackages [diagralhomekit]: Downloading https://files.pythonhosted.org/packages/da/c1/8cac925855ec7a7fcbade196d16ddaac417f3dd3b4012764b2bc228f9abb/diagralhomekit-0.9.4.tar.gz
+[2023-04-09 10:07:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:04] INFO root fetch - processPackages [diagralhomekit]: Downloading https://files.pythonhosted.org/packages/33/2a/c5309990fc6c10b6ee2e273707286138f0f6e4ee76f4c841538698812fcb/diagralhomekit-0.9.5.tar.gz
+[2023-04-09 10:07:04] INFO root fetch - processPackages [diagralhomekit]: executing diffoscope
+[2023-04-09 10:07:04] INFO root fetch - processPackages [diagralhomekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diagralhomekit-0.9.4.tar.gz tmp/diagralhomekit-0.9.5.tar.gz --markdown 20230409/d/diagralhomekit/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-09 10:07:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:07:05] INFO root fetch - main [MainThread]: Store serial: [17635259]
