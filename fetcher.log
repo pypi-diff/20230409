@@ -2466,3 +2466,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 07:45:20] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:45:21] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:45:21] INFO root fetch - main [MainThread]: Store serial: [17634579]
+[2023-04-09 07:50:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634579]
+[2023-04-09 07:50:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-04-09 07:50:31] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-09 07:50:31] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/45/a9/dbeb325ce53097ee2445013dd2adff988109dcc3e995b8a342c916e5dd33/nonebot_plugin_l4d2_server-0.4.5.tar.gz
+[2023-04-09 07:50:31] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: executing diffoscope
+[2023-04-09 07:50:31] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.4.4.tar.gz tmp/nonebot_plugin_l4d2_server-0.4.5.tar.gz --markdown 20230409/n/nonebot-plugin-l4d2-server/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-09 07:50:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:50:33] INFO root fetch - main [MainThread]: Store serial: [17634583]
