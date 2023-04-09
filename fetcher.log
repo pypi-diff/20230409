@@ -4530,3 +4530,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:19:32] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:19:37] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:19:37] INFO root fetch - main [MainThread]: Store serial: [17636134]
+[2023-04-09 13:24:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636134]
+[2023-04-09 13:24:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 13:24:44] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 13:24:44] ERROR root fetch - processPackages [ninjapie]: Unable to get metadata: No such project 'ninjapie'
+[2023-04-09 13:24:44] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:24:44] INFO root fetch - processPackages [statinf]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-09 13:24:44] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-09 13:24:44] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-09 13:24:44] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/c8/45/40aed3904c28ffc5c6a151584dc21c78c8b2ce1c8ba6f1cb75c90b3615e7/hkkang_utils-0.1.8.tar.gz
+[2023-04-09 13:24:44] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/f1/89/18bce920aa031fddf661a3be98c69f9e3d456710046650e8f270d26b09f1/torchserve_nightly-2023.4.7-py3-none-any.whl
+[2023-04-09 13:24:44] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/63/1a/7f813ad2ab78bf669432a2c2be094f99ccb691dbcf2cf9eccf6bac7d1831/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl
+[2023-04-09 13:24:44] INFO root fetch - processPackages [statinf]: Downloading https://files.pythonhosted.org/packages/df/b2/9f6d59a3a6f961c0addf445ca565638eb0854d6039781cb891175ffbe651/statinf-1.2.0.tar.gz
+[2023-04-09 13:24:44] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23695693>=10485760
+[2023-04-09 13:24:44] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:24:44] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-09 13:24:44] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-04-09 13:24:44] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.4.7-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl.zip --markdown 20230409/t/torch-model-archiver-nightly/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-09 13:24:44] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/f0/59/97d4cb14d60df518a25048e27ce7e4417bbb76c61c28dd718b8de3fd9c6f/hkkang_utils-0.1.9.tar.gz
+[2023-04-09 13:24:44] INFO root fetch - processPackages [statinf]: Downloading https://files.pythonhosted.org/packages/a4/ac/42a04d3ad23b150e3e26bb14f46e2fb1e0c58802197ffe864b7f4d89a722/statinf-1.2.1.tar.gz
+[2023-04-09 13:24:45] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/8e/0d/89b559816b3c3923e175e6a2e1d694ea0d85771fd8dcf4338063a8f98f35/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl
+[2023-04-09 13:24:45] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-04-09 13:24:45] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.8.tar.gz tmp/hkkang_utils-0.1.9.tar.gz --markdown 20230409/h/hkkang-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 13:24:45] INFO root fetch - processPackages [statinf]: executing diffoscope
+[2023-04-09 13:24:45] INFO root fetch - processPackages [statinf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statinf-1.2.0.tar.gz tmp/statinf-1.2.1.tar.gz --markdown 20230409/s/statinf/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-09 13:24:45] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-04-09 13:24:45] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.4.7-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl.zip --markdown 20230409/t/torch-workflow-archiver-nightly/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-09 13:24:45] INFO root fetch - processPackages [port-forward-manager]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-09 13:24:45] INFO root fetch - processPackages [port-forward-manager]: Downloading https://files.pythonhosted.org/packages/0f/36/7c55aa3bff7ff543595504d3669341d91c29c87da9e3ed22ffdc22d1bbd5/port_forward_manager-3.0.8.tar.gz
+[2023-04-09 13:24:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:24:45] INFO root fetch - processPackages [aioautomower]: New version: [2023.4.5] Old Version: [2023.4.4]
+[2023-04-09 13:24:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:24:46] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/84/72/ca9b5ebcd0aad0bc6200cb7aa2267f9ae882fa3bf86dbfcecfef2ed3450a/aioautomower-2023.4.4.tar.gz
+[2023-04-09 13:24:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:24:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:24:46] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/a7/d2/88f4dfe1507a2d971440d157694ca76ceaefeb0c198d5f19508f5e7da4bf/aioautomower-2023.4.5.tar.gz
+[2023-04-09 13:24:46] INFO root fetch - processPackages [port-forward-manager]: Downloading https://files.pythonhosted.org/packages/44/a7/3e360cb046f97ac108b6a9f9e1b367e5e16207cc8a1cfcfbf4dfee9a66e6/port_forward_manager-3.0.9.tar.gz
+[2023-04-09 13:24:46] INFO root fetch - processPackages [aioautomower]: executing diffoscope
+[2023-04-09 13:24:46] INFO root fetch - processPackages [aioautomower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioautomower-2023.4.4.tar.gz tmp/aioautomower-2023.4.5.tar.gz --markdown 20230409/a/aioautomower/2023.4.4-2023.4.5/diff.md --exclude *.pyd
+[2023-04-09 13:24:46] INFO root fetch - processPackages [port-forward-manager]: executing diffoscope
+[2023-04-09 13:24:46] INFO root fetch - processPackages [port-forward-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/port_forward_manager-3.0.8.tar.gz tmp/port_forward_manager-3.0.9.tar.gz --markdown 20230409/p/port-forward-manager/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-09 13:24:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:24:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:24:47] INFO root fetch - main [MainThread]: Store serial: [17636159]
