@@ -4196,3 +4196,17 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 12:08:21] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
 [2023-04-09 12:09:14] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:09:14] INFO root fetch - main [MainThread]: Store serial: [17635864]
+[2023-04-09 12:14:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635864]
+[2023-04-09 12:14:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-09 12:14:23] INFO root fetch - processPackages [Rickrack]: New version: [2.7.26] Old Version: [2.7.25]
+[2023-04-09 12:14:23] INFO root fetch - processPackages [kcli]: New version: [99.0.202304091017] Old Version: [99.0.202304082039]
+[2023-04-09 12:14:23] INFO root fetch - processPackages [Rickrack]: Downloading https://files.pythonhosted.org/packages/40/1e/6ca7d638a65dac7f023f65eb994cbc6f7dd0fae821b11b63d6452524ffa9/Rickrack-2.7.25.tar.gz
+[2023-04-09 12:14:23] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/82/96/bfd1c2d543aaeb1dec345ac4e1e8bc19a800e0341e3d292a1bc1e8fc57f1/kcli-99.0.202304091017-py3-none-any.whl
+[2023-04-09 12:14:24] INFO root fetch - processPackages [Rickrack]: Downloading https://files.pythonhosted.org/packages/a8/6b/78874d4368d79f557b1a33185c655ca1f70e299ae2042b14e90a4b60b897/Rickrack-2.7.26.tar.gz
+[2023-04-09 12:14:24] INFO root fetch - processPackages [Rickrack]: executing diffoscope
+[2023-04-09 12:14:24] INFO root fetch - processPackages [Rickrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Rickrack-2.7.25.tar.gz tmp/Rickrack-2.7.26.tar.gz --markdown 20230409/R/Rickrack/2.7.25-2.7.26/diff.md --exclude *.pyd
+[2023-04-09 12:14:24] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-09 12:14:24] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304082039-py3-none-any.whl.zip tmp/kcli-99.0.202304091017-py3-none-any.whl.zip --markdown 20230409/k/kcli/99.0.202304082039-99.0.202304091017/diff.md --exclude *.pyd
+[2023-04-09 12:14:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:14:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:14:32] INFO root fetch - main [MainThread]: Store serial: [17635872]
