@@ -3123,3 +3123,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:35:36] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.4.27-cp311-cp311-win_amd64.whl.zip tmp/quarkstudio-6.5.0rc2-cp310-cp310-macosx_10_9_universal2.whl.zip --markdown 20230409/q/quarkstudio/6.4.27-6.5.0rc2/diff.md --exclude *.pyd
 [2023-04-09 09:35:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:35:39] INFO root fetch - main [MainThread]: Store serial: [17635066]
+[2023-04-09 09:40:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635066]
+[2023-04-09 09:40:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 09:40:50] INFO root fetch - processPackages [hds-stats]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-09 09:40:50] INFO root fetch - processPackages [quarkstudio]: New version: [6.5.0rc2] Old Version: [6.4.27]
+[2023-04-09 09:40:50] INFO root fetch - processPackages [tf-nightly-macos]: New version: [2.13.0.dev20230408] Old Version: [2.13.0.dev20230406]
+[2023-04-09 09:40:50] INFO root fetch - processPackages [searchlogit]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-09 09:40:50] INFO root fetch - processPackages [vandal]: New version: [4.0.4] Old Version: [4.0.3]
+[2023-04-09 09:40:50] INFO root fetch - processPackages [tf-nightly-macos]: Downloading https://files.pythonhosted.org/packages/e5/34/41eb87b96e16e4892bab7d9c2add6bd0323a25353592ffb4938562728922/tf_nightly_macos-2.13.0.dev20230406-cp39-cp39-macosx_12_0_arm64.whl
+[2023-04-09 09:40:50] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/96/77/efc8f5768abba7f29d6765747e06e98bfe862f035a6913028a74ed6d0e43/vandal-4.0.3.tar.gz
+[2023-04-09 09:40:50] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/ff/b7/2d4c6d96ab0046bfc32d7b7470eac0e92c8b7c7e97fd86beec24f21e5ed3/hds-stats-0.1.0.tar.gz
+[2023-04-09 09:40:50] INFO root fetch - processPackages [searchlogit]: Downloading https://files.pythonhosted.org/packages/13/24/bd23fb928d17998821e56efbbbaac03ccf3d449a3e8dda872e12c83b48bc/searchlogit-0.3.4.tar.gz
+[2023-04-09 09:40:50] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-09 09:40:50] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds_stats-0.0.4-py3-none-any.whl.zip tmp/hds-stats-0.1.0.tar.gz --markdown 20230409/h/hds-stats/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-09 09:40:50] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-04-09 09:40:50] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.3.3.tar.gz tmp/searchlogit-0.3.4.tar.gz --markdown 20230409/s/searchlogit/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-09 09:40:50] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/a0/d9/59ab34d75771c485b3669eaa5bde3d02d6cc7971663077956f2d1386e870/quarkstudio-6.5.0rc2-cp311-cp311-macosx_10_9_universal2.whl
+[2023-04-09 09:40:50] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/3d/0e/98f06c3031b7cd530aae1fefb5a0a2cc93b50044bc6e7591c105031fea5c/vandal-4.0.4.tar.gz
+[2023-04-09 09:40:50] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 09:40:50] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.3.tar.gz tmp/vandal-4.0.4.tar.gz --markdown 20230409/v/vandal/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2023-04-09 09:40:51] WARNING root fetch - processPackages [tf-nightly-macos]: Skipping package: exceeds size limit 186103188>=10485760
+[2023-04-09 09:40:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:40:51] WARNING root fetch - processPackages [CircleBlock]: Skipping, unable to determine old version
+[2023-04-09 09:40:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:40:51] INFO root fetch - processPackages [vandal]: New version: [4.0.4] Old Version: [4.0.3]
+[2023-04-09 09:40:51] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 09:40:51] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.3.tar.gz tmp/vandal-4.0.4.tar.gz --markdown 20230409/v/vandal/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2023-04-09 09:40:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:40:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:40:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:40:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:40:53] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2023-04-09 09:40:53] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.4.27-cp311-cp311-win_amd64.whl.zip tmp/quarkstudio-6.5.0rc2-cp311-cp311-macosx_10_9_universal2.whl.zip --markdown 20230409/q/quarkstudio/6.4.27-6.5.0rc2/diff.md --exclude *.pyd
+[2023-04-09 09:40:57] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:40:57] INFO root fetch - main [MainThread]: Store serial: [17635090]
