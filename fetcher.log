@@ -5564,3 +5564,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 15:33:08] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:33:10] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:33:10] INFO root fetch - main [MainThread]: Store serial: [17636897]
+[2023-04-09 15:38:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636897]
+[2023-04-09 15:38:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 15:38:18] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.0] Old Version: [1.8.9]
+[2023-04-09 15:38:18] INFO root fetch - processPackages [nod]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-09 15:38:18] INFO root fetch - processPackages [apache-age-community-detection]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 15:38:18] INFO root fetch - processPackages [dkimpy]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-09 15:38:18] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 15:38:18] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 15:38:18] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 15:38:18] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:38:18] INFO root fetch - processPackages [nod]: Downloading https://files.pythonhosted.org/packages/29/68/fa9ee2e85c8eb335ef05a2334da769ca99a56fc4ae27e946d3092ff6fe85/nod-1.8.1.tar.gz
+[2023-04-09 15:38:18] INFO root fetch - processPackages [apache-age-community-detection]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-09 15:38:18] INFO root fetch - processPackages [dkimpy]: Downloading https://files.pythonhosted.org/packages/ce/ff/6c10995ac2cdb4ec81bb31ff7e8660eeaf1b797348a134767eadb647477a/dkimpy-1.1.1.tar.gz
+[2023-04-09 15:38:18] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/c0/9f/16b2973c060d48e4ab20511ec56d5795afbef4e7ef00101daa8df6427d4f/onnx2tf-1.9.0.tar.gz
+[2023-04-09 15:38:18] INFO root fetch - processPackages [apache-age-community-detection]: Downloading https://files.pythonhosted.org/packages/90/71/caaa3a39451b858a357c7f31512c4fd9f3fafc3e8dc186eccc64eda405d3/apache-age-community-detection-0.1.2.tar.gz
+[2023-04-09 15:38:18] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-09 15:38:18] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.8.9.tar.gz tmp/onnx2tf-1.9.0.tar.gz --markdown 20230409/o/onnx2tf/1.8.9-1.9.0/diff.md --exclude *.pyd
+[2023-04-09 15:38:18] INFO root fetch - processPackages [apache-age-community-detection]: Downloading https://files.pythonhosted.org/packages/90/71/caaa3a39451b858a357c7f31512c4fd9f3fafc3e8dc186eccc64eda405d3/apache-age-community-detection-0.1.2.tar.gz
+[2023-04-09 15:38:18] INFO root fetch - processPackages [apache-age-community-detection]: executing diffoscope
+[2023-04-09 15:38:18] INFO root fetch - processPackages [apache-age-community-detection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-age-community-detection-0.1.1.tar.gz tmp/apache-age-community-detection-0.1.2.tar.gz --markdown 20230409/a/apache-age-community-detection/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 15:38:18] INFO root fetch - processPackages [dkimpy]: Downloading https://files.pythonhosted.org/packages/e9/fa/d220babf87bc638cd36b289f4da42300108d40203759bbc7cc20a95db605/dkimpy-1.1.2.tar.gz
+[2023-04-09 15:38:18] INFO root fetch - processPackages [dkimpy]: executing diffoscope
+[2023-04-09 15:38:18] INFO root fetch - processPackages [dkimpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkimpy-1.1.1.tar.gz tmp/dkimpy-1.1.2.tar.gz --markdown 20230409/d/dkimpy/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-09 15:38:18] INFO root fetch - processPackages [apache-age-community-detection]: Downloading https://files.pythonhosted.org/packages/ee/f2/604c25a06f70d9e649dd6b4d1afd023320510af6c0f5ce4440ffd5ce14bf/apache-age-community-detection-0.1.3.tar.gz
+[2023-04-09 15:38:19] INFO root fetch - processPackages [apache-age-community-detection]: executing diffoscope
+[2023-04-09 15:38:19] INFO root fetch - processPackages [apache-age-community-detection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-age-community-detection-0.1.2.tar.gz tmp/apache-age-community-detection-0.1.3.tar.gz --markdown 20230409/a/apache-age-community-detection/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-09 15:38:19] INFO root fetch - processPackages [nod]: Downloading https://files.pythonhosted.org/packages/20/47/ec5074ac42c9d743d8a611cb586d1e5bda7e6d8859b50d4c788f9eee2c62/nod-1.9.0.tar.gz
+[2023-04-09 15:38:19] INFO root fetch - processPackages [nod]: executing diffoscope
+[2023-04-09 15:38:19] INFO root fetch - processPackages [nod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nod-1.8.1.tar.gz tmp/nod-1.9.0.tar.gz --markdown 20230409/n/nod/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-09 15:38:19] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:38:20] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:38:20] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:38:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:38:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:38:22] INFO root fetch - main [MainThread]: Store serial: [17636926]
