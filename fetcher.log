@@ -3598,3 +3598,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:48:46] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.6.8.tar.gz tmp/cdk8s-plus-24-2.6.9.tar.gz --markdown 20230409/c/cdk8s-plus-24/2.6.8-2.6.9/diff.md --exclude *.pyd
 [2023-04-09 10:48:47] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:48:47] INFO root fetch - main [MainThread]: Store serial: [17635383]
+[2023-04-09 10:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635383]
+[2023-04-09 10:53:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 10:53:54] INFO root fetch - processPackages [WestJR]: New version: [0.4] Old Version: [0.3.1]
+[2023-04-09 10:53:54] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-09 10:53:54] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.6.9] Old Version: [2.6.8]
+[2023-04-09 10:53:54] INFO root fetch - processPackages [pdm]: New version: [2.5.0b0] Old Version: [2.5.0]
+[2023-04-09 10:53:54] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.0.dev67] Old Version: [3.0.0.dev66]
+[2023-04-09 10:53:54] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 10:53:54] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.0.dev66-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.0.dev67-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.0.dev66-3.0.0.dev67/diff.md --exclude *.pyd
+[2023-04-09 10:53:54] INFO root fetch - processPackages [WestJR]: Downloading https://files.pythonhosted.org/packages/d1/33/87fc97359339b917e744958b66e0d07a38896dd435bff3f122dbadb40b9f/WestJR-0.3.1.tar.gz
+[2023-04-09 10:53:54] INFO root fetch - processPackages [pdm]: Downloading https://files.pythonhosted.org/packages/fb/1c/8e1b3f739ae1e134d3e0e415fcd84fd1a4a8bf4b4e65791c8d9ee4fe50c3/pdm-2.5.0.tar.gz
+[2023-04-09 10:53:54] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/2e/c3/724c29fc5927b6d4c1fd35cfa0cb2ff4acee63e35655fd66e99c2c06ee60/CircleBlock-1.0.2.tar.gz
+[2023-04-09 10:53:54] INFO root fetch - processPackages [cdk8s-plus-25]: Downloading https://files.pythonhosted.org/packages/ec/8e/008894f6e590a85a0a5e40559b3be7440abb4a340d072f31b3f63547c2e9/cdk8s-plus-25-2.6.8.tar.gz
+[2023-04-09 10:53:55] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-09 10:53:55] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.1.tar.gz tmp/CircleBlock-1.0.2.tar.gz --markdown 20230409/C/CircleBlock/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 10:53:55] INFO root fetch - processPackages [pdm]: Downloading https://files.pythonhosted.org/packages/43/5e/77192bb7d65ac60503c90c3a3ee3c212abc119ae09fdc1daf3ca548dc29d/pdm-2.5.0b0.tar.gz
+[2023-04-09 10:53:55] INFO root fetch - processPackages [WestJR]: Downloading https://files.pythonhosted.org/packages/87/f6/8f9e917e98546967087bae5eb7334e83429024a97a6e39c527745b0dcaeb/WestJR-0.4.tar.gz
+[2023-04-09 10:53:55] INFO root fetch - processPackages [WestJR]: executing diffoscope
+[2023-04-09 10:53:55] INFO root fetch - processPackages [WestJR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WestJR-0.3.1.tar.gz tmp/WestJR-0.4.tar.gz --markdown 20230409/W/WestJR/0.3.1-0.4/diff.md --exclude *.pyd
+[2023-04-09 10:53:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:53:55] INFO root fetch - processPackages [kiwigrad]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-09 10:53:56] INFO root fetch - processPackages [kiwigrad]: executing diffoscope
+[2023-04-09 10:53:56] INFO root fetch - processPackages [kiwigrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwigrad-0.0.7.tar.gz tmp/kiwigrad-0.0.8.tar.gz --markdown 20230409/k/kiwigrad/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-09 10:53:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:53:56] INFO root fetch - processPackages [cdk8s-plus-25]: Downloading https://files.pythonhosted.org/packages/5b/f7/1346a1b31c4c86e15fda06c2b74525c5950f72292f0b6a7e5fae3dcd8052/cdk8s-plus-25-2.6.9.tar.gz
+[2023-04-09 10:53:56] INFO root fetch - processPackages [pdm]: executing diffoscope
+[2023-04-09 10:53:56] INFO root fetch - processPackages [pdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm-2.5.0.tar.gz tmp/pdm-2.5.0b0.tar.gz --markdown 20230409/p/pdm/2.5.0-2.5.0b0/diff.md --exclude *.pyd
+[2023-04-09 10:53:57] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:53:57] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-04-09 10:53:57] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.6.8.tar.gz tmp/cdk8s-plus-25-2.6.9.tar.gz --markdown 20230409/c/cdk8s-plus-25/2.6.8-2.6.9/diff.md --exclude *.pyd
+[2023-04-09 10:53:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:53:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:54:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:54:03] INFO root fetch - main [MainThread]: Store serial: [17635405]
