@@ -8555,3 +8555,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:54:37] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:54:37] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:54:37] INFO root fetch - main [MainThread]: Store serial: [17638832]
+[2023-04-09 20:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638832]
+[2023-04-09 20:59:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 20:59:45] WARNING root fetch - processPackages [skilin3]: Skipping, unable to determine old version
+[2023-04-09 20:59:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:59:45] WARNING root fetch - processPackages [bibx]: Skipping, unable to determine old version
+[2023-04-09 20:59:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:59:45] INFO root fetch - processPackages [tf-gnns]: New version: [0.1.5a2] Old Version: [0.1.5a1]
+[2023-04-09 20:59:45] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 20:59:45] INFO root fetch - processPackages [basecfg]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-09 20:59:45] WARNING root fetch - processPackages [holophonor]: Skipping, unable to determine old version
+[2023-04-09 20:59:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:59:45] INFO root fetch - processPackages [leapseconds]: New version: [2023.4.0] Old Version: [2023.3.3]
+[2023-04-09 20:59:45] INFO root fetch - processPackages [cowboe]: New version: [1.0.8.9] Old Version: [1.0.8.8]
+[2023-04-09 20:59:45] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 20:59:45] INFO root fetch - processPackages [cowboe]: executing diffoscope
+[2023-04-09 20:59:45] INFO root fetch - processPackages [cowboe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cowboe-1.0.8.8.tar.gz tmp/cowboe-1.0.8.9.tar.gz --markdown 20230409/c/cowboe/1.0.8.8-1.0.8.9/diff.md --exclude *.pyd
+[2023-04-09 20:59:45] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 20:59:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:59:45] INFO root fetch - processPackages [tf-gnns]: Downloading https://files.pythonhosted.org/packages/85/1b/62c9e1901083ff28918b42f970a0c639a7391ee24511048afbd826be914a/tf-gnns-0.1.5a2.tar.gz
+[2023-04-09 20:59:45] INFO root fetch - processPackages [leapseconds]: Downloading https://files.pythonhosted.org/packages/3a/3e/5c759259ecbf231ca05d113168fe431bb73cf871448097c09297aa9fd167/leapseconds-2023.3.3.tar.gz
+[2023-04-09 20:59:45] INFO root fetch - processPackages [basecfg]: Downloading https://files.pythonhosted.org/packages/07/67/822279817164521733c41c812519cc20765d9ee16749d91d53afb34f6915/basecfg-1.2.0.tar.gz
+[2023-04-09 20:59:45] INFO root fetch - processPackages [tf-gnns]: executing diffoscope
+[2023-04-09 20:59:45] INFO root fetch - processPackages [tf-gnns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf-gnns-0.1.5a1.tar.gz tmp/tf-gnns-0.1.5a2.tar.gz --markdown 20230409/t/tf-gnns/0.1.5a1-0.1.5a2/diff.md --exclude *.pyd
+[2023-04-09 20:59:45] INFO root fetch - processPackages [leapseconds]: Downloading https://files.pythonhosted.org/packages/7f/8d/c0699181e0c17582033e7bf0f562152d16a73338d6d7b64d79c4b4c4498c/leapseconds-2023.4.0.tar.gz
+[2023-04-09 20:59:45] INFO root fetch - processPackages [basecfg]: executing diffoscope
+[2023-04-09 20:59:45] INFO root fetch - processPackages [basecfg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basecfg-1.1.0.tar.gz tmp/basecfg-1.2.0.tar.gz --markdown 20230409/b/basecfg/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-09 20:59:45] INFO root fetch - processPackages [leapseconds]: executing diffoscope
+[2023-04-09 20:59:45] INFO root fetch - processPackages [leapseconds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leapseconds-2023.3.3.tar.gz tmp/leapseconds-2023.4.0.tar.gz --markdown 20230409/l/leapseconds/2023.3.3-2023.4.0/diff.md --exclude *.pyd
+[2023-04-09 20:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:59:46] INFO root fetch - main [MainThread]: Store serial: [17638862]
