@@ -2602,3 +2602,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:11:16] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:11:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:11:17] INFO root fetch - main [MainThread]: Store serial: [17634730]
+[2023-04-09 08:16:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634730]
+[2023-04-09 08:16:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 08:16:25] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-09 08:16:25] INFO root fetch - processPackages [python-office]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-09 08:16:25] INFO root fetch - processPackages [eth-abi-lite]: New version: [3.1.0] Old Version: [3.0.3]
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pymediawikidocker]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pyzw]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 08:16:25] INFO root fetch - processPackages [python-office]: Downloading https://files.pythonhosted.org/packages/b1/23/a62fc7f451324a6e6b183285cc18313c5ded64e4f951c197413b082d3f00/python-office-0.3.8.tar.gz
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pymediawikidocker]: Downloading https://files.pythonhosted.org/packages/74/8d/452611ab4f8860c5207d3270d99b1e9b1c81ce9c7d3d523b7a6be111f428/pymediawikidocker-0.9.2.tar.gz
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pyzw]: Downloading https://files.pythonhosted.org/packages/a0/00/408129e4183e9fcaab7fddb5f0f5a3b0ab576d8349d09dde5b6cfcd57b69/pyzw-0.0.3.tar.gz
+[2023-04-09 08:16:25] INFO root fetch - processPackages [eth-abi-lite]: Downloading https://files.pythonhosted.org/packages/87/ba/f16b082f7251fcf0a2186e870b7f06c5f468be2226b5d504cf06dcca175e/eth_abi_lite-3.0.3.tar.gz
+[2023-04-09 08:16:25] INFO root fetch - processPackages [katalytic-files]: Downloading https://files.pythonhosted.org/packages/28/7a/ec64277e0d97643a9edea489c5ea51d7db1fd224a402620218284d083814/katalytic-files-0.3.2.tar.gz
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pyzw]: executing diffoscope
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pyzw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzw-0.0.2.tar.gz tmp/pyzw-0.0.3.tar.gz --markdown 20230409/p/pyzw/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pymediawikidocker]: Downloading https://files.pythonhosted.org/packages/09/09/d50df7a7fa82ddb33f6d7ce7a2f326a6a233c77d290f78988eb4b1374a4f/pymediawikidocker-0.9.3.tar.gz
+[2023-04-09 08:16:25] INFO root fetch - processPackages [python-office]: executing diffoscope
+[2023-04-09 08:16:25] INFO root fetch - processPackages [python-office]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-office-0.3.7.tar.gz tmp/python-office-0.3.8.tar.gz --markdown 20230409/p/python-office/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-09 08:16:25] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-09 08:16:25] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.1.tar.gz tmp/katalytic-files-0.3.2.tar.gz --markdown 20230409/k/katalytic-files/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-09 08:16:25] INFO root fetch - processPackages [eth-abi-lite]: Downloading https://files.pythonhosted.org/packages/d2/aa/b33b623d95586b4130158d58b50082f8b939c6d902575f87dfdd22e13f40/eth_abi_lite-3.1.0.tar.gz
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pymediawikidocker]: executing diffoscope
+[2023-04-09 08:16:25] INFO root fetch - processPackages [pymediawikidocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymediawikidocker-0.9.2.tar.gz tmp/pymediawikidocker-0.9.3.tar.gz --markdown 20230409/p/pymediawikidocker/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-09 08:16:25] INFO root fetch - processPackages [eth-abi-lite]: executing diffoscope
+[2023-04-09 08:16:25] INFO root fetch - processPackages [eth-abi-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth_abi_lite-3.0.3.tar.gz tmp/eth_abi_lite-3.1.0.tar.gz --markdown 20230409/e/eth-abi-lite/3.0.3-3.1.0/diff.md --exclude *.pyd
+[2023-04-09 08:16:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:26] INFO root fetch - processPackages [popdf]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-09 08:16:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:26] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230409] Old Version: [1.5.3.dev20230408]
+[2023-04-09 08:16:26] INFO root fetch - processPackages [popdf]: Downloading https://files.pythonhosted.org/packages/f5/f4/6a0fbde38a0ca21992d7aa5383e00d1a56b808a2100aacd8b3b98835604d/popdf-0.0.6.tar.gz
+[2023-04-09 08:16:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:26] INFO root fetch - processPackages [django-cast]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-09 08:16:26] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/14/b4/04ed791700dc1fc02e2bd607fc0c4328b025e55bf4050ce8440ee63adcab/pretext-1.5.3.dev20230409.tar.gz
+[2023-04-09 08:16:27] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/08/d0/6455a8c6cc1a455997e400140263ce181dbcef2b961935fa657f84fa4304/django-cast-0.2.8.tar.gz
+[2023-04-09 08:16:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:27] INFO root fetch - processPackages [CustomGPT]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 08:16:27] INFO root fetch - processPackages [popdf]: Downloading https://files.pythonhosted.org/packages/8f/9e/1688dbc88dca407de117438401dbfd69909fd7962da97e71ea2f1f0f4c2d/popdf-0.0.8.tar.gz
+[2023-04-09 08:16:27] INFO root fetch - processPackages [CustomGPT]: Downloading https://files.pythonhosted.org/packages/8d/db/a1a2f97875a6cf3250e4eeb502f938e7139970cd76af339a569de916b6be/CustomGPT-0.1.0.tar.gz
+[2023-04-09 08:16:27] INFO root fetch - processPackages [popdf]: executing diffoscope
+[2023-04-09 08:16:27] INFO root fetch - processPackages [popdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popdf-0.0.6.tar.gz tmp/popdf-0.0.8.tar.gz --markdown 20230409/p/popdf/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-04-09 08:16:27] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-04-09 08:16:27] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230408.tar.gz tmp/pretext-1.5.3.dev20230409.tar.gz --markdown 20230409/p/pretext/1.5.3.dev20230408-1.5.3.dev20230409/diff.md --exclude *.pyd
+[2023-04-09 08:16:27] INFO root fetch - processPackages [CustomGPT]: Downloading https://files.pythonhosted.org/packages/0f/0f/160cfc38534676a0e7a5985c1356aa4753173e6b7684ec46f851474c7798/CustomGPT-0.1.1.tar.gz
+[2023-04-09 08:16:27] INFO root fetch - processPackages [django-cast]: Downloading https://files.pythonhosted.org/packages/1e/ba/729f0c86f18455387a69c10dd88886e8da0093c7771abb6bd65065a7b70c/django-cast-0.2.9.tar.gz
+[2023-04-09 08:16:27] INFO root fetch - processPackages [CustomGPT]: executing diffoscope
+[2023-04-09 08:16:27] INFO root fetch - processPackages [CustomGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomGPT-0.1.0.tar.gz tmp/CustomGPT-0.1.1.tar.gz --markdown 20230409/C/CustomGPT/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 08:16:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:28] INFO root fetch - processPackages [django-cast]: executing diffoscope
+[2023-04-09 08:16:28] INFO root fetch - processPackages [django-cast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cast-0.2.8.tar.gz tmp/django-cast-0.2.9.tar.gz --markdown 20230409/d/django-cast/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-09 08:16:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:16:32] INFO root fetch - main [MainThread]: Store serial: [17634757]
