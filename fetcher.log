@@ -5918,3 +5918,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:20:59] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:21:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:21:00] INFO root fetch - main [MainThread]: Store serial: [17637119]
+[2023-04-09 16:26:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637119]
+[2023-04-09 16:26:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 16:26:07] WARNING root fetch - processPackages [vajirayana]: Skipping, unable to determine old version
+[2023-04-09 16:26:07] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:26:07] INFO root fetch - processPackages [twnet-parser]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-04-09 16:26:07] INFO root fetch - processPackages [cnki-html2json]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 16:26:07] INFO root fetch - processPackages [geospace]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-09 16:26:07] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.13.0.dev20230408] Old Version: [2.13.0.dev20230406]
+[2023-04-09 16:26:07] INFO root fetch - processPackages [mgz]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-09 16:26:08] INFO root fetch - processPackages [twnet-parser]: Downloading https://files.pythonhosted.org/packages/12/57/91ddc5edf442ff642e72edb1f43e41539095306ba1dca90a3a222649b86e/twnet_parser-0.3.3.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/5a/19/9b2ab667eb8996a525733e0302e18c6af581c6aa77f85858a7b5b8a2510c/tf_nightly_intel-2.13.0.dev20230406-cp39-cp39-win_amd64.whl
+[2023-04-09 16:26:08] INFO root fetch - processPackages [cnki-html2json]: Downloading https://files.pythonhosted.org/packages/d2/87/ed081ab8d312a7912d6bcc7e98baa7f54c890bf1991e13e2f879dfada0c9/cnki_html2json-0.0.6.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [geospace]: Downloading https://files.pythonhosted.org/packages/9b/93/787bdd244dc2329f75114682a315a255eeffe3ccaa50acb5e964d52fc8a7/geospace-0.3.0.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [mgz]: Downloading https://files.pythonhosted.org/packages/3f/c1/01499b2c7a7e8ca67a4e3d16d6c237de4b8d8b103d08d090f99b6fbe6ece/mgz-1.8.8.tar.gz
+[2023-04-09 16:26:08] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 178093344>=10485760
+[2023-04-09 16:26:08] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:26:08] INFO root fetch - processPackages [nonebot-plugin-tts-gal]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-09 16:26:08] INFO root fetch - processPackages [mgz]: Downloading https://files.pythonhosted.org/packages/af/28/845205c817682a35883ecd3b20e9e09be17f8e08dd38fd1ee3a194f8499f/mgz-1.8.9.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [twnet-parser]: Downloading https://files.pythonhosted.org/packages/fa/cd/2186144bcbb591c2c06968804f01cbab63b4467d4fde188ba503e6394b37/twnet_parser-0.4.0.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [cnki-html2json]: Downloading https://files.pythonhosted.org/packages/fc/f4/da976c4289be71f68c126cbfe530d44dacf8064071255d3b4162127cd976/cnki_html2json-0.0.7.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [nonebot-plugin-tts-gal]: Downloading https://files.pythonhosted.org/packages/40/92/c3428b8cb628a5c78187bdc4802b0b64f480511d40de64e3ea3254f6dceb/nonebot_plugin_tts_gal-0.3.8.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [geospace]: Downloading https://files.pythonhosted.org/packages/1b/5a/d935f23b94ee535bed4069fafda9763a23a6242a1988c4bcb40161287c59/geospace-0.3.1.tar.gz
+[2023-04-09 16:26:08] INFO root fetch - processPackages [cnki-html2json]: executing diffoscope
+[2023-04-09 16:26:08] INFO root fetch - processPackages [cnki-html2json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnki_html2json-0.0.6.tar.gz tmp/cnki_html2json-0.0.7.tar.gz --markdown 20230409/c/cnki-html2json/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 16:26:08] INFO root fetch - processPackages [mgz]: executing diffoscope
+[2023-04-09 16:26:08] INFO root fetch - processPackages [mgz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgz-1.8.8.tar.gz tmp/mgz-1.8.9.tar.gz --markdown 20230409/m/mgz/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-09 16:26:08] INFO root fetch - processPackages [twnet-parser]: executing diffoscope
+[2023-04-09 16:26:08] INFO root fetch - processPackages [twnet-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twnet_parser-0.3.3.tar.gz tmp/twnet_parser-0.4.0.tar.gz --markdown 20230409/t/twnet-parser/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-04-09 16:26:08] INFO root fetch - processPackages [geospace]: executing diffoscope
+[2023-04-09 16:26:08] INFO root fetch - processPackages [geospace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geospace-0.3.0.tar.gz tmp/geospace-0.3.1.tar.gz --markdown 20230409/g/geospace/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-09 16:26:09] INFO root fetch - processPackages [nonebot-plugin-tts-gal]: Downloading https://files.pythonhosted.org/packages/ef/37/f82cd297b5cddfaf0fd6565fe3f355e53cfed5684328cd4cc98ddeace8a8/nonebot_plugin_tts_gal-0.3.9.tar.gz
+[2023-04-09 16:26:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:26:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:26:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:26:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:26:10] INFO root fetch - processPackages [nonebot-plugin-tts-gal]: executing diffoscope
+[2023-04-09 16:26:10] INFO root fetch - processPackages [nonebot-plugin-tts-gal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_tts_gal-0.3.8.tar.gz tmp/nonebot_plugin_tts_gal-0.3.9.tar.gz --markdown 20230409/n/nonebot-plugin-tts-gal/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-09 16:26:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:26:12] INFO root fetch - main [MainThread]: Store serial: [17637146]
