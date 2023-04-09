@@ -3442,3 +3442,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:17:25] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:17:25] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:17:25] INFO root fetch - main [MainThread]: Store serial: [17635291]
+[2023-04-09 10:22:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635291]
+[2023-04-09 10:22:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 10:22:33] WARNING root fetch - processPackages [fastencode]: Skipping, unable to determine old version
+[2023-04-09 10:22:33] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:22:33] INFO root fetch - processPackages [test-yolo]: New version: [0.0.12] Old Version: [0.0.11]
+[2023-04-09 10:22:33] INFO root fetch - processPackages [vandal]: New version: [4.0.8] Old Version: [4.0.7]
+[2023-04-09 10:22:33] INFO root fetch - processPackages [exchange-calendars]: New version: [4.2.6] Old Version: [4.2.5]
+[2023-04-09 10:22:33] INFO root fetch - processPackages [exchange-calendars]: Downloading https://files.pythonhosted.org/packages/1f/34/82afa377704989b812899365a8af63030e9a512224763d36557654625d30/exchange_calendars-4.2.5.tar.gz
+[2023-04-09 10:22:33] INFO root fetch - processPackages [test-yolo]: Downloading https://files.pythonhosted.org/packages/9b/84/bdb961a409bafad836a5edb52e2ba6fdf3bc666d59d4e3c3a4fce516e928/test_yolo-0.0.12-py3-none-any.whl
+[2023-04-09 10:22:33] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/4b/70/7f51aecdb598bfabdba91ce161908b13ef8d2e1e3c9df6a38938fe14a453/vandal-4.0.8.tar.gz
+[2023-04-09 10:22:33] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 10:22:33] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.7.tar.gz tmp/vandal-4.0.8.tar.gz --markdown 20230409/v/vandal/4.0.7-4.0.8/diff.md --exclude *.pyd
+[2023-04-09 10:22:33] INFO root fetch - processPackages [test-yolo]: executing diffoscope
+[2023-04-09 10:22:33] INFO root fetch - processPackages [test-yolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_yolo-0.0.11-py3-none-any.whl.zip tmp/test_yolo-0.0.12-py3-none-any.whl.zip --markdown 20230409/t/test-yolo/0.0.11-0.0.12/diff.md --exclude *.pyd
+[2023-04-09 10:22:33] INFO root fetch - processPackages [exchange-calendars]: Downloading https://files.pythonhosted.org/packages/5c/88/902f28a53a46505774503804ed1242fa82d6a224e974a58ef40f7ac60655/exchange_calendars-4.2.6.tar.gz
+[2023-04-09 10:22:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:22:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:22:34] INFO root fetch - processPackages [exchange-calendars]: executing diffoscope
+[2023-04-09 10:22:34] INFO root fetch - processPackages [exchange-calendars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exchange_calendars-4.2.5.tar.gz tmp/exchange_calendars-4.2.6.tar.gz --markdown 20230409/e/exchange-calendars/4.2.5-4.2.6/diff.md --exclude *.pyd
+[2023-04-09 10:22:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:22:40] INFO root fetch - main [MainThread]: Store serial: [17635302]
