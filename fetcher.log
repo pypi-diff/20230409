@@ -6704,3 +6704,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:50:58] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:51:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:51:00] INFO root fetch - main [MainThread]: Store serial: [17637690]
+[2023-04-09 17:56:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637690]
+[2023-04-09 17:56:07] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 17:56:07] INFO root fetch - processPackages [dismake]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 17:56:07] INFO root fetch - processPackages [xyz-exam]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-09 17:56:07] INFO root fetch - processPackages [prsmsp]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-04-09 17:56:07] WARNING root fetch - processPackages [opencv-stubs]: Skipping, unable to determine old version
+[2023-04-09 17:56:07] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:56:07] WARNING root fetch - processPackages [django-client-whitelist]: Skipping, unable to determine old version
+[2023-04-09 17:56:07] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:56:07] INFO root fetch - processPackages [pymfx4]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-09 17:56:07] WARNING root fetch - processPackages [hoverboard]: Skipping, unable to determine old version
+[2023-04-09 17:56:07] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:56:07] INFO root fetch - processPackages [adafruit-circuitpython-pn532]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-09 17:56:07] INFO root fetch - processPackages [xyz-exam]: Downloading https://files.pythonhosted.org/packages/bb/2f/c1c6d6f8f71c288f2e6188626f63640cabe751c10dd10e2f623e2dc9b052/xyz_exam-0.3.4-py3-none-any.whl
+[2023-04-09 17:56:07] INFO root fetch - processPackages [dismake]: Downloading https://files.pythonhosted.org/packages/f9/8b/498321e0cb724227cadcff3d3c891d42f86e694a29872111e0a7960363cb/dismake-0.0.4.tar.gz
+[2023-04-09 17:56:07] INFO root fetch - processPackages [prsmsp]: Downloading https://files.pythonhosted.org/packages/2e/7b/8df2af47ed9cdb1746d28ecfe0f36601a45fe12cd1701fe675eca126405b/prsmsp-1.3.0.tar.gz
+[2023-04-09 17:56:07] INFO root fetch - processPackages [pymfx4]: Downloading https://files.pythonhosted.org/packages/a1/fd/0b7e0157ae899378dee0696de3507bc68ceb95e456de3211555f3d48ef9b/pymfx4-0.1.tar.gz
+[2023-04-09 17:56:07] INFO root fetch - processPackages [adafruit-circuitpython-pn532]: Downloading https://files.pythonhosted.org/packages/13/b8/0b420e51da9a5da6eef9fbc189efc0dc9db12d6aef921179332349c7b735/adafruit-circuitpython-pn532-2.3.8.tar.gz
+[2023-04-09 17:56:08] INFO root fetch - processPackages [prsmsp]: executing diffoscope
+[2023-04-09 17:56:08] INFO root fetch - processPackages [prsmsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prsmsp-1.2.2.tar.gz tmp/prsmsp-1.3.0.tar.gz --markdown 20230409/p/prsmsp/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-04-09 17:56:08] INFO root fetch - processPackages [pymfx4]: Downloading https://files.pythonhosted.org/packages/33/79/86168a1b4143e1a3ae25348f854643e1a9f6a9bf2fc61cd7bcea9846da12/pymfx4-0.1.1.tar.gz
+[2023-04-09 17:56:08] INFO root fetch - processPackages [pymfx4]: executing diffoscope
+[2023-04-09 17:56:08] INFO root fetch - processPackages [pymfx4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymfx4-0.1.tar.gz tmp/pymfx4-0.1.1.tar.gz --markdown 20230409/p/pymfx4/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 17:56:08] INFO root fetch - processPackages [dismake]: Downloading https://files.pythonhosted.org/packages/76/8c/126ebbb067acb68059f467cb92deaf568808d21ec40f7335b540c9256b96/dismake-0.0.5.tar.gz
+[2023-04-09 17:56:08] INFO root fetch - processPackages [xyz-exam]: Downloading https://files.pythonhosted.org/packages/f6/77/f75950a49b23a2492e49078b78cadb2286fa851fa777ff721a97f623cbb5/xyz_exam-0.3.5-py3-none-any.whl
+[2023-04-09 17:56:08] INFO root fetch - processPackages [adafruit-circuitpython-pn532]: Downloading https://files.pythonhosted.org/packages/b0/bb/bd3c43e9fbd82552db107b1fb8647f1d19e2b1fe07832b1dd6294639059e/adafruit-circuitpython-pn532-2.3.9.tar.gz
+[2023-04-09 17:56:08] INFO root fetch - processPackages [dismake]: executing diffoscope
+[2023-04-09 17:56:08] INFO root fetch - processPackages [dismake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dismake-0.0.4.tar.gz tmp/dismake-0.0.5.tar.gz --markdown 20230409/d/dismake/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 17:56:08] INFO root fetch - processPackages [xyz-exam]: executing diffoscope
+[2023-04-09 17:56:08] INFO root fetch - processPackages [xyz-exam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xyz_exam-0.3.4-py3-none-any.whl.zip tmp/xyz_exam-0.3.5-py3-none-any.whl.zip --markdown 20230409/x/xyz-exam/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-09 17:56:08] INFO root fetch - processPackages [adafruit-circuitpython-pn532]: executing diffoscope
+[2023-04-09 17:56:08] INFO root fetch - processPackages [adafruit-circuitpython-pn532]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-pn532-2.3.8.tar.gz tmp/adafruit-circuitpython-pn532-2.3.9.tar.gz --markdown 20230409/a/adafruit-circuitpython-pn532/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-09 17:56:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:56:09] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 17:56:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:56:09] INFO root fetch - processPackages [aiva-core]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-09 17:56:09] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: Downloading https://files.pythonhosted.org/packages/2a/52/8ceb823f6ac740a8d80f214a246a87080bbc3978d282d993435181d5be6b/chatgpt_prompt_wrapper-0.0.4.tar.gz
+[2023-04-09 17:56:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:56:09] INFO root fetch - processPackages [aiva-core]: Downloading https://files.pythonhosted.org/packages/34/91/523e03ea2e1fb40c9139a17803b8d6755356d7290df2b9e484243c2aa451/aiva_core-0.1.4.tar.gz
+[2023-04-09 17:56:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:56:09] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: executing diffoscope
+[2023-04-09 17:56:09] INFO root fetch - processPackages [chatgpt-prompt-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt_prompt_wrapper-0.0.3.tar.gz tmp/chatgpt_prompt_wrapper-0.0.4.tar.gz --markdown 20230409/c/chatgpt-prompt-wrapper/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 17:56:09] INFO root fetch - processPackages [aiva-core]: executing diffoscope
+[2023-04-09 17:56:09] INFO root fetch - processPackages [aiva-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiva_core-0.1.3.tar.gz tmp/aiva_core-0.1.4.tar.gz --markdown 20230409/a/aiva-core/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 17:56:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:56:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:56:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:56:11] INFO root fetch - main [MainThread]: Store serial: [17637725]
