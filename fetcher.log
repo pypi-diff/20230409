@@ -5599,3 +5599,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 15:38:21] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:38:22] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:38:22] INFO root fetch - main [MainThread]: Store serial: [17636926]
+[2023-04-09 15:43:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636926]
+[2023-04-09 15:43:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 15:43:31] INFO root fetch - processPackages [threadsnake]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-09 15:43:31] INFO root fetch - processPackages [reacher]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-09 15:43:31] INFO root fetch - processPackages [xklb]: New version: [1.24.9] Old Version: [1.24.8]
+[2023-04-09 15:43:31] INFO root fetch - processPackages [dfvfs]: New version: [20230408] Old Version: [20230407]
+[2023-04-09 15:43:31] INFO root fetch - processPackages [chemaphy]: New version: [2.9.0] Old Version: [2.8.3]
+[2023-04-09 15:43:31] INFO root fetch - processPackages [chemaphy]: executing diffoscope
+[2023-04-09 15:43:31] INFO root fetch - processPackages [chemaphy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemaphy-2.8.3.tar.gz tmp/chemaphy-2.9.0.tar.gz --markdown 20230409/c/chemaphy/2.8.3-2.9.0/diff.md --exclude *.pyd
+[2023-04-09 15:43:31] INFO root fetch - processPackages [reacher]: Downloading https://files.pythonhosted.org/packages/49/68/766bec1f9bf0a3d6441a6a77ad92fa6c6ee2052c0f11a4dac3bc4674b061/reacher-0.3.6-py2.py3-none-any.whl
+[2023-04-09 15:43:31] INFO root fetch - processPackages [dfvfs]: Downloading https://files.pythonhosted.org/packages/72/c1/09a1d3c8e940a2107cf43a85edb298c39fc7dfea6ea80421bbaf6f1f97cb/dfvfs-20230407.tar.gz
+[2023-04-09 15:43:31] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/12/2a/e1b507cda3a025df8ca7b12ba6cc2fb620dad923448945c443abe8117f6f/xklb-1.24.8.tar.gz
+[2023-04-09 15:43:31] INFO root fetch - processPackages [reacher]: executing diffoscope
+[2023-04-09 15:43:31] INFO root fetch - processPackages [reacher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reacher-0.3.5-py2.py3-none-any.whl.zip tmp/reacher-0.3.6-py2.py3-none-any.whl.zip --markdown 20230409/r/reacher/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-09 15:43:31] INFO root fetch - processPackages [threadsnake]: Downloading https://files.pythonhosted.org/packages/dd/0e/c17a64ec1b26938d28747f1860df8c443153b68f94d16b6dd9a54d2af9ee/threadsnake-1.0.6.tar.gz
+[2023-04-09 15:43:31] INFO root fetch - processPackages [threadsnake]: executing diffoscope
+[2023-04-09 15:43:31] INFO root fetch - processPackages [threadsnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/threadsnake-1.0.5.tar.gz tmp/threadsnake-1.0.6.tar.gz --markdown 20230409/t/threadsnake/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-09 15:43:31] INFO root fetch - processPackages [dfvfs]: Downloading https://files.pythonhosted.org/packages/7e/ad/d45da08149dcc794cb8909f4b2d5902f1e34bd4cfaac65c22d34eb8f8342/dfvfs-20230408.tar.gz
+[2023-04-09 15:43:31] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/9b/f1/d9de5072479348bbef599c2692b91f9511e50852a18cc46269fc0e5aad78/xklb-1.24.9.tar.gz
+[2023-04-09 15:43:31] INFO root fetch - processPackages [dfvfs]: executing diffoscope
+[2023-04-09 15:43:31] INFO root fetch - processPackages [dfvfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfvfs-20230407.tar.gz tmp/dfvfs-20230408.tar.gz --markdown 20230409/d/dfvfs/20230407-20230408/diff.md --exclude *.pyd
+[2023-04-09 15:43:31] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-04-09 15:43:31] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.24.8.tar.gz tmp/xklb-1.24.9.tar.gz --markdown 20230409/x/xklb/1.24.8-1.24.9/diff.md --exclude *.pyd
+[2023-04-09 15:43:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:32] INFO root fetch - processPackages [pyathena]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-09 15:43:32] INFO root fetch - processPackages [pyathena]: Downloading https://files.pythonhosted.org/packages/83/e8/82b62383ebd2a1f43d29ca765053e1f52eb55a1139dfd7203ebf040cbc0e/PyAthena-2.9.5.tar.gz
+[2023-04-09 15:43:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:32] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-09 15:43:32] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/c1/70/3267f94d196f9213b2b44a429d64b71cb1f9f3d812687dd74ff8a983a588/bridgecrew-2.3.98.tar.gz
+[2023-04-09 15:43:32] INFO root fetch - processPackages [pyathena]: Downloading https://files.pythonhosted.org/packages/fe/d0/1d42ee02f8c5180d7b51cec5ba9a6b8c49317e9499139cbad947a348c5d4/PyAthena-2.9.6.tar.gz
+[2023-04-09 15:43:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bdew-datetimes]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/9e/6b/ea9cdf20d73a8621ab1f56b3ee95c8fe6b3e23cb8cd7a0f75ec041c3f16f/bridgecrew-2.3.99.tar.gz
+[2023-04-09 15:43:33] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-04-09 15:43:33] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAthena-2.9.5.tar.gz tmp/PyAthena-2.9.6.tar.gz --markdown 20230409/p/pyathena/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-09 15:43:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bdew-datetimes]: Downloading https://files.pythonhosted.org/packages/c4/2f/09937561741c82c0d43b0a908e2a41c1b84b318cc215ab4ab8f4fdc65718/bdew_datetimes-0.3.5.tar.gz
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230409/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bdew-datetimes]: Downloading https://files.pythonhosted.org/packages/93/e5/898900a6fd3b2e4d0b76efcdd239c1881d139c05a39caefb115936be6362/bdew_datetimes-0.3.6.tar.gz
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bdew-datetimes]: executing diffoscope
+[2023-04-09 15:43:33] INFO root fetch - processPackages [bdew-datetimes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdew_datetimes-0.3.5.tar.gz tmp/bdew_datetimes-0.3.6.tar.gz --markdown 20230409/b/bdew-datetimes/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-09 15:43:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:43:37] INFO root fetch - main [MainThread]: Store serial: [17636951]
