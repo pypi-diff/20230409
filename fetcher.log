@@ -6954,3 +6954,66 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 18:16:57] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230409/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
 [2023-04-09 18:17:01] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:17:01] INFO root fetch - main [MainThread]: Store serial: [17637933]
+[2023-04-09 18:22:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637933]
+[2023-04-09 18:22:09] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-09 18:22:09] WARNING root fetch - processPackages [antra]: Skipping, unable to determine old version
+[2023-04-09 18:22:09] INFO root fetch - main [MainThread]: error
+[2023-04-09 18:22:09] WARNING root fetch - processPackages [lnkgonewild]: Skipping, unable to determine old version
+[2023-04-09 18:22:09] INFO root fetch - main [MainThread]: error
+[2023-04-09 18:22:09] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230408] Old Version: [0.1.dev20230407]
+[2023-04-09 18:22:09] INFO root fetch - processPackages [napari-process-points-and-surfaces]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-04-09 18:22:09] INFO root fetch - processPackages [requests-toolkit-stable]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-09 18:22:09] INFO root fetch - processPackages [protobuf-to-pydantic]: New version: [0.1.7.1] Old Version: [0.1.7]
+[2023-04-09 18:22:09] INFO root fetch - processPackages [mama]: New version: [0.7.9] Old Version: [0.7.7]
+[2023-04-09 18:22:09] INFO root fetch - processPackages [protobuf-to-pydantic]: Downloading https://files.pythonhosted.org/packages/f1/92/532fa419a6846ac231bd86a86763fa0632b1437e27b732ef7ec09ab0622f/protobuf_to_pydantic-0.1.7.tar.gz
+[2023-04-09 18:22:09] INFO root fetch - processPackages [requests-toolkit-stable]: Downloading https://files.pythonhosted.org/packages/ea/2f/fe7a713c70fae1c4c4ef94d529e28761f5be3d093a3007ce34ad84555e08/requests-toolkit-stable-0.9.1.tar.gz
+[2023-04-09 18:22:09] INFO root fetch - processPackages [napari-process-points-and-surfaces]: Downloading https://files.pythonhosted.org/packages/88/78/fdd0c2a17165907cbc9f5e84cae4cab52284c30d8abda5a8eb2ef49b2391/napari-process-points-and-surfaces-0.4.2.tar.gz
+[2023-04-09 18:22:09] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/9f/b0/3bc3a20b494ecb103845b6138af798c98f7b071b773eb80626a0f8425c90/feathub_nightly-0.1.dev20230408-py3-none-any.whl
+[2023-04-09 18:22:10] INFO root fetch - processPackages [mama]: executing diffoscope
+[2023-04-09 18:22:10] INFO root fetch - processPackages [mama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mama-0.7.7.tar.gz tmp/mama-0.7.9.tar.gz --markdown 20230409/m/mama/0.7.7-0.7.9/diff.md --exclude *.pyd
+[2023-04-09 18:22:10] INFO root fetch - processPackages [protobuf-to-pydantic]: Downloading https://files.pythonhosted.org/packages/c4/d9/8a16e6129e7534a1ffb08665475d54299e3d50bf1d671905b6917ae20592/protobuf_to_pydantic-0.1.7.1.tar.gz
+[2023-04-09 18:22:10] INFO root fetch - processPackages [requests-toolkit-stable]: Downloading https://files.pythonhosted.org/packages/8b/f3/99e29ddebe019e9d662d5ee6ad128fcfabbfd728e75d465bdd99f3d7dabe/requests-toolkit-stable-0.9.2.tar.gz
+[2023-04-09 18:22:10] INFO root fetch - processPackages [protobuf-to-pydantic]: executing diffoscope
+[2023-04-09 18:22:10] INFO root fetch - processPackages [protobuf-to-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protobuf_to_pydantic-0.1.7.tar.gz tmp/protobuf_to_pydantic-0.1.7.1.tar.gz --markdown 20230409/p/protobuf-to-pydantic/0.1.7-0.1.7.1/diff.md --exclude *.pyd
+[2023-04-09 18:22:10] INFO root fetch - processPackages [requests-toolkit-stable]: executing diffoscope
+[2023-04-09 18:22:10] INFO root fetch - processPackages [requests-toolkit-stable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requests-toolkit-stable-0.9.1.tar.gz tmp/requests-toolkit-stable-0.9.2.tar.gz --markdown 20230409/r/requests-toolkit-stable/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-09 18:22:10] INFO root fetch - processPackages [napari-process-points-and-surfaces]: Downloading https://files.pythonhosted.org/packages/6d/1c/39bc6845d530883bf081cbfb7a17b785245b4c326130ef2004dd8791bdee/napari-process-points-and-surfaces-0.5.0.tar.gz
+[2023-04-09 18:22:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:11] INFO root fetch - processPackages [hugg]: New version: [0.0.84] Old Version: [0.0.83]
+[2023-04-09 18:22:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:11] INFO root fetch - processPackages [agstoolbox]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-09 18:22:11] INFO root fetch - processPackages [napari-process-points-and-surfaces]: executing diffoscope
+[2023-04-09 18:22:11] INFO root fetch - processPackages [napari-process-points-and-surfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-process-points-and-surfaces-0.4.2.tar.gz tmp/napari-process-points-and-surfaces-0.5.0.tar.gz --markdown 20230409/n/napari-process-points-and-surfaces/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-04-09 18:22:11] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/32/10/8ad35758d3486a7b6fe3b0adfade8bd2f81ae3cdb39a6f269d00c7f99d19/hugg-0.0.84.tar.gz
+[2023-04-09 18:22:11] INFO root fetch - processPackages [agstoolbox]: Downloading https://files.pythonhosted.org/packages/e9/a1/036ec55dba8700fdc8bdff2add44df8f610871b512917b45f9707594d71d/agstoolbox-0.3.7.tar.gz
+[2023-04-09 18:22:11] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 18:22:11] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.83.tar.gz tmp/hugg-0.0.84.tar.gz --markdown 20230409/h/hugg/0.0.83-0.0.84/diff.md --exclude *.pyd
+[2023-04-09 18:22:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:11] INFO root fetch - processPackages [agstoolbox]: executing diffoscope
+[2023-04-09 18:22:11] INFO root fetch - processPackages [agstoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agstoolbox-0.3.6.tar.gz tmp/agstoolbox-0.3.7.tar.gz --markdown 20230409/a/agstoolbox/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-09 18:22:11] WARNING root fetch - processPackages [jsonator]: Skipping, unable to determine old version
+[2023-04-09 18:22:11] INFO root fetch - main [MainThread]: error
+[2023-04-09 18:22:11] INFO root fetch - processPackages [lunchable]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-09 18:22:12] INFO root fetch - processPackages [lunchable]: Downloading https://files.pythonhosted.org/packages/25/eb/a44a4b8f848bd5fd0fa02ab7fc397ff4e2a6272a79d80f76fce22fd57480/lunchable-0.5.0.tar.gz
+[2023-04-09 18:22:12] INFO root fetch - processPackages [lunchable]: Downloading https://files.pythonhosted.org/packages/41/34/853561fe5c50832f25f429e4f237e207b934dddcfd1074e7682d35a71ee3/lunchable-0.5.1.tar.gz
+[2023-04-09 18:22:12] INFO root fetch - processPackages [lunchable]: executing diffoscope
+[2023-04-09 18:22:12] INFO root fetch - processPackages [lunchable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lunchable-0.5.0.tar.gz tmp/lunchable-0.5.1.tar.gz --markdown 20230409/l/lunchable/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-09 18:22:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:12] INFO root fetch - processPackages [lupin-danquin]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2023-04-09 18:22:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:12] INFO root fetch - processPackages [aiva-core]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-09 18:22:12] INFO root fetch - processPackages [lupin-danquin]: Downloading https://files.pythonhosted.org/packages/6c/56/8b80639e8cd577487dd60501615a5f071eb5f55a1263a458df56b89d321f/lupin-danquin-0.0.1.dev0.tar.gz
+[2023-04-09 18:22:13] INFO root fetch - processPackages [aiva-core]: Downloading https://files.pythonhosted.org/packages/46/50/71088c598ad29e4ff7f5dd29a9177505572a3412800acc2b2e3d9a018246/aiva_core-0.1.6.tar.gz
+[2023-04-09 18:22:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:13] INFO root fetch - processPackages [lupin-danquin]: Downloading https://files.pythonhosted.org/packages/88/1a/432dbb2bad21e88c5cd05fcc1871d2b1d75ddcf0da6f470be94c198cf57c/lupin-danquin-0.0.1.dev1.tar.gz
+[2023-04-09 18:22:13] INFO root fetch - processPackages [aiva-core]: executing diffoscope
+[2023-04-09 18:22:13] INFO root fetch - processPackages [aiva-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiva_core-0.1.5.tar.gz tmp/aiva_core-0.1.6.tar.gz --markdown 20230409/a/aiva-core/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-09 18:22:13] INFO root fetch - processPackages [lupin-danquin]: executing diffoscope
+[2023-04-09 18:22:13] INFO root fetch - processPackages [lupin-danquin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-danquin-0.0.1.dev0.tar.gz tmp/lupin-danquin-0.0.1.dev1.tar.gz --markdown 20230409/l/lupin-danquin/0.0.1.dev0-0.0.1.dev1/diff.md --exclude *.pyd
+[2023-04-09 18:22:13] INFO root fetch - processPackages [feathub-nightly]: executing diffoscope
+[2023-04-09 18:22:13] INFO root fetch - processPackages [feathub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feathub_nightly-0.1.dev20230407-py3-none-any.whl.zip tmp/feathub_nightly-0.1.dev20230408-py3-none-any.whl.zip --markdown 20230409/f/feathub-nightly/0.1.dev20230407-0.1.dev20230408/diff.md --exclude *.pyd
+[2023-04-09 18:22:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:22:17] INFO root fetch - main [MainThread]: Store serial: [17637985]
