@@ -7991,3 +7991,31 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:18:15] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:18:15] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:18:15] INFO root fetch - main [MainThread]: Store serial: [17638657]
+[2023-04-09 20:23:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638657]
+[2023-04-09 20:23:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 20:23:22] INFO root fetch - processPackages [python-can]: New version: [4.2.0rc0] Old Version: [4.1.0a2]
+[2023-04-09 20:23:22] INFO root fetch - processPackages [tf-gnns]: New version: [0.1.5a1] Old Version: [0.1.5a0]
+[2023-04-09 20:23:22] INFO root fetch - processPackages [py-yprinciple-gen]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-09 20:23:22] WARNING root fetch - processPackages [tripadvisorapi]: Skipping, unable to determine old version
+[2023-04-09 20:23:22] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:23:22] INFO root fetch - processPackages [citros]: New version: [23.14.9] Old Version: [23.14.8]
+[2023-04-09 20:23:22] WARNING root fetch - processPackages [llamada]: Skipping, unable to determine old version
+[2023-04-09 20:23:22] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:23:23] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 20:23:23] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.8.tar.gz tmp/citros-23.14.9.tar.gz --markdown 20230409/c/citros/23.14.8-23.14.9/diff.md --exclude *.pyd
+[2023-04-09 20:23:23] INFO root fetch - processPackages [python-can]: Downloading https://files.pythonhosted.org/packages/c6/ca/b4dc06d92b783580086be7f3b7cab34dde4fa25e095302cdb479e4f19df2/python-can-4.1.0a2.tar.gz
+[2023-04-09 20:23:23] INFO root fetch - processPackages [py-yprinciple-gen]: Downloading https://files.pythonhosted.org/packages/ae/e3/a6a12c9dc6645b77113cf09e26b13d815472e491105c24a253d2cd3c940f/py_yprinciple_gen-0.2.6.tar.gz
+[2023-04-09 20:23:23] INFO root fetch - processPackages [tf-gnns]: Downloading https://files.pythonhosted.org/packages/aa/c0/250f491b3cf6a3e00d8a00032cfab781d2d156b8eebf76f587d61a75e1fe/tf-gnns-0.1.5a1.tar.gz
+[2023-04-09 20:23:23] INFO root fetch - processPackages [py-yprinciple-gen]: Downloading https://files.pythonhosted.org/packages/37/5f/ac2323cfd812e397687f8ede49385c60093ef46d609dd5ef791645d6a163/py_yprinciple_gen-0.2.7.tar.gz
+[2023-04-09 20:23:23] INFO root fetch - processPackages [tf-gnns]: executing diffoscope
+[2023-04-09 20:23:23] INFO root fetch - processPackages [tf-gnns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf-gnns-0.1.5a0.tar.gz tmp/tf-gnns-0.1.5a1.tar.gz --markdown 20230409/t/tf-gnns/0.1.5a0-0.1.5a1/diff.md --exclude *.pyd
+[2023-04-09 20:23:23] INFO root fetch - processPackages [python-can]: Downloading https://files.pythonhosted.org/packages/f7/de/2d4f0a2384b4664ff358f1ac4b0326e783ba5d6228759002cf3de93e5e86/python-can-4.2.0rc0.tar.gz
+[2023-04-09 20:23:23] INFO root fetch - processPackages [py-yprinciple-gen]: executing diffoscope
+[2023-04-09 20:23:23] INFO root fetch - processPackages [py-yprinciple-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_yprinciple_gen-0.2.6.tar.gz tmp/py_yprinciple_gen-0.2.7.tar.gz --markdown 20230409/p/py-yprinciple-gen/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-09 20:23:23] INFO root fetch - processPackages [python-can]: executing diffoscope
+[2023-04-09 20:23:23] INFO root fetch - processPackages [python-can]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-can-4.1.0a2.tar.gz tmp/python-can-4.2.0rc0.tar.gz --markdown 20230409/p/python-can/4.1.0a2-4.2.0rc0/diff.md --exclude *.pyd
+[2023-04-09 20:23:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:23:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:23:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:23:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:23:28] INFO root fetch - main [MainThread]: Store serial: [17638680]
