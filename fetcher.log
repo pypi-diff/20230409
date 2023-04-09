@@ -4410,3 +4410,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 12:53:43] INFO root fetch - processPackages [nonebot-desktop-wing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-wing-0.1.0.tar.gz tmp/nonebot-desktop-wing-0.1.1.tar.gz --markdown 20230409/n/nonebot-desktop-wing/0.1.0-0.1.1/diff.md --exclude *.pyd
 [2023-04-09 12:53:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:53:44] INFO root fetch - main [MainThread]: Store serial: [17635997]
+[2023-04-09 12:58:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635997]
+[2023-04-09 12:58:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 12:58:51] WARNING root fetch - processPackages [lakestream]: Skipping, unable to determine old version
+[2023-04-09 12:58:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 12:58:51] INFO root fetch - processPackages [pingdatautil]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 12:58:51] WARNING root fetch - processPackages [sqlmodel-repository]: Skipping, unable to determine old version
+[2023-04-09 12:58:51] WARNING root fetch - processPackages [td-ameritrade-etl]: Skipping, unable to determine old version
+[2023-04-09 12:58:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 12:58:51] INFO root fetch - processPackages [lacuscore]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-09 12:58:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 12:58:51] INFO root fetch - processPackages [trans-utils]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-04-09 12:58:51] INFO root fetch - processPackages [pingdatautil]: Downloading https://files.pythonhosted.org/packages/09/ab/15d4bbc00909fb7ced48b7e4346de154add67854a5f06198782f59709da5/pingdatautil-0.0.1.tar.gz
+[2023-04-09 12:58:51] INFO root fetch - processPackages [lacuscore]: Downloading https://files.pythonhosted.org/packages/6e/e6/7632119c809741fffbbb8b162a821444a7ff9fbc6a38f4325c0fbb79ed5a/lacuscore-1.4.2.tar.gz
+[2023-04-09 12:58:51] INFO root fetch - processPackages [trans-utils]: Downloading https://files.pythonhosted.org/packages/2f/6b/fd2a62378ebabca7fffa2d86dd9b99c3ea0b6c018b8cd37f722b199dbda0/trans_utils-0.2.2-py3-none-any.whl
+[2023-04-09 12:58:52] INFO root fetch - processPackages [lacuscore]: executing diffoscope
+[2023-04-09 12:58:52] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.1.tar.gz tmp/lacuscore-1.4.2.tar.gz --markdown 20230409/l/lacuscore/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-09 12:58:52] INFO root fetch - processPackages [pingdatautil]: Downloading https://files.pythonhosted.org/packages/5b/b8/efd4d179550881d3b9080bd0efa11793df656a7d8e35a7b6f29613f3c5d3/pingdatautil-0.0.2.tar.gz
+[2023-04-09 12:58:52] INFO root fetch - processPackages [trans-utils]: Downloading https://files.pythonhosted.org/packages/3b/a2/8e9d94c3ee656c6f9b367606d04cd47f9074be69c17777290bfaeb75f5db/trans_utils-0.3.0-py3-none-any.whl
+[2023-04-09 12:58:52] INFO root fetch - processPackages [pingdatautil]: executing diffoscope
+[2023-04-09 12:58:52] INFO root fetch - processPackages [pingdatautil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pingdatautil-0.0.1.tar.gz tmp/pingdatautil-0.0.2.tar.gz --markdown 20230409/p/pingdatautil/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 12:58:52] INFO root fetch - processPackages [trans-utils]: executing diffoscope
+[2023-04-09 12:58:52] INFO root fetch - processPackages [trans-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trans_utils-0.2.2-py3-none-any.whl.zip tmp/trans_utils-0.3.0-py3-none-any.whl.zip --markdown 20230409/t/trans-utils/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 12:58:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:58:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:58:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:58:54] INFO root fetch - main [MainThread]: Store serial: [17636039]
