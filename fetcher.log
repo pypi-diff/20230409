@@ -9392,3 +9392,28 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:56:56] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:56:56] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:56:56] INFO root fetch - main [MainThread]: Store serial: [17639549]
+[2023-04-09 23:01:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639549]
+[2023-04-09 23:02:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 23:02:04] INFO root fetch - processPackages [smartrent.py]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-09 23:02:04] INFO root fetch - processPackages [edwh]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-09 23:02:04] INFO root fetch - processPackages [gridworks-proactor]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-09 23:02:04] INFO root fetch - processPackages [openhasp-config-manager]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-09 23:02:04] INFO root fetch - processPackages [gridworks-proactor]: Downloading https://files.pythonhosted.org/packages/08/6e/e99e9ba8722492d55df48bf61ffce48ec5ff120674525b9d0cf3a2f31ca3/gridworks_proactor-0.1.5.tar.gz
+[2023-04-09 23:02:04] INFO root fetch - processPackages [openhasp-config-manager]: Downloading https://files.pythonhosted.org/packages/c7/a6/49609aff7be74246cdfc5b254ba043a4c3f0be6752bab4ca061613f622ff/openhasp_config_manager-0.4.5.tar.gz
+[2023-04-09 23:02:04] INFO root fetch - processPackages [smartrent.py]: Downloading https://files.pythonhosted.org/packages/2c/3e/a530194321c01aeb3546a371d6d0438a3f8804bfdeb0aaed901dc13b3005/smartrent.py-0.4.0.tar.gz
+[2023-04-09 23:02:04] INFO root fetch - processPackages [openhasp-config-manager]: executing diffoscope
+[2023-04-09 23:02:04] INFO root fetch - processPackages [openhasp-config-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openhasp_config_manager-0.4.4.tar.gz tmp/openhasp_config_manager-0.4.5.tar.gz --markdown 20230409/o/openhasp-config-manager/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-09 23:02:04] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/b4/75/2cb6ba58a4d2ae92fab6f6ba4291ca128c586509ba48967c933ed63061b2/edwh-0.2.3.tar.gz
+[2023-04-09 23:02:04] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-09 23:02:04] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.2.2.tar.gz tmp/edwh-0.2.3.tar.gz --markdown 20230409/e/edwh/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-09 23:02:04] INFO root fetch - processPackages [smartrent.py]: Downloading https://files.pythonhosted.org/packages/cd/63/8ef0955524c5895ecac6fa99d070e8687add8a452ce2e594c15af1ee4e04/smartrent.py-0.4.1.tar.gz
+[2023-04-09 23:02:04] INFO root fetch - processPackages [gridworks-proactor]: Downloading https://files.pythonhosted.org/packages/b0/03/5ecba8a503f28501daa62b3efa429940e9eaa2d491f51f001deb17edcd9c/gridworks_proactor-0.1.6.tar.gz
+[2023-04-09 23:02:05] INFO root fetch - processPackages [smartrent.py]: executing diffoscope
+[2023-04-09 23:02:05] INFO root fetch - processPackages [smartrent.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartrent.py-0.4.0.tar.gz tmp/smartrent.py-0.4.1.tar.gz --markdown 20230409/s/smartrent.py/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-09 23:02:05] INFO root fetch - processPackages [gridworks-proactor]: executing diffoscope
+[2023-04-09 23:02:05] INFO root fetch - processPackages [gridworks-proactor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridworks_proactor-0.1.5.tar.gz tmp/gridworks_proactor-0.1.6.tar.gz --markdown 20230409/g/gridworks-proactor/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-09 23:02:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:02:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:02:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:02:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:02:06] INFO root fetch - main [MainThread]: Store serial: [17639561]
