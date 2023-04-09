@@ -5728,3 +5728,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 15:54:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:54:13] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:54:13] INFO root fetch - main [MainThread]: Store serial: [17637003]
+[2023-04-09 15:59:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637003]
+[2023-04-09 15:59:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 15:59:21] INFO root fetch - processPackages [keyrock-encryption]: New version: [2023.4.9.1358] Old Version: [2023.4.8.1854]
+[2023-04-09 15:59:21] INFO root fetch - processPackages [mahdienc]: New version: [0.2] Old Version: [0.1]
+[2023-04-09 15:59:21] INFO root fetch - processPackages [vorta]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-09 15:59:22] INFO root fetch - processPackages [peaksjs-widget]: New version: [0.1.1.dev0] Old Version: [0.1.0.dev1]
+[2023-04-09 15:59:22] INFO root fetch - processPackages [lazylinop]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-09 15:59:22] INFO root fetch - processPackages [mahdienc]: Downloading https://files.pythonhosted.org/packages/9c/a3/267564310f86b7cb4620ceb23f8920d9e8f516bb03746591c9d75bc720be/mahdienc-0.1.tar.gz
+[2023-04-09 15:59:22] INFO root fetch - processPackages [keyrock-encryption]: Downloading https://files.pythonhosted.org/packages/90/3d/ab5b62a34d9aac29dcd0da043cc329669ca35f5552c6f61ccd64a008377b/keyrock-encryption-2023.4.9.1358.tar.gz
+[2023-04-09 15:59:22] INFO root fetch - processPackages [vorta]: Downloading https://files.pythonhosted.org/packages/7a/29/f0a581c576a20b3a0ec7caf03ac8f27eb8cca60c53ba4c03cd451721e443/vorta-0.8.8.tar.gz
+[2023-04-09 15:59:22] INFO root fetch - processPackages [lazylinop]: Downloading https://files.pythonhosted.org/packages/e1/09/801da882d3d912fcaa96b7e5d9a70f7fa5384c4b918ba01726f645d0646f/lazylinop-1.0.7-py3-none-any.whl
+[2023-04-09 15:59:22] INFO root fetch - processPackages [peaksjs-widget]: executing diffoscope
+[2023-04-09 15:59:22] INFO root fetch - processPackages [peaksjs-widget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaksjs_widget-0.1.0.dev1.tar.gz tmp/peaksjs_widget-0.1.1.dev0.tar.gz --markdown 20230409/p/peaksjs-widget/0.1.0.dev1-0.1.1.dev0/diff.md --exclude *.pyd
+[2023-04-09 15:59:22] INFO root fetch - processPackages [keyrock-encryption]: executing diffoscope
+[2023-04-09 15:59:22] INFO root fetch - processPackages [keyrock-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keyrock-encryption-2023.4.8.1854.tar.gz tmp/keyrock-encryption-2023.4.9.1358.tar.gz --markdown 20230409/k/keyrock-encryption/2023.4.8.1854-2023.4.9.1358/diff.md --exclude *.pyd
+[2023-04-09 15:59:22] INFO root fetch - processPackages [lazylinop]: Downloading https://files.pythonhosted.org/packages/5c/fd/39e677779966df2318a92fd88e0cd8305aa4971e4644fb3c00f928fb58cd/lazylinop-1.0.8-py3-none-any.whl
+[2023-04-09 15:59:22] INFO root fetch - processPackages [mahdienc]: Downloading https://files.pythonhosted.org/packages/61/46/53d5a240cb9802c21e0a6f6ef25dc8f30ad4eb8f000e34d77256a73a6689/mahdienc-0.2.tar.gz
+[2023-04-09 15:59:22] INFO root fetch - processPackages [lazylinop]: executing diffoscope
+[2023-04-09 15:59:22] INFO root fetch - processPackages [lazylinop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazylinop-1.0.7-py3-none-any.whl.zip tmp/lazylinop-1.0.8-py3-none-any.whl.zip --markdown 20230409/l/lazylinop/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-09 15:59:22] INFO root fetch - processPackages [mahdienc]: executing diffoscope
+[2023-04-09 15:59:22] INFO root fetch - processPackages [mahdienc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mahdienc-0.1.tar.gz tmp/mahdienc-0.2.tar.gz --markdown 20230409/m/mahdienc/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-09 15:59:23] INFO root fetch - processPackages [vorta]: Downloading https://files.pythonhosted.org/packages/7e/59/439353a00ed22ce5ff388c3b0dba7f945f8a308d66ec533e2d37d0f788e9/vorta-0.8.9.tar.gz
+[2023-04-09 15:59:23] INFO root fetch - processPackages [vorta]: executing diffoscope
+[2023-04-09 15:59:23] INFO root fetch - processPackages [vorta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vorta-0.8.8.tar.gz tmp/vorta-0.8.9.tar.gz --markdown 20230409/v/vorta/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-09 15:59:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:59:23] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 15:59:23] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 15:59:23] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 15:59:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:59:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:59:23] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-09 15:59:23] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-09 15:59:23] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230409/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-09 15:59:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:59:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:59:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:00:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:00:03] INFO root fetch - main [MainThread]: Store serial: [17637022]
