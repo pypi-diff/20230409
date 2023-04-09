@@ -7714,3 +7714,32 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:36:29] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:36:29] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:36:29] INFO root fetch - main [MainThread]: Store serial: [17638462]
+[2023-04-09 19:41:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638462]
+[2023-04-09 19:41:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 19:41:36] INFO root fetch - processPackages [hbili-gpt]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 19:41:36] INFO root fetch - processPackages [django-forbid]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 19:41:36] INFO root fetch - processPackages [citros]: New version: [23.14.9] Old Version: [23.14.8]
+[2023-04-09 19:41:36] INFO root fetch - processPackages [plugwise]: New version: [0.9.4a9] Old Version: [0.9.4a8]
+[2023-04-09 19:41:36] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-09 19:41:36] INFO root fetch - processPackages [hbili-gpt]: executing diffoscope
+[2023-04-09 19:41:36] INFO root fetch - processPackages [hbili-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbili-gpt-0.1.8.tar.gz tmp/hbili-gpt-0.1.9.tar.gz --markdown 20230409/h/hbili-gpt/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 19:41:36] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 19:41:36] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.8.tar.gz tmp/citros-23.14.9.tar.gz --markdown 20230409/c/citros/23.14.8-23.14.9/diff.md --exclude *.pyd
+[2023-04-09 19:41:37] INFO root fetch - processPackages [django-forbid]: Downloading https://files.pythonhosted.org/packages/7b/e0/20e330f353b77a615e6ade67b4bdbc323a33995a174bac56d5f71a1e2661/django-forbid-0.0.3.tar.gz
+[2023-04-09 19:41:37] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-09 19:41:37] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230409/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-09 19:41:37] INFO root fetch - processPackages [plugwise]: Downloading https://files.pythonhosted.org/packages/9f/eb/88773e492984c980bc342942239d3bd6eee77c3dc052d35d25e42e2137a6/plugwise-0.9.4a8.tar.gz
+[2023-04-09 19:41:37] INFO root fetch - processPackages [django-forbid]: Downloading https://files.pythonhosted.org/packages/81/97/9fef0607fe40650d464e3865d48ed389564e24edcfafca04cbc9831e844f/django-forbid-0.0.4.tar.gz
+[2023-04-09 19:41:37] INFO root fetch - processPackages [plugwise]: Downloading https://files.pythonhosted.org/packages/ec/fd/45b5a2ee424806593e900234e26bf62ae0c3582ac99cadfa9477e6719004/plugwise-0.9.4a9.tar.gz
+[2023-04-09 19:41:37] INFO root fetch - processPackages [django-forbid]: executing diffoscope
+[2023-04-09 19:41:37] INFO root fetch - processPackages [django-forbid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-forbid-0.0.3.tar.gz tmp/django-forbid-0.0.4.tar.gz --markdown 20230409/d/django-forbid/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 19:41:37] INFO root fetch - processPackages [plugwise]: executing diffoscope
+[2023-04-09 19:41:37] INFO root fetch - processPackages [plugwise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugwise-0.9.4a8.tar.gz tmp/plugwise-0.9.4a9.tar.gz --markdown 20230409/p/plugwise/0.9.4a8-0.9.4a9/diff.md --exclude *.pyd
+[2023-04-09 19:41:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:41:38] WARNING root fetch - processPackages [tranquilo]: Skipping, unable to determine old version
+[2023-04-09 19:41:38] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:41:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:41:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:41:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:41:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:41:41] INFO root fetch - main [MainThread]: Store serial: [17638483]
