@@ -3296,3 +3296,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:56:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:56:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:56:44] INFO root fetch - main [MainThread]: Store serial: [17635196]
+[2023-04-09 10:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635196]
+[2023-04-09 10:01:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 10:01:51] INFO root fetch - processPackages [stlog]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 10:01:51] INFO root fetch - processPackages [Goosu]: New version: [0.1] Old Version: [0.0]
+[2023-04-09 10:01:51] INFO root fetch - processPackages [videobox]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-09 10:01:51] INFO root fetch - processPackages [kavk-api]: New version: [0.9.7.3] Old Version: [0.9.7.2]
+[2023-04-09 10:01:51] INFO root fetch - processPackages [Goosu]: Downloading https://files.pythonhosted.org/packages/45/7a/47f83f5ae8442a9c6f2d26ddf2978acd2aa18996f15de21b8ff6225c2b4b/Goosu-0.0.tar.gz
+[2023-04-09 10:01:51] INFO root fetch - processPackages [stlog]: Downloading https://files.pythonhosted.org/packages/46/08/4f06fd83ee6670e184f0a1bda204eb80ad6eda73354f8921b6347f7627db/stlog-0.0.4.tar.gz
+[2023-04-09 10:01:51] INFO root fetch - processPackages [videobox]: Downloading https://files.pythonhosted.org/packages/d1/14/bb72248e8047b60c77f0e4656186675fd8a2e30424ebb9c1706a5adc74f7/videobox-0.3.2.tar.gz
+[2023-04-09 10:01:52] INFO root fetch - processPackages [kavk-api]: Downloading https://files.pythonhosted.org/packages/50/f1/4d5f033f64d7976654f1fec57ed0ed74c05f8f89631c3676f626bea61f92/kavk_api-0.9.7.3.tar.gz
+[2023-04-09 10:01:52] INFO root fetch - processPackages [kavk-api]: executing diffoscope
+[2023-04-09 10:01:52] INFO root fetch - processPackages [kavk-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kavk_api-0.9.7.2.tar.gz tmp/kavk_api-0.9.7.3.tar.gz --markdown 20230409/k/kavk-api/0.9.7.2-0.9.7.3/diff.md --exclude *.pyd
+[2023-04-09 10:01:52] INFO root fetch - processPackages [Goosu]: Downloading https://files.pythonhosted.org/packages/98/a6/8bf7dbc3bb20cf72d9c91cd24a07df455b23b5375953e56c9e3e8f398288/Goosu-0.1.tar.gz
+[2023-04-09 10:01:52] INFO root fetch - processPackages [stlog]: Downloading https://files.pythonhosted.org/packages/1b/4f/cd045c81ba462219f034ee716b509a8e5548c9fe331da37bf71efcb2ae43/stlog-0.0.5.tar.gz
+[2023-04-09 10:01:52] INFO root fetch - processPackages [stlog]: executing diffoscope
+[2023-04-09 10:01:52] INFO root fetch - processPackages [stlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stlog-0.0.4.tar.gz tmp/stlog-0.0.5.tar.gz --markdown 20230409/s/stlog/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 10:01:52] INFO root fetch - processPackages [videobox]: Downloading https://files.pythonhosted.org/packages/f3/54/c2f570573bf660a379c72133aa19925f08c7d139cc8fcfaa9a69224c45d7/videobox-0.4.0.tar.gz
+[2023-04-09 10:01:52] INFO root fetch - processPackages [videobox]: executing diffoscope
+[2023-04-09 10:01:52] INFO root fetch - processPackages [videobox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videobox-0.3.2.tar.gz tmp/videobox-0.4.0.tar.gz --markdown 20230409/v/videobox/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-09 10:01:52] INFO root fetch - processPackages [Goosu]: executing diffoscope
+[2023-04-09 10:01:52] INFO root fetch - processPackages [Goosu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Goosu-0.0.tar.gz tmp/Goosu-0.1.tar.gz --markdown 20230409/G/Goosu/0.0-0.1/diff.md --exclude *.pyd
+[2023-04-09 10:01:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:01:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:01:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:01:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:01:53] INFO root fetch - main [MainThread]: Store serial: [17635210]
