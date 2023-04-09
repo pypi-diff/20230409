@@ -5439,3 +5439,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 15:10:27] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:10:31] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:10:31] INFO root fetch - main [MainThread]: Store serial: [17636825]
+[2023-04-09 15:15:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636825]
+[2023-04-09 15:15:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 15:15:39] INFO root fetch - processPackages [hexa]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 15:15:39] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 15:15:39] INFO root fetch - processPackages [incipyt]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-09 15:15:39] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 15:15:39] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.703] Old Version: [0.0.702]
+[2023-04-09 15:15:39] INFO root fetch - processPackages [hexa]: Downloading https://files.pythonhosted.org/packages/e6/68/f2917e1192dedeba4dedfa9c40ec787f4431615446a487fed13e77a4d784/hexa-0.0.1-py3-none-any.whl
+[2023-04-09 15:15:39] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-09 15:15:39] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230409/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 15:15:39] INFO root fetch - processPackages [incipyt]: Downloading https://files.pythonhosted.org/packages/9b/96/cf7be0c1a77e91f198aafd1ef57e8fcb55e32c2496263972c86b10b15154/incipyt-0.2.0.tar.gz
+[2023-04-09 15:15:39] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/6e/a8/b8643dad31c9921d7d23368908c71304b0dc85aca8293ba75f6c79767a82/nbdev-apl-0.0.703.tar.gz
+[2023-04-09 15:15:39] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/4f/ef/fda8cd8fa77cf1995400d770038f35794e1a7943adb80fbe2fa4cdf9f7e6/CircleBlock-1.0.3.tar.gz
+[2023-04-09 15:15:39] INFO root fetch - processPackages [incipyt]: Downloading https://files.pythonhosted.org/packages/c4/25/d96600e541fc8d8611a303daecf8484eb5faf8030891d391ba7bc378f6df/incipyt-0.3.0.tar.gz
+[2023-04-09 15:15:39] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-09 15:15:39] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.702.tar.gz tmp/nbdev-apl-0.0.703.tar.gz --markdown 20230409/n/nbdev-apl/0.0.702-0.0.703/diff.md --exclude *.pyd
+[2023-04-09 15:15:39] INFO root fetch - processPackages [hexa]: Downloading https://files.pythonhosted.org/packages/27/6d/6a32ec4cf53f5867f54642be98b5eeb8faff43cf89a59a707f55233adc2b/hexa-0.0.2.tar.gz
+[2023-04-09 15:15:39] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-09 15:15:39] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.2.tar.gz tmp/CircleBlock-1.0.3.tar.gz --markdown 20230409/C/CircleBlock/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 15:15:40] INFO root fetch - processPackages [incipyt]: executing diffoscope
+[2023-04-09 15:15:40] INFO root fetch - processPackages [incipyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/incipyt-0.2.0.tar.gz tmp/incipyt-0.3.0.tar.gz --markdown 20230409/i/incipyt/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 15:15:40] INFO root fetch - processPackages [hexa]: executing diffoscope
+[2023-04-09 15:15:40] INFO root fetch - processPackages [hexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexa-0.0.1-py3-none-any.whl.zip tmp/hexa-0.0.2.tar.gz --markdown 20230409/h/hexa/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 15:15:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:15:40] INFO root fetch - processPackages [homcloud]: New version: [4.0.0a3] Old Version: [4.0.0a2]
+[2023-04-09 15:15:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:15:40] INFO root fetch - processPackages [homcloud]: Downloading https://files.pythonhosted.org/packages/ef/ac/7a628368686ea9ea59a83f80ad98681c24eb7a7e6362285b233b211f8bd5/homcloud-4.0.0a2.tar.gz
+[2023-04-09 15:15:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:15:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:15:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:15:41] INFO root fetch - processPackages [homcloud]: Downloading https://files.pythonhosted.org/packages/9b/3f/69e8ca7bbaa2185a52b91fb13f30dbc36f3f48f5cde3a63a16f12ecdd5ca/homcloud-4.0.0a3.tar.gz
+[2023-04-09 15:15:41] INFO root fetch - processPackages [homcloud]: executing diffoscope
+[2023-04-09 15:15:41] INFO root fetch - processPackages [homcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homcloud-4.0.0a2.tar.gz tmp/homcloud-4.0.0a3.tar.gz --markdown 20230409/h/homcloud/4.0.0a2-4.0.0a3/diff.md --exclude *.pyd
+[2023-04-09 15:15:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:15:56] INFO root fetch - main [MainThread]: Store serial: [17636846]
