@@ -3632,3 +3632,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:53:59] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:54:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:54:03] INFO root fetch - main [MainThread]: Store serial: [17635405]
+[2023-04-09 10:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635405]
+[2023-04-09 10:59:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 10:59:10] INFO root fetch - processPackages [kiwigrad]: New version: [0.1] Old Version: [0.0.9]
+[2023-04-09 10:59:10] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-04-09 10:59:10] INFO root fetch - processPackages [smartbox]: New version: [2.0.0b2] Old Version: [2.0.0b1]
+[2023-04-09 10:59:10] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 10:59:11] INFO root fetch - processPackages [kiwigrad]: Downloading https://files.pythonhosted.org/packages/74/19/5633e34e9b151b5a728a1926d19171eec747171fe3834c7ee88b54f139ca/kiwigrad-0.0.9.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/8d/23/c482502389d5171a6c47c6cdf326634d6d13e53ca269966d2bbe4507e701/cdk8s-plus-26-2.2.8.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [smartbox]: Downloading https://files.pythonhosted.org/packages/f1/fb/2d91cc75e7ff9ba60b2531127d3ab9bbcf4a1e4f37e33c2661f611039e52/smartbox-2.0.0b1.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/7c/c4/d60a564f3da745273bfa35e59033388d7e8d9e9554261bd419d45d8071c7/txt2ebook-0.1.8.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [kiwigrad]: Downloading https://files.pythonhosted.org/packages/f4/74/db135b570aa347433f2f0bcdcd269b52313648160820cdb8094434e67b9b/kiwigrad-0.1.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [kiwigrad]: executing diffoscope
+[2023-04-09 10:59:11] INFO root fetch - processPackages [kiwigrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwigrad-0.0.9.tar.gz tmp/kiwigrad-0.1.tar.gz --markdown 20230409/k/kiwigrad/0.0.9-0.1/diff.md --exclude *.pyd
+[2023-04-09 10:59:11] INFO root fetch - processPackages [smartbox]: Downloading https://files.pythonhosted.org/packages/06/96/86e331af46bca4237949eb20935d75a96ebfd18434cf1cb0a00d8dd98360/smartbox-2.0.0b2.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [smartbox]: executing diffoscope
+[2023-04-09 10:59:11] INFO root fetch - processPackages [smartbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartbox-2.0.0b1.tar.gz tmp/smartbox-2.0.0b2.tar.gz --markdown 20230409/s/smartbox/2.0.0b1-2.0.0b2/diff.md --exclude *.pyd
+[2023-04-09 10:59:11] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/63/ce/2a84cc2cdfe7af7bfde884eac04444bee9642df350565b204d57dfbe8bc6/cdk8s-plus-26-2.2.9.tar.gz
+[2023-04-09 10:59:11] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2023-04-09 10:59:11] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.8.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20230409/t/txt2ebook/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 10:59:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:59:12] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-04-09 10:59:12] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.2.8.tar.gz tmp/cdk8s-plus-26-2.2.9.tar.gz --markdown 20230409/c/cdk8s-plus-26/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-04-09 10:59:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:59:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:59:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:59:13] INFO root fetch - main [MainThread]: Store serial: [17635421]
