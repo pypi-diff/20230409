@@ -6480,3 +6480,53 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:29:29] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:29:32] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:29:32] INFO root fetch - main [MainThread]: Store serial: [17637543]
+[2023-04-09 17:34:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637543]
+[2023-04-09 17:34:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 17:34:39] INFO root fetch - processPackages [roboweb-extension]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 17:34:39] INFO root fetch - processPackages [ronbun]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-09 17:34:39] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.17] Old Version: [0.1.16]
+[2023-04-09 17:34:39] INFO root fetch - processPackages [spinecore]: New version: [0.0.18] Old Version: [0.0.17]
+[2023-04-09 17:34:39] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-09 17:34:40] INFO root fetch - processPackages [roboweb-extension]: executing diffoscope
+[2023-04-09 17:34:40] INFO root fetch - processPackages [roboweb-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb-extension-0.1.8.tar.gz tmp/roboweb_extension-0.1.9.tar.gz --markdown 20230409/r/roboweb-extension/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 17:34:40] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-09 17:34:40] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230409/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-09 17:34:40] INFO root fetch - processPackages [ronbun]: Downloading https://files.pythonhosted.org/packages/cb/9e/0326b314e80615cb99c560372d47ffd69f7c8c2f646628bb5d4bfb9add8e/ronbun-0.7.1.tar.gz
+[2023-04-09 17:34:40] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/2f/ea/2ebeae5a45e6c920d5c42b4245133fb14188fc41fd483ff7f3eed0b5baeb/roboweb_server-0.1.17.tar.gz
+[2023-04-09 17:34:40] INFO root fetch - processPackages [spinecore]: Downloading https://files.pythonhosted.org/packages/e9/20/221c90c172e0dff7a8747a0eb7282f65b6d509e2d7dace7c1c3533dcbec9/spinecore-0.0.18.tar.gz
+[2023-04-09 17:34:40] INFO root fetch - processPackages [spinecore]: executing diffoscope
+[2023-04-09 17:34:40] INFO root fetch - processPackages [spinecore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spinecore-0.0.17.tar.gz tmp/spinecore-0.0.18.tar.gz --markdown 20230409/s/spinecore/0.0.17-0.0.18/diff.md --exclude *.pyd
+[2023-04-09 17:34:40] INFO root fetch - processPackages [ronbun]: Downloading https://files.pythonhosted.org/packages/c3/1c/6cbbea467d83f98a99bf2cdc359cbf45e36f5ef592feae21447594081980/ronbun-0.7.2.tar.gz
+[2023-04-09 17:34:40] INFO root fetch - processPackages [ronbun]: executing diffoscope
+[2023-04-09 17:34:40] INFO root fetch - processPackages [ronbun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ronbun-0.7.1.tar.gz tmp/ronbun-0.7.2.tar.gz --markdown 20230409/r/ronbun/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-09 17:34:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:34:41] INFO root fetch - processPackages [sqlmodel-repository]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 17:34:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:34:41] INFO root fetch - processPackages [aiva-core]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-09 17:34:41] INFO root fetch - processPackages [sqlmodel-repository]: Downloading https://files.pythonhosted.org/packages/72/96/0c55511a98a823d9599b07df7dccd32faf38dd665299131135c46c51d297/sqlmodel_repository-1.0.0.tar.gz
+[2023-04-09 17:34:41] INFO root fetch - processPackages [aiva-core]: Downloading https://files.pythonhosted.org/packages/c0/39/7e3997e395c4046a69bb779d214f96ec666bf927f67cd1e34487fd6b726b/aiva_core-0.1.3.tar.gz
+[2023-04-09 17:34:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:34:41] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a127] Old Version: [0.0.1a126]
+[2023-04-09 17:34:41] INFO root fetch - processPackages [aiva-core]: executing diffoscope
+[2023-04-09 17:34:41] INFO root fetch - processPackages [aiva-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiva_core-0.1.2.tar.gz tmp/aiva_core-0.1.3.tar.gz --markdown 20230409/a/aiva-core/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-09 17:34:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:34:41] INFO root fetch - processPackages [ddd-interface]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 17:34:41] INFO root fetch - processPackages [sqlmodel-repository]: Downloading https://files.pythonhosted.org/packages/b5/e3/357c6477ff16f4173de65ea1731f95abba6bc8347a8082e7a0e14edeff30/sqlmodel_repository-1.0.1.tar.gz
+[2023-04-09 17:34:41] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/16/f5/ffabfdc8fea088b4d5bd59ccaf7d3bf8bbb52865db0b8b3112e077eb102b/simplebox-0.0.1a126-py3-none-any.whl
+[2023-04-09 17:34:41] INFO root fetch - processPackages [ddd-interface]: Downloading https://files.pythonhosted.org/packages/ed/46/95cf61042f0a6e281dcd1fe4b499e0ba2fe0efd356fbb3354abf994640bc/ddd-interface-0.0.8.tar.gz
+[2023-04-09 17:34:41] INFO root fetch - processPackages [sqlmodel-repository]: executing diffoscope
+[2023-04-09 17:34:41] INFO root fetch - processPackages [sqlmodel-repository]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmodel_repository-1.0.0.tar.gz tmp/sqlmodel_repository-1.0.1.tar.gz --markdown 20230409/s/sqlmodel-repository/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 17:34:42] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/fd/6d/5bae08262c617867ca8d93da41a82d83c8097d5c3b2c32aaa35ecb03c6e5/simplebox-0.0.1a127-py3-none-any.whl
+[2023-04-09 17:34:42] INFO root fetch - processPackages [ddd-interface]: Downloading https://files.pythonhosted.org/packages/58/b2/318a7beb4e7e0def7060bf008b5b42b7d37cf05c39584ed232d263de0793/ddd-interface-0.0.9.tar.gz
+[2023-04-09 17:34:42] INFO root fetch - processPackages [ddd-interface]: executing diffoscope
+[2023-04-09 17:34:42] INFO root fetch - processPackages [ddd-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddd-interface-0.0.8.tar.gz tmp/ddd-interface-0.0.9.tar.gz --markdown 20230409/d/ddd-interface/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 17:34:42] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2023-04-09 17:34:42] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a126-py3-none-any.whl.zip tmp/simplebox-0.0.1a127-py3-none-any.whl.zip --markdown 20230409/s/simplebox/0.0.1a126-0.0.1a127/diff.md --exclude *.pyd
+[2023-04-09 17:34:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:34:42] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 17:34:42] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.16.tar.gz tmp/roboweb_server-0.1.17.tar.gz --markdown 20230409/r/roboweb-server/0.1.16-0.1.17/diff.md --exclude *.pyd
+[2023-04-09 17:34:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:34:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:34:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:35:19] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:35:19] INFO root fetch - main [MainThread]: Store serial: [17637570]
