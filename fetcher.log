@@ -2491,3 +2491,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 07:55:42] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:55:42] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:55:42] INFO root fetch - main [MainThread]: Store serial: [17634595]
+[2023-04-09 08:00:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634595]
+[2023-04-09 08:00:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 08:00:50] WARNING root fetch - processPackages [parsimonious-lite]: Skipping, unable to determine old version
+[2023-04-09 08:00:50] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:00:50] WARNING root fetch - processPackages [CustomGPT]: Skipping, unable to determine old version
+[2023-04-09 08:00:50] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pybgpkit-parser]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pynecone]: New version: [0.1.22a0] Old Version: [0.1.22]
+[2023-04-09 08:00:50] INFO root fetch - processPackages [toad]: New version: [0.1.2rc0] Old Version: [0.1.1a0]
+[2023-04-09 08:00:50] INFO root fetch - processPackages [nlterm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 08:00:50] INFO root fetch - processPackages [systemrdl-compiler]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pybgpkit-parser]: Downloading https://files.pythonhosted.org/packages/6e/21/6b1fe72649e0be0c5190bcf5a2818761977ca2b6f825cf938d2a05144b41/pybgpkit_parser-0.4.1.tar.gz
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pynecone]: Downloading https://files.pythonhosted.org/packages/88/64/6d18b64117fdc18184480c570f5338257693513d55556189c726d5169cd7/pynecone-0.1.22.tar.gz
+[2023-04-09 08:00:50] INFO root fetch - processPackages [nlterm]: Downloading https://files.pythonhosted.org/packages/6a/66/ceffd608bb4b0a73fd35737bec08cb7c78d91a7f3cae5bfdcf920e62b2fa/nlterm-0.0.2.tar.gz
+[2023-04-09 08:00:50] INFO root fetch - processPackages [toad]: Downloading https://files.pythonhosted.org/packages/0b/5a/074f033606b655b45fcabec0842578c82b42580c678f94f320be05ae61f1/toad-0.1.1a0.tar.gz
+[2023-04-09 08:00:50] INFO root fetch - processPackages [systemrdl-compiler]: Downloading https://files.pythonhosted.org/packages/24/b3/2f21e1b9eb4f3c12980fed433a65ec43d39ef511990977d98a4af2859cb5/systemrdl-compiler-1.8.0.tar.gz
+[2023-04-09 08:00:50] WARNING root fetch - processPackages [toad]: Skipping package: exceeds size limit 13980393>=10485760
+[2023-04-09 08:00:50] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pynecone]: executing diffoscope
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pynecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynecone-0.1.22.tar.gz tmp/pynecone-0.1.22a0.tar.gz --markdown 20230409/p/pynecone/0.1.22-0.1.22a0/diff.md --exclude *.pyd
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pybgpkit-parser]: Downloading https://files.pythonhosted.org/packages/f6/ff/a117d723598884f13119bd05d5f20f4c5f3a26cda734bd54d01c6be693b7/pybgpkit_parser-0.4.2.tar.gz
+[2023-04-09 08:00:50] INFO root fetch - processPackages [nlterm]: Downloading https://files.pythonhosted.org/packages/ba/25/0fba24147a3673d758ecfb6d842625cea1903eabe615b473b67f74b9b355/nlterm-0.0.3.tar.gz
+[2023-04-09 08:00:50] INFO root fetch - processPackages [systemrdl-compiler]: Downloading https://files.pythonhosted.org/packages/3c/ee/de4fae11995c64843ad11ad5085ee6d1de5b3dda00be2274aca72b5d9cf3/systemrdl-compiler-1.9.0.tar.gz
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pybgpkit-parser]: executing diffoscope
+[2023-04-09 08:00:50] INFO root fetch - processPackages [pybgpkit-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybgpkit_parser-0.4.1.tar.gz tmp/pybgpkit_parser-0.4.2.tar.gz --markdown 20230409/p/pybgpkit-parser/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-09 08:00:50] INFO root fetch - processPackages [nlterm]: executing diffoscope
+[2023-04-09 08:00:50] INFO root fetch - processPackages [nlterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlterm-0.0.2.tar.gz tmp/nlterm-0.0.3.tar.gz --markdown 20230409/n/nlterm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 08:00:51] INFO root fetch - processPackages [systemrdl-compiler]: executing diffoscope
+[2023-04-09 08:00:51] INFO root fetch - processPackages [systemrdl-compiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systemrdl-compiler-1.8.0.tar.gz tmp/systemrdl-compiler-1.9.0.tar.gz --markdown 20230409/s/systemrdl-compiler/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-09 08:00:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:00:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:00:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:00:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:00:52] INFO root fetch - main [MainThread]: Store serial: [17634651]
