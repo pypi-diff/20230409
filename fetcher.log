@@ -3412,3 +3412,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:12:15] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:12:16] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:12:16] INFO root fetch - main [MainThread]: Store serial: [17635277]
+[2023-04-09 10:17:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635277]
+[2023-04-09 10:17:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 10:17:23] INFO root fetch - processPackages [init-tikz]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 10:17:23] INFO root fetch - processPackages [cdk8s-operator]: New version: [0.1.9] Old Version: [0.1.86]
+[2023-04-09 10:17:23] INFO root fetch - processPackages [ChessToTheDeath]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 10:17:23] INFO root fetch - processPackages [runtimepy]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-04-09 10:17:23] INFO root fetch - processPackages [IPRA]: New version: [3.16.47] Old Version: [2.16.47]
+[2023-04-09 10:17:23] INFO root fetch - processPackages [cdk8s-operator]: Downloading https://files.pythonhosted.org/packages/10/09/7174c3047b1b5f0a8c4de632e09c914e4f9735c679054e1d5e4bb2c631bf/cdk8s-operator-0.1.86.tar.gz
+[2023-04-09 10:17:23] INFO root fetch - processPackages [ChessToTheDeath]: Downloading https://files.pythonhosted.org/packages/5e/2d/d1aafcda48cfb68578394f7e86abf6870583133edf265fd760e94db76d23/chesstothedeath-0.1.0-py3-none-any.whl
+[2023-04-09 10:17:23] INFO root fetch - processPackages [IPRA]: Downloading https://files.pythonhosted.org/packages/bb/26/dbbf36914ae40cf38559c46f1ae7103eab081e7e7298f537d397ec10786f/IPRA-2.16.47-py3-none-any.whl
+[2023-04-09 10:17:24] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/ca/b1/d11da5259aa2109f8252fb0b95d3cdcef5ae41e4d27292933a2b91d57833/runtimepy-1.2.0.tar.gz
+[2023-04-09 10:17:24] INFO root fetch - processPackages [init-tikz]: executing diffoscope
+[2023-04-09 10:17:24] INFO root fetch - processPackages [init-tikz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/init_tikz-0.1.8.tar.gz tmp/init_tikz-0.1.9.tar.gz --markdown 20230409/i/init-tikz/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 10:17:24] INFO root fetch - processPackages [runtimepy]: executing diffoscope
+[2023-04-09 10:17:24] INFO root fetch - processPackages [runtimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtimepy-1.1.1.tar.gz tmp/runtimepy-1.2.0.tar.gz --markdown 20230409/r/runtimepy/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-04-09 10:17:24] INFO root fetch - processPackages [IPRA]: Downloading https://files.pythonhosted.org/packages/c7/dd/ee1edb1b036e7a4bee76368bd4ce6cdd1ef4d8f44f06e2a6205102b52b15/IPRA-3.16.47-py3-none-any.whl
+[2023-04-09 10:17:24] INFO root fetch - processPackages [ChessToTheDeath]: Downloading https://files.pythonhosted.org/packages/59/b9/b3e94b8f850bcd3773ccb7ebf90ac5dfd2539736faa05ce15e111a0a5aed/chesstothedeath-0.1.1-py3-none-any.whl
+[2023-04-09 10:17:24] INFO root fetch - processPackages [cdk8s-operator]: Downloading https://files.pythonhosted.org/packages/cf/49/e3f05b44bf567dbb41f4a10cdd29813d1a09ebf081061811c9ae725089cd/cdk8s-operator-0.1.9.tar.gz
+[2023-04-09 10:17:24] INFO root fetch - processPackages [IPRA]: executing diffoscope
+[2023-04-09 10:17:24] INFO root fetch - processPackages [IPRA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IPRA-2.16.47-py3-none-any.whl.zip tmp/IPRA-3.16.47-py3-none-any.whl.zip --markdown 20230409/I/IPRA/2.16.47-3.16.47/diff.md --exclude *.pyd
+[2023-04-09 10:17:24] INFO root fetch - processPackages [ChessToTheDeath]: executing diffoscope
+[2023-04-09 10:17:24] INFO root fetch - processPackages [ChessToTheDeath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chesstothedeath-0.1.0-py3-none-any.whl.zip tmp/chesstothedeath-0.1.1-py3-none-any.whl.zip --markdown 20230409/C/ChessToTheDeath/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 10:17:24] INFO root fetch - processPackages [cdk8s-operator]: executing diffoscope
+[2023-04-09 10:17:24] INFO root fetch - processPackages [cdk8s-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-operator-0.1.86.tar.gz tmp/cdk8s-operator-0.1.9.tar.gz --markdown 20230409/c/cdk8s-operator/0.1.86-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 10:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:17:25] INFO root fetch - main [MainThread]: Store serial: [17635291]
