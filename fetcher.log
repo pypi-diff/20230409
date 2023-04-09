@@ -4231,3 +4231,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 12:19:41] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:19:42] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:19:42] INFO root fetch - main [MainThread]: Store serial: [17635881]
+[2023-04-09 12:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635881]
+[2023-04-09 12:24:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 12:24:49] INFO root fetch - processPackages [niklibpy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 12:24:49] INFO root fetch - processPackages [py3traits]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-09 12:24:49] INFO root fetch - processPackages [niklibpy]: Downloading https://files.pythonhosted.org/packages/8c/ae/b86ab1373fcf6091a6129b1774c479cecebbf53102da70f27de973a566aa/niklibpy-0.1.0.tar.gz
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: Downloading https://files.pythonhosted.org/packages/dd/11/557f41757be1eaa81af5644c218168ee7b26d660f0533bda3aeeefbe95ae/pokegraph-0.1.0-py3-none-any.whl
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: Downloading https://files.pythonhosted.org/packages/dd/11/557f41757be1eaa81af5644c218168ee7b26d660f0533bda3aeeefbe95ae/pokegraph-0.1.0-py3-none-any.whl
+[2023-04-09 12:24:49] INFO root fetch - processPackages [py3traits]: Downloading https://files.pythonhosted.org/packages/d1/f4/e5a2829fcfc28f64bee8f248465d100c2ef1fbbfc76cc609bbddf9e32467/py3traits-1.2.0-py2.py3-none-any.whl
+[2023-04-09 12:24:49] INFO root fetch - processPackages [niklibpy]: Downloading https://files.pythonhosted.org/packages/24/ef/24af4e2d81001806c3ffd85aeac3fca1abaa695b80a49e3c97c3583e6b7c/niklibpy-0.1.1.tar.gz
+[2023-04-09 12:24:49] INFO root fetch - processPackages [niklibpy]: executing diffoscope
+[2023-04-09 12:24:49] INFO root fetch - processPackages [niklibpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niklibpy-0.1.0.tar.gz tmp/niklibpy-0.1.1.tar.gz --markdown 20230409/n/niklibpy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: Downloading https://files.pythonhosted.org/packages/bb/17/959ec6c679c2ea772dbbb1e4eeacb523d4569882e325d0471c77264b7758/pokegraph-0.1.1-py3-none-any.whl
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: Downloading https://files.pythonhosted.org/packages/bb/17/959ec6c679c2ea772dbbb1e4eeacb523d4569882e325d0471c77264b7758/pokegraph-0.1.1-py3-none-any.whl
+[2023-04-09 12:24:49] INFO root fetch - processPackages [py3traits]: Downloading https://files.pythonhosted.org/packages/67/b8/5d4bb3be8d026b5acacbe264c2cc6111911bc93fc257115dc71366485290/py3traits-1.2.1-py2.py3-none-any.whl
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: executing diffoscope
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: executing diffoscope
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokegraph-0.1.0-py3-none-any.whl.zip tmp/pokegraph-0.1.1-py3-none-any.whl.zip --markdown 20230409/p/pokegraph/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 12:24:49] INFO root fetch - processPackages [pokegraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokegraph-0.1.0-py3-none-any.whl.zip tmp/pokegraph-0.1.1-py3-none-any.whl.zip --markdown 20230409/p/pokegraph/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 12:24:50] INFO root fetch - processPackages [py3traits]: executing diffoscope
+[2023-04-09 12:24:50] INFO root fetch - processPackages [py3traits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3traits-1.2.0-py2.py3-none-any.whl.zip tmp/py3traits-1.2.1-py2.py3-none-any.whl.zip --markdown 20230409/p/py3traits/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-09 12:24:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:24:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:24:51] INFO root fetch - main [MainThread]: Store serial: [17635892]
