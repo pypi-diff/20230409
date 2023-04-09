@@ -2761,3 +2761,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:32:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:32:13] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:32:13] INFO root fetch - main [MainThread]: Store serial: [17634813]
+[2023-04-09 08:37:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634813]
+[2023-04-09 08:37:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 08:37:20] WARNING root fetch - processPackages [hds-stats]: Skipping, unable to determine old version
+[2023-04-09 08:37:20] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-09 08:37:20] INFO root fetch - processPackages [classiq]: New version: [0.9.3] Old Version: [0.9.1]
+[2023-04-09 08:37:20] INFO root fetch - processPackages [selenextra]: New version: [0.5] Old Version: [0.4]
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-09 08:37:20] INFO root fetch - processPackages [pyzw]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/2a/33/ce93c3eca5d7c5ced0fdaaec6c5cadd635748c8194a47ba52d39e1986ea1/bingai-0.0.5.tar.gz
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/2a/33/ce93c3eca5d7c5ced0fdaaec6c5cadd635748c8194a47ba52d39e1986ea1/bingai-0.0.5.tar.gz
+[2023-04-09 08:37:20] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/62/bd/a743e4141094b0e9dc17aeac1cedfe15efc910502e7411611d5cdf9d1878/classiq-0.9.1-py3-none-any.whl
+[2023-04-09 08:37:20] INFO root fetch - processPackages [selenextra]: Downloading https://files.pythonhosted.org/packages/44/50/7a46181dad1eeb19748934f0bf12e66c598f55fd062a19dc3c1432148bd0/selenextra-0.5.tar.gz
+[2023-04-09 08:37:20] INFO root fetch - processPackages [pyzw]: Downloading https://files.pythonhosted.org/packages/1d/f3/d84731299a887c980c92db539e606a969e4c136c462eb5487faf6b675bbe/pyzw-0.0.5.tar.gz
+[2023-04-09 08:37:20] INFO root fetch - processPackages [selenextra]: executing diffoscope
+[2023-04-09 08:37:20] INFO root fetch - processPackages [selenextra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenextra-0.4.tar.gz tmp/selenextra-0.5.tar.gz --markdown 20230409/s/selenextra/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-09 08:37:20] INFO root fetch - processPackages [pyzw]: executing diffoscope
+[2023-04-09 08:37:20] INFO root fetch - processPackages [pyzw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzw-0.0.4.tar.gz tmp/pyzw-0.0.5.tar.gz --markdown 20230409/p/pyzw/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/c1/24/adf7f74f3941281537f9844837af992be7cdb10f62b5850f8da3edadb3e2/bingai-0.0.6.tar.gz
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/c1/24/adf7f74f3941281537f9844837af992be7cdb10f62b5850f8da3edadb3e2/bingai-0.0.6.tar.gz
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-0.0.5.tar.gz tmp/bingai-0.0.6.tar.gz --markdown 20230409/b/bingai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 08:37:20] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-0.0.5.tar.gz tmp/bingai-0.0.6.tar.gz --markdown 20230409/b/bingai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-09 08:37:21] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/e5/eb/9b39365fd2d7c2027f6610a884229059149ab9a3395be331767306762c07/classiq-0.9.3-py3-none-any.whl
+[2023-04-09 08:37:21] INFO root fetch - processPackages [classiq]: executing diffoscope
+[2023-04-09 08:37:21] INFO root fetch - processPackages [classiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classiq-0.9.1-py3-none-any.whl.zip tmp/classiq-0.9.3-py3-none-any.whl.zip --markdown 20230409/c/classiq/0.9.1-0.9.3/diff.md --exclude *.pyd
+[2023-04-09 08:37:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:37:21] INFO root fetch - processPackages [webssh]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-04-09 08:37:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:37:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:37:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:37:21] INFO root fetch - processPackages [webssh]: Downloading https://files.pythonhosted.org/packages/14/5f/294ab508ea9850ef4c2fe9cc7abb5ffd161c4ceb0a4f33e73cf8faabca53/webssh-1.6.1.tar.gz
+[2023-04-09 08:37:21] INFO root fetch - processPackages [webssh]: Downloading https://files.pythonhosted.org/packages/3b/a0/6df4b2daae067807771670264a4c2b0f41914364af9c9adc58ba0d7576ef/webssh-1.6.2.tar.gz
+[2023-04-09 08:37:22] INFO root fetch - processPackages [webssh]: executing diffoscope
+[2023-04-09 08:37:22] INFO root fetch - processPackages [webssh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webssh-1.6.1.tar.gz tmp/webssh-1.6.2.tar.gz --markdown 20230409/w/webssh/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-04-09 08:37:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:37:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:37:23] INFO root fetch - main [MainThread]: Store serial: [17634833]
