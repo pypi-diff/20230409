@@ -9163,3 +9163,34 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:24:28] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:24:28] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:24:28] INFO root fetch - main [MainThread]: Store serial: [17639402]
+[2023-04-09 22:29:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639402]
+[2023-04-09 22:29:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 22:29:36] INFO root fetch - processPackages [amid]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-09 22:29:36] INFO root fetch - processPackages [pdm-conda]: New version: [0.8.0b0] Old Version: [0.8.0]
+[2023-04-09 22:29:36] INFO root fetch - processPackages [addok]: New version: [1.1.1] Old Version: [1.1.0rc2]
+[2023-04-09 22:29:36] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:29:36] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-09 22:29:36] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-04-09 22:29:36] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230409/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:29:36] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/ec/6a/5af3286b5c558e30c93c2405cc2677b390728b9be5514ed737b78c67ea95/pdm_conda-0.8.0.tar.gz
+[2023-04-09 22:29:36] INFO root fetch - processPackages [addok]: Downloading https://files.pythonhosted.org/packages/b0/91/4e0bc45d3e83b40acc0376915bece7eece290a48274b22bb2ec5558c070d/addok-1.1.0rc2.tar.gz
+[2023-04-09 22:29:36] INFO root fetch - processPackages [amid]: Downloading https://files.pythonhosted.org/packages/63/b6/7b8fbac0e861e9709a550fb10b182f206e9daf576813d1ab075397ecd4bc/amid-0.9.0.tar.gz
+[2023-04-09 22:29:36] INFO root fetch - processPackages [nextcloudtalkbot]: Downloading https://files.pythonhosted.org/packages/df/32/0043dff2e93ecfa0fcf02e10a19b2e848ed8450e86212bdcc6701b56e583/nextcloudtalkbot-0.0.6.tar.gz
+[2023-04-09 22:29:36] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-09 22:29:36] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.5-py3-none-any.whl.zip tmp/nextcloudtalkbot-0.0.6.tar.gz --markdown 20230409/n/nextcloudtalkbot/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-09 22:29:36] INFO root fetch - processPackages [pdm-conda]: executing diffoscope
+[2023-04-09 22:29:36] INFO root fetch - processPackages [pdm-conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_conda-0.8.0.tar.gz tmp/pdm_conda-0.8.0b0.tar.gz --markdown 20230409/p/pdm-conda/0.8.0-0.8.0b0/diff.md --exclude *.pyd
+[2023-04-09 22:29:37] INFO root fetch - processPackages [addok]: Downloading https://files.pythonhosted.org/packages/05/6f/fbfb3b1f74e51db165e8267b95d73ef7887345043c516307abd6ddf399d4/addok-1.1.1.tar.gz
+[2023-04-09 22:29:37] INFO root fetch - processPackages [amid]: Downloading https://files.pythonhosted.org/packages/0b/92/30a29361e79dfdb9bd10412e1465fd6fb5e780e40a34f24dc5f071fc07bc/amid-0.9.1.tar.gz
+[2023-04-09 22:29:37] INFO root fetch - processPackages [addok]: executing diffoscope
+[2023-04-09 22:29:37] INFO root fetch - processPackages [addok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/addok-1.1.0rc2.tar.gz tmp/addok-1.1.1.tar.gz --markdown 20230409/a/addok/1.1.0rc2-1.1.1/diff.md --exclude *.pyd
+[2023-04-09 22:29:37] INFO root fetch - processPackages [amid]: executing diffoscope
+[2023-04-09 22:29:37] INFO root fetch - processPackages [amid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amid-0.9.0.tar.gz tmp/amid-0.9.1.tar.gz --markdown 20230409/a/amid/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-09 22:29:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:29:38] WARNING root fetch - processPackages [datastructureshh]: Skipping, unable to determine old version
+[2023-04-09 22:29:38] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:29:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:29:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:29:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:29:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:29:39] INFO root fetch - main [MainThread]: Store serial: [17639422]
