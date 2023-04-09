@@ -7121,3 +7121,76 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 18:33:39] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:33:40] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:33:40] INFO root fetch - main [MainThread]: Store serial: [17638061]
+[2023-04-09 18:38:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638061]
+[2023-04-09 18:38:47] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-09 18:38:47] INFO root fetch - processPackages [espeak-phonemizer]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-09 18:38:47] INFO root fetch - processPackages [python-dlt]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2023-04-09 18:38:47] INFO root fetch - processPackages [revChatGPT]: New version: [4.1.5.1] Old Version: [4.1.5]
+[2023-04-09 18:38:47] INFO root fetch - processPackages [pydit-jceresearch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 18:38:47] INFO root fetch - processPackages [npm-cockpit]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-09 18:38:47] INFO root fetch - processPackages [espeak-phonemizer]: Downloading https://files.pythonhosted.org/packages/49/88/8ecd5366f7c8b1a74c9afd00b35d044ea25b705762df28dffd2f5634b6b9/espeak_phonemizer-1.1.0.tar.gz
+[2023-04-09 18:38:47] INFO root fetch - processPackages [python-dlt]: Downloading https://files.pythonhosted.org/packages/14/c8/2731306652f98ce20be95dc9bf379f9cf35d087a285ba804dae6b2f6d2e5/python_dlt-0.2.0a8.tar.gz
+[2023-04-09 18:38:47] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/f7/28/09cefff676267f8f96da041ea2417bb8b12e16a7c78edc545f2a83654cf8/revChatGPT-4.1.5.1.tar.gz
+[2023-04-09 18:38:47] INFO root fetch - processPackages [npm-cockpit]: Downloading https://files.pythonhosted.org/packages/ab/8b/363da156e74f0a1cff404ca5a1767fcce6189f4170f464a148046092cb1d/npm-cockpit-0.2.1.tar.gz
+[2023-04-09 18:38:47] INFO root fetch - processPackages [pydit-jceresearch]: Downloading https://files.pythonhosted.org/packages/cf/d5/9b0268e48e889401aa2a7918bb2a375e3c1549dd79394a0448a8504bc6e7/pydit-jceresearch-0.0.8.tar.gz
+[2023-04-09 18:38:47] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-09 18:38:47] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.1.5.tar.gz tmp/revChatGPT-4.1.5.1.tar.gz --markdown 20230409/r/revChatGPT/4.1.5-4.1.5.1/diff.md --exclude *.pyd
+[2023-04-09 18:38:47] INFO root fetch - processPackages [espeak-phonemizer]: Downloading https://files.pythonhosted.org/packages/d0/65/0dd1efa57f9f4b1bfd3db0458b87cc67e021e4fe1b621f397ea90927e4b9/espeak_phonemizer-1.2.0.tar.gz
+[2023-04-09 18:38:47] INFO root fetch - processPackages [espeak-phonemizer]: executing diffoscope
+[2023-04-09 18:38:47] INFO root fetch - processPackages [espeak-phonemizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espeak_phonemizer-1.1.0.tar.gz tmp/espeak_phonemizer-1.2.0.tar.gz --markdown 20230409/e/espeak-phonemizer/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-09 18:38:47] INFO root fetch - processPackages [python-dlt]: Downloading https://files.pythonhosted.org/packages/2d/69/d219b168cad322ca0d36fa1f8921dc0adc5a1937ca297aaca12fc6e41b86/python_dlt-0.2.0a9.tar.gz
+[2023-04-09 18:38:47] INFO root fetch - processPackages [pydit-jceresearch]: Downloading https://files.pythonhosted.org/packages/70/df/4f41595b62e8897183b7362265dca6b06c653455ff4f535aa71abfd02ee9/pydit-jceresearch-0.0.9.tar.gz
+[2023-04-09 18:38:48] INFO root fetch - processPackages [pydit-jceresearch]: executing diffoscope
+[2023-04-09 18:38:48] INFO root fetch - processPackages [pydit-jceresearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydit-jceresearch-0.0.8.tar.gz tmp/pydit-jceresearch-0.0.9.tar.gz --markdown 20230409/p/pydit-jceresearch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 18:38:48] INFO root fetch - processPackages [npm-cockpit]: Downloading https://files.pythonhosted.org/packages/ea/56/9bd2e5ba26e617ef7690ca55c38c007ca74bce3129127ecf32cbf03d8c61/npm-cockpit-0.3.0.tar.gz
+[2023-04-09 18:38:48] INFO root fetch - processPackages [npm-cockpit]: executing diffoscope
+[2023-04-09 18:38:48] INFO root fetch - processPackages [npm-cockpit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npm-cockpit-0.2.1.tar.gz tmp/npm-cockpit-0.3.0.tar.gz --markdown 20230409/n/npm-cockpit/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 18:38:48] INFO root fetch - processPackages [python-dlt]: executing diffoscope
+[2023-04-09 18:38:48] INFO root fetch - processPackages [python-dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_dlt-0.2.0a8.tar.gz tmp/python_dlt-0.2.0a9.tar.gz --markdown 20230409/p/python-dlt/0.2.0a8-0.2.0a9/diff.md --exclude *.pyd
+[2023-04-09 18:38:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:48] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-09 18:38:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:48] INFO root fetch - processPackages [unhandled-exception-logger]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 18:38:48] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/63/32/ffb6b2b96d41cf412db824ad59ea4da99a4b62f123034cc8a3b0c9f5c4fa/hiddifypanel-3.0.5-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 18:38:48] INFO root fetch - processPackages [unhandled-exception-logger]: Downloading https://files.pythonhosted.org/packages/a0/93/0a5f5a9534bc044d9d055d253a071c5988612a2605dd8fe18acb2d0603a4/unhandled_exception_logger-0.0.1.tar.gz
+[2023-04-09 18:38:48] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 18:38:48] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.4-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.5-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-09 18:38:49] INFO root fetch - processPackages [unhandled-exception-logger]: Downloading https://files.pythonhosted.org/packages/d1/14/a06cf1a70d9a84d2871b367ea23bb452e40ec82db4184d77e11ec2900c4b/unhandled_exception_logger-0.0.2.tar.gz
+[2023-04-09 18:38:49] INFO root fetch - processPackages [unhandled-exception-logger]: executing diffoscope
+[2023-04-09 18:38:49] INFO root fetch - processPackages [unhandled-exception-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unhandled_exception_logger-0.0.1.tar.gz tmp/unhandled_exception_logger-0.0.2.tar.gz --markdown 20230409/u/unhandled-exception-logger/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 18:38:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:49] INFO root fetch - processPackages [hugg]: New version: [0.0.85] Old Version: [0.0.84]
+[2023-04-09 18:38:49] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/a3/e0/383fb3cb265d9f6c9ebb9d2bbc96129f9bda7b58e0d9985642879f28e7d0/hugg-0.0.85.tar.gz
+[2023-04-09 18:38:49] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 18:38:49] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.84.tar.gz tmp/hugg-0.0.85.tar.gz --markdown 20230409/h/hugg/0.0.84-0.0.85/diff.md --exclude *.pyd
+[2023-04-09 18:38:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:50] INFO root fetch - processPackages [whisper-ctranslate2]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-09 18:38:50] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/5b/bf/d1ab75799057373c29a3011b453a9e4132f766575d7d74e73eeeae364e5f/whisper-ctranslate2-0.1.4.tar.gz
+[2023-04-09 18:38:50] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/31/9f/0c27603559b5c99fddfb8ce6b0cd9f07e4392b6d8a4090648af09d16e5f0/whisper-ctranslate2-0.1.5.tar.gz
+[2023-04-09 18:38:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:50] INFO root fetch - processPackages [flet-core]: New version: [0.6.0.dev1296] Old Version: [0.6.0.dev1294]
+[2023-04-09 18:38:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:50] INFO root fetch - processPackages [flet]: New version: [0.6.0.dev1296] Old Version: [0.6.0.dev1294]
+[2023-04-09 18:38:50] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2023-04-09 18:38:50] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.6.0.dev1294.tar.gz tmp/flet_core-0.6.0.dev1296.tar.gz --markdown 20230409/f/flet-core/0.6.0.dev1294-0.6.0.dev1296/diff.md --exclude *.pyd
+[2023-04-09 18:38:51] INFO root fetch - processPackages [whisper-ctranslate2]: executing diffoscope
+[2023-04-09 18:38:51] INFO root fetch - processPackages [whisper-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper-ctranslate2-0.1.4.tar.gz tmp/whisper-ctranslate2-0.1.5.tar.gz --markdown 20230409/w/whisper-ctranslate2/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-09 18:38:51] INFO root fetch - processPackages [flet]: executing diffoscope
+[2023-04-09 18:38:51] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.6.0.dev1294.tar.gz tmp/flet-0.6.0.dev1296.tar.gz --markdown 20230409/f/flet/0.6.0.dev1294-0.6.0.dev1296/diff.md --exclude *.pyd
+[2023-04-09 18:38:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:51] INFO root fetch - processPackages [sefazetllib]: New version: [0.1.19] Old Version: [0.1.18]
+[2023-04-09 18:38:51] INFO root fetch - processPackages [sefazetllib]: Downloading https://files.pythonhosted.org/packages/89/44/8e4d32cbd7e23949b1114f2af857e62e101bbf44281b99a1c17d5493e775/sefazetllib-0.1.19.tar.gz
+[2023-04-09 18:38:51] INFO root fetch - processPackages [sefazetllib]: executing diffoscope
+[2023-04-09 18:38:51] INFO root fetch - processPackages [sefazetllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sefazetllib-0.1.18.tar.gz tmp/sefazetllib-0.1.19.tar.gz --markdown 20230409/s/sefazetllib/0.1.18-0.1.19/diff.md --exclude *.pyd
+[2023-04-09 18:38:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:52] INFO root fetch - processPackages [flet-pyodide]: New version: [0.6.0.dev1296] Old Version: [0.6.0.dev1294]
+[2023-04-09 18:38:52] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2023-04-09 18:38:52] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.6.0.dev1294.tar.gz tmp/flet_pyodide-0.6.0.dev1296.tar.gz --markdown 20230409/f/flet-pyodide/0.6.0.dev1294-0.6.0.dev1296/diff.md --exclude *.pyd
+[2023-04-09 18:38:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:52] WARNING root fetch - processPackages [catslibrary]: Skipping, unable to determine old version
+[2023-04-09 18:38:52] INFO root fetch - main [MainThread]: error
+[2023-04-09 18:38:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:38:58] INFO root fetch - main [MainThread]: Store serial: [17638117]
