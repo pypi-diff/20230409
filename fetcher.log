@@ -2931,3 +2931,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:58:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:58:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:58:12] INFO root fetch - main [MainThread]: Store serial: [17634909]
+[2023-04-09 09:03:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634909]
+[2023-04-09 09:03:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 09:03:19] INFO root fetch - processPackages [bingai]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-09 09:03:19] INFO root fetch - processPackages [CustomGPT]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-09 09:03:19] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-04-09 09:03:19] INFO root fetch - processPackages [hugg]: New version: [0.0.78] Old Version: [0.0.77]
+[2023-04-09 09:03:20] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-04-09 09:03:20] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230409/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-04-09 09:03:20] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-04-09 09:03:20] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/a4/e8/4ec395906455553d8a5b75b044424407e32552e446fe927def8e40a00bc9/hugg-0.0.77.tar.gz
+[2023-04-09 09:03:20] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/ad/c0/89727a3fd8bed808c09492d394e800d4527986700f17a7c439202c03ee2c/bingai-1.1.1.tar.gz
+[2023-04-09 09:03:20] INFO root fetch - processPackages [CustomGPT]: Downloading https://files.pythonhosted.org/packages/40/73/336edadd338e857885ed326e3c021adc80533a10d4b5f6ee20ee75acc424/CustomGPT-0.1.4.tar.gz
+[2023-04-09 09:03:20] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 09:03:20] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-1.1.0.tar.gz tmp/bingai-1.1.1.tar.gz --markdown 20230409/b/bingai/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-09 09:03:20] INFO root fetch - processPackages [CustomGPT]: executing diffoscope
+[2023-04-09 09:03:20] INFO root fetch - processPackages [CustomGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomGPT-0.1.3.tar.gz tmp/CustomGPT-0.1.4.tar.gz --markdown 20230409/C/CustomGPT/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 09:03:20] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/50/70/73a3b99aad15f65fd87412d8d9d2cbb2cd90f4444cf03a74d2aa106dd182/hugg-0.0.78.tar.gz
+[2023-04-09 09:03:20] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 09:03:20] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.77.tar.gz tmp/hugg-0.0.78.tar.gz --markdown 20230409/h/hugg/0.0.77-0.0.78/diff.md --exclude *.pyd
+[2023-04-09 09:03:20] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-04-09 09:03:20] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230409/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-04-09 09:03:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hds-stats]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hbutils]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-09 09:03:21] INFO root fetch - processPackages [slideflow]: New version: [2.0.0b1] Old Version: [2.0.0]
+[2023-04-09 09:03:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hugg]: New version: [0.0.78] Old Version: [0.0.77]
+[2023-04-09 09:03:21] INFO root fetch - processPackages [slideflow]: Downloading https://files.pythonhosted.org/packages/59/58/d7c231fef43044f6297d14e60fbe66e9ca969b4aa69efb0ad1d9c4dd1ca0/slideflow-2.0.0-py3-none-any.whl
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/b8/40/8b13e391153c7c30d90513e6179466673bd4a4baf4ae0cfd2e89c04d0518/hds_stats-0.0.3-py3-none-any.whl
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.77.tar.gz tmp/hugg-0.0.78.tar.gz --markdown 20230409/h/hugg/0.0.77-0.0.78/diff.md --exclude *.pyd
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds_stats-0.0.2-py3-none-any.whl.zip tmp/hds_stats-0.0.3-py3-none-any.whl.zip --markdown 20230409/h/hds-stats/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hbutils]: Downloading https://files.pythonhosted.org/packages/bc/32/3cb97d89b25c65d11ad571651faadecf1a2530dfd174689aec3d3c66abd5/hbutils-0.8.5.tar.gz
+[2023-04-09 09:03:21] INFO root fetch - processPackages [slideflow]: executing diffoscope
+[2023-04-09 09:03:21] INFO root fetch - processPackages [slideflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slideflow-2.0.0-py3-none-any.whl.zip tmp/slideflow-2.0.0b1-py3-none-any.whl.zip --markdown 20230409/s/slideflow/2.0.0-2.0.0b1/diff.md --exclude *.pyd
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hbutils]: executing diffoscope
+[2023-04-09 09:03:21] INFO root fetch - processPackages [hbutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbutils-0.8.4.tar.gz tmp/hbutils-0.8.5.tar.gz --markdown 20230409/h/hbutils/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-09 09:03:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:03:34] INFO root fetch - main [MainThread]: Store serial: [17634936]
