@@ -3587,3 +3587,14 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:43:27] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:43:37] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:43:37] INFO root fetch - main [MainThread]: Store serial: [17635371]
+[2023-04-09 10:48:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635371]
+[2023-04-09 10:48:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-09 10:48:44] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.6.9] Old Version: [2.6.8]
+[2023-04-09 10:48:44] WARNING root fetch - processPackages [gester]: Skipping, unable to determine old version
+[2023-04-09 10:48:44] INFO root fetch - main [MainThread]: error
+[2023-04-09 10:48:45] INFO root fetch - processPackages [cdk8s-plus-24]: Downloading https://files.pythonhosted.org/packages/fe/41/bbd9543b1132f25d4df5c4314fc4cdcd6812f0a5b0e666d3cb6de1f2947f/cdk8s-plus-24-2.6.8.tar.gz
+[2023-04-09 10:48:45] INFO root fetch - processPackages [cdk8s-plus-24]: Downloading https://files.pythonhosted.org/packages/18/ea/716ffcb078c71e5d2ef6f457ff36423f056803cc804df6971d2e6c587db4/cdk8s-plus-24-2.6.9.tar.gz
+[2023-04-09 10:48:46] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-04-09 10:48:46] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.6.8.tar.gz tmp/cdk8s-plus-24-2.6.9.tar.gz --markdown 20230409/c/cdk8s-plus-24/2.6.8-2.6.9/diff.md --exclude *.pyd
+[2023-04-09 10:48:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:48:47] INFO root fetch - main [MainThread]: Store serial: [17635383]
