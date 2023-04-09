@@ -6129,3 +6129,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:46:59] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:47:04] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:47:04] INFO root fetch - main [MainThread]: Store serial: [17637293]
+[2023-04-09 16:52:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637293]
+[2023-04-09 16:52:12] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-09 16:52:12] WARNING root fetch - processPackages [base16-colorlib]: Skipping, unable to determine old version
+[2023-04-09 16:52:12] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:52:12] WARNING root fetch - processPackages [phcmas1]: Skipping, unable to determine old version
+[2023-04-09 16:52:12] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:52:12] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 16:52:12] INFO root fetch - processPackages [pyBibX]: New version: [2.9.0] Old Version: [1.7.7]
+[2023-04-09 16:52:12] INFO root fetch - processPackages [dash-mantine-components]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-09 16:52:12] INFO root fetch - processPackages [gwpy]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-04-09 16:52:12] INFO root fetch - processPackages [pytest-describe]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-09 16:52:12] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 16:52:12] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 16:52:12] INFO root fetch - processPackages [dash-mantine-components]: Downloading https://files.pythonhosted.org/packages/90/b3/8be0020523f382bf603a975983ffdadae4b9ca09586016b9556bf2dea6d9/dash_mantine_components-0.8.0.tar.gz
+[2023-04-09 16:52:12] INFO root fetch - processPackages [pytest-describe]: Downloading https://files.pythonhosted.org/packages/6a/ca/a3b27318429fcd5c397d1b659cbfa2c3f44031689b142586786d797bbec6/pytest-describe-2.0.1.tar.gz
+[2023-04-09 16:52:12] INFO root fetch - processPackages [gwpy]: Downloading https://files.pythonhosted.org/packages/a0/79/12053e5bb8f5f96a59f379790561f053436dc9047cc1f243875f7e4fcc1e/gwpy-3.0.2.tar.gz
+[2023-04-09 16:52:12] INFO root fetch - processPackages [pyBibX]: Downloading https://files.pythonhosted.org/packages/64/8b/b8591416eaa22b41e8f7989a3b39212ff3d6a368df3929e34130f3f52305/pyBibX-2.9.0.tar.gz
+[2023-04-09 16:52:13] INFO root fetch - processPackages [pytest-describe]: Downloading https://files.pythonhosted.org/packages/5b/eb/46faae9ae7bc2aafdf976528ed3e12da29f4664d6fb39978ddbdd70e255e/pytest-describe-2.0.2.tar.gz
+[2023-04-09 16:52:13] INFO root fetch - processPackages [pyBibX]: executing diffoscope
+[2023-04-09 16:52:13] INFO root fetch - processPackages [pyBibX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyBibX-1.7.7.tar.gz tmp/pyBibX-2.9.0.tar.gz --markdown 20230409/p/pyBibX/1.7.7-2.9.0/diff.md --exclude *.pyd
+[2023-04-09 16:52:13] INFO root fetch - processPackages [dash-mantine-components]: Downloading https://files.pythonhosted.org/packages/a4/05/890b33093331e1bec298f61bf10f3de72d6c1127528d100493ed8b998b08/dash_mantine_components-0.9.0.tar.gz
+[2023-04-09 16:52:13] INFO root fetch - processPackages [gwpy]: Downloading https://files.pythonhosted.org/packages/a3/fa/943ad839431e80ad1013ff25ec86f5d01209b9fd955520a1c61997582635/gwpy-3.0.3.tar.gz
+[2023-04-09 16:52:13] INFO root fetch - processPackages [pytest-describe]: executing diffoscope
+[2023-04-09 16:52:13] INFO root fetch - processPackages [pytest-describe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-describe-2.0.1.tar.gz tmp/pytest-describe-2.0.2.tar.gz --markdown 20230409/p/pytest-describe/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-09 16:52:13] INFO root fetch - processPackages [dash-mantine-components]: executing diffoscope
+[2023-04-09 16:52:13] INFO root fetch - processPackages [dash-mantine-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_mantine_components-0.8.0.tar.gz tmp/dash_mantine_components-0.9.0.tar.gz --markdown 20230409/d/dash-mantine-components/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 16:52:13] INFO root fetch - processPackages [gwpy]: executing diffoscope
+[2023-04-09 16:52:13] INFO root fetch - processPackages [gwpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwpy-3.0.2.tar.gz tmp/gwpy-3.0.3.tar.gz --markdown 20230409/g/gwpy/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-04-09 16:52:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:13] INFO root fetch - processPackages [picorm]: New version: [0.1.4] Old Version: [0.1.1]
+[2023-04-09 16:52:13] INFO root fetch - processPackages [picorm]: Downloading https://files.pythonhosted.org/packages/1e/50/1d1b46aaaec28ca163fb327819d6dd63fd9ce3da32b2398efebd9d874525/picorm-0.1.1.tar.gz
+[2023-04-09 16:52:14] INFO root fetch - processPackages [picorm]: Downloading https://files.pythonhosted.org/packages/4c/0a/fbc43d623d26ac8cbc04c52e96da1b1785ec200b3f1c56e98bed80d4900c/picorm-0.1.4.tar.gz
+[2023-04-09 16:52:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:14] INFO root fetch - processPackages [apicast]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-09 16:52:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:14] INFO root fetch - processPackages [lftk]: New version: [1.0b6] Old Version: [1.0b5]
+[2023-04-09 16:52:14] INFO root fetch - processPackages [picorm]: executing diffoscope
+[2023-04-09 16:52:14] INFO root fetch - processPackages [picorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picorm-0.1.1.tar.gz tmp/picorm-0.1.4.tar.gz --markdown 20230409/p/picorm/0.1.1-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 16:52:14] INFO root fetch - processPackages [apicast]: Downloading https://files.pythonhosted.org/packages/bb/b2/10ed111153a51d431b63f45da16f742d666e500a2c948141891d3c8f3d2b/apicast-0.8.6.tar.gz
+[2023-04-09 16:52:14] INFO root fetch - processPackages [lftk]: Downloading https://files.pythonhosted.org/packages/a0/23/29b914197fc243d756f97a8f7bdbea6a96991c5876c6b10d1ccd3f59a02c/lftk-1.0b5.tar.gz
+[2023-04-09 16:52:14] INFO root fetch - processPackages [apicast]: executing diffoscope
+[2023-04-09 16:52:14] INFO root fetch - processPackages [apicast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apicast-0.8.5.tar.gz tmp/apicast-0.8.6.tar.gz --markdown 20230409/a/apicast/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-09 16:52:14] INFO root fetch - processPackages [lftk]: Downloading https://files.pythonhosted.org/packages/2f/7b/1f87b772f9b040e6e729fd140d7e9bd6cda975bee8711960434bebaef84a/lftk-1.0b6.tar.gz
+[2023-04-09 16:52:15] INFO root fetch - processPackages [lftk]: executing diffoscope
+[2023-04-09 16:52:15] INFO root fetch - processPackages [lftk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lftk-1.0b5.tar.gz tmp/lftk-1.0b6.tar.gz --markdown 20230409/l/lftk/1.0b5-1.0b6/diff.md --exclude *.pyd
+[2023-04-09 16:52:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:15] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 16:52:15] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 16:52:15] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 16:52:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:16] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 16:52:16] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 16:52:16] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 16:52:16] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:52:16] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:16] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:20] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:52:20] INFO root fetch - main [MainThread]: Store serial: [17637338]
