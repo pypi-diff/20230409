@@ -5103,3 +5103,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 14:22:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:22:01] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:22:01] INFO root fetch - main [MainThread]: Store serial: [17636483]
+[2023-04-09 14:27:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636483]
+[2023-04-09 14:27:08] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-09 14:27:08] WARNING root fetch - processPackages [conda-forge-metadata]: Skipping, unable to determine old version
+[2023-04-09 14:27:08] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:27:08] INFO root fetch - processPackages [skyfield]: New version: [1.9] Old Version: [1.8]
+[2023-04-09 14:27:08] WARNING root fetch - processPackages [ftrixminer]: Skipping, unable to determine old version
+[2023-04-09 14:27:08] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:27:08] INFO root fetch - processPackages [wilderness]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 14:27:08] WARNING root fetch - processPackages [print-colors]: Skipping, unable to determine old version
+[2023-04-09 14:27:08] INFO root fetch - processPackages [reedsolo]: New version: [2.0.9] Old Version: [2.0.5]
+[2023-04-09 14:27:08] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:27:08] INFO root fetch - processPackages [bigdl-dllib-spark3]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 14:27:08] INFO root fetch - processPackages [chat-agent]: New version: [0.1.6.6] Old Version: [0.1.6.5]
+[2023-04-09 14:27:08] INFO root fetch - processPackages [wilderness]: Downloading https://files.pythonhosted.org/packages/7c/22/37dbee6b4c2f968c27cc46a90c29adae7e0eba914d7e91cc654abc36ac26/wilderness-0.1.8.tar.gz
+[2023-04-09 14:27:09] INFO root fetch - processPackages [skyfield]: Downloading https://files.pythonhosted.org/packages/28/ae/15ae3702110d7140b816e094fe54c2bbe8d82f2f114dcb7e45580c2017b4/skyfield-1.8.tar.gz
+[2023-04-09 14:27:09] INFO root fetch - processPackages [reedsolo]: Downloading https://files.pythonhosted.org/packages/eb/f3/bc280f8731706a9a32cfaf5b8afb77156aacab4603344cb90bd29f417e30/reedsolo-2.0.5.tar.gz
+[2023-04-09 14:27:09] INFO root fetch - processPackages [bigdl-dllib-spark3]: Downloading https://files.pythonhosted.org/packages/59/f2/9b389cb5ceb9da02000ff9ac72b312d5bdd21a5fd077d9e170ef957c8692/bigdl-dllib-spark3-2.3.0b20230408.tar.gz
+[2023-04-09 14:27:09] INFO root fetch - processPackages [chat-agent]: Downloading https://files.pythonhosted.org/packages/65/12/46d2974a9b049f94be5d306a0d4990ac447381c16e1bf85345567912c19a/chat_agent-0.1.6.6.tar.gz
+[2023-04-09 14:27:09] WARNING root fetch - processPackages [bigdl-dllib-spark3]: Skipping package: exceeds size limit 61235030>=10485760
+[2023-04-09 14:27:09] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:27:09] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 14:27:09] INFO root fetch - processPackages [wilderness]: Downloading https://files.pythonhosted.org/packages/ba/5f/7338a6f4da705c8b605571c439383db38af68052efb8add81ab672f5a8cd/wilderness-0.1.9.tar.gz
+[2023-04-09 14:27:09] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/67/24/ec8fc58431cff2f5f3e175c1f0f929079b93c9e72d700003929bd53cd1c7/bigdl_orca_spark3-2.3.0b20230408-py3-none-manylinux1_x86_64.whl
+[2023-04-09 14:27:09] INFO root fetch - processPackages [chat-agent]: executing diffoscope
+[2023-04-09 14:27:09] INFO root fetch - processPackages [chat-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_agent-0.1.6.5.tar.gz tmp/chat_agent-0.1.6.6.tar.gz --markdown 20230409/c/chat-agent/0.1.6.5-0.1.6.6/diff.md --exclude *.pyd
+[2023-04-09 14:27:09] INFO root fetch - processPackages [wilderness]: executing diffoscope
+[2023-04-09 14:27:09] INFO root fetch - processPackages [wilderness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wilderness-0.1.8.tar.gz tmp/wilderness-0.1.9.tar.gz --markdown 20230409/w/wilderness/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 14:27:09] INFO root fetch - processPackages [skyfield]: Downloading https://files.pythonhosted.org/packages/f2/a3/d5cb47c6fc6c196e1deb5723e34e8200380df9fc9e3fc0d6048e24eadfd7/skyfield-1.9.tar.gz
+[2023-04-09 14:27:09] INFO root fetch - processPackages [reedsolo]: Downloading https://files.pythonhosted.org/packages/eb/d1/bc1241c2ca5ff869e5a35326c2bd99f68b6eedb450fbe8d2037c31344c25/reedsolo-2.0.9.tar.gz
+[2023-04-09 14:27:09] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20208867>=10485760
+[2023-04-09 14:27:09] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:27:09] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 14:27:09] INFO root fetch - processPackages [reedsolo]: executing diffoscope
+[2023-04-09 14:27:09] INFO root fetch - processPackages [reedsolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reedsolo-2.0.5.tar.gz tmp/reedsolo-2.0.9.tar.gz --markdown 20230409/r/reedsolo/2.0.5-2.0.9/diff.md --exclude *.pyd
+[2023-04-09 14:27:09] INFO root fetch - processPackages [skyfield]: executing diffoscope
+[2023-04-09 14:27:09] INFO root fetch - processPackages [skyfield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skyfield-1.8.tar.gz tmp/skyfield-1.9.tar.gz --markdown 20230409/s/skyfield/1.8-1.9/diff.md --exclude *.pyd
+[2023-04-09 14:27:09] INFO root fetch - processPackages [bigdl-friesian-spark3]: Downloading https://files.pythonhosted.org/packages/42/72/9fec226a7c4cb68c71450f86259ae4bd1a3d9a70e3ec47beaa1db3dc2c99/bigdl_friesian_spark3-2.3.0b20230409-py3-none-manylinux1_x86_64.whl
+[2023-04-09 14:27:10] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-04-09 14:27:10] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.3.0b20230408-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.3.0b20230409-py3-none-manylinux1_x86_64.whl.zip --markdown 20230409/b/bigdl-friesian-spark3/2.3.0b20230408-2.3.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 14:27:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:10] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 14:27:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:10] INFO root fetch - processPackages [lightnovel-crawler]: New version: [3.2.5] Old Version: [3.2.4]
+[2023-04-09 14:27:10] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 14:27:10] INFO root fetch - processPackages [bigdl-chronos-spark3]: Downloading https://files.pythonhosted.org/packages/b5/96/cf7958c2f04e416409e7f4909e62ded44329a4d54319d79446c9103394cc/bigdl_chronos_spark3-2.3.0b20230409-py3-none-manylinux1_x86_64.whl
+[2023-04-09 14:27:10] INFO root fetch - processPackages [lightnovel-crawler]: Downloading https://files.pythonhosted.org/packages/1d/e7/c24a25719341f509bcd97d54c80c4da00cbd25b6afb6a61080102a96fa24/lightnovel_crawler-3.2.4-py3-none-any.whl
+[2023-04-09 14:27:11] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/c3/e2/be88f1e572a9eb9bf3e23c0f3cad8ca34e63d6f856a318f937844bdfba28/bigdl_spark3-2.3.0b20230409-py3-none-manylinux1_x86_64.whl
+[2023-04-09 14:27:11] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-04-09 14:27:11] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.3.0b20230408-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.3.0b20230409-py3-none-manylinux1_x86_64.whl.zip --markdown 20230409/b/bigdl-chronos-spark3/2.3.0b20230408-2.3.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 14:27:11] INFO root fetch - processPackages [lightnovel-crawler]: Downloading https://files.pythonhosted.org/packages/58/7d/b86cb494022e5904595b5ec550f68fce577716a014d7d2644a58b8ba8041/lightnovel_crawler-3.2.5-py3-none-any.whl
+[2023-04-09 14:27:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:11] INFO root fetch - processPackages [yaclipy]: New version: [1.2.1] Old Version: [1.1.1]
+[2023-04-09 14:27:11] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-04-09 14:27:11] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.3.0b20230408-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.3.0b20230409-py3-none-manylinux1_x86_64.whl.zip --markdown 20230409/b/bigdl-spark3/2.3.0b20230408-2.3.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 14:27:11] INFO root fetch - processPackages [yaclipy]: Downloading https://files.pythonhosted.org/packages/27/8a/d05e382e24cb9d56697bc11aa81c85ffed5988303835e54d6c121957d46d/yaclipy-1.1.1.tar.gz
+[2023-04-09 14:27:11] INFO root fetch - processPackages [lightnovel-crawler]: executing diffoscope
+[2023-04-09 14:27:11] INFO root fetch - processPackages [lightnovel-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightnovel_crawler-3.2.4-py3-none-any.whl.zip tmp/lightnovel_crawler-3.2.5-py3-none-any.whl.zip --markdown 20230409/l/lightnovel-crawler/3.2.4-3.2.5/diff.md --exclude *.pyd
+[2023-04-09 14:27:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:11] INFO root fetch - processPackages [yaclipy]: Downloading https://files.pythonhosted.org/packages/d0/fa/3effecfa31fab0019d95a743061c7e696e1c1cce6b0108d3f011b7f9d9eb/yaclipy-1.2.1.tar.gz
+[2023-04-09 14:27:11] INFO root fetch - processPackages [yaclipy]: executing diffoscope
+[2023-04-09 14:27:11] INFO root fetch - processPackages [yaclipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaclipy-1.1.1.tar.gz tmp/yaclipy-1.2.1.tar.gz --markdown 20230409/y/yaclipy/1.1.1-1.2.1/diff.md --exclude *.pyd
+[2023-04-09 14:27:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:27:17] INFO root fetch - main [MainThread]: Store serial: [17636573]
