@@ -7253,3 +7253,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 18:49:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:49:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:49:17] INFO root fetch - main [MainThread]: Store serial: [17638157]
+[2023-04-09 18:54:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638157]
+[2023-04-09 18:54:25] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hugg]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hnvlearn]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 18:54:25] INFO root fetch - processPackages [coolfunc]: New version: [1.1.2] Old Version: [1.0]
+[2023-04-09 18:54:25] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 18:54:25] INFO root fetch - processPackages [desmos2python]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-04-09 18:54:25] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 18:54:25] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hnvlearn]: Downloading https://files.pythonhosted.org/packages/82/d5/6c3a983352906e3c78dd55298810f63d14d38bb7784f0fe9984e272023cf/hnvlearn-0.0.3-py3-none-any.whl
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/b2/00/f2b0d8067f6e693dde64258618db718829e6a7c2243d4fd12b7f2f38a625/hugg-0.0.86.tar.gz
+[2023-04-09 18:54:25] INFO root fetch - processPackages [desmos2python]: Downloading https://files.pythonhosted.org/packages/9b/09/00a2b830f651ecb935ed4fc23ce30afebca0e2981379036e70b8681a194a/desmos2python-0.3.2.tar.gz
+[2023-04-09 18:54:25] INFO root fetch - processPackages [coolfunc]: Downloading https://files.pythonhosted.org/packages/b2/3f/561f74f5478e1da1b5b66a2b5b1d6b48468469ffdbb904e1fefe1f11616c/coolfunc-1.1.2.tar.gz
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.85.tar.gz tmp/hugg-0.0.86.tar.gz --markdown 20230409/h/hugg/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hnvlearn]: executing diffoscope
+[2023-04-09 18:54:25] INFO root fetch - processPackages [hnvlearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hnvlearn-0.0.2-py3-none-any.whl.zip tmp/hnvlearn-0.0.3-py3-none-any.whl.zip --markdown 20230409/h/hnvlearn/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 18:54:25] INFO root fetch - processPackages [coolfunc]: executing diffoscope
+[2023-04-09 18:54:25] INFO root fetch - processPackages [coolfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolfunc-1.0.tar.gz tmp/coolfunc-1.1.2.tar.gz --markdown 20230409/c/coolfunc/1.0-1.1.2/diff.md --exclude *.pyd
+[2023-04-09 18:54:26] INFO root fetch - processPackages [desmos2python]: executing diffoscope
+[2023-04-09 18:54:26] INFO root fetch - processPackages [desmos2python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desmos2python-0.3.0.tar.gz tmp/desmos2python-0.3.2.tar.gz --markdown 20230409/d/desmos2python/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-04-09 18:54:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:54:26] INFO root fetch - processPackages [preservation-database]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 18:54:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:54:26] INFO root fetch - processPackages [qt-colored-logger]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-09 18:54:26] INFO root fetch - processPackages [preservation-database]: Downloading https://files.pythonhosted.org/packages/0e/4d/5ed2b0f4179dd35db42ea91abaeab6c87437bce7ac87b69f3a8aeb30ee25/preservation-database-0.0.98.tar.gz
+[2023-04-09 18:54:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:54:26] INFO root fetch - processPackages [qt-colored-logger]: Downloading https://files.pythonhosted.org/packages/07/85/3f2214e35b414bb878da3020717bddd307b68ea81934709464496e0e1468/qt_colored_logger-0.3.0.tar.gz
+[2023-04-09 18:54:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:54:27] INFO root fetch - processPackages [qt-colored-logger]: Downloading https://files.pythonhosted.org/packages/2c/ee/3ae14244980dcbea89128e9b9c2a8a59500c070f52079da852af89c4722c/qt_colored_logger-0.4.0.tar.gz
+[2023-04-09 18:54:27] INFO root fetch - processPackages [preservation-database]: Downloading https://files.pythonhosted.org/packages/e2/d0/cdba7eeb87b98a70c49267d91ff8cd5f34a86497ce18205874b1a442b9f6/preservation-database-0.0.99.tar.gz
+[2023-04-09 18:54:27] INFO root fetch - processPackages [preservation-database]: executing diffoscope
+[2023-04-09 18:54:27] INFO root fetch - processPackages [preservation-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preservation-database-0.0.98.tar.gz tmp/preservation-database-0.0.99.tar.gz --markdown 20230409/p/preservation-database/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 18:54:27] INFO root fetch - processPackages [qt-colored-logger]: executing diffoscope
+[2023-04-09 18:54:27] INFO root fetch - processPackages [qt-colored-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qt_colored_logger-0.3.0.tar.gz tmp/qt_colored_logger-0.4.0.tar.gz --markdown 20230409/q/qt-colored-logger/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-09 18:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:54:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:54:31] INFO root fetch - main [MainThread]: Store serial: [17638179]
