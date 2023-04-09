@@ -6752,3 +6752,21 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:56:10] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:56:11] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:56:11] INFO root fetch - main [MainThread]: Store serial: [17637725]
+[2023-04-09 18:01:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637725]
+[2023-04-09 18:01:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-09 18:01:19] INFO root fetch - processPackages [raydl]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 18:01:19] INFO root fetch - processPackages [napari-blender-bridge]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 18:01:19] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-04-09 18:01:19] INFO root fetch - processPackages [raydl]: Downloading https://files.pythonhosted.org/packages/ba/7b/ad1eec6693ab10d1e68dee5ad7655d15dfd7f1f2f2c3d8585dff7f998046/raydl-0.0.6.tar.gz
+[2023-04-09 18:01:19] INFO root fetch - processPackages [napari-blender-bridge]: Downloading https://files.pythonhosted.org/packages/37/17/c7850210e6c9682892a0c800aa2a2aba7d039419e9d68f523daf090aa482/napari-blender-bridge-0.1.1.tar.gz
+[2023-04-09 18:01:19] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: Downloading https://files.pythonhosted.org/packages/52/2f/ba7acfb377386bdf69c09f2c5b82dcdf020f403abeb2ac0f2d8f28cd6d87/nonebot-plugin-chatgpt-on-qq-1.0.2.tar.gz
+[2023-04-09 18:01:19] WARNING root fetch - processPackages [napari-blender-bridge]: Skipping package: exceeds size limit 14337526>=10485760
+[2023-04-09 18:01:19] INFO root fetch - main [MainThread]: error
+[2023-04-09 18:01:19] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: executing diffoscope
+[2023-04-09 18:01:19] INFO root fetch - processPackages [nonebot-plugin-chatgpt-on-qq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-chatgpt-on-qq-1.0.0.tar.gz tmp/nonebot-plugin-chatgpt-on-qq-1.0.2.tar.gz --markdown 20230409/n/nonebot-plugin-chatgpt-on-qq/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-09 18:01:19] INFO root fetch - processPackages [raydl]: Downloading https://files.pythonhosted.org/packages/60/b0/fde8daae30e40f6adaaca8dcef8a823574459763bbca5feca2ed11f1cd4b/raydl-0.0.7.tar.gz
+[2023-04-09 18:01:19] INFO root fetch - processPackages [raydl]: executing diffoscope
+[2023-04-09 18:01:19] INFO root fetch - processPackages [raydl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raydl-0.0.6.tar.gz tmp/raydl-0.0.7.tar.gz --markdown 20230409/r/raydl/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 18:01:20] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:01:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:01:21] INFO root fetch - main [MainThread]: Store serial: [17637751]
