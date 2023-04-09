@@ -2679,3 +2679,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:21:41] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:21:49] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:21:49] INFO root fetch - main [MainThread]: Store serial: [17634774]
+[2023-04-09 08:26:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634774]
+[2023-04-09 08:26:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 08:26:59] INFO root fetch - processPackages [CustomGPT]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: New version: [0.0.75] Old Version: [0.0.74]
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: New version: [0.0.75] Old Version: [0.0.74]
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/66/41/de41c45e5bdad7702cce66fabd3aecaefbe4c0f3d6b83fa948186b1e0dbe/bingai-0.0.2.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/66/41/de41c45e5bdad7702cce66fabd3aecaefbe4c0f3d6b83fa948186b1e0dbe/bingai-0.0.2.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/6d/62/ecb0fe3b6d7f04871ccaef3803c4af3550f3b6c9fa825ac53f2f5ae28e67/hugg-0.0.74.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/6d/62/ecb0fe3b6d7f04871ccaef3803c4af3550f3b6c9fa825ac53f2f5ae28e67/hugg-0.0.74.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [CustomGPT]: Downloading https://files.pythonhosted.org/packages/c8/d9/6714dc54a2408660bd732e12971e8d1e16907674466afb681b0e12aded65/CustomGPT-0.1.2.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [CustomGPT]: executing diffoscope
+[2023-04-09 08:26:59] INFO root fetch - processPackages [CustomGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomGPT-0.1.1.tar.gz tmp/CustomGPT-0.1.2.tar.gz --markdown 20230409/C/CustomGPT/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/af/e2/4b4b73a9ee9f03fdad0b52b64707440f6ddbe42aad3741af5abc8dbfbd89/bingai-0.0.3.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/af/e2/4b4b73a9ee9f03fdad0b52b64707440f6ddbe42aad3741af5abc8dbfbd89/bingai-0.0.3.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/a4/3a/8e15d4f99afc88ca6ec546ddac09846f6ceb09ecfbf920da2c4c4cbd9a6f/hugg-0.0.75.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/a4/3a/8e15d4f99afc88ca6ec546ddac09846f6ceb09ecfbf920da2c4c4cbd9a6f/hugg-0.0.75.tar.gz
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-0.0.2.tar.gz tmp/bingai-0.0.3.tar.gz --markdown 20230409/b/bingai/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 08:26:59] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-0.0.2.tar.gz tmp/bingai-0.0.3.tar.gz --markdown 20230409/b/bingai/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.74.tar.gz tmp/hugg-0.0.75.tar.gz --markdown 20230409/h/hugg/0.0.74-0.0.75/diff.md --exclude *.pyd
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 08:26:59] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.74.tar.gz tmp/hugg-0.0.75.tar.gz --markdown 20230409/h/hugg/0.0.74-0.0.75/diff.md --exclude *.pyd
+[2023-04-09 08:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:27:00] INFO root fetch - processPackages [langful]: New version: [0.21] Old Version: [0.2]
+[2023-04-09 08:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:27:00] INFO root fetch - processPackages [langful]: Downloading https://files.pythonhosted.org/packages/0c/00/944bb36fcdb0f94dff8c1f24d619e0cd33034f8c91d1203cf75328b67e2b/langful-0.21-py2.py3-none-any.whl
+[2023-04-09 08:27:00] INFO root fetch - processPackages [langful]: executing diffoscope
+[2023-04-09 08:27:00] INFO root fetch - processPackages [langful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langful-0.2-py2.py3-none-any.whl.zip tmp/langful-0.21-py2.py3-none-any.whl.zip --markdown 20230409/l/langful/0.2-0.21/diff.md --exclude *.pyd
+[2023-04-09 08:27:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:27:02] INFO root fetch - main [MainThread]: Store serial: [17634793]
