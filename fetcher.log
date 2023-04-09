@@ -4210,3 +4210,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 12:14:25] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:14:32] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:14:32] INFO root fetch - main [MainThread]: Store serial: [17635872]
+[2023-04-09 12:19:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635872]
+[2023-04-09 12:19:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-09 12:19:40] INFO root fetch - processPackages [property-lister]: New version: [1.6] Old Version: [1.5]
+[2023-04-09 12:19:40] INFO root fetch - processPackages [nerfacc]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-09 12:19:40] INFO root fetch - processPackages [vmn]: New version: [0.8.0rc8] Old Version: [0.8.0rc7]
+[2023-04-09 12:19:40] INFO root fetch - processPackages [nerfacc]: Downloading https://files.pythonhosted.org/packages/de/59/ba594a686205cac34080b559446b2b468170768137e897493839f6ef2a26/nerfacc-0.5.0.tar.gz
+[2023-04-09 12:19:40] INFO root fetch - processPackages [property-lister]: Downloading https://files.pythonhosted.org/packages/76/94/a842c43a6108814bbea67586e8f6fafa380e1f483cebd741584f682b801f/property-lister-1.5.tar.gz
+[2023-04-09 12:19:40] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/23/45/5b37c2edcfded31b40f00f7c7fb83150e08aca053018b1a26f25cfd524b1/vmn-0.8.0rc7-py3-none-any.whl
+[2023-04-09 12:19:40] INFO root fetch - processPackages [property-lister]: Downloading https://files.pythonhosted.org/packages/82/e1/63191b1afe26f4020bf88a88de00b1cedb990f87606e28527875de281518/property-lister-1.6.tar.gz
+[2023-04-09 12:19:40] INFO root fetch - processPackages [nerfacc]: Downloading https://files.pythonhosted.org/packages/3b/34/5a8ff44af903d2c07460c0da176dc7eba86415e3065ec17e0e31474a51c2/nerfacc-0.5.1.tar.gz
+[2023-04-09 12:19:40] INFO root fetch - processPackages [vmn]: Downloading https://files.pythonhosted.org/packages/06/4e/0b14262568a337d6ce200773ea842fb66d7ccced5b8c9d0d2b8f48722ab8/vmn-0.8.0rc8-py3-none-any.whl
+[2023-04-09 12:19:40] INFO root fetch - processPackages [property-lister]: executing diffoscope
+[2023-04-09 12:19:40] INFO root fetch - processPackages [property-lister]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/property-lister-1.5.tar.gz tmp/property-lister-1.6.tar.gz --markdown 20230409/p/property-lister/1.5-1.6/diff.md --exclude *.pyd
+[2023-04-09 12:19:40] INFO root fetch - processPackages [nerfacc]: executing diffoscope
+[2023-04-09 12:19:40] INFO root fetch - processPackages [nerfacc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nerfacc-0.5.0.tar.gz tmp/nerfacc-0.5.1.tar.gz --markdown 20230409/n/nerfacc/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-09 12:19:41] INFO root fetch - processPackages [vmn]: executing diffoscope
+[2023-04-09 12:19:41] INFO root fetch - processPackages [vmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmn-0.8.0rc7-py3-none-any.whl.zip tmp/vmn-0.8.0rc8-py3-none-any.whl.zip --markdown 20230409/v/vmn/0.8.0rc7-0.8.0rc8/diff.md --exclude *.pyd
+[2023-04-09 12:19:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:19:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:19:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:19:42] INFO root fetch - main [MainThread]: Store serial: [17635881]
