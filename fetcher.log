@@ -4924,3 +4924,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:56:06] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:56:06] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:56:06] INFO root fetch - main [MainThread]: Store serial: [17636358]
+[2023-04-09 14:01:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636358]
+[2023-04-09 14:01:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 14:01:13] INFO root fetch - processPackages [renutil]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-09 14:01:13] INFO root fetch - processPackages [topologicpy]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-09 14:01:13] INFO root fetch - processPackages [bugs-chart.py]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-09 14:01:13] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 14:01:13] INFO root fetch - processPackages [bigdl-serving]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 14:01:14] INFO root fetch - processPackages [renutil]: Downloading https://files.pythonhosted.org/packages/c6/57/5caaf77da670d798a6c8238d6dddd90342c2cf686f98186faeccaa1c32f4/renutil-1.9.0.tar.gz
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.3.0b20230408-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.3.0b20230409-py3-none-win_amd64.whl.zip --markdown 20230409/b/bigdl-chronos/2.3.0b20230408-2.3.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 14:01:14] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/e2/51/4875fd1eea57f405297c2ef6a84f8d7997e68d3c4e82c9d152df1952f771/topologicpy-0.4.0.tar.gz
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bugs-chart.py]: Downloading https://files.pythonhosted.org/packages/05/1e/e0217472bff730bd55cfdd4e36220d0cba48dbcaf37d80dc15745243cb01/bugs-chart.py-1.0.4.tar.gz
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bugs-chart.py]: executing diffoscope
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bugs-chart.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bugs-chart.py-1.0.3.tar.gz tmp/bugs-chart.py-1.0.4.tar.gz --markdown 20230409/b/bugs-chart.py/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/17/47/0c85165350910a3992de3c1ce1f6c9d80149d71079e9fbe7486ba45629b4/bigdl_serving-2.3.0b20230409-py2.py3-none-any.whl
+[2023-04-09 14:01:14] INFO root fetch - processPackages [renutil]: Downloading https://files.pythonhosted.org/packages/cd/5d/e1f3026c9bc0d8bb39b14057ddfe0d055c7b2f76d2dd605cf07ec5f4505e/renutil-1.9.1.tar.gz
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-04-09 14:01:14] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.3.0b20230408-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.3.0b20230409-py2.py3-none-any.whl.zip --markdown 20230409/b/bigdl-serving/2.3.0b20230408-2.3.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 14:01:14] INFO root fetch - processPackages [renutil]: executing diffoscope
+[2023-04-09 14:01:14] INFO root fetch - processPackages [renutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renutil-1.9.0.tar.gz tmp/renutil-1.9.1.tar.gz --markdown 20230409/r/renutil/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-09 14:01:14] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34011890>=10485760
+[2023-04-09 14:01:14] INFO root fetch - main [MainThread]: error
+[2023-04-09 14:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:01:16] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:01:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:01:17] INFO root fetch - main [MainThread]: Store serial: [17636382]
