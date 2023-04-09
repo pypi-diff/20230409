@@ -3186,3 +3186,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:46:14] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:46:22] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:46:22] INFO root fetch - main [MainThread]: Store serial: [17635122]
+[2023-04-09 09:51:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635122]
+[2023-04-09 09:51:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 09:51:30] INFO root fetch - processPackages [pooltool-billiards]: New version: [0.2.0] Old Version: [0.1]
+[2023-04-09 09:51:30] INFO root fetch - processPackages [SYSTEM32-Critical]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 09:51:30] INFO root fetch - processPackages [vandal]: New version: [4.0.6] Old Version: [4.0.5]
+[2023-04-09 09:51:30] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-09 09:51:30] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-04-09 09:51:30] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/00/82/064ee2a09cb778a6edf223c5dabfd9a17cbe5aedf84d46f5594af5429842/vandal-4.0.5.tar.gz
+[2023-04-09 09:51:30] INFO root fetch - processPackages [SYSTEM32-Critical]: Downloading https://files.pythonhosted.org/packages/38/f5/a878f216862deba06237f1f906bd269834c76c2f9d35a2c60f5fe3ec47a2/system32_critical-0.0.1.tar.gz
+[2023-04-09 09:51:30] INFO root fetch - processPackages [pooltool-billiards]: Downloading https://files.pythonhosted.org/packages/47/9c/b6c322072971af6ca65b2ec2f04f9178ae9fc0b4f7fcea477454c5c0fa65/pooltool-billiards-0.1.tar.gz
+[2023-04-09 09:51:30] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/d5/95/d70c95da3e78b71d35838af276daf5b2f53394c4c9a44fa5dd8f2aa64498/few_shot_priming-0.0.96-py3-none-any.whl
+[2023-04-09 09:51:30] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/ca/7f/a36a5538a5100fa15d02bbd755fd23241035a68e6019b99cb8d273c32a61/NinjaTools-0.8.9.tar.gz
+[2023-04-09 09:51:30] INFO root fetch - processPackages [SYSTEM32-Critical]: Downloading https://files.pythonhosted.org/packages/0f/76/aaf6728d1ae231510debc127181e20f70e1578481ca54c6e1e55e89e72c7/system32_critical-0.0.2.tar.gz
+[2023-04-09 09:51:30] WARNING root fetch - processPackages [pooltool-billiards]: Skipping package: exceeds size limit 92038802>=10485760
+[2023-04-09 09:51:30] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:51:30] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-09 09:51:30] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/c7/71/a7b4f014290b5ae1474b127bd91a4c85edd6d29485cb379809b551f1d589/vandal-4.0.6.tar.gz
+[2023-04-09 09:51:31] INFO root fetch - processPackages [SYSTEM32-Critical]: executing diffoscope
+[2023-04-09 09:51:31] INFO root fetch - processPackages [SYSTEM32-Critical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/system32_critical-0.0.1.tar.gz tmp/system32_critical-0.0.2.tar.gz --markdown 20230409/S/SYSTEM32-Critical/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 09:51:31] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-09 09:51:31] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/36/c3/2d22ecaadfc1cbe57118895684bc799aa1ff33706a5a09e130728af4cd83/NinjaTools-0.9.0.tar.gz
+[2023-04-09 09:51:31] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-09 09:51:31] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230409/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 09:51:31] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 09:51:31] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.5.tar.gz tmp/vandal-4.0.6.tar.gz --markdown 20230409/v/vandal/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2023-04-09 09:51:31] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/1e/e8/6368ab93b7135424a35ce07aac4de4056a38a1ae6f862ed63a5a79a4dce6/few_shot_priming-0.0.99-py3-none-any.whl
+[2023-04-09 09:51:31] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-04-09 09:51:31] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230409/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 09:51:31] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-09 09:51:31] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:51:31] INFO root fetch - processPackages [strictly-typed-pandas]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-09 09:51:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:31] INFO root fetch - processPackages [strictly-typed-pandas]: Downloading https://files.pythonhosted.org/packages/5a/fe/612c7ae5360e5d8bd7cd639ce633afc68b6d094a508c75cc800cc5d3f4ef/strictly_typed_pandas-0.1.5.tar.gz
+[2023-04-09 09:51:31] INFO root fetch - processPackages [vandal]: New version: [4.0.6] Old Version: [4.0.5]
+[2023-04-09 09:51:32] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 09:51:32] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.5.tar.gz tmp/vandal-4.0.6.tar.gz --markdown 20230409/v/vandal/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2023-04-09 09:51:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:32] INFO root fetch - processPackages [webtypy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 09:51:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:32] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-09 09:51:32] INFO root fetch - processPackages [strictly-typed-pandas]: Downloading https://files.pythonhosted.org/packages/08/ae/5bbd9f81d4faca66a867cfa8eb386f43a76468b5c57ab9e63156451e7c8e/strictly_typed_pandas-0.1.6.tar.gz
+[2023-04-09 09:51:32] INFO root fetch - processPackages [webtypy]: Downloading https://files.pythonhosted.org/packages/b2/7c/058f97ff893d6788ec109f41c552743170bae63814d69b20ca9111b4d260/webtypy-0.1.0.tar.gz
+[2023-04-09 09:51:32] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-09 09:51:32] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230409/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 09:51:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:32] INFO root fetch - processPackages [strictly-typed-pandas]: executing diffoscope
+[2023-04-09 09:51:32] INFO root fetch - processPackages [strictly-typed-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictly_typed_pandas-0.1.5.tar.gz tmp/strictly_typed_pandas-0.1.6.tar.gz --markdown 20230409/s/strictly-typed-pandas/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-09 09:51:32] INFO root fetch - processPackages [webtypy]: Downloading https://files.pythonhosted.org/packages/31/84/874a926be272b7e74114003b357c1dfbe73a569d5c6ee084ce94ebcc7a8f/webtypy-0.1.1.tar.gz
+[2023-04-09 09:51:32] INFO root fetch - processPackages [webtypy]: executing diffoscope
+[2023-04-09 09:51:32] INFO root fetch - processPackages [webtypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webtypy-0.1.0.tar.gz tmp/webtypy-0.1.1.tar.gz --markdown 20230409/w/webtypy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 09:51:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:51:33] INFO root fetch - main [MainThread]: Store serial: [17635153]
