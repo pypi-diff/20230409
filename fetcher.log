@@ -7825,3 +7825,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:52:10] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:52:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:52:12] INFO root fetch - main [MainThread]: Store serial: [17638531]
+[2023-04-09 19:57:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638531]
+[2023-04-09 19:57:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 19:57:20] INFO root fetch - processPackages [netbox-inventory]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-09 19:57:20] WARNING root fetch - processPackages [oijedgidghiodhiog]: Skipping, unable to determine old version
+[2023-04-09 19:57:20] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:57:20] WARNING root fetch - processPackages [chatgpt-gaming-framework]: Skipping, unable to determine old version
+[2023-04-09 19:57:20] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:57:20] INFO root fetch - processPackages [symbolicmode]: New version: [0.9.5] Old Version: [0.9.1]
+[2023-04-09 19:57:20] WARNING root fetch - processPackages [gdfgdfgdfgdfg]: Skipping, unable to determine old version
+[2023-04-09 19:57:20] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:57:20] INFO root fetch - processPackages [kcli]: New version: [99.0.202304091755] Old Version: [99.0.202304091017]
+[2023-04-09 19:57:20] WARNING root fetch - processPackages [npf-web-extension]: Skipping, unable to determine old version
+[2023-04-09 19:57:20] INFO root fetch - main [MainThread]: error
+[2023-04-09 19:57:20] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 19:57:20] INFO root fetch - processPackages [netbox-inventory]: Downloading https://files.pythonhosted.org/packages/a0/73/8535b4ce67a7a9a077495b080e3a61ac80ee66cacf754d1dc16d9d308387/netbox-inventory-1.2.1.tar.gz
+[2023-04-09 19:57:20] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/82/da/5fc06a3208469f4ab7dde8ded900cc5c07b5df877583fc326f9e4a24e591/symbolicmode-0.9.5.tar.gz
+[2023-04-09 19:57:20] INFO root fetch - processPackages [wizata-dsapi]: Downloading https://files.pythonhosted.org/packages/f4/ed/bb72a4d824337deb359d7798793c5c362b332c38ea5c9cd2a345f3dcd843/wizata-dsapi-0.0.98.tar.gz
+[2023-04-09 19:57:20] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/0f/0f/4059a180ed3d9a54515bc91402d374f7d588c1fbd6a6032982e19a45abf4/kcli-99.0.202304091755-py3-none-any.whl
+[2023-04-09 19:57:20] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-09 19:57:20] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.1.tar.gz tmp/symbolicmode-0.9.5.tar.gz --markdown 20230409/s/symbolicmode/0.9.1-0.9.5/diff.md --exclude *.pyd
+[2023-04-09 19:57:20] INFO root fetch - processPackages [netbox-inventory]: Downloading https://files.pythonhosted.org/packages/73/6b/dfc917fae74820273df95e66eaa790e514c021f6cb17a784b675d303ba7d/netbox-inventory-1.2.2.tar.gz
+[2023-04-09 19:57:20] INFO root fetch - processPackages [wizata-dsapi]: Downloading https://files.pythonhosted.org/packages/7c/40/af36cbebf4438a159b8623950ba75023ae5c2f010005cfb5c07b7536a06b/wizata-dsapi-0.0.99.tar.gz
+[2023-04-09 19:57:20] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-09 19:57:20] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.0.98.tar.gz tmp/wizata-dsapi-0.0.99.tar.gz --markdown 20230409/w/wizata-dsapi/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 19:57:21] INFO root fetch - processPackages [netbox-inventory]: executing diffoscope
+[2023-04-09 19:57:21] INFO root fetch - processPackages [netbox-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-inventory-1.2.1.tar.gz tmp/netbox-inventory-1.2.2.tar.gz --markdown 20230409/n/netbox-inventory/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-09 19:57:21] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-09 19:57:21] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304091017-py3-none-any.whl.zip tmp/kcli-99.0.202304091755-py3-none-any.whl.zip --markdown 20230409/k/kcli/99.0.202304091017-99.0.202304091755/diff.md --exclude *.pyd
+[2023-04-09 19:57:21] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:57:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:57:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:57:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 19:57:30] INFO root fetch - main [MainThread]: Store serial: [17638561]
