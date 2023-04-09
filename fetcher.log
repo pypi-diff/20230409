@@ -4834,3 +4834,35 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:45:42] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:45:42] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:45:42] INFO root fetch - main [MainThread]: Store serial: [17636301]
+[2023-04-09 13:50:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636301]
+[2023-04-09 13:50:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pikvm-cli]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 13:50:50] INFO root fetch - processPackages [oidc-jwt-validation]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pykillerx]: New version: [0.1b4] Old Version: [0.1.9]
+[2023-04-09 13:50:50] WARNING root fetch - processPackages [forbidden]: Skipping, unable to determine old version
+[2023-04-09 13:50:50] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:50:50] WARNING root fetch - processPackages [melon-chart.py]: Skipping, unable to determine old version
+[2023-04-09 13:50:50] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:50:50] INFO root fetch - processPackages [PowerWrapper]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101681038685] Old Version: [0.0.101680952230]
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pykillerx]: executing diffoscope
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pykillerx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykillerx-0.1.9.tar.gz tmp/pykillerx-0.1b4.tar.gz --markdown 20230409/p/pykillerx/0.1.9-0.1b4/diff.md --exclude *.pyd
+[2023-04-09 13:50:50] INFO root fetch - processPackages [oidc-jwt-validation]: Downloading https://files.pythonhosted.org/packages/25/30/7830db1049a4212c7bd65531b8e914c87b42b2a49c5dc2d6472d7b4072aa/oidc-jwt-validation-0.2.0.tar.gz
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pikvm-cli]: Downloading https://files.pythonhosted.org/packages/4f/8d/bdb1a1441b8787f0ec7cd075d405683ef350149fbdf0c834f97dc87cdd51/pikvm-cli-1.0.3.tar.gz
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/b9/34/37973b4e98dff8c6cda0c6faec7271f3a127301f390726a3c130f8eab846/pyre-check-nightly-0.0.101680952230.tar.gz
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pikvm-cli]: executing diffoscope
+[2023-04-09 13:50:50] INFO root fetch - processPackages [pikvm-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pikvm-cli-1.0.2.tar.gz tmp/pikvm-cli-1.0.3.tar.gz --markdown 20230409/p/pikvm-cli/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 13:50:50] INFO root fetch - processPackages [PowerWrapper]: Downloading https://files.pythonhosted.org/packages/99/49/c68d3bf89fbcae1216f18030936c5ed58619a8c20322a0bb0960dd8e01d4/PowerWrapper-0.0.2.tar.gz
+[2023-04-09 13:50:50] INFO root fetch - processPackages [oidc-jwt-validation]: Downloading https://files.pythonhosted.org/packages/f7/28/067ffe319582d875cbeeab24512d2d8cc1b830e35b3b2697a9ddf2f6b54b/oidc-jwt-validation-0.3.0.tar.gz
+[2023-04-09 13:50:50] INFO root fetch - processPackages [oidc-jwt-validation]: executing diffoscope
+[2023-04-09 13:50:50] INFO root fetch - processPackages [oidc-jwt-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oidc-jwt-validation-0.2.0.tar.gz tmp/oidc-jwt-validation-0.3.0.tar.gz --markdown 20230409/o/oidc-jwt-validation/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 13:50:51] INFO root fetch - processPackages [PowerWrapper]: Downloading https://files.pythonhosted.org/packages/1d/66/c4e9baaf8f1ddb42a23ddec350fbecaae8eb537695d8bcd18cf6fc7f73bd/PowerWrapper-0.0.3.tar.gz
+[2023-04-09 13:50:51] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23002815>=10485760
+[2023-04-09 13:50:51] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:50:51] INFO root fetch - processPackages [PowerWrapper]: executing diffoscope
+[2023-04-09 13:50:51] INFO root fetch - processPackages [PowerWrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PowerWrapper-0.0.2.tar.gz tmp/PowerWrapper-0.0.3.tar.gz --markdown 20230409/P/PowerWrapper/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 13:50:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:50:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:50:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:50:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:50:52] INFO root fetch - main [MainThread]: Store serial: [17636329]
