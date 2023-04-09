@@ -6397,3 +6397,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:18:28] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:19:06] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:19:06] INFO root fetch - main [MainThread]: Store serial: [17637496]
+[2023-04-09 17:24:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637496]
+[2023-04-09 17:24:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 17:24:14] WARNING root fetch - processPackages [ringneck]: Skipping, unable to determine old version
+[2023-04-09 17:24:14] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:24:14] INFO root fetch - processPackages [PythonToolsKit]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-09 17:24:14] INFO root fetch - processPackages [fastapi_amis_admin]: New version: [0.5.4] Old Version: [0.5.3a2]
+[2023-04-09 17:24:14] INFO root fetch - processPackages [LocalResolver]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 17:24:14] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 17:24:14] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: New version: [1.7.4] Old Version: [1.7.3]
+[2023-04-09 17:24:14] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 17:24:14] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 17:24:14] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:24:14] INFO root fetch - processPackages [fastapi_amis_admin]: Downloading https://files.pythonhosted.org/packages/4d/3c/86cfac8c0142e9fcc88aafebadb3183313da7f746f419efe4349a3acacc4/fastapi_amis_admin-0.5.3a2.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [geospace]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-09 17:24:14] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: Downloading https://files.pythonhosted.org/packages/14/3d/1eba33c6f5e48b3f624041b3ff6ffac946fed725277a888ac6d84ad34760/nonebot_plugin_searchbiliinfo-1.7.3.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [LocalResolver]: Downloading https://files.pythonhosted.org/packages/2c/4b/9d988129cdae9e6f591bae8d8d5974e2c6fc2de810624e78e3c92a08252b/LocalResolver-0.0.2.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [PythonToolsKit]: Downloading https://files.pythonhosted.org/packages/28/33/edbda9cf7bf4bd792b93ac5d54c2e55af272beebb32d32b778a0f378e516/PythonToolsKit-1.2.2.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [geospace]: Downloading https://files.pythonhosted.org/packages/25/40/780f059548ab8c81d694bd03a165827613bb773b4d5989f1226e5c0e3bf4/geospace-0.3.2.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [geospace]: executing diffoscope
+[2023-04-09 17:24:14] INFO root fetch - processPackages [geospace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geospace-0.3.1.tar.gz tmp/geospace-0.3.2.tar.gz --markdown 20230409/g/geospace/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-09 17:24:14] INFO root fetch - processPackages [PythonToolsKit]: Downloading https://files.pythonhosted.org/packages/8e/ed/fb5a6d2063f28223ca0a3df7969c12baa46ab842b7e930b9523fb02f9703/PythonToolsKit-1.2.3.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [fastapi_amis_admin]: Downloading https://files.pythonhosted.org/packages/30/ae/40f281f3c1b91b6d8ecd45584f7eb8e18097545fcc48166977f07c8d4537/fastapi_amis_admin-0.5.4.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [LocalResolver]: Downloading https://files.pythonhosted.org/packages/ba/2f/593f7645007c900c194907c81016b21a3ca6cf6434f167d268bcb1454ed9/LocalResolver-0.0.3.tar.gz
+[2023-04-09 17:24:14] INFO root fetch - processPackages [PythonToolsKit]: executing diffoscope
+[2023-04-09 17:24:14] INFO root fetch - processPackages [PythonToolsKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonToolsKit-1.2.2.tar.gz tmp/PythonToolsKit-1.2.3.tar.gz --markdown 20230409/P/PythonToolsKit/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-09 17:24:14] INFO root fetch - processPackages [fastapi_amis_admin]: executing diffoscope
+[2023-04-09 17:24:14] INFO root fetch - processPackages [fastapi_amis_admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_amis_admin-0.5.3a2.tar.gz tmp/fastapi_amis_admin-0.5.4.tar.gz --markdown 20230409/f/fastapi_amis_admin/0.5.3a2-0.5.4/diff.md --exclude *.pyd
+[2023-04-09 17:24:14] INFO root fetch - processPackages [LocalResolver]: executing diffoscope
+[2023-04-09 17:24:14] INFO root fetch - processPackages [LocalResolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LocalResolver-0.0.2.tar.gz tmp/LocalResolver-0.0.3.tar.gz --markdown 20230409/L/LocalResolver/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 17:24:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:24:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:24:16] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:24:16] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: Downloading https://files.pythonhosted.org/packages/b9/42/b773888bee40173bea15c092014e3ff3c3c16ed99b7114894f0dbe148e36/nonebot_plugin_searchbiliinfo-1.7.4.tar.gz
+[2023-04-09 17:24:16] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: executing diffoscope
+[2023-04-09 17:24:16] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_searchbiliinfo-1.7.3.tar.gz tmp/nonebot_plugin_searchbiliinfo-1.7.4.tar.gz --markdown 20230409/n/nonebot-plugin-searchbiliinfo/1.7.3-1.7.4/diff.md --exclude *.pyd
+[2023-04-09 17:24:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:24:18] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:24:18] INFO root fetch - main [MainThread]: Store serial: [17637517]
