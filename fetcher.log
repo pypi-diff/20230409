@@ -9322,3 +9322,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:45:46] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:46:26] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:46:26] INFO root fetch - main [MainThread]: Store serial: [17639507]
+[2023-04-09 22:51:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639507]
+[2023-04-09 22:51:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 22:51:42] INFO root fetch - processPackages [finlogic]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-09 22:51:42] WARNING root fetch - processPackages [photocard]: Skipping, unable to determine old version
+[2023-04-09 22:51:42] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:51:42] INFO root fetch - processPackages [JarvisAI]: New version: [4.7] Old Version: [4.6]
+[2023-04-09 22:51:42] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 22:51:42] WARNING root fetch - processPackages [t-money]: Skipping, unable to determine old version
+[2023-04-09 22:51:42] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:51:42] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:51:42] INFO root fetch - processPackages [pychan]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-09 22:51:42] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 22:51:42] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:51:42] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/f5/30/7ce2103fdc5c0e709ef9dbbc2d02c357d9842f0f572b5ad225c523b2c5b2/FinLogic-0.3.4.tar.gz
+[2023-04-09 22:51:42] INFO root fetch - processPackages [JarvisAI]: Downloading https://files.pythonhosted.org/packages/bb/63/ef0ff16e4293effde85aa5edbd5c191dafd284f4f924aad4ce894ab6ba70/JarvisAI-4.6.tar.gz
+[2023-04-09 22:51:42] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 22:51:42] INFO root fetch - processPackages [pychan]: Downloading https://files.pythonhosted.org/packages/0b/c5/165ef2333f2d0fc073bb029e3a0c345815e2a42e0cee8209254ed8cb49bf/pychan-0.5.0.tar.gz
+[2023-04-09 22:51:42] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 22:51:42] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:51:42] INFO root fetch - processPackages [bintropy]: New version: [1.4.0] Old Version: [1.3.7]
+[2023-04-09 22:51:43] INFO root fetch - processPackages [JarvisAI]: Downloading https://files.pythonhosted.org/packages/28/da/805fc2b6451da8d036783b9fe7f419d25ef1128912df16c9495cf2df0a2f/JarvisAI-4.7.tar.gz
+[2023-04-09 22:51:43] INFO root fetch - processPackages [pychan]: Downloading https://files.pythonhosted.org/packages/ca/3a/37fa17f7ecb795c5dd74ae8a87be8845517eda72f9c27d5896cb59907db6/pychan-0.6.0.tar.gz
+[2023-04-09 22:51:43] INFO root fetch - processPackages [JarvisAI]: executing diffoscope
+[2023-04-09 22:51:43] INFO root fetch - processPackages [JarvisAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JarvisAI-4.6.tar.gz tmp/JarvisAI-4.7.tar.gz --markdown 20230409/J/JarvisAI/4.6-4.7/diff.md --exclude *.pyd
+[2023-04-09 22:51:43] INFO root fetch - processPackages [pychan]: executing diffoscope
+[2023-04-09 22:51:43] INFO root fetch - processPackages [pychan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychan-0.5.0.tar.gz tmp/pychan-0.6.0.tar.gz --markdown 20230409/p/pychan/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-09 22:51:43] INFO root fetch - processPackages [bintropy]: Downloading https://files.pythonhosted.org/packages/42/45/b0f8048b3ac5360f4afc833d6bb81fad6eb7f6a5d81578a467293ff9a86c/bintropy-1.4.0.tar.gz
+[2023-04-09 22:51:43] INFO root fetch - processPackages [bintropy]: executing diffoscope
+[2023-04-09 22:51:43] INFO root fetch - processPackages [bintropy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bintropy-1.3.7.tar.gz tmp/bintropy-1.4.0.tar.gz --markdown 20230409/b/bintropy/1.3.7-1.4.0/diff.md --exclude *.pyd
+[2023-04-09 22:51:43] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/ad/9c/9021fb85c33311ed40941becb90788fe6606b0a985a7fc5a294d150579d5/FinLogic-0.3.5.tar.gz
+[2023-04-09 22:51:43] INFO root fetch - processPackages [finlogic]: executing diffoscope
+[2023-04-09 22:51:43] INFO root fetch - processPackages [finlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FinLogic-0.3.4.tar.gz tmp/FinLogic-0.3.5.tar.gz --markdown 20230409/f/finlogic/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-09 22:51:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:51:44] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:51:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:51:44] INFO root fetch - processPackages [nextcloudtalkbot]: Downloading https://files.pythonhosted.org/packages/17/a6/3613ebeed7e2534a6b590ee3d06896c1a415d6a752927b521ff177ba7f04/nextcloudtalkbot-0.0.9.tar.gz
+[2023-04-09 22:51:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:51:44] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-09 22:51:44] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230409/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:51:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:51:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:51:45] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:51:45] INFO root fetch - main [MainThread]: Store serial: [17639538]
