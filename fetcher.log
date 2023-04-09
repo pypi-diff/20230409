@@ -8834,3 +8834,25 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:42:26] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:42:26] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:42:26] INFO root fetch - main [MainThread]: Store serial: [17639110]
+[2023-04-09 21:47:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639110]
+[2023-04-09 21:47:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 21:47:34] INFO root fetch - processPackages [redpjpj]: New version: [1.1] Old Version: [1.0]
+[2023-04-09 21:47:34] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 21:47:34] WARNING root fetch - processPackages [jsoninja]: Skipping, unable to determine old version
+[2023-04-09 21:47:34] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:47:34] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-09 21:47:34] INFO root fetch - processPackages [redpjpj]: Downloading https://files.pythonhosted.org/packages/9d/fe/42885bb578cec7daa9da7bd37d61ccc904636a73874c2cbd017ac095536c/redpjpj-1.0.tar.gz
+[2023-04-09 21:47:34] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: Downloading https://files.pythonhosted.org/packages/8a/59/df3f27349db498b5ccea76299e87339dc16d6636a64b755575ff6449430c/fastapi-crudrouter-mongodb-0.0.1.tar.gz
+[2023-04-09 21:47:34] INFO root fetch - processPackages [PyMemoryEditor]: Downloading https://files.pythonhosted.org/packages/50/4f/883a7a694b6a26a4af958fd737a116396eb96a1c72e66740106cf922d97a/PyMemoryEditor-1.4.2.tar.gz
+[2023-04-09 21:47:34] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-09 21:47:34] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.4.1.tar.gz tmp/PyMemoryEditor-1.4.2.tar.gz --markdown 20230409/P/PyMemoryEditor/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-09 21:47:35] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: Downloading https://files.pythonhosted.org/packages/8f/99/b06949fad08ac2adc14302be23ceddec87908d65c5dbd8bad604f1660a1a/fastapi-crudrouter-mongodb-0.0.2.tar.gz
+[2023-04-09 21:47:35] INFO root fetch - processPackages [redpjpj]: Downloading https://files.pythonhosted.org/packages/2b/58/bc02b9f653888c647c5965a5fb3b432fa7771286b190f913f89c251d1186/redpjpj-1.1.tar.gz
+[2023-04-09 21:47:35] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: executing diffoscope
+[2023-04-09 21:47:35] INFO root fetch - processPackages [fastapi-crudrouter-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-crudrouter-mongodb-0.0.1.tar.gz tmp/fastapi-crudrouter-mongodb-0.0.2.tar.gz --markdown 20230409/f/fastapi-crudrouter-mongodb/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 21:47:35] INFO root fetch - processPackages [redpjpj]: executing diffoscope
+[2023-04-09 21:47:35] INFO root fetch - processPackages [redpjpj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redpjpj-1.0.tar.gz tmp/redpjpj-1.1.tar.gz --markdown 20230409/r/redpjpj/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-09 21:47:36] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:47:36] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:47:36] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:47:36] INFO root fetch - main [MainThread]: Store serial: [17639128]
