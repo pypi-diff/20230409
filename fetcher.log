@@ -8761,3 +8761,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:26:58] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:26:58] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:26:58] INFO root fetch - main [MainThread]: Store serial: [17639032]
+[2023-04-09 21:32:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639032]
+[2023-04-09 21:32:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 21:32:05] INFO root fetch - processPackages [pyright-polite]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 21:32:05] INFO root fetch - processPackages [heart-model]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 21:32:05] WARNING root fetch - processPackages [redpjpj]: Skipping, unable to determine old version
+[2023-04-09 21:32:05] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:32:05] WARNING root fetch - processPackages [DataStructuresLiamTheodore]: Skipping, unable to determine old version
+[2023-04-09 21:32:05] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:32:05] INFO root fetch - processPackages [dragonxxdlib]: New version: [1.0.0] Old Version: [0.6.2]
+[2023-04-09 21:32:05] INFO root fetch - processPackages [bev]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-09 21:32:05] INFO root fetch - processPackages [pyright-polite]: Downloading https://files.pythonhosted.org/packages/33/06/65884c22ad8714d00ef2e6ffa39d089dbebef715e28ddf6c056546c96c4c/pyright_polite-1.0.2.tar.gz
+[2023-04-09 21:32:05] INFO root fetch - processPackages [heart-model]: Downloading https://files.pythonhosted.org/packages/5f/f1/ce1cbd2f05966429eb35d35cdc22da2d531ca5652f0a6bc3370e47a4f5c2/heart-model-0.0.9.tar.gz
+[2023-04-09 21:32:05] INFO root fetch - processPackages [dragonxxdlib]: Downloading https://files.pythonhosted.org/packages/fc/9a/f9858ff14d3636e7a6af28b86df742526de35449b06c580abbe64a55a887/dragonxxdlib-0.6.2.tar.gz
+[2023-04-09 21:32:05] INFO root fetch - processPackages [bev]: Downloading https://files.pythonhosted.org/packages/45/af/4d49cf3c96468ffbfb149fa3bb0be166bdbf84b70a44c5e25a3ef8bd2bac/bev-0.6.0.tar.gz
+[2023-04-09 21:32:06] INFO root fetch - processPackages [heart-model]: executing diffoscope
+[2023-04-09 21:32:06] INFO root fetch - processPackages [heart-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heart-model-0.0.8.tar.gz tmp/heart-model-0.0.9.tar.gz --markdown 20230409/h/heart-model/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 21:32:06] INFO root fetch - processPackages [pyright-polite]: Downloading https://files.pythonhosted.org/packages/b4/94/75680e3947619e7eb5b681d9909cb196699f873cf15adb9d55adac26d422/pyright_polite-1.0.3.tar.gz
+[2023-04-09 21:32:06] INFO root fetch - processPackages [dragonxxdlib]: Downloading https://files.pythonhosted.org/packages/7e/88/8b1d8190af6aa7a5ad3a301b95d9cd16e284b4817ae16295c5631526aa85/dragonxxdlib-1.0.0.tar.gz
+[2023-04-09 21:32:06] INFO root fetch - processPackages [pyright-polite]: executing diffoscope
+[2023-04-09 21:32:06] INFO root fetch - processPackages [pyright-polite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyright_polite-1.0.2.tar.gz tmp/pyright_polite-1.0.3.tar.gz --markdown 20230409/p/pyright-polite/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 21:32:06] INFO root fetch - processPackages [bev]: Downloading https://files.pythonhosted.org/packages/2f/93/d0b0d6ddaa645d68c31e41016087598606d5f704c5e97601d8af2c2289d3/bev-0.7.0.tar.gz
+[2023-04-09 21:32:06] INFO root fetch - processPackages [dragonxxdlib]: executing diffoscope
+[2023-04-09 21:32:06] INFO root fetch - processPackages [dragonxxdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonxxdlib-0.6.2.tar.gz tmp/dragonxxdlib-1.0.0.tar.gz --markdown 20230409/d/dragonxxdlib/0.6.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-09 21:32:06] INFO root fetch - processPackages [bev]: executing diffoscope
+[2023-04-09 21:32:06] INFO root fetch - processPackages [bev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bev-0.6.0.tar.gz tmp/bev-0.7.0.tar.gz --markdown 20230409/b/bev/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-09 21:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:32:07] INFO root fetch - main [MainThread]: Store serial: [17639059]
