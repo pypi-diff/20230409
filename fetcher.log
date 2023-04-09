@@ -8730,3 +8730,34 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:20:47] INFO root fetch - processPackages [now-lms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/now_lms-0.0.1a220230326.tar.gz tmp/now_lms-0.0.1a220230409.tar.gz --markdown 20230409/n/now-lms/0.0.1a220230326-0.0.1a220230409/diff.md --exclude *.pyd
 [2023-04-09 21:21:48] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:21:48] INFO root fetch - main [MainThread]: Store serial: [17639007]
+[2023-04-09 21:26:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639007]
+[2023-04-09 21:26:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 21:26:56] INFO root fetch - processPackages [hbili-gpt]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 21:26:56] WARNING root fetch - processPackages [fastapi-crudrouter-mongodb]: Skipping, unable to determine old version
+[2023-04-09 21:26:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:26:56] WARNING root fetch - processPackages [ENSF]: Skipping, unable to determine old version
+[2023-04-09 21:26:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:26:56] INFO root fetch - processPackages [spotify-to-ytmusic]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 21:26:56] INFO root fetch - processPackages [tklinenums]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-04-09 21:26:56] INFO root fetch - processPackages [akira3d]: New version: [4.7.2] Old Version: [4.6.9]
+[2023-04-09 21:26:56] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 21:26:56] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-09 21:26:56] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.0.98.tar.gz tmp/wizata-dsapi-0.0.99.tar.gz --markdown 20230409/w/wizata-dsapi/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 21:26:56] INFO root fetch - processPackages [akira3d]: Downloading https://files.pythonhosted.org/packages/9d/f9/0ba050d2fd29fc300fcd2a536072b15465b10d96d23e0254ae62a0cbfd55/akira3d-4.6.9.tar.gz
+[2023-04-09 21:26:56] INFO root fetch - processPackages [spotify-to-ytmusic]: Downloading https://files.pythonhosted.org/packages/38/c6/73dadf8c56f9c03464cc36af37a61225fa1d9ae0722c6c43a69342beed34/spotify_to_ytmusic-0.1.2.tar.gz
+[2023-04-09 21:26:57] INFO root fetch - processPackages [hbili-gpt]: executing diffoscope
+[2023-04-09 21:26:57] INFO root fetch - processPackages [hbili-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbili-gpt-0.1.8.tar.gz tmp/hbili-gpt-0.1.9.tar.gz --markdown 20230409/h/hbili-gpt/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 21:26:57] INFO root fetch - processPackages [tklinenums]: Downloading https://files.pythonhosted.org/packages/30/33/c5dd07567ce16ae5b4d5bcc79e73e0a7e0b6539719a8aa976879d90dd1f7/tklinenums-1.6.2.tar.gz
+[2023-04-09 21:26:57] INFO root fetch - processPackages [akira3d]: Downloading https://files.pythonhosted.org/packages/ce/af/ebe0ca83e9d925739cf972d6e9857e442a6e64eb117211f2df5b2e6e7026/akira3d-4.7.2.tar.gz
+[2023-04-09 21:26:57] INFO root fetch - processPackages [spotify-to-ytmusic]: executing diffoscope
+[2023-04-09 21:26:57] INFO root fetch - processPackages [spotify-to-ytmusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_to_ytmusic-0.1.1.tar.gz tmp/spotify_to_ytmusic-0.1.2.tar.gz --markdown 20230409/s/spotify-to-ytmusic/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 21:26:57] INFO root fetch - processPackages [tklinenums]: executing diffoscope
+[2023-04-09 21:26:57] INFO root fetch - processPackages [tklinenums]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tklinenums-1.6.1.tar.gz tmp/tklinenums-1.6.2.tar.gz --markdown 20230409/t/tklinenums/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-04-09 21:26:57] INFO root fetch - processPackages [akira3d]: executing diffoscope
+[2023-04-09 21:26:57] INFO root fetch - processPackages [akira3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akira3d-4.6.9.tar.gz tmp/akira3d-4.7.2.tar.gz --markdown 20230409/a/akira3d/4.6.9-4.7.2/diff.md --exclude *.pyd
+[2023-04-09 21:26:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:26:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:26:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:26:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:26:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:26:58] INFO root fetch - main [MainThread]: Store serial: [17639032]
