@@ -4951,3 +4951,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 14:01:16] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:01:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:01:17] INFO root fetch - main [MainThread]: Store serial: [17636382]
+[2023-04-09 14:06:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636382]
+[2023-04-09 14:06:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 14:06:24] INFO root fetch - processPackages [jms-metabolite-services]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-09 14:06:24] INFO root fetch - processPackages [dxsp]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-09 14:06:24] INFO root fetch - processPackages [freeplot]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-09 14:06:24] INFO root fetch - processPackages [vibe-chart.py]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 14:06:24] INFO root fetch - processPackages [pdm]: New version: [2.5.1] Old Version: [2.5.0b0]
+[2023-04-09 14:06:25] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/0f/59/6cfe4eaaad510d100ee0eb79b9214085caf8d983f9f255c0951e7d3b2aa7/dxsp-0.0.4.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [jms-metabolite-services]: Downloading https://files.pythonhosted.org/packages/b9/01/557fc0e4efe9de84cc6b34280437020f43bd4551c66450b96119a82a464f/jms-metabolite-services-0.5.4.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [freeplot]: Downloading https://files.pythonhosted.org/packages/ad/bf/d085e47d2c8a3058c1459f76e469a834c6c67d1c06c67be8779b4b176bc6/freeplot-0.3.0.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [vibe-chart.py]: Downloading https://files.pythonhosted.org/packages/40/ce/72376052c8d57bbda2b8bc39529002d5c737e5674e5879b234afc7d8742a/vibe-chart.py-1.0.0.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [pdm]: Downloading https://files.pythonhosted.org/packages/a7/1c/d3480a95f56654ba1eee80edc22dd626256fca2d34133e895d94f122f544/pdm-2.5.1.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [jms-metabolite-services]: executing diffoscope
+[2023-04-09 14:06:25] INFO root fetch - processPackages [jms-metabolite-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jms-metabolite-services-0.5.3.tar.gz tmp/jms-metabolite-services-0.5.4.tar.gz --markdown 20230409/j/jms-metabolite-services/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-09 14:06:25] INFO root fetch - processPackages [pdm]: executing diffoscope
+[2023-04-09 14:06:25] INFO root fetch - processPackages [pdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm-2.5.0b0.tar.gz tmp/pdm-2.5.1.tar.gz --markdown 20230409/p/pdm/2.5.0b0-2.5.1/diff.md --exclude *.pyd
+[2023-04-09 14:06:25] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/28/df/d5bdbfeec4d652cfe14888cdc7523465db0173043e0a2289fe7c487b7cad/dxsp-0.0.5.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 14:06:25] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.4.tar.gz tmp/dxsp-0.0.5.tar.gz --markdown 20230409/d/dxsp/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-09 14:06:25] INFO root fetch - processPackages [vibe-chart.py]: Downloading https://files.pythonhosted.org/packages/7a/95/0c8763beb4a267caf4a22c2cd0f29da9f449449b5faf5e1511ddaf026358/vibe-chart.py-1.0.1.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [freeplot]: Downloading https://files.pythonhosted.org/packages/76/59/0f929c9d706ae64623abab96868504c7dd54a9416ce01325ab46036806b8/freeplot-0.3.1.tar.gz
+[2023-04-09 14:06:25] INFO root fetch - processPackages [vibe-chart.py]: executing diffoscope
+[2023-04-09 14:06:25] INFO root fetch - processPackages [vibe-chart.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vibe-chart.py-1.0.0.tar.gz tmp/vibe-chart.py-1.0.1.tar.gz --markdown 20230409/v/vibe-chart.py/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 14:06:25] INFO root fetch - processPackages [freeplot]: executing diffoscope
+[2023-04-09 14:06:25] INFO root fetch - processPackages [freeplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeplot-0.3.0.tar.gz tmp/freeplot-0.3.1.tar.gz --markdown 20230409/f/freeplot/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-09 14:06:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:06:26] INFO root fetch - processPackages [eAwaiter]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 14:06:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:06:26] INFO root fetch - processPackages [analysisbykwok]: New version: [0.0.15] Old Version: [0.0.14]
+[2023-04-09 14:06:26] INFO root fetch - processPackages [eAwaiter]: Downloading https://files.pythonhosted.org/packages/f1/46/02a3ae0f3a68cbef90d562640964829634028ba188d2eb136717ff337f6a/eAwaiter-0.0.1.tar.gz
+[2023-04-09 14:06:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:06:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:06:26] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/9f/f1/fa138b5d4e741ecc1a02460a2bc2e43d15c3bedc0bc1d9c9900dc59155c7/analysisbykwok-0.0.15.tar.gz
+[2023-04-09 14:06:26] INFO root fetch - processPackages [analysisbykwok]: executing diffoscope
+[2023-04-09 14:06:26] INFO root fetch - processPackages [analysisbykwok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analysisbykwok-0.0.14.tar.gz tmp/analysisbykwok-0.0.15.tar.gz --markdown 20230409/a/analysisbykwok/0.0.14-0.0.15/diff.md --exclude *.pyd
+[2023-04-09 14:06:26] INFO root fetch - processPackages [eAwaiter]: Downloading https://files.pythonhosted.org/packages/b2/f4/97bc6597d5281d8bce5804c2ddd12250bb72b3d8aed7f446b81d9111d4e5/eAwaiter-0.0.2.tar.gz
+[2023-04-09 14:06:26] INFO root fetch - processPackages [eAwaiter]: executing diffoscope
+[2023-04-09 14:06:26] INFO root fetch - processPackages [eAwaiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eAwaiter-0.0.1.tar.gz tmp/eAwaiter-0.0.2.tar.gz --markdown 20230409/e/eAwaiter/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 14:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:06:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 14:06:28] INFO root fetch - main [MainThread]: Store serial: [17636420]
