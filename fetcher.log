@@ -6656,3 +6656,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:45:47] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:45:48] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:45:48] INFO root fetch - main [MainThread]: Store serial: [17637641]
+[2023-04-09 17:50:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637641]
+[2023-04-09 17:50:56] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-09 17:50:56] INFO root fetch - processPackages [comet-ml]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-09 17:50:56] INFO root fetch - processPackages [popupsort]: New version: [1.3.3] Old Version: [1.2.1]
+[2023-04-09 17:50:56] WARNING root fetch - processPackages [assistantgpt]: Skipping, unable to determine old version
+[2023-04-09 17:50:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:50:56] WARNING root fetch - processPackages [hnvlearn]: Skipping, unable to determine old version
+[2023-04-09 17:50:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:50:56] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 17:50:56] INFO root fetch - processPackages [utran]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 17:50:56] INFO root fetch - processPackages [aiofauna]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-09 17:50:56] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 17:50:56] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 17:50:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:50:56] INFO root fetch - processPackages [comet-ml]: Downloading https://files.pythonhosted.org/packages/fb/d1/5b364541fde741bc08ab30b76b39bd9dceaf41e597c7878d897b2397d984/comet_ml-3.9.0.tar.gz
+[2023-04-09 17:50:56] WARNING root fetch - processPackages [semantra]: Skipping, unable to determine old version
+[2023-04-09 17:50:56] INFO root fetch - processPackages [popupsort]: Downloading https://files.pythonhosted.org/packages/86/49/9a36b3afb6f2aac36df93ffaa4b99828aa89b91875a40acb0c88b86b50e8/popupsort-1.2.1.tar.gz
+[2023-04-09 17:50:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:50:56] WARNING root fetch - processPackages [micropython-tmp117]: Skipping, unable to determine old version
+[2023-04-09 17:50:56] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:50:56] INFO root fetch - processPackages [melnor-bluetooth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 17:50:56] INFO root fetch - processPackages [aiofauna]: Downloading https://files.pythonhosted.org/packages/79/ed/63b00fbae909823f0675b0de62b3bc9446e5527590028a43b1d9f0197792/aiofauna-0.0.5.tar.gz
+[2023-04-09 17:50:56] INFO root fetch - processPackages [utran]: Downloading https://files.pythonhosted.org/packages/53/b4/4d6f440d3d6ab1a8da5a9b540f25c4703a9d36c1a58582d57a4d0bff0b25/utran-1.0.3-py3-none-any.whl
+[2023-04-09 17:50:56] INFO root fetch - processPackages [melnor-bluetooth]: Downloading https://files.pythonhosted.org/packages/ae/1b/e370cededd784265fdbd6335ae11181f66a89b0bf7aba749457cb06e0590/melnor-bluetooth-0.0.8.tar.gz
+[2023-04-09 17:50:57] INFO root fetch - processPackages [popupsort]: Downloading https://files.pythonhosted.org/packages/bb/0d/6f8402da720f08f1a5f166227798b004b67e04a7a5f033bbbe82e42bd3b7/popupsort-1.3.3.tar.gz
+[2023-04-09 17:50:57] INFO root fetch - processPackages [comet-ml]: Downloading https://files.pythonhosted.org/packages/17/97/9f1e153f6b4df253f5eea38e51f9be34256bc8bf0d363d01a1ffc2d2d668/comet_ml-3.9.1.tar.gz
+[2023-04-09 17:50:57] INFO root fetch - processPackages [comet-ml]: executing diffoscope
+[2023-04-09 17:50:57] INFO root fetch - processPackages [comet-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comet_ml-3.9.0.tar.gz tmp/comet_ml-3.9.1.tar.gz --markdown 20230409/c/comet-ml/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-09 17:50:57] INFO root fetch - processPackages [utran]: executing diffoscope
+[2023-04-09 17:50:57] INFO root fetch - processPackages [utran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utran-1.0.2-py3-none-any.whl.zip tmp/utran-1.0.3-py3-none-any.whl.zip --markdown 20230409/u/utran/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 17:50:57] INFO root fetch - processPackages [aiofauna]: Downloading https://files.pythonhosted.org/packages/40/45/07ce9f981df6b785136f93187f94379c9a48438fb4433ae7c8c0932c2491/aiofauna-0.0.6.tar.gz
+[2023-04-09 17:50:57] INFO root fetch - processPackages [popupsort]: executing diffoscope
+[2023-04-09 17:50:57] INFO root fetch - processPackages [popupsort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popupsort-1.2.1.tar.gz tmp/popupsort-1.3.3.tar.gz --markdown 20230409/p/popupsort/1.2.1-1.3.3/diff.md --exclude *.pyd
+[2023-04-09 17:50:57] INFO root fetch - processPackages [melnor-bluetooth]: Downloading https://files.pythonhosted.org/packages/ad/d8/409e697ace8337020f01d25524cfb5b7e0f4a4222e44db8121b100b86af9/melnor-bluetooth-0.0.9.tar.gz
+[2023-04-09 17:50:57] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-04-09 17:50:57] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.0.5.tar.gz tmp/aiofauna-0.0.6.tar.gz --markdown 20230409/a/aiofauna/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-09 17:50:57] INFO root fetch - processPackages [melnor-bluetooth]: executing diffoscope
+[2023-04-09 17:50:57] INFO root fetch - processPackages [melnor-bluetooth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melnor-bluetooth-0.0.8.tar.gz tmp/melnor-bluetooth-0.0.9.tar.gz --markdown 20230409/m/melnor-bluetooth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 17:50:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:50:58] INFO root fetch - processPackages [marvin]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-09 17:50:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:50:58] INFO root fetch - processPackages [marvin]: Downloading https://files.pythonhosted.org/packages/4a/69/9ea021a7db583599ac1fafca84e551886512c9943363cb7ce2f1c89f59b6/marvin-0.7.2.tar.gz
+[2023-04-09 17:50:58] WARNING root fetch - processPackages [marvin]: Skipping package: exceeds size limit 15476867>=10485760
+[2023-04-09 17:50:58] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:50:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:50:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:51:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:51:00] INFO root fetch - main [MainThread]: Store serial: [17637690]
