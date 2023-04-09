@@ -2800,3 +2800,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:37:23] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:37:23] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:37:23] INFO root fetch - main [MainThread]: Store serial: [17634833]
+[2023-04-09 08:42:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634833]
+[2023-04-09 08:42:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 08:42:30] INFO root fetch - processPackages [fastapi-mvc-framework]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-09 08:42:30] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 08:42:30] INFO root fetch - processPackages [bingai]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 08:42:30] INFO root fetch - processPackages [selenextra]: New version: [0.6] Old Version: [0.5]
+[2023-04-09 08:42:30] INFO root fetch - processPackages [slideflow]: New version: [2.0.0rc0] Old Version: [2.0.0b1]
+[2023-04-09 08:42:30] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-09 08:42:30] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230409/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 08:42:30] INFO root fetch - processPackages [bingai]: Downloading https://files.pythonhosted.org/packages/fa/84/f285686a2c18f0066b400229f34901b39a625187373c8cb00cc33d7c97a0/bingai-0.0.7.tar.gz
+[2023-04-09 08:42:30] INFO root fetch - processPackages [slideflow]: Downloading https://files.pythonhosted.org/packages/10/04/bac601807509eace3443a7702bd134d221fedc367c44df9e65d85b9574ff/slideflow-2.0.0b1-py3-none-any.whl
+[2023-04-09 08:42:30] INFO root fetch - processPackages [selenextra]: Downloading https://files.pythonhosted.org/packages/ed/9c/2d0e03faec7464a6926184edfececf67b5dc8ea8deb4e3766b3334bb8a63/selenextra-0.6.tar.gz
+[2023-04-09 08:42:30] INFO root fetch - processPackages [bingai]: executing diffoscope
+[2023-04-09 08:42:30] INFO root fetch - processPackages [bingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingai-0.0.6.tar.gz tmp/bingai-0.0.7.tar.gz --markdown 20230409/b/bingai/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 08:42:30] INFO root fetch - processPackages [selenextra]: executing diffoscope
+[2023-04-09 08:42:30] INFO root fetch - processPackages [selenextra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenextra-0.5.tar.gz tmp/selenextra-0.6.tar.gz --markdown 20230409/s/selenextra/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-09 08:42:30] INFO root fetch - processPackages [fastapi-mvc-framework]: Downloading https://files.pythonhosted.org/packages/61/45/ef7a29b4f65debc59602331f1536f753a4e1e757f2a927e4f0c73c6000af/fastapi_mvc_framework-1.1.3.tar.gz
+[2023-04-09 08:42:30] INFO root fetch - processPackages [fastapi-mvc-framework]: executing diffoscope
+[2023-04-09 08:42:30] INFO root fetch - processPackages [fastapi-mvc-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_mvc_framework-1.1.2.tar.gz tmp/fastapi_mvc_framework-1.1.3.tar.gz --markdown 20230409/f/fastapi-mvc-framework/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-09 08:42:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:42:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:42:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:42:31] INFO root fetch - processPackages [slideflow]: Downloading https://files.pythonhosted.org/packages/c6/e3/2f426cd63629a4e8d0a584892248e1049801b0282893b1448844627cf14a/slideflow-2.0.0rc0-py3-none-any.whl
+[2023-04-09 08:42:32] INFO root fetch - processPackages [slideflow]: executing diffoscope
+[2023-04-09 08:42:32] INFO root fetch - processPackages [slideflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slideflow-2.0.0b1-py3-none-any.whl.zip tmp/slideflow-2.0.0rc0-py3-none-any.whl.zip --markdown 20230409/s/slideflow/2.0.0b1-2.0.0rc0/diff.md --exclude *.pyd
+[2023-04-09 08:42:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:42:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:42:39] INFO root fetch - main [MainThread]: Store serial: [17634845]
