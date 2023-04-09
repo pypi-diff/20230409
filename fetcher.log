@@ -3659,3 +3659,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:59:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:59:13] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:59:13] INFO root fetch - main [MainThread]: Store serial: [17635421]
+[2023-04-09 11:04:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635421]
+[2023-04-09 11:04:20] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-09 11:04:20] INFO root fetch - processPackages [autogluon.common]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:20] INFO root fetch - processPackages [autogluon.multimodal]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:20] INFO root fetch - processPackages [autogluon.core]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.features]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.tabular]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/84/b2/d2a925a375e86d17be55dffe8f8c4b172c510e9ba665eeb31a39eeaaa012/autogluon.common-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/4f/df/91431197a0bc17a5be7f57caf0932598f325b73209855f022eb6a2d04df7/autogluon.core-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/29/3b/5f2d9b308549f7747b7b38251144c390f1cfa6eb2876c86754bbb62d6eb0/autogluon.multimodal-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/9b/85/cbea485c0e8a01e2d9a48befaea8c98c7e594f2ce03bcffdb2bb455e090c/autogluon.features-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/e4/03/696405e5cbccb5d5f14eebd5ba217e6a889d0b0c0805e55d48e1286cb3f4/autogluon.tabular-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-0.7.0b20230408.tar.gz tmp/autogluon.multimodal-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon.multimodal/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-0.7.0b20230408.tar.gz tmp/autogluon.common-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon.common/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-0.7.0b20230408.tar.gz tmp/autogluon.core-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon.core/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-0.7.0b20230408.tar.gz tmp/autogluon.features-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon.features/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2023-04-09 11:04:21] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-0.7.0b20230408.tar.gz tmp/autogluon.tabular-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon.tabular/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:22] INFO root fetch - processPackages [autogluon.timeseries]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:22] INFO root fetch - processPackages [autogluon]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:22] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/cd/fe/b047139bd59c5bed885bf621332adc2307fda10f3753aa3ea3f04adb1022/autogluon.timeseries-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/32/37/1da3bc595f06f930c7e9b2db3f05322ba29e2b2aabb928a744c87e9baa4f/autogluon-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon.eda]: New version: [0.7.0b20230409] Old Version: [0.7.0b20230408]
+[2023-04-09 11:04:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:23] INFO root fetch - processPackages [cdk8s-grafana]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-0.7.0b20230408.tar.gz tmp/autogluon.timeseries-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon.timeseries/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon.eda]: Downloading https://files.pythonhosted.org/packages/46/70/f622d792679cf1f237e3262e36815f0be871340fed62eeb206e72a65be14/autogluon.eda-0.7.0b20230409.tar.gz
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-0.7.0b20230408.tar.gz tmp/autogluon-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:23] INFO root fetch - processPackages [cdk8s-grafana]: Downloading https://files.pythonhosted.org/packages/d9/95/654afcf433ff074ee19483bcc89f1b1a113ddd08edd6ff0bfcc205167a77/cdk8s-grafana-0.1.98.tar.gz
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon.eda]: executing diffoscope
+[2023-04-09 11:04:23] INFO root fetch - processPackages [autogluon.eda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.eda-0.7.0b20230408.tar.gz tmp/autogluon.eda-0.7.0b20230409.tar.gz --markdown 20230409/a/autogluon.eda/0.7.0b20230408-0.7.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 11:04:24] INFO root fetch - processPackages [cdk8s-grafana]: Downloading https://files.pythonhosted.org/packages/70/0b/1cbbebf9bdeb0edcb5ab0f3110b233c14ebfd8e9d744573a7640af1c4b94/cdk8s-grafana-0.1.99.tar.gz
+[2023-04-09 11:04:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:24] INFO root fetch - processPackages [latz]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-09 11:04:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:24] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-09 11:04:24] INFO root fetch - processPackages [cdk8s-grafana]: executing diffoscope
+[2023-04-09 11:04:24] INFO root fetch - processPackages [cdk8s-grafana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-grafana-0.1.98.tar.gz tmp/cdk8s-grafana-0.1.99.tar.gz --markdown 20230409/c/cdk8s-grafana/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-09 11:04:24] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: executing diffoscope
+[2023-04-09 11:04:24] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_streamdeck_yaml-2023.4.8.tar.gz tmp/home_assistant_streamdeck_yaml-2023.4.9.tar.gz --markdown 20230409/h/home-assistant-streamdeck-yaml/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-09 11:04:24] INFO root fetch - processPackages [latz]: Downloading https://files.pythonhosted.org/packages/4a/85/efcdb366c28786122a38c6dfdbb3d349c0fac3cf4cc9ce5d5892988eb58b/latz-0.2.0.tar.gz
+[2023-04-09 11:04:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:24] INFO root fetch - processPackages [kiwigrad]: New version: [0.11] Old Version: [0.1]
+[2023-04-09 11:04:24] INFO root fetch - processPackages [kiwigrad]: Downloading https://files.pythonhosted.org/packages/47/34/a96cc98d2338cb9f2995c8ee182e646378f68044bbfb4d484761d0226884/kiwigrad-0.11.tar.gz
+[2023-04-09 11:04:24] INFO root fetch - processPackages [kiwigrad]: executing diffoscope
+[2023-04-09 11:04:24] INFO root fetch - processPackages [kiwigrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwigrad-0.1.tar.gz tmp/kiwigrad-0.11.tar.gz --markdown 20230409/k/kiwigrad/0.1-0.11/diff.md --exclude *.pyd
+[2023-04-09 11:04:24] INFO root fetch - processPackages [latz]: Downloading https://files.pythonhosted.org/packages/09/6c/47a9cf224117f09bf17b62d6b4fb262534601ee449d39fc1e5fae9631c40/latz-0.2.1.tar.gz
+[2023-04-09 11:04:24] INFO root fetch - processPackages [latz]: executing diffoscope
+[2023-04-09 11:04:24] INFO root fetch - processPackages [latz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latz-0.2.0.tar.gz tmp/latz-0.2.1.tar.gz --markdown 20230409/l/latz/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-09 11:04:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:25] INFO root fetch - processPackages [italy-geopop]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-09 11:04:25] INFO root fetch - processPackages [italy-geopop]: Downloading https://files.pythonhosted.org/packages/8e/27/d8734c1f043617a0cf48749f7ba0e109a59aa55e9ec0656d9eec6925bd3d/italy_geopop-0.5.0.tar.gz
+[2023-04-09 11:04:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:25] WARNING root fetch - processPackages [web3-checksum]: Skipping, unable to determine old version
+[2023-04-09 11:04:25] INFO root fetch - main [MainThread]: error
+[2023-04-09 11:04:25] INFO root fetch - processPackages [torch-pruning]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-09 11:04:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:25] WARNING root fetch - processPackages [italy-geopop]: Skipping package: exceeds size limit 16032571>=10485760
+[2023-04-09 11:04:25] INFO root fetch - main [MainThread]: error
+[2023-04-09 11:04:25] INFO root fetch - processPackages [torch-pruning]: Downloading https://files.pythonhosted.org/packages/66/f3/0261034f02eb145ee0f817a6223b2510fedf2e349f61ae80781dbcab2329/torch-pruning-1.1.5.tar.gz
+[2023-04-09 11:04:25] INFO root fetch - processPackages [torch-pruning]: executing diffoscope
+[2023-04-09 11:04:25] INFO root fetch - processPackages [torch-pruning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch-pruning-1.1.4.tar.gz tmp/torch-pruning-1.1.5.tar.gz --markdown 20230409/t/torch-pruning/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-09 11:04:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:04:27] INFO root fetch - main [MainThread]: Store serial: [17635467]
