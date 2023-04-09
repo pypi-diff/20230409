@@ -5341,3 +5341,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 14:59:29] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:59:55] INFO root fetch - main [MainThread]: success
 [2023-04-09 14:59:55] INFO root fetch - main [MainThread]: Store serial: [17636686]
+[2023-04-09 15:05:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636686]
+[2023-04-09 15:05:11] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 15:05:11] INFO root fetch - processPackages [ckip-transformers]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-09 15:05:11] WARNING root fetch - processPackages [source-and-license]: Skipping, unable to determine old version
+[2023-04-09 15:05:11] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 15:05:11] WARNING root fetch - processPackages [circuitpython-async-buzzer]: Skipping, unable to determine old version
+[2023-04-09 15:05:11] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:05:11] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:05:11] WARNING root fetch - processPackages [pyhclrs]: Skipping, unable to determine old version
+[2023-04-09 15:05:11] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:05:11] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 15:05:11] INFO root fetch - processPackages [marvin]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-09 15:05:11] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 15:05:11] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-09 15:05:11] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230409/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 15:05:11] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-09 15:05:11] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230409/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 15:05:11] INFO root fetch - processPackages [marvin]: Downloading https://files.pythonhosted.org/packages/4a/69/9ea021a7db583599ac1fafca84e551886512c9943363cb7ce2f1c89f59b6/marvin-0.7.2.tar.gz
+[2023-04-09 15:05:11] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/12/79/bc1f57bca86ab5f5087317ea6493a0fb7e5421627a93bfa980e43d977c4b/dxsp-0.0.9.tar.gz
+[2023-04-09 15:05:11] INFO root fetch - processPackages [ckip-transformers]: Downloading https://files.pythonhosted.org/packages/9a/31/5c34c19ae6a562a0319d95a9fa03ed674e5daf31618db59d6293838497f3/ckip-transformers-0.3.4.tar.gz
+[2023-04-09 15:05:11] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 15:05:11] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 15:05:11] INFO root fetch - processPackages [ckip-transformers]: executing diffoscope
+[2023-04-09 15:05:11] INFO root fetch - processPackages [ckip-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckip-transformers-0.3.3.tar.gz tmp/ckip-transformers-0.3.4.tar.gz --markdown 20230409/c/ckip-transformers/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-09 15:05:11] WARNING root fetch - processPackages [marvin]: Skipping package: exceeds size limit 15476867>=10485760
+[2023-04-09 15:05:11] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:05:12] INFO root fetch - processPackages [lifesci]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-09 15:05:12] INFO root fetch - processPackages [lifesci]: Downloading https://files.pythonhosted.org/packages/3c/4c/2bebb2f0e8c07adb8de60788ab231ea597da06ecdf5b89e5834edd17eaf8/lifesci-0.3.1.tar.gz
+[2023-04-09 15:05:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:05:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:05:12] INFO root fetch - processPackages [lifesci]: Downloading https://files.pythonhosted.org/packages/ee/2f/566cd5beccdcb42b70df730485717e6d1e49849b7e739ec8dda071328570/lifesci-0.3.2.tar.gz
+[2023-04-09 15:05:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:05:12] INFO root fetch - processPackages [lifesci]: executing diffoscope
+[2023-04-09 15:05:12] INFO root fetch - processPackages [lifesci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifesci-0.3.1.tar.gz tmp/lifesci-0.3.2.tar.gz --markdown 20230409/l/lifesci/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-09 15:05:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:05:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:05:14] INFO root fetch - main [MainThread]: Store serial: [17636784]
