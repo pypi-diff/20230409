@@ -7943,3 +7943,28 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 20:07:56] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:07:57] INFO root fetch - main [MainThread]: success
 [2023-04-09 20:07:57] INFO root fetch - main [MainThread]: Store serial: [17638627]
+[2023-04-09 20:12:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638627]
+[2023-04-09 20:13:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 20:13:04] INFO root fetch - processPackages [tf-gnns]: New version: [0.1.5a0] Old Version: [0.1.5]
+[2023-04-09 20:13:04] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 20:13:04] INFO root fetch - processPackages [socialmediaextractor]: New version: [0.2] Old Version: [0.1]
+[2023-04-09 20:13:04] WARNING root fetch - processPackages [lottery-generator]: Skipping, unable to determine old version
+[2023-04-09 20:13:04] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:13:04] INFO root fetch - processPackages [ninjapie]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-09 20:13:04] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 20:13:04] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 20:13:04] INFO root fetch - processPackages [tf-gnns]: Downloading https://files.pythonhosted.org/packages/cb/c9/811837ac4173484fe06e37643daa49bb922dddc7c00aa756e9194b436ec6/tf-gnns-0.1.5a0.tar.gz
+[2023-04-09 20:13:04] INFO root fetch - processPackages [socialmediaextractor]: Downloading https://files.pythonhosted.org/packages/ff/ff/eacc7ec83504250efcffe1f56e14983d32e8ad3fe45167159be306464860/socialmediaextractor-0.1.tar.gz
+[2023-04-09 20:13:04] INFO root fetch - processPackages [ninjapie]: Downloading https://files.pythonhosted.org/packages/4f/d8/b82aea54f1b8a56f7e8ca2cff9e583cbe80de9f116c31018a4343cdd97a0/ninjapie-1.0.3.tar.gz
+[2023-04-09 20:13:05] INFO root fetch - processPackages [ninjapie]: executing diffoscope
+[2023-04-09 20:13:05] INFO root fetch - processPackages [ninjapie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ninjapie-1.0.2.tar.gz tmp/ninjapie-1.0.3.tar.gz --markdown 20230409/n/ninjapie/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 20:13:05] INFO root fetch - processPackages [socialmediaextractor]: Downloading https://files.pythonhosted.org/packages/a9/c4/f4725812165d7a60da78d6ea49363b1390cc904cc4eb7fc5e561b147e426/socialmediaextractor-0.2.tar.gz
+[2023-04-09 20:13:05] INFO root fetch - processPackages [tf-gnns]: executing diffoscope
+[2023-04-09 20:13:05] INFO root fetch - processPackages [tf-gnns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf-gnns-0.1.5.tar.gz tmp/tf-gnns-0.1.5a0.tar.gz --markdown 20230409/t/tf-gnns/0.1.5-0.1.5a0/diff.md --exclude *.pyd
+[2023-04-09 20:13:05] INFO root fetch - processPackages [socialmediaextractor]: executing diffoscope
+[2023-04-09 20:13:05] INFO root fetch - processPackages [socialmediaextractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socialmediaextractor-0.1.tar.gz tmp/socialmediaextractor-0.2.tar.gz --markdown 20230409/s/socialmediaextractor/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-09 20:13:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:13:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:13:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:13:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:13:06] INFO root fetch - main [MainThread]: Store serial: [17638644]
