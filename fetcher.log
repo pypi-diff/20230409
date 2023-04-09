@@ -4126,3 +4126,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 11:52:37] INFO root fetch - processPackages [tinyfk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyfk-0.6.0.dev2.tar.gz tmp/tinyfk-0.6.0.dev4.tar.gz --markdown 20230409/t/tinyfk/0.6.0.dev2-0.6.0.dev4/diff.md --exclude *.pyd
 [2023-04-09 11:52:42] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:52:42] INFO root fetch - main [MainThread]: Store serial: [17635777]
+[2023-04-09 11:57:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635777]
+[2023-04-09 11:57:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 11:57:49] INFO root fetch - processPackages [applyx]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-09 11:57:49] INFO root fetch - processPackages [croydon]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-09 11:57:49] INFO root fetch - processPackages [tinyfk]: New version: [0.6.0.dev5] Old Version: [0.6.0.dev4]
+[2023-04-09 11:57:49] INFO root fetch - processPackages [arg-services]: New version: [1.3.0] Old Version: [1.2.3]
+[2023-04-09 11:57:50] INFO root fetch - processPackages [croydon]: Downloading https://files.pythonhosted.org/packages/8f/72/2b0cc92fceb6bd77170a59ac4edf6e7fdbccad4a324aa32e6c1df26b7196/croydon-0.8.4.tar.gz
+[2023-04-09 11:57:50] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/4c/9e/13978330781a6ff55b295f1444d2dc594b3983c45404d42a8c2d089a0a42/applyx-0.2.2-py3-none-any.whl
+[2023-04-09 11:57:50] INFO root fetch - processPackages [tinyfk]: Downloading https://files.pythonhosted.org/packages/ea/c9/54f01360fa6d974f2a790effdc371f52dfb5290b91a343eb54f5c2ef2131/tinyfk-0.6.0.dev5.tar.gz
+[2023-04-09 11:57:50] INFO root fetch - processPackages [arg-services]: Downloading https://files.pythonhosted.org/packages/80/2f/dff17338103edc1beaeec6f9abac534ec22e83b3a712b82cb50ae055a401/arg_services-1.2.3.tar.gz
+[2023-04-09 11:57:50] INFO root fetch - processPackages [croydon]: Downloading https://files.pythonhosted.org/packages/fd/c8/961d4adfae7a67e41d9fdae1e26eaf4d6dc8770cf60b1a3778cf5c7c6344/croydon-0.8.5.tar.gz
+[2023-04-09 11:57:50] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-04-09 11:57:50] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.8.4.tar.gz tmp/croydon-0.8.5.tar.gz --markdown 20230409/c/croydon/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-09 11:57:50] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/82/93/e40b469c2331b79970fd40d60260a5192916053b095cfb00daddbdb8cf49/applyx-0.2.3-py3-none-any.whl
+[2023-04-09 11:57:50] INFO root fetch - processPackages [arg-services]: Downloading https://files.pythonhosted.org/packages/eb/61/368325baae9c6e8f4015119fcea640c16fe973b98ef80594a339e1a45303/arg_services-1.3.0.tar.gz
+[2023-04-09 11:57:50] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2023-04-09 11:57:50] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.2-py3-none-any.whl.zip tmp/applyx-0.2.3-py3-none-any.whl.zip --markdown 20230409/a/applyx/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-09 11:57:50] INFO root fetch - processPackages [arg-services]: executing diffoscope
+[2023-04-09 11:57:50] INFO root fetch - processPackages [arg-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arg_services-1.2.3.tar.gz tmp/arg_services-1.3.0.tar.gz --markdown 20230409/a/arg-services/1.2.3-1.3.0/diff.md --exclude *.pyd
+[2023-04-09 11:57:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:57:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:57:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:57:53] INFO root fetch - processPackages [tinyfk]: executing diffoscope
+[2023-04-09 11:57:53] INFO root fetch - processPackages [tinyfk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyfk-0.6.0.dev4.tar.gz tmp/tinyfk-0.6.0.dev5.tar.gz --markdown 20230409/t/tinyfk/0.6.0.dev4-0.6.0.dev5/diff.md --exclude *.pyd
+[2023-04-09 11:57:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:57:58] INFO root fetch - main [MainThread]: Store serial: [17635819]
