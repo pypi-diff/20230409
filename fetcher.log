@@ -2655,3 +2655,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:16:31] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:16:32] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:16:32] INFO root fetch - main [MainThread]: Store serial: [17634757]
+[2023-04-09 08:21:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634757]
+[2023-04-09 08:21:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 08:21:39] WARNING root fetch - processPackages [bingai]: Skipping, unable to determine old version
+[2023-04-09 08:21:39] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:21:39] WARNING root fetch - processPackages [SIC1]: Skipping, unable to determine old version
+[2023-04-09 08:21:39] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:21:39] INFO root fetch - processPackages [pyzw]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 08:21:39] INFO root fetch - processPackages [dialogy]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-09 08:21:39] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230409] Old Version: [20230403]
+[2023-04-09 08:21:40] INFO root fetch - processPackages [dialogy]: Downloading https://files.pythonhosted.org/packages/70/9d/56ec53a9c6f6a02a88f59662db0e7cf348d65fc87de1b8de5885bcf6452d/dialogy-1.3.1.tar.gz
+[2023-04-09 08:21:40] INFO root fetch - processPackages [pyzw]: Downloading https://files.pythonhosted.org/packages/82/e5/34aae41e9c4a5563dd1c7ed95f68cc297a5c559ec59e9cdfc95fe33e9cb4/pyzw-0.0.4.tar.gz
+[2023-04-09 08:21:40] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/68/08/15b82a2c98ef56c567858edf8ed6b2893c37b433a7bb1b8cfbf44e9b0ce9/fake-bpy-module-latest-20230403.tar.gz
+[2023-04-09 08:21:40] INFO root fetch - processPackages [pyzw]: executing diffoscope
+[2023-04-09 08:21:40] INFO root fetch - processPackages [pyzw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzw-0.0.3.tar.gz tmp/pyzw-0.0.4.tar.gz --markdown 20230409/p/pyzw/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 08:21:40] INFO root fetch - processPackages [dialogy]: Downloading https://files.pythonhosted.org/packages/e9/79/2b9f3f5807a08c1bbef0aa48e97d2febf165d35c9ccb90d53c39ff62b139/dialogy-1.3.2.tar.gz
+[2023-04-09 08:21:40] INFO root fetch - processPackages [dialogy]: executing diffoscope
+[2023-04-09 08:21:40] INFO root fetch - processPackages [dialogy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialogy-1.3.1.tar.gz tmp/dialogy-1.3.2.tar.gz --markdown 20230409/d/dialogy/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-09 08:21:40] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/11/f7/5468fa65edf7f22d63ccfc4ceac48863e0bb81e51d91a74dac4ecd9c17f7/fake-bpy-module-latest-20230409.tar.gz
+[2023-04-09 08:21:40] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-09 08:21:40] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230403.tar.gz tmp/fake-bpy-module-latest-20230409.tar.gz --markdown 20230409/f/fake-bpy-module-latest/20230403-20230409/diff.md --exclude *.pyd
+[2023-04-09 08:21:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:21:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:21:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:21:49] INFO root fetch - main [MainThread]: Store serial: [17634774]
