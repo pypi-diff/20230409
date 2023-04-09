@@ -8807,3 +8807,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:37:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:37:17] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:37:17] INFO root fetch - main [MainThread]: Store serial: [17639067]
+[2023-04-09 21:42:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639067]
+[2023-04-09 21:42:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 21:42:24] WARNING root fetch - processPackages [enabledisablelua]: Skipping, unable to determine old version
+[2023-04-09 21:42:24] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-09 21:42:24] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:42:24] WARNING root fetch - processPackages [eva-decord]: Skipping, unable to determine old version
+[2023-04-09 21:42:24] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:42:24] INFO root fetch - processPackages [abraia]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-09 21:42:24] WARNING root fetch - processPackages [continue-sestinj]: Skipping, unable to determine old version
+[2023-04-09 21:42:24] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:42:24] INFO root fetch - processPackages [pref-voting]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-09 21:42:24] WARNING root fetch - processPackages [ClusterIMG]: Skipping, unable to determine old version
+[2023-04-09 21:42:24] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:42:24] ERROR root fetch - processPackages [summermachine]: Unable to get metadata: No such project 'summermachine'
+[2023-04-09 21:42:24] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:42:24] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-09 21:42:24] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.0.98.tar.gz tmp/wizata-dsapi-0.0.99.tar.gz --markdown 20230409/w/wizata-dsapi/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-09 21:42:24] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/06/4c/aa36d15e1cb3fa32e366cbce431728e996da283bc4e59b586879fd78cb13/pref_voting-0.2.3.tar.gz
+[2023-04-09 21:42:25] INFO root fetch - processPackages [abraia]: executing diffoscope
+[2023-04-09 21:42:25] INFO root fetch - processPackages [abraia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abraia-0.9.3.tar.gz tmp/abraia-0.9.4.tar.gz --markdown 20230409/a/abraia/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-09 21:42:25] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/2f/f0/c5c6d0297571d69ab637d8e60c6d474cd10d3cc5540b232597d353d8892b/pref_voting-0.2.4.tar.gz
+[2023-04-09 21:42:25] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2023-04-09 21:42:25] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-0.2.3.tar.gz tmp/pref_voting-0.2.4.tar.gz --markdown 20230409/p/pref-voting/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-09 21:42:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:42:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:42:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:42:26] INFO root fetch - main [MainThread]: Store serial: [17639110]
