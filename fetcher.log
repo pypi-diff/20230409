@@ -8655,3 +8655,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:10:08] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:10:08] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:10:08] INFO root fetch - main [MainThread]: Store serial: [17638915]
+[2023-04-09 21:15:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638915]
+[2023-04-09 21:15:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 21:15:16] WARNING root fetch - processPackages [ENSF-338-Final-Project]: Skipping, unable to determine old version
+[2023-04-09 21:15:16] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:15:16] INFO root fetch - processPackages [pygwalker]: New version: [0.1.7a2] Old Version: [0.1.7a0]
+[2023-04-09 21:15:16] INFO root fetch - processPackages [zuela]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-09 21:15:16] INFO root fetch - processPackages [q2rad]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-09 21:15:16] WARNING root fetch - processPackages [rio-vrt]: Skipping, unable to determine old version
+[2023-04-09 21:15:16] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:15:16] ERROR root fetch - processPackages [thesummachine]: Unable to get metadata: No such project 'thesummachine'
+[2023-04-09 21:15:16] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:15:16] INFO root fetch - processPackages [q2rad]: executing diffoscope
+[2023-04-09 21:15:16] INFO root fetch - processPackages [q2rad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2rad-0.1.98.tar.gz tmp/q2rad-0.1.99.tar.gz --markdown 20230409/q/q2rad/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-09 21:15:16] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/b6/b6/4fd42d2423933b68fa2ddc0fda526a062f3194bf4aecb7c237ddb7ce34f9/pygwalker-0.1.7a0.tar.gz
+[2023-04-09 21:15:16] INFO root fetch - processPackages [zuela]: Downloading https://files.pythonhosted.org/packages/8f/2b/36bd3ae78fbf81c350e47e739f9d3505020aaf8eb91bce32e5334f5173d7/zuela-0.4.0.tar.gz
+[2023-04-09 21:15:16] INFO root fetch - processPackages [zuela]: executing diffoscope
+[2023-04-09 21:15:16] INFO root fetch - processPackages [zuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuela-0.3.0.tar.gz tmp/zuela-0.4.0.tar.gz --markdown 20230409/z/zuela/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-09 21:15:17] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/d0/06/fff7a012984c7040c5cb050c61448d611f0a93184c2702534b645b1a84dd/pygwalker-0.1.7a2.tar.gz
+[2023-04-09 21:15:17] INFO root fetch - processPackages [pygwalker]: executing diffoscope
+[2023-04-09 21:15:17] INFO root fetch - processPackages [pygwalker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygwalker-0.1.7a0.tar.gz tmp/pygwalker-0.1.7a2.tar.gz --markdown 20230409/p/pygwalker/0.1.7a0-0.1.7a2/diff.md --exclude *.pyd
+[2023-04-09 21:15:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:15:18] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:15:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:15:34] INFO root fetch - main [MainThread]: Store serial: [17638970]
