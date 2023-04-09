@@ -3056,3 +3056,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:25:01] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:25:01] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:25:01] INFO root fetch - main [MainThread]: Store serial: [17635006]
+[2023-04-09 09:30:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635006]
+[2023-04-09 09:30:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hds-stats]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 09:30:08] INFO root fetch - processPackages [vandal]: New version: [4.0.0] Old Version: [3.8.9]
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.0.dev66] Old Version: [3.0.0.dev65]
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hiddifypanel]: New version: [3.0.0.dev66] Old Version: [3.0.0.dev65]
+[2023-04-09 09:30:08] INFO root fetch - processPackages [cdk8s]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/f4/a4/46c65099b58a5a4f87baf22eaec7dc01606b3ad79088674a7a89fbbe2c4f/hds_stats-0.0.4-py3-none-any.whl
+[2023-04-09 09:30:08] INFO root fetch - processPackages [cdk8s]: Downloading https://files.pythonhosted.org/packages/f9/e7/78c27733c758b9bca3e5cce123decc839f1fe457f60f740830c1188f74ac/cdk8s-2.7.8.tar.gz
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/a2/6c/821b6fe7ed2435ec42de6392870b9f86b53b091b4f686de1430a9a62f59d/hiddifypanel-3.0.0.dev65-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/a2/6c/821b6fe7ed2435ec42de6392870b9f86b53b091b4f686de1430a9a62f59d/hiddifypanel-3.0.0.dev65-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 09:30:08] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/8b/59/928346ebfd8fa0cf6b7aeff090cb46086b4746e211bcb6fea6c55c24194a/vandal-3.8.9.tar.gz
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-09 09:30:08] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds_stats-0.0.3-py3-none-any.whl.zip tmp/hds_stats-0.0.4-py3-none-any.whl.zip --markdown 20230409/h/hds-stats/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 09:30:09] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/62/a5/faf8824aa8b7bd27af5c507a78388776ab5ff782efda2167bb8a2dd4e14f/vandal-4.0.0.tar.gz
+[2023-04-09 09:30:09] INFO root fetch - processPackages [cdk8s]: Downloading https://files.pythonhosted.org/packages/71/30/02a1bcc270c53f6b55cd50dc45c426ecdc5d520a1a3f21057474d46e3de9/cdk8s-2.7.9.tar.gz
+[2023-04-09 09:30:09] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 09:30:09] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-3.8.9.tar.gz tmp/vandal-4.0.0.tar.gz --markdown 20230409/v/vandal/3.8.9-4.0.0/diff.md --exclude *.pyd
+[2023-04-09 09:30:09] INFO root fetch - processPackages [cdk8s]: executing diffoscope
+[2023-04-09 09:30:09] INFO root fetch - processPackages [cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-2.7.8.tar.gz tmp/cdk8s-2.7.9.tar.gz --markdown 20230409/c/cdk8s/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-09 09:30:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:30:10] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-09 09:30:10] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-09 09:30:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:30:10] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:30:11] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-09 09:30:11] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:30:11] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/d5/d7/9230b9172fd51e03ef75695ba24add6dd7a68cbdd2f138c5a49a4d30b68d/hiddifypanel-3.0.0.dev66-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 09:30:11] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/d5/d7/9230b9172fd51e03ef75695ba24add6dd7a68cbdd2f138c5a49a4d30b68d/hiddifypanel-3.0.0.dev66-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-09 09:30:13] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 09:30:13] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.0.dev65-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.0.dev66-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.0.dev65-3.0.0.dev66/diff.md --exclude *.pyd
+[2023-04-09 09:30:13] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-09 09:30:13] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.0.0.dev65-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.0.0.dev66-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230409/h/hiddifypanel/3.0.0.dev65-3.0.0.dev66/diff.md --exclude *.pyd
+[2023-04-09 09:30:24] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:30:26] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:30:26] INFO root fetch - main [MainThread]: Store serial: [17635040]
