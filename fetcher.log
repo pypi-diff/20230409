@@ -3482,3 +3482,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:27:48] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:27:49] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:27:49] INFO root fetch - main [MainThread]: Store serial: [17635308]
+[2023-04-09 10:32:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635308]
+[2023-04-09 10:32:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 10:32:56] INFO root fetch - processPackages [python-frank-energie]: New version: [3.0.0a2] Old Version: [3.0.0a1]
+[2023-04-09 10:32:56] INFO root fetch - processPackages [metaseg]: New version: [0.3.3] Old Version: [0.3.1]
+[2023-04-09 10:32:56] INFO root fetch - processPackages [indian-cities]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 10:32:56] INFO root fetch - processPackages [kiwigrad]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-09 10:32:56] INFO root fetch - processPackages [citros]: New version: [23.14.4] Old Version: [23.14.2]
+[2023-04-09 10:32:56] INFO root fetch - processPackages [python-frank-energie]: Downloading https://files.pythonhosted.org/packages/7a/8d/38755095afcfe69fcf91093d16f53a296a0972308d5f8265dc8ec191481d/python_frank_energie-3.0.0a1.tar.gz
+[2023-04-09 10:32:57] INFO root fetch - processPackages [citros]: Downloading https://files.pythonhosted.org/packages/d2/54/48e9cb840e15f90ecfe620d27379e35ddeb1783d11db1718833fd28b6b09/citros-23.14.4.tar.gz
+[2023-04-09 10:32:57] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/c7/5c/b34aceac69b7b2d61f74fa187e490c8688c012a04fb7dc1d7dd1115df772/metaseg-0.3.3.tar.gz
+[2023-04-09 10:32:57] INFO root fetch - processPackages [kiwigrad]: Downloading https://files.pythonhosted.org/packages/67/dc/36f4729e0f5a0853f5dae6424aa988ebd82ec6b5edd510e2290039fc0cdd/kiwigrad-0.0.8.tar.gz
+[2023-04-09 10:32:57] INFO root fetch - processPackages [indian-cities]: Downloading https://files.pythonhosted.org/packages/68/4e/9bac27f56b14d746bcae3388bd85866cd9eeca4a0216548a91e8723d7b8a/indian_cities-1.0.0.tar.gz
+[2023-04-09 10:32:57] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 10:32:57] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.2.tar.gz tmp/citros-23.14.4.tar.gz --markdown 20230409/c/citros/23.14.2-23.14.4/diff.md --exclude *.pyd
+[2023-04-09 10:32:57] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-09 10:32:57] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.3.1.tar.gz tmp/metaseg-0.3.3.tar.gz --markdown 20230409/m/metaseg/0.3.1-0.3.3/diff.md --exclude *.pyd
+[2023-04-09 10:32:57] INFO root fetch - processPackages [kiwigrad]: executing diffoscope
+[2023-04-09 10:32:57] INFO root fetch - processPackages [kiwigrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwigrad-0.0.7.tar.gz tmp/kiwigrad-0.0.8.tar.gz --markdown 20230409/k/kiwigrad/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-09 10:32:57] INFO root fetch - processPackages [indian-cities]: Downloading https://files.pythonhosted.org/packages/b8/73/74fefcccfbddd601b4adc16c5c57e3b2352caa219beae8a2e1f75467f68f/indian_cities-1.0.1.tar.gz
+[2023-04-09 10:32:57] INFO root fetch - processPackages [python-frank-energie]: Downloading https://files.pythonhosted.org/packages/1d/8f/7969bd41a1cd22becc3f5984dfc7e6dde2a5a429e5522864e2a0dc482abf/python_frank_energie-3.0.0a2.tar.gz
+[2023-04-09 10:32:57] INFO root fetch - processPackages [python-frank-energie]: executing diffoscope
+[2023-04-09 10:32:57] INFO root fetch - processPackages [python-frank-energie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_frank_energie-3.0.0a1.tar.gz tmp/python_frank_energie-3.0.0a2.tar.gz --markdown 20230409/p/python-frank-energie/3.0.0a1-3.0.0a2/diff.md --exclude *.pyd
+[2023-04-09 10:32:57] INFO root fetch - processPackages [indian-cities]: executing diffoscope
+[2023-04-09 10:32:57] INFO root fetch - processPackages [indian-cities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indian_cities-1.0.0.tar.gz tmp/indian_cities-1.0.1.tar.gz --markdown 20230409/i/indian-cities/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 10:32:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:32:58] INFO root fetch - processPackages [init-tikz]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 10:32:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:32:58] INFO root fetch - processPackages [zimagi]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-09 10:32:58] INFO root fetch - processPackages [init-tikz]: executing diffoscope
+[2023-04-09 10:32:58] INFO root fetch - processPackages [init-tikz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/init_tikz-0.1.8.tar.gz tmp/init_tikz-0.1.9.tar.gz --markdown 20230409/i/init-tikz/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 10:32:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:32:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:32:58] INFO root fetch - processPackages [zimagi]: Downloading https://files.pythonhosted.org/packages/e8/4b/b155e4f0b7606d368c19e3d41df4c6af5d2743ec086d5c519e39a5e8ada7/zimagi-0.9.4.tar.gz
+[2023-04-09 10:32:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:32:59] INFO root fetch - processPackages [zimagi]: Downloading https://files.pythonhosted.org/packages/98/d2/7e3715c9f3f31766db54027f7e4db00e400d7de314d70b833776ce02930f/zimagi-0.9.5.tar.gz
+[2023-04-09 10:32:59] INFO root fetch - processPackages [zimagi]: executing diffoscope
+[2023-04-09 10:32:59] INFO root fetch - processPackages [zimagi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimagi-0.9.4.tar.gz tmp/zimagi-0.9.5.tar.gz --markdown 20230409/z/zimagi/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-09 10:32:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:33:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:33:00] INFO root fetch - main [MainThread]: Store serial: [17635328]
