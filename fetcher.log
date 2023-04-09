@@ -3035,3 +3035,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:19:52] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:19:52] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:19:52] INFO root fetch - main [MainThread]: Store serial: [17634993]
+[2023-04-09 09:24:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634993]
+[2023-04-09 09:24:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 09:24:59] WARNING root fetch - processPackages [dolby]: Skipping, unable to determine old version
+[2023-04-09 09:24:59] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:24:59] INFO root fetch - processPackages [searchlogit]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-09 09:24:59] INFO root fetch - processPackages [searchlogit]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-09 09:24:59] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230408] Old Version: [0.7.3.dev20230407]
+[2023-04-09 09:24:59] INFO root fetch - processPackages [searchlogit]: Downloading https://files.pythonhosted.org/packages/e8/7f/8fb49755a9d247c8e0f222659e228daf06bcd7d3be7b1f6ee37f80b8dc70/searchlogit-0.3.2.tar.gz
+[2023-04-09 09:24:59] INFO root fetch - processPackages [searchlogit]: Downloading https://files.pythonhosted.org/packages/e8/7f/8fb49755a9d247c8e0f222659e228daf06bcd7d3be7b1f6ee37f80b8dc70/searchlogit-0.3.2.tar.gz
+[2023-04-09 09:24:59] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/ff/73/e71855ad71cb09dc5cecd92a7ffc526eaa3c7fc3b0e28bd6d0eee78ff0ac/tfq_nightly-0.7.3.dev20230407-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-09 09:25:00] INFO root fetch - processPackages [searchlogit]: Downloading https://files.pythonhosted.org/packages/96/1d/ccff502dc84b682af44df3df6551b143dbfc7bdb2b4c38fdb355f6bf1c38/searchlogit-0.3.3.tar.gz
+[2023-04-09 09:25:00] INFO root fetch - processPackages [searchlogit]: Downloading https://files.pythonhosted.org/packages/96/1d/ccff502dc84b682af44df3df6551b143dbfc7bdb2b4c38fdb355f6bf1c38/searchlogit-0.3.3.tar.gz
+[2023-04-09 09:25:00] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819850>=10485760
+[2023-04-09 09:25:00] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:25:00] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-04-09 09:25:00] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.3.2.tar.gz tmp/searchlogit-0.3.3.tar.gz --markdown 20230409/s/searchlogit/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-09 09:25:00] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-04-09 09:25:00] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.3.2.tar.gz tmp/searchlogit-0.3.3.tar.gz --markdown 20230409/s/searchlogit/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-09 09:25:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:25:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:25:01] INFO root fetch - main [MainThread]: Store serial: [17635006]
