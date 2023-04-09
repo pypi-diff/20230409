@@ -1919,3 +1919,129 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 05:34:37] INFO root fetch - main [MainThread]: success
 [2023-04-09 05:34:38] INFO root fetch - main [MainThread]: success
 [2023-04-09 05:34:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634170]
+[2023-04-09 06:04:46] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:04:46] INFO root fetch - processPackages [enum-properties]: New version: [1.4.0] Old Version: [1.3.3]
+[2023-04-09 06:04:46] INFO root fetch - processPackages [aio-alipay-sdk-python]: New version: [3.6.462] Old Version: [3.6.461]
+[2023-04-09 06:04:46] WARNING root fetch - processPackages [sonos-websocket]: Skipping, unable to determine old version
+[2023-04-09 06:04:46] INFO root fetch - main [MainThread]: error
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/7e/48/b2e9aac99b0f116b0d16ea4668cb4df3e5ec255e002ab192e06a4f5da791/roboweb_server-0.1.15-py3-none-any.whl
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/7e/48/b2e9aac99b0f116b0d16ea4668cb4df3e5ec255e002ab192e06a4f5da791/roboweb_server-0.1.15-py3-none-any.whl
+[2023-04-09 06:04:46] INFO root fetch - processPackages [homeassistant]: New version: [2023.4.2] Old Version: [2023.4.1]
+[2023-04-09 06:04:46] INFO root fetch - processPackages [enum-properties]: Downloading https://files.pythonhosted.org/packages/ca/82/a89cc99df047b5051ea92150369ca0e32443a7c71b4703baeea7995815d0/enum_properties-1.3.3.tar.gz
+[2023-04-09 06:04:46] INFO root fetch - processPackages [aio-alipay-sdk-python]: Downloading https://files.pythonhosted.org/packages/75/a5/e30e4c033842a81b378c49d209ef427700f2b434dc1829d753c389a19fb5/aio-alipay-sdk-python-3.6.462.tar.gz
+[2023-04-09 06:04:46] INFO root fetch - processPackages [aio-alipay-sdk-python]: executing diffoscope
+[2023-04-09 06:04:46] INFO root fetch - processPackages [aio-alipay-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio-alipay-sdk-python-3.6.461.tar.gz tmp/aio-alipay-sdk-python-3.6.462.tar.gz --markdown 20230409/a/aio-alipay-sdk-python/3.6.461-3.6.462/diff.md --exclude *.pyd
+[2023-04-09 06:04:46] INFO root fetch - processPackages [enum-properties]: Downloading https://files.pythonhosted.org/packages/a2/09/75a165344d8a003663bc4818669e8ad684efa164c8a6b0bedd1087a22bda/enum_properties-1.4.0.tar.gz
+[2023-04-09 06:04:46] INFO root fetch - processPackages [enum-properties]: executing diffoscope
+[2023-04-09 06:04:46] INFO root fetch - processPackages [enum-properties]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enum_properties-1.3.3.tar.gz tmp/enum_properties-1.4.0.tar.gz --markdown 20230409/e/enum-properties/1.3.3-1.4.0/diff.md --exclude *.pyd
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/5c/85/495726c5e4eaccc256ba8d963f954f175351d60729f4115c16db294b621f/roboweb_server-0.1.16.tar.gz
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/5c/85/495726c5e4eaccc256ba8d963f954f175351d60729f4115c16db294b621f/roboweb_server-0.1.16.tar.gz
+[2023-04-09 06:04:46] INFO root fetch - processPackages [homeassistant]: Downloading https://files.pythonhosted.org/packages/ff/82/433a9ff326a8125425b31a75ce5612a051452d9daa281909658077d4d812/homeassistant-2023.4.1.tar.gz
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:04:46] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:04:46] WARNING root fetch - processPackages [homeassistant]: Skipping package: exceeds size limit 12879124>=10485760
+[2023-04-09 06:04:46] INFO root fetch - main [MainThread]: error
+[2023-04-09 06:04:46] INFO root fetch - processPackages [starlette-admin]: New version: [0.8.0.dev0] Old Version: [0.7.0.dev0]
+[2023-04-09 06:04:47] INFO root fetch - processPackages [starlette-admin]: Downloading https://files.pythonhosted.org/packages/93/f5/30c0e3eac7598a60d5fda3f62362498dce3f9e849747c902f3aaff3a37db/starlette_admin-0.7.0.dev0.tar.gz
+[2023-04-09 06:04:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:47] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:04:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:47] INFO root fetch - processPackages [adsb-tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 06:04:47] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:04:47] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:04:47] INFO root fetch - processPackages [adsb-tools]: Downloading https://files.pythonhosted.org/packages/94/df/ee6975a94030afe703aba0357584d23170ceeaf37c370f8cf9f3d64b0e99/adsb_tools-0.1.8.tar.gz
+[2023-04-09 06:04:48] INFO root fetch - processPackages [adsb-tools]: Downloading https://files.pythonhosted.org/packages/bc/b7/7f1110da5c231ecb277aa444b7a0f2e64e20e14610d4502072dceeed2745/adsb_tools-0.1.9.tar.gz
+[2023-04-09 06:04:48] INFO root fetch - processPackages [adsb-tools]: executing diffoscope
+[2023-04-09 06:04:48] INFO root fetch - processPackages [adsb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adsb_tools-0.1.8.tar.gz tmp/adsb_tools-0.1.9.tar.gz --markdown 20230409/a/adsb-tools/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 06:04:48] INFO root fetch - processPackages [starlette-admin]: Downloading https://files.pythonhosted.org/packages/ed/27/a2d8b602235f95b5eb9724ae612d6b3e934b15c6f9fe7fe1c18950cb0b1c/starlette_admin-0.8.0.dev0.tar.gz
+[2023-04-09 06:04:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:49] INFO root fetch - processPackages [odoo-addon-crm-salesperson-planner]: New version: [15.0.1.0.0.5] Old Version: [15.0.1.0.0.3]
+[2023-04-09 06:04:49] INFO root fetch - processPackages [starlette-admin]: executing diffoscope
+[2023-04-09 06:04:49] INFO root fetch - processPackages [starlette-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starlette_admin-0.7.0.dev0.tar.gz tmp/starlette_admin-0.8.0.dev0.tar.gz --markdown 20230409/s/starlette-admin/0.7.0.dev0-0.8.0.dev0/diff.md --exclude *.pyd
+[2023-04-09 06:04:49] INFO root fetch - processPackages [odoo-addon-crm-salesperson-planner]: Downloading https://files.pythonhosted.org/packages/ef/59/f228cefb17243da894b94fa17c1b92200cdce5d32a7bb2851a80a1796b67/odoo_addon_crm_salesperson_planner-15.0.1.0.0.3-py3-none-any.whl
+[2023-04-09 06:04:49] INFO root fetch - processPackages [odoo-addon-crm-salesperson-planner]: Downloading https://files.pythonhosted.org/packages/16/bf/c04e097523d32da4b0b499f1091a79e460bd16e1ad0222d359ba777a2f13/odoo_addon_crm_salesperson_planner-15.0.1.0.0.5-py3-none-any.whl
+[2023-04-09 06:04:49] INFO root fetch - processPackages [odoo-addon-crm-salesperson-planner]: executing diffoscope
+[2023-04-09 06:04:49] INFO root fetch - processPackages [odoo-addon-crm-salesperson-planner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_crm_salesperson_planner-15.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_crm_salesperson_planner-15.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230409/o/odoo-addon-crm-salesperson-planner/15.0.1.0.0.3-15.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-04-09 06:04:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:51] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:04:51] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:04:51] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:04:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:51] INFO root fetch - processPackages [PyComplexHeatmap]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-04-09 06:04:51] INFO root fetch - processPackages [PyComplexHeatmap]: Downloading https://files.pythonhosted.org/packages/f1/4f/338b776809f448e41db1db919193e8bb3ef9b49fe74899b38f5f70fb9307/PyComplexHeatmap-1.3.8.tar.gz
+[2023-04-09 06:04:51] INFO root fetch - processPackages [PyComplexHeatmap]: Downloading https://files.pythonhosted.org/packages/46/8d/22fb2286c4e0992660de82ee92d08bba4d8ff943c918c73b332a61e418fe/PyComplexHeatmap-1.3.9.tar.gz
+[2023-04-09 06:04:51] INFO root fetch - processPackages [PyComplexHeatmap]: executing diffoscope
+[2023-04-09 06:04:51] INFO root fetch - processPackages [PyComplexHeatmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyComplexHeatmap-1.3.8.tar.gz tmp/PyComplexHeatmap-1.3.9.tar.gz --markdown 20230409/P/PyComplexHeatmap/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-04-09 06:04:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:53] INFO root fetch - processPackages [odoo-addon-crm-claim]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-09 06:04:53] INFO root fetch - processPackages [odoo-addon-crm-claim]: Downloading https://files.pythonhosted.org/packages/ba/9b/37d93791117d0a9f35d17c4a34cf46593a83a7a078cca2237540ca42c696/odoo_addon_crm_claim-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-09 06:04:53] INFO root fetch - processPackages [odoo-addon-crm-claim]: Downloading https://files.pythonhosted.org/packages/39/67/f7b35b7e11370e2008094000c9e5fabfd84fe399c4e10d2c9b96da5ec0fe/odoo_addon_crm_claim-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-09 06:04:53] INFO root fetch - processPackages [odoo-addon-crm-claim]: executing diffoscope
+[2023-04-09 06:04:53] INFO root fetch - processPackages [odoo-addon-crm-claim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_crm_claim-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_crm_claim-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230409/o/odoo-addon-crm-claim/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-09 06:04:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:55] ERROR root fetch - processPackages [porteratzo-libs]: Unable to get metadata: No such project 'porteratzo-libs'
+[2023-04-09 06:04:55] INFO root fetch - main [MainThread]: error
+[2023-04-09 06:04:55] INFO root fetch - processPackages [ez-yaml]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-09 06:04:55] INFO root fetch - processPackages [ez-yaml]: Downloading https://files.pythonhosted.org/packages/a2/72/9102232c4cfde3cc62de8e873fe11689bc357c2b18c552e7c82ca1c51e29/ez_yaml-1.2.0.tar.gz
+[2023-04-09 06:04:55] INFO root fetch - processPackages [ez-yaml]: Downloading https://files.pythonhosted.org/packages/9f/27/7a9d1628f1dd4b7abbd65951b9abd818f10440e3a0bdcbb24ece2e793e18/ez_yaml-1.3.0.tar.gz
+[2023-04-09 06:04:55] INFO root fetch - processPackages [ez-yaml]: executing diffoscope
+[2023-04-09 06:04:55] INFO root fetch - processPackages [ez-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ez_yaml-1.2.0.tar.gz tmp/ez_yaml-1.3.0.tar.gz --markdown 20230409/e/ez-yaml/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-09 06:04:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:56] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:04:56] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:04:56] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:04:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:59] INFO root fetch - processPackages [porteratzolibs]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 06:04:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:04:59] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:04:59] INFO root fetch - processPackages [porteratzolibs]: Downloading https://files.pythonhosted.org/packages/63/49/5293bebdc644fafc198e38f43e3ef498a467c8dbba35806bc5fb214de3ac/porteratzolibs-0.1.1.tar.gz
+[2023-04-09 06:04:59] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:04:59] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:04:59] INFO root fetch - processPackages [porteratzolibs]: Downloading https://files.pythonhosted.org/packages/0f/43/85f17148d46c375088a61c6687bd5a791bbcb5282dfb616daac546a397e1/porteratzolibs-0.1.2.tar.gz
+[2023-04-09 06:04:59] INFO root fetch - processPackages [porteratzolibs]: executing diffoscope
+[2023-04-09 06:04:59] INFO root fetch - processPackages [porteratzolibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porteratzolibs-0.1.1.tar.gz tmp/porteratzolibs-0.1.2.tar.gz --markdown 20230409/p/porteratzolibs/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 06:05:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:00] INFO root fetch - processPackages [use-case-registry]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-09 06:05:00] INFO root fetch - processPackages [use-case-registry]: Downloading https://files.pythonhosted.org/packages/87/db/73ca5b2e1fb07ffd6e0a4d9da465914537101efd34d1cb444149867384a0/use_case_registry-1.4.1.tar.gz
+[2023-04-09 06:05:00] INFO root fetch - processPackages [use-case-registry]: executing diffoscope
+[2023-04-09 06:05:00] INFO root fetch - processPackages [use-case-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/use_case_registry-1.4.0.tar.gz tmp/use_case_registry-1.4.1.tar.gz --markdown 20230409/u/use-case-registry/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-09 06:05:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:00] INFO root fetch - processPackages [porteratzolibs]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 06:05:00] INFO root fetch - processPackages [porteratzolibs]: executing diffoscope
+[2023-04-09 06:05:00] INFO root fetch - processPackages [porteratzolibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porteratzolibs-0.1.1.tar.gz tmp/porteratzolibs-0.1.2.tar.gz --markdown 20230409/p/porteratzolibs/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 06:05:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:01] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:05:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:01] INFO root fetch - processPackages [boosty]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 06:05:01] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:05:01] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:05:01] INFO root fetch - processPackages [boosty]: Downloading https://files.pythonhosted.org/packages/94/19/c3d2712fd6aa5e7e40cc850485260316ff0658a4e9ac9e6183661e1b87db/boosty-0.0.6.tar.gz
+[2023-04-09 06:05:02] INFO root fetch - processPackages [boosty]: Downloading https://files.pythonhosted.org/packages/4d/63/bd615c7903f671439466cef4b392e8f4259485eb88dbdd802dcc8d0b39c5/boosty-0.0.7.tar.gz
+[2023-04-09 06:05:02] INFO root fetch - processPackages [boosty]: executing diffoscope
+[2023-04-09 06:05:02] INFO root fetch - processPackages [boosty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boosty-0.0.6.tar.gz tmp/boosty-0.0.7.tar.gz --markdown 20230409/b/boosty/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 06:05:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:03] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-09 06:05:03] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 06:05:03] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.15-py3-none-any.whl.zip tmp/roboweb_server-0.1.16.tar.gz --markdown 20230409/r/roboweb-server/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-09 06:05:03] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:03] INFO root fetch - processPackages [quarkstudio]: New version: [6.5.0rc1] Old Version: [6.4.27]
+[2023-04-09 06:05:03] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/e6/7c/d99a3de0563b5a52f3db5ad161193a4ea2cee86e4d25e8ed2d6bef919e4f/quarkstudio-6.4.27-cp311-cp311-win_amd64.whl
+[2023-04-09 06:05:04] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/7b/48/0aa0993403e092a7c804d1b0d2940fc483ede8e9054446ee408b8b868df9/quarkstudio-6.5.0rc1-cp311-cp311-win_amd64.whl
+[2023-04-09 06:05:05] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2023-04-09 06:05:05] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.4.27-cp311-cp311-win_amd64.whl.zip tmp/quarkstudio-6.5.0rc1-cp311-cp311-win_amd64.whl.zip --markdown 20230409/q/quarkstudio/6.4.27-6.5.0rc1/diff.md --exclude *.pyd
+[2023-04-09 06:05:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:09] INFO root fetch - processPackages [python-geoacumen]: New version: [2023.4.9] Old Version: [2023.4.2]
+[2023-04-09 06:05:09] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/04/27/bd8312bc34b1a0cdd9951c91daef0bf46af772cdd13239ef503a9f0d5afa/python-geoacumen-2023.4.2.tar.gz
+[2023-04-09 06:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:11] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/5f/e2/00a753a65c099d5dc1e7e08b33007a36c2242ef2f41953a24324a98eb31e/python-geoacumen-2023.4.9.tar.gz
+[2023-04-09 06:05:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:12] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2023-04-09 06:05:12] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2023.4.2.tar.gz tmp/python-geoacumen-2023.4.9.tar.gz --markdown 20230409/p/python-geoacumen/2023.4.2-2023.4.9/diff.md --exclude *.pyd
+[2023-04-09 06:05:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:05:15] INFO root fetch - main [MainThread]: success
