@@ -6284,3 +6284,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:02:47] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:02:58] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:02:58] INFO root fetch - main [MainThread]: Store serial: [17637405]
+[2023-04-09 17:08:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637405]
+[2023-04-09 17:08:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-09 17:08:06] INFO root fetch - processPackages [virt-backup]: New version: [0.5.5] Old Version: [0.5.1]
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cookiecutter-openedx-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cowboe]: New version: [1.0.8.9] Old Version: [1.0.8.8]
+[2023-04-09 17:08:06] INFO root fetch - processPackages [vorta]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-09 17:08:06] INFO root fetch - processPackages [django-moncash]: New version: [2.4.4] Old Version: [2.4.3]
+[2023-04-09 17:08:06] INFO root fetch - processPackages [virt-backup]: Downloading https://files.pythonhosted.org/packages/24/96/b22a2778b8f2c2dc27fd7b47cafc7ff615c69adf1c2cc861c43db7a2e34b/virt-backup-0.5.1.tar.gz
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cookiecutter-openedx-plugin]: Downloading https://files.pythonhosted.org/packages/cf/eb/3cef9685b6f7f293cea54ea1c5bb78a94ec6d974c44f454c59eff539e96a/cookiecutter-openedx-plugin-0.1.2.tar.gz
+[2023-04-09 17:08:06] INFO root fetch - processPackages [django-moncash]: Downloading https://files.pythonhosted.org/packages/04/7d/80c57510c0d95dfaa9c00d43ac04eb83ea36cc63c696972a22cc73751046/django_moncash-2.4.4.tar.gz
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cookiecutter-openedx-plugin]: executing diffoscope
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cookiecutter-openedx-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiecutter-openedx-plugin-0.1.1.tar.gz tmp/cookiecutter-openedx-plugin-0.1.2.tar.gz --markdown 20230409/c/cookiecutter-openedx-plugin/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cowboe]: Downloading https://files.pythonhosted.org/packages/62/d9/b4f2fcac706f860d112b08e14c2d101e98ba1ec704f81a90eb98f739f355/cowboe-1.0.8.8.tar.gz
+[2023-04-09 17:08:06] INFO root fetch - processPackages [vorta]: executing diffoscope
+[2023-04-09 17:08:06] INFO root fetch - processPackages [vorta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vorta-0.8.8.tar.gz tmp/vorta-0.8.9.tar.gz --markdown 20230409/v/vorta/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-09 17:08:06] INFO root fetch - processPackages [django-moncash]: executing diffoscope
+[2023-04-09 17:08:06] INFO root fetch - processPackages [django-moncash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_moncash-2.4.3.tar.gz tmp/django_moncash-2.4.4.tar.gz --markdown 20230409/d/django-moncash/2.4.3-2.4.4/diff.md --exclude *.pyd
+[2023-04-09 17:08:06] INFO root fetch - processPackages [virt-backup]: Downloading https://files.pythonhosted.org/packages/42/ae/6b5929ce54325ffa804e306cb9e1efbf91f54f46b173575b38e66fc0cf08/virt-backup-0.5.5.tar.gz
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cowboe]: Downloading https://files.pythonhosted.org/packages/e4/80/79013288d04c5dc9e4dba6f82ae1568d70078140a5715b485a5797c480d2/cowboe-1.0.8.9.tar.gz
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cowboe]: executing diffoscope
+[2023-04-09 17:08:06] INFO root fetch - processPackages [cowboe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cowboe-1.0.8.8.tar.gz tmp/cowboe-1.0.8.9.tar.gz --markdown 20230409/c/cowboe/1.0.8.8-1.0.8.9/diff.md --exclude *.pyd
+[2023-04-09 17:08:06] INFO root fetch - processPackages [virt-backup]: executing diffoscope
+[2023-04-09 17:08:06] INFO root fetch - processPackages [virt-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/virt-backup-0.5.1.tar.gz tmp/virt-backup-0.5.5.tar.gz --markdown 20230409/v/virt-backup/0.5.1-0.5.5/diff.md --exclude *.pyd
+[2023-04-09 17:08:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:07] INFO root fetch - processPackages [recon-lw]: New version: [2.0.0.dev4639609103] Old Version: [2.0.0.dev4639231672]
+[2023-04-09 17:08:07] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:07] INFO root fetch - processPackages [ipynbname]: New version: [2023.1.0.0] Old Version: [2021.3.2]
+[2023-04-09 17:08:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:08] INFO root fetch - processPackages [zintor]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-04-09 17:08:08] INFO root fetch - processPackages [ipynbname]: Downloading https://files.pythonhosted.org/packages/40/be/d3717bd60240255c1f21dd6ba54eb654d7a5590c52f68f12023764f7b073/ipynbname-2021.3.2.tar.gz
+[2023-04-09 17:08:08] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2023-04-09 17:08:08] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-2.0.0.dev4639231672.tar.gz tmp/recon_lw-2.0.0.dev4639609103.tar.gz --markdown 20230409/r/recon-lw/2.0.0.dev4639231672-2.0.0.dev4639609103/diff.md --exclude *.pyd
+[2023-04-09 17:08:08] INFO root fetch - processPackages [zintor]: Downloading https://files.pythonhosted.org/packages/c3/29/db64858f6740ffafc1fb4ca460de14c2a49bf16ce7475c8880b1547c3e4d/zintor-0.0.16.tar.gz
+[2023-04-09 17:08:08] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:08] INFO root fetch - processPackages [ipynbname]: Downloading https://files.pythonhosted.org/packages/ec/43/2f7e963416af3cb4d56717491698d1fd1bc959f82dd91fe9be423251135c/ipynbname-2023.1.0.0.tar.gz
+[2023-04-09 17:08:08] INFO root fetch - processPackages [ipynbname]: executing diffoscope
+[2023-04-09 17:08:08] INFO root fetch - processPackages [ipynbname]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipynbname-2021.3.2.tar.gz tmp/ipynbname-2023.1.0.0.tar.gz --markdown 20230409/i/ipynbname/2021.3.2-2023.1.0.0/diff.md --exclude *.pyd
+[2023-04-09 17:08:08] INFO root fetch - processPackages [zintor]: Downloading https://files.pythonhosted.org/packages/62/f7/ae5d43adc6c3a5e4ce0b0ecfca34c645bf071a3dcfe966095dcb987f031b/zintor-0.0.17.tar.gz
+[2023-04-09 17:08:08] INFO root fetch - processPackages [zintor]: executing diffoscope
+[2023-04-09 17:08:08] INFO root fetch - processPackages [zintor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zintor-0.0.16.tar.gz tmp/zintor-0.0.17.tar.gz --markdown 20230409/z/zintor/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-04-09 17:08:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:08:09] INFO root fetch - main [MainThread]: Store serial: [17637436]
