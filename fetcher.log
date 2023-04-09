@@ -2045,3 +2045,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 06:05:13] INFO root fetch - main [MainThread]: success
 [2023-04-09 06:05:14] INFO root fetch - main [MainThread]: success
 [2023-04-09 06:05:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634258]
+[2023-04-09 06:35:47] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-09 06:35:47] INFO root fetch - processPackages [mathtranslate]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-04-09 06:35:47] INFO root fetch - processPackages [katalytic-pkg]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-09 06:35:47] WARNING root fetch - processPackages [xchem-chimp]: Skipping, unable to determine old version
+[2023-04-09 06:35:47] INFO root fetch - main [MainThread]: error
+[2023-04-09 06:35:47] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-04-09 06:35:47] INFO root fetch - processPackages [ssoss]: New version: [0.3.16] Old Version: [0.3.15]
+[2023-04-09 06:35:47] WARNING root fetch - processPackages [snemail]: Skipping, unable to determine old version
+[2023-04-09 06:35:47] INFO root fetch - main [MainThread]: error
+[2023-04-09 06:35:47] INFO root fetch - processPackages [screen-ocr]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-09 06:35:47] INFO root fetch - processPackages [mathtranslate]: executing diffoscope
+[2023-04-09 06:35:47] INFO root fetch - processPackages [mathtranslate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathtranslate-2.1.8.tar.gz tmp/mathtranslate-2.1.9.tar.gz --markdown 20230409/m/mathtranslate/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-04-09 06:35:47] INFO root fetch - processPackages [screen-ocr]: Downloading https://files.pythonhosted.org/packages/ac/be/9d0bba6f76e20b5dc9f454e91404a834a529ced353574e82e4673ce58f89/screen-ocr-0.4.0.tar.gz
+[2023-04-09 06:35:47] INFO root fetch - processPackages [ssoss]: Downloading https://files.pythonhosted.org/packages/8d/8e/3529c3e5686ece62a8e932476bfbb7c4f4519eb4828c6de738cc245c2d31/ssoss-0.3.15.tar.gz
+[2023-04-09 06:35:47] INFO root fetch - processPackages [katalytic-pkg]: Downloading https://files.pythonhosted.org/packages/45/22/20e9e7a793b92024e03dea7d5e2bb863d6504ba3ae1aa60f1c6a4eda7a94/katalytic-pkg-0.2.0.tar.gz
+[2023-04-09 06:35:47] INFO root fetch - processPackages [katalytic-pkg]: executing diffoscope
+[2023-04-09 06:35:47] INFO root fetch - processPackages [katalytic-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-pkg-0.1.1.tar.gz tmp/katalytic-pkg-0.2.0.tar.gz --markdown 20230409/k/katalytic-pkg/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-09 06:35:47] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/7f/38/d0138a3d1bba86339a22fb663896de3595f776218b8a919fb250a48eb1af/so_vits_svc_fork-3.1.2.tar.gz
+[2023-04-09 06:35:48] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-09 06:35:48] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.1.tar.gz tmp/so_vits_svc_fork-3.1.2.tar.gz --markdown 20230409/s/so-vits-svc-fork/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-04-09 06:35:48] INFO root fetch - processPackages [ssoss]: Downloading https://files.pythonhosted.org/packages/12/a4/e574ead7202b01474df895e1443db33176ddd19de08c918f47d027e11b35/ssoss-0.3.16.tar.gz
+[2023-04-09 06:35:48] INFO root fetch - processPackages [screen-ocr]: Downloading https://files.pythonhosted.org/packages/94/3b/9443fad21b5f390f151d7e7c9db93d9ad68e5967b71c7a1acbf8364e75d3/screen-ocr-0.5.0.tar.gz
+[2023-04-09 06:35:48] INFO root fetch - processPackages [screen-ocr]: executing diffoscope
+[2023-04-09 06:35:48] INFO root fetch - processPackages [ssoss]: executing diffoscope
+[2023-04-09 06:35:48] INFO root fetch - processPackages [ssoss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssoss-0.3.15.tar.gz tmp/ssoss-0.3.16.tar.gz --markdown 20230409/s/ssoss/0.3.15-0.3.16/diff.md --exclude *.pyd
+[2023-04-09 06:35:48] INFO root fetch - processPackages [screen-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screen-ocr-0.4.0.tar.gz tmp/screen-ocr-0.5.0.tar.gz --markdown 20230409/s/screen-ocr/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-09 06:35:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:48] INFO root fetch - processPackages [yzy]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 06:35:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:49] INFO root fetch - processPackages [mia-accounting]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-09 06:35:49] INFO root fetch - processPackages [yzy]: Downloading https://files.pythonhosted.org/packages/73/ad/7de16ed1754528c1eaf01b986b33c11489aabb1f18e44d75e34241a3e9e6/yzy-0.0.4.tar.gz
+[2023-04-09 06:35:49] INFO root fetch - processPackages [yzy]: executing diffoscope
+[2023-04-09 06:35:49] INFO root fetch - processPackages [yzy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yzy-0.0.3.tar.gz tmp/yzy-0.0.4.tar.gz --markdown 20230409/y/yzy/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 06:35:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:49] INFO root fetch - processPackages [mia-accounting]: Downloading https://files.pythonhosted.org/packages/7d/a6/7d6169981d5a8d297b9445a86d4cdde72e049dd13cd0a6e530f7c9b78c39/mia-accounting-1.2.0.tar.gz
+[2023-04-09 06:35:49] INFO root fetch - processPackages [FamousCipherAlgorithms]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-09 06:35:49] INFO root fetch - processPackages [mia-accounting]: executing diffoscope
+[2023-04-09 06:35:49] INFO root fetch - processPackages [mia-accounting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mia-accounting-1.1.0.tar.gz tmp/mia-accounting-1.2.0.tar.gz --markdown 20230409/m/mia-accounting/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-09 06:35:49] ERROR root fetch - processPackages [isedit]: Unable to get metadata: No such project 'isedit'
+[2023-04-09 06:35:49] INFO root fetch - main [MainThread]: error
+[2023-04-09 06:35:49] INFO root fetch - processPackages [vcorelib]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-09 06:35:49] INFO root fetch - processPackages [FamousCipherAlgorithms]: Downloading https://files.pythonhosted.org/packages/e0/1e/57e6084c42338004f56f7a441b5e79976e5e4cb15e3dc1579c584f3ced2f/famouscipheralgorithms-0.1.3.tar.gz
+[2023-04-09 06:35:49] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/3c/9a/eda3a1e45a399776e212a36b99e2f7ed8a8e39d50ee5dbbca80139029ef9/vcorelib-1.5.0.tar.gz
+[2023-04-09 06:35:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:49] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.831974621.dev9056] Old Version: [0.2.831606979.dev9055]
+[2023-04-09 06:35:49] INFO root fetch - processPackages [FamousCipherAlgorithms]: Downloading https://files.pythonhosted.org/packages/a9/a2/684eeaddd6b8cde05c81208b1b15158b43a84ca3f11542805074dfc0e9eb/famouscipheralgorithms-0.1.4.tar.gz
+[2023-04-09 06:35:49] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/2d/71/cc30f9d62fa29247ac89e3614fd89fc0b811ca4f44524f33afadfea82fa7/vcorelib-1.5.1.tar.gz
+[2023-04-09 06:35:49] INFO root fetch - processPackages [FamousCipherAlgorithms]: executing diffoscope
+[2023-04-09 06:35:49] INFO root fetch - processPackages [FamousCipherAlgorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/famouscipheralgorithms-0.1.3.tar.gz tmp/famouscipheralgorithms-0.1.4.tar.gz --markdown 20230409/F/FamousCipherAlgorithms/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 06:35:49] INFO root fetch - processPackages [vcorelib]: executing diffoscope
+[2023-04-09 06:35:49] INFO root fetch - processPackages [vcorelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcorelib-1.5.0.tar.gz tmp/vcorelib-1.5.1.tar.gz --markdown 20230409/v/vcorelib/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-09 06:35:50] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/f6/c4/8de2a1a114cd5f67c93475873bc15519f464cd876cf4a3d90f7c745aa723/quickstart-vdk-0.2.831974621.dev9056.tar.gz
+[2023-04-09 06:35:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:50] INFO root fetch - processPackages [onnx2tf]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-09 06:35:50] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-09 06:35:50] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.8.8.tar.gz tmp/onnx2tf-1.8.9.tar.gz --markdown 20230409/o/onnx2tf/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-09 06:35:50] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-04-09 06:35:50] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.831606979.dev9055.tar.gz tmp/quickstart-vdk-0.2.831974621.dev9056.tar.gz --markdown 20230409/q/quickstart-vdk/0.2.831606979.dev9055-0.2.831974621.dev9056/diff.md --exclude *.pyd
+[2023-04-09 06:35:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:50] INFO root fetch - processPackages [slice-finder]: New version: [0.0.22] Old Version: [0.0.21]
+[2023-04-09 06:35:51] INFO root fetch - processPackages [slice-finder]: Downloading https://files.pythonhosted.org/packages/7c/28/5fde9312a38fd0b779cb5343c1b0258f95a0cf0066c47292df08f28293e4/slice_finder-0.0.21.tar.gz
+[2023-04-09 06:35:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:51] INFO root fetch - processPackages [PyMemoryEditor]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-09 06:35:51] INFO root fetch - processPackages [PyMemoryEditor]: executing diffoscope
+[2023-04-09 06:35:51] INFO root fetch - processPackages [PyMemoryEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMemoryEditor-1.3.1.tar.gz tmp/PyMemoryEditor-1.3.2.tar.gz --markdown 20230409/P/PyMemoryEditor/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-09 06:35:51] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:51] INFO root fetch - processPackages [slice-finder]: Downloading https://files.pythonhosted.org/packages/20/88/f0ff53399ca11ae865a645d322efd450f9fa028b0ca299165bd605887d04/slice_finder-0.0.22.tar.gz
+[2023-04-09 06:35:51] INFO root fetch - processPackages [slice-finder]: executing diffoscope
+[2023-04-09 06:35:51] INFO root fetch - processPackages [slice-finder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slice_finder-0.0.21.tar.gz tmp/slice_finder-0.0.22.tar.gz --markdown 20230409/s/slice-finder/0.0.21-0.0.22/diff.md --exclude *.pyd
+[2023-04-09 06:35:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 06:35:52] INFO root fetch - main [MainThread]: success
