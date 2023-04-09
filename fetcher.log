@@ -2977,3 +2977,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:03:27] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:03:34] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:03:34] INFO root fetch - main [MainThread]: Store serial: [17634936]
+[2023-04-09 09:08:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634936]
+[2023-04-09 09:08:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 09:08:42] INFO root fetch - processPackages [python-office]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-09 09:08:42] INFO root fetch - processPackages [hugg]: New version: [0.0.79] Old Version: [0.0.78]
+[2023-04-09 09:08:42] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 09:08:42] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-09 09:08:42] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-09 09:08:42] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-09 09:08:42] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230409/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-09 09:08:42] INFO root fetch - processPackages [python-office]: executing diffoscope
+[2023-04-09 09:08:42] INFO root fetch - processPackages [python-office]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-office-0.3.8.tar.gz tmp/python-office-0.3.9.tar.gz --markdown 20230409/p/python-office/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-09 09:08:42] INFO root fetch - processPackages [hugg]: Downloading https://files.pythonhosted.org/packages/d3/8a/8739cfad63806c6cf0923e18088889596b1b1f23366aea8c290f12fbacc2/hugg-0.0.79.tar.gz
+[2023-04-09 09:08:43] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-09 09:08:43] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230409/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 09:08:43] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-04-09 09:08:43] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230409/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-09 09:08:43] INFO root fetch - processPackages [hugg]: executing diffoscope
+[2023-04-09 09:08:43] INFO root fetch - processPackages [hugg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugg-0.0.78.tar.gz tmp/hugg-0.0.79.tar.gz --markdown 20230409/h/hugg/0.0.78-0.0.79/diff.md --exclude *.pyd
+[2023-04-09 09:08:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:08:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:08:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:08:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:08:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:08:44] INFO root fetch - main [MainThread]: Store serial: [17634951]
