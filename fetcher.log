@@ -9027,3 +9027,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:08:41] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:08:46] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:08:46] INFO root fetch - main [MainThread]: Store serial: [17639273]
+[2023-04-09 22:13:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639273]
+[2023-04-09 22:13:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 22:13:54] WARNING root fetch - processPackages [colorez]: Skipping, unable to determine old version
+[2023-04-09 22:13:54] INFO root fetch - processPackages [gpx]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-09 22:13:54] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:13:54] INFO root fetch - processPackages [hds-stats]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 22:13:54] INFO root fetch - processPackages [heart-model]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:13:54] INFO root fetch - processPackages [mycroft-dinkum-listener]: New version: [0.0.1a3] Old Version: [0.0.1a2]
+[2023-04-09 22:13:54] INFO root fetch - processPackages [lastfm-cli-scrobbler]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 22:13:54] INFO root fetch - processPackages [heart-model]: executing diffoscope
+[2023-04-09 22:13:54] INFO root fetch - processPackages [heart-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heart-model-0.0.8.tar.gz tmp/heart-model-0.0.9.tar.gz --markdown 20230409/h/heart-model/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:13:54] INFO root fetch - processPackages [gpx]: Downloading https://files.pythonhosted.org/packages/39/1c/8e20b6ff7a84e4e74078b3ca6dbf2f0f62cf1d8852167cefe8ab4f2bb75e/gpx-0.2.0.tar.gz
+[2023-04-09 22:13:54] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/36/a2/cc27ab9b87a51d370c40f8dc167d4c86df7657c2a729546a7a99534a04ab/hds-stats-0.1.2.tar.gz
+[2023-04-09 22:13:54] INFO root fetch - processPackages [mycroft-dinkum-listener]: Downloading https://files.pythonhosted.org/packages/8c/8f/17638c347fc0b802c688d57471329c0354f9c46ad61ec99f37c05173c023/mycroft_dinkum_listener-0.0.1a3-py3-none-any.whl
+[2023-04-09 22:13:54] INFO root fetch - processPackages [lastfm-cli-scrobbler]: Downloading https://files.pythonhosted.org/packages/d7/b0/426ab3ed6a0b9294b28347d12a7615792338a92adf0efb3cf82d094852ee/lastfm-cli-scrobbler-0.1.0.tar.gz
+[2023-04-09 22:13:54] INFO root fetch - processPackages [gpx]: Downloading https://files.pythonhosted.org/packages/95/ed/3757326aa4df3cf66d4aff5a4bfa2c0f4db9237a3a654be1a9aeb58a9aff/gpx-0.2.1.tar.gz
+[2023-04-09 22:13:54] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-09 22:13:54] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds-stats-0.1.1.tar.gz tmp/hds-stats-0.1.2.tar.gz --markdown 20230409/h/hds-stats/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 22:13:54] INFO root fetch - processPackages [mycroft-dinkum-listener]: executing diffoscope
+[2023-04-09 22:13:54] INFO root fetch - processPackages [mycroft-dinkum-listener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mycroft_dinkum_listener-0.0.1a2-py3-none-any.whl.zip tmp/mycroft_dinkum_listener-0.0.1a3-py3-none-any.whl.zip --markdown 20230409/m/mycroft-dinkum-listener/0.0.1a2-0.0.1a3/diff.md --exclude *.pyd
+[2023-04-09 22:13:54] INFO root fetch - processPackages [gpx]: executing diffoscope
+[2023-04-09 22:13:54] INFO root fetch - processPackages [gpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpx-0.2.0.tar.gz tmp/gpx-0.2.1.tar.gz --markdown 20230409/g/gpx/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-09 22:13:54] INFO root fetch - processPackages [lastfm-cli-scrobbler]: Downloading https://files.pythonhosted.org/packages/8c/bb/5b1523adeddf01fa281eac41ac78eca3196c91bce5291a0901e6a4d4480e/lastfm-cli-scrobbler-0.1.1.tar.gz
+[2023-04-09 22:13:55] INFO root fetch - processPackages [lastfm-cli-scrobbler]: executing diffoscope
+[2023-04-09 22:13:55] INFO root fetch - processPackages [lastfm-cli-scrobbler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lastfm-cli-scrobbler-0.1.0.tar.gz tmp/lastfm-cli-scrobbler-0.1.1.tar.gz --markdown 20230409/l/lastfm-cli-scrobbler/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 22:13:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:13:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:13:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:13:55] INFO root fetch - processPackages [riscv-ctg]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-09 22:13:55] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:13:56] INFO root fetch - processPackages [riscv-ctg]: Downloading https://files.pythonhosted.org/packages/32/5a/52979a76dae7f22721f85300f9e178809490e031e6a8464e3475b884f6c6/riscv_ctg-0.8.0.tar.gz
+[2023-04-09 22:13:56] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:13:56] INFO root fetch - processPackages [riscv-ctg]: Downloading https://files.pythonhosted.org/packages/07/3e/0313d3ef2acd900e50b7c0166e9e52d333878f461424674eb4d061e4b63b/riscv_ctg-0.9.0.tar.gz
+[2023-04-09 22:13:56] INFO root fetch - processPackages [riscv-ctg]: executing diffoscope
+[2023-04-09 22:13:56] INFO root fetch - processPackages [riscv-ctg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riscv_ctg-0.8.0.tar.gz tmp/riscv_ctg-0.9.0.tar.gz --markdown 20230409/r/riscv-ctg/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 22:13:58] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:13:58] INFO root fetch - main [MainThread]: Store serial: [17639299]
