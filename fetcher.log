@@ -5873,3 +5873,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:15:43] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:15:43] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:15:43] INFO root fetch - main [MainThread]: Store serial: [17637082]
+[2023-04-09 16:20:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637082]
+[2023-04-09 16:20:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 16:20:50] INFO root fetch - processPackages [acr122u-websocket]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-09 16:20:50] INFO root fetch - processPackages [pineboo]: New version: [1.0.3.6] Old Version: [1.0.3.5]
+[2023-04-09 16:20:51] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-09 16:20:51] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-09 16:20:51] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-09 16:20:51] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-04-09 16:20:51] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230409/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-09 16:20:51] INFO root fetch - processPackages [acr122u-websocket]: Downloading https://files.pythonhosted.org/packages/9b/4d/ed82ee5ee830908e5e4ca44737312de0fcf3a1e3bc39d6efebe1bc53dd3f/acr122u-websocket-1.1.0.tar.gz
+[2023-04-09 16:20:51] INFO root fetch - processPackages [pineboo]: Downloading https://files.pythonhosted.org/packages/29/dd/d788ea82266e8d33639257a3dde9399afbbebe5081ea614ed28c43193e43/pineboo-1.0.3.6.tar.gz
+[2023-04-09 16:20:51] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-09 16:20:51] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230409/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-09 16:20:51] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-09 16:20:51] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230409/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-09 16:20:51] INFO root fetch - processPackages [acr122u-websocket]: executing diffoscope
+[2023-04-09 16:20:51] INFO root fetch - processPackages [acr122u-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acr122u-websocket-1.0.1.tar.gz tmp/acr122u-websocket-1.1.0.tar.gz --markdown 20230409/a/acr122u-websocket/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-09 16:20:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:20:52] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-09 16:20:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:20:52] INFO root fetch - processPackages [privatejet]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-09 16:20:52] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:20:52] INFO root fetch - processPackages [italy-geopop]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-09 16:20:52] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/df/b5/75e58ba051931174e6c65e8ad96f2dad1d327225ff53cca4310a31073909/CircleBlock-1.0.5.tar.gz
+[2023-04-09 16:20:52] INFO root fetch - processPackages [privatejet]: Downloading https://files.pythonhosted.org/packages/15/10/9b01ffc0a87f0883921e411faa5cfd93ba708656c9487625927de02b9cf0/privatejet-0.0.1-py3-none-any.whl
+[2023-04-09 16:20:52] INFO root fetch - processPackages [italy-geopop]: Downloading https://files.pythonhosted.org/packages/0a/45/619018c5b20b42598d30eebc311ee422c867227c5f0e9eb0ec4f0864406f/italy_geopop-0.5.1.tar.gz
+[2023-04-09 16:20:53] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-09 16:20:53] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.4.tar.gz tmp/CircleBlock-1.0.5.tar.gz --markdown 20230409/C/CircleBlock/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-09 16:20:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:20:53] INFO root fetch - processPackages [pineboo]: New version: [1.0.3.6] Old Version: [1.0.3.5]
+[2023-04-09 16:20:53] INFO root fetch - processPackages [pineboo]: Downloading https://files.pythonhosted.org/packages/29/dd/d788ea82266e8d33639257a3dde9399afbbebe5081ea614ed28c43193e43/pineboo-1.0.3.6.tar.gz
+[2023-04-09 16:20:53] INFO root fetch - processPackages [privatejet]: Downloading https://files.pythonhosted.org/packages/32/ad/29aca4bd214117c3243c4750012d329b7deaf1759525705475385dc6b934/privatejet-0.0.2.tar.gz
+[2023-04-09 16:20:53] INFO root fetch - processPackages [pineboo]: executing diffoscope
+[2023-04-09 16:20:53] INFO root fetch - processPackages [pineboo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pineboo-1.0.3.5.tar.gz tmp/pineboo-1.0.3.6.tar.gz --markdown 20230409/p/pineboo/1.0.3.5-1.0.3.6/diff.md --exclude *.pyd
+[2023-04-09 16:20:53] INFO root fetch - processPackages [pineboo]: executing diffoscope
+[2023-04-09 16:20:53] INFO root fetch - processPackages [pineboo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pineboo-1.0.3.5.tar.gz tmp/pineboo-1.0.3.6.tar.gz --markdown 20230409/p/pineboo/1.0.3.5-1.0.3.6/diff.md --exclude *.pyd
+[2023-04-09 16:20:53] INFO root fetch - processPackages [privatejet]: executing diffoscope
+[2023-04-09 16:20:53] INFO root fetch - processPackages [privatejet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/privatejet-0.0.1-py3-none-any.whl.zip tmp/privatejet-0.0.2.tar.gz --markdown 20230409/p/privatejet/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-09 16:20:53] WARNING root fetch - processPackages [italy-geopop]: Skipping package: exceeds size limit 16032671>=10485760
+[2023-04-09 16:20:53] INFO root fetch - main [MainThread]: error
+[2023-04-09 16:20:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:20:54] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:20:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:21:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:21:00] INFO root fetch - main [MainThread]: Store serial: [17637119]
