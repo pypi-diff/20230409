@@ -7858,3 +7858,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 19:57:22] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:57:30] INFO root fetch - main [MainThread]: success
 [2023-04-09 19:57:30] INFO root fetch - main [MainThread]: Store serial: [17638561]
+[2023-04-09 20:02:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638561]
+[2023-04-09 20:02:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 20:02:38] WARNING root fetch - processPackages [cleanese]: Skipping, unable to determine old version
+[2023-04-09 20:02:38] WARNING root fetch - processPackages [ingniodgniodguno]: Skipping, unable to determine old version
+[2023-04-09 20:02:38] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:02:38] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:02:38] INFO root fetch - processPackages [zoinks]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-09 20:02:38] INFO root fetch - processPackages [cpggen]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-09 20:02:38] INFO root fetch - processPackages [Erutils]: New version: [1.3.0] Old Version: [1.2.2.2]
+[2023-04-09 20:02:38] WARNING root fetch - processPackages [ENSF-338-Final-Project]: Skipping, unable to determine old version
+[2023-04-09 20:02:38] INFO root fetch - main [MainThread]: error
+[2023-04-09 20:02:38] INFO root fetch - processPackages [data-warehouse-client]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-09 20:02:38] INFO root fetch - processPackages [ovos-vad-plugin-silero]: New version: [0.0.1a2] Old Version: [0.0.1]
+[2023-04-09 20:02:38] INFO root fetch - processPackages [zoinks]: Downloading https://files.pythonhosted.org/packages/1d/de/3c4bfb364151f88b479fdb9a0780c1547c660cd4185b1904eb3f952183dc/zoinks-0.0.5.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [data-warehouse-client]: Downloading https://files.pythonhosted.org/packages/6f/a5/c5ec93e3a9a098d245cd20088be16e509bafe9be764b0091dda6fe3fbd2b/data-warehouse-client-3.0.2.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [ovos-vad-plugin-silero]: Downloading https://files.pythonhosted.org/packages/ec/5b/997e299a3ff5e1685d8e32ec79156573df5a38efbfd86ee2043537a50d1e/ovos-vad-plugin-silero-0.0.1.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [Erutils]: Downloading https://files.pythonhosted.org/packages/5e/18/1ee64d0d64558c0c60d692beb0496e9df44cb4a04710f94f5022be32b2b9/erutils-1.2.2.2.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/c5/27/b403e22a6011b5b2a3679b612ea2b8adbb9aa2993ec151f2299402662816/cpggen-0.7.1.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [data-warehouse-client]: executing diffoscope
+[2023-04-09 20:02:38] INFO root fetch - processPackages [data-warehouse-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-warehouse-client-3.0.1.tar.gz tmp/data-warehouse-client-3.0.2.tar.gz --markdown 20230409/d/data-warehouse-client/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-09 20:02:38] INFO root fetch - processPackages [ovos-vad-plugin-silero]: Downloading https://files.pythonhosted.org/packages/1f/be/c31a409ebbfd0852863632d93fc2f01f25549ec33f471ca7fb61dc0c92f9/ovos-vad-plugin-silero-0.0.1a2.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [Erutils]: Downloading https://files.pythonhosted.org/packages/1c/b7/c5aca7700c17dabf56c9919b56ca545d468803341fbc08ad43090760d59e/Erutils-1.3.0.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [zoinks]: Downloading https://files.pythonhosted.org/packages/48/e4/973a8e20bc4a20e1709a969da752cedfe8b32a962da1162fd4256261a2b5/zoinks-0.0.6.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [zoinks]: executing diffoscope
+[2023-04-09 20:02:38] INFO root fetch - processPackages [zoinks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoinks-0.0.5.tar.gz tmp/zoinks-0.0.6.tar.gz --markdown 20230409/z/zoinks/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-09 20:02:38] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/54/8c/e12365ba8e22fe27396006687b280c45ca5b01387438f295d956d31a8abe/cpggen-0.7.2.tar.gz
+[2023-04-09 20:02:38] INFO root fetch - processPackages [Erutils]: executing diffoscope
+[2023-04-09 20:02:38] INFO root fetch - processPackages [Erutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erutils-1.2.2.2.tar.gz tmp/Erutils-1.3.0.tar.gz --markdown 20230409/E/Erutils/1.2.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-04-09 20:02:38] INFO root fetch - processPackages [ovos-vad-plugin-silero]: executing diffoscope
+[2023-04-09 20:02:38] INFO root fetch - processPackages [ovos-vad-plugin-silero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-vad-plugin-silero-0.0.1.tar.gz tmp/ovos-vad-plugin-silero-0.0.1a2.tar.gz --markdown 20230409/o/ovos-vad-plugin-silero/0.0.1-0.0.1a2/diff.md --exclude *.pyd
+[2023-04-09 20:02:39] INFO root fetch - processPackages [cpggen]: executing diffoscope
+[2023-04-09 20:02:39] INFO root fetch - processPackages [cpggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpggen-0.7.1.tar.gz tmp/cpggen-0.7.2.tar.gz --markdown 20230409/c/cpggen/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-09 20:02:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:02:39] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-04-09 20:02:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:02:40] INFO root fetch - processPackages [ovos-vad-plugin-silero]: New version: [0.0.1a2] Old Version: [0.0.1]
+[2023-04-09 20:02:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:02:40] INFO root fetch - processPackages [ovos-vad-plugin-silero]: executing diffoscope
+[2023-04-09 20:02:40] INFO root fetch - processPackages [ovos-vad-plugin-silero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-vad-plugin-silero-0.0.1.tar.gz tmp/ovos-vad-plugin-silero-0.0.1a2.tar.gz --markdown 20230409/o/ovos-vad-plugin-silero/0.0.1-0.0.1a2/diff.md --exclude *.pyd
+[2023-04-09 20:02:40] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/ed/93/38dc4b24d947f1ec271781bdb47a50b77ff762d7a701730c6786ca4ec303/piperider-nightly-0.9.0.20220920.tar.gz
+[2023-04-09 20:02:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:02:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:02:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:02:42] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/a4/47/99354233feb8a6a201731f0992c5656ca2eb5728a26eae7fd09fc5e04b4c/piperider-nightly-0.9.0.20220921.tar.gz
+[2023-04-09 20:02:44] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-04-09 20:02:44] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230409/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-04-09 20:02:47] INFO root fetch - main [MainThread]: success
+[2023-04-09 20:02:47] INFO root fetch - main [MainThread]: Store serial: [17638599]
