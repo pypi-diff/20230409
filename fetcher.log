@@ -3241,3 +3241,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:51:33] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:51:33] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:51:33] INFO root fetch - main [MainThread]: Store serial: [17635153]
+[2023-04-09 09:56:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635153]
+[2023-04-09 09:56:41] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-09 09:56:41] INFO root fetch - processPackages [pytest-emoji-output]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-09 09:56:41] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-09 09:56:41] WARNING root fetch - processPackages [legal-segmenter]: Skipping, unable to determine old version
+[2023-04-09 09:56:41] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:56:41] WARNING root fetch - processPackages [EmailNotice]: Skipping, unable to determine old version
+[2023-04-09 09:56:41] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:56:41] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-09 09:56:41] WARNING root fetch - processPackages [Goosu]: Skipping, unable to determine old version
+[2023-04-09 09:56:41] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:56:41] INFO root fetch - processPackages [parse-it]: New version: [3.8.0] Old Version: [3.7.0]
+[2023-04-09 09:56:41] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-09 09:56:41] INFO root fetch - processPackages [pytest-emoji-output]: Downloading https://files.pythonhosted.org/packages/f0/be/95aacdf27ea03e830e672a55bd80e7ad7c736c1d1777581ac3b70ff6a74e/pytest-emoji-output-0.2.0.tar.gz
+[2023-04-09 09:56:41] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/7d/5e/b034492ce7b6cdc72ed3a711b98589f6cb2a92d8b65fd61b4cdcc227ef6d/CircleBlock-1.0.0.tar.gz
+[2023-04-09 09:56:41] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/cd/52/dbb13663fccbffb09d020cc56e8a7a1b551efa4c47759a518f758bba3f02/parse_it-3.7.0.tar.gz
+[2023-04-09 09:56:41] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2023-04-09 09:56:41] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20230409/N/NinjaTools/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 09:56:41] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: executing diffoscope
+[2023-04-09 09:56:41] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_streamdeck_yaml-2023.4.8.tar.gz tmp/home_assistant_streamdeck_yaml-2023.4.9.tar.gz --markdown 20230409/h/home-assistant-streamdeck-yaml/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-09 09:56:41] INFO root fetch - processPackages [CircleBlock]: Downloading https://files.pythonhosted.org/packages/a9/eb/ec21321ef1436654381f70a673620a93b3ee7a0f9d4681ce328809505f69/CircleBlock-1.0.1.tar.gz
+[2023-04-09 09:56:41] INFO root fetch - processPackages [pytest-emoji-output]: Downloading https://files.pythonhosted.org/packages/25/2a/2e49813d1cb95570edfd19ead1537e38f21d03c01e7f8b6603b8b6ad33fc/pytest-emoji-output-0.2.1.tar.gz
+[2023-04-09 09:56:41] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-09 09:56:41] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.0.tar.gz tmp/CircleBlock-1.0.1.tar.gz --markdown 20230409/C/CircleBlock/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-09 09:56:41] INFO root fetch - processPackages [parse-it]: Downloading https://files.pythonhosted.org/packages/3b/d8/0a3f4a732fa677a35dbea4e9c72741f55e44859dc1c79bf5edfce61d95f0/parse_it-3.8.0.tar.gz
+[2023-04-09 09:56:41] INFO root fetch - processPackages [pytest-emoji-output]: executing diffoscope
+[2023-04-09 09:56:41] INFO root fetch - processPackages [pytest-emoji-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-emoji-output-0.2.0.tar.gz tmp/pytest-emoji-output-0.2.1.tar.gz --markdown 20230409/p/pytest-emoji-output/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-09 09:56:42] INFO root fetch - processPackages [parse-it]: executing diffoscope
+[2023-04-09 09:56:42] INFO root fetch - processPackages [parse-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_it-3.7.0.tar.gz tmp/parse_it-3.8.0.tar.gz --markdown 20230409/p/parse-it/3.7.0-3.8.0/diff.md --exclude *.pyd
+[2023-04-09 09:56:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:42] INFO root fetch - processPackages [django-admin-rangefilter]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-04-09 09:56:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:42] INFO root fetch - processPackages [django-admin-rangefilter]: Downloading https://files.pythonhosted.org/packages/92/62/a828470981d75676c0d3abc22823bf7ed44cc34f7d9520cb138ce58326ea/django-admin-rangefilter-0.8.8.tar.gz
+[2023-04-09 09:56:42] INFO root fetch - processPackages [hds-stats]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 09:56:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:42] INFO root fetch - processPackages [webtypy]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 09:56:43] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/bf/40/c19cdc2860f7e8ff1e7a02ae82ac24206c2dbf19797aec6bfd31adb8d7a5/hds-stats-0.1.1.tar.gz
+[2023-04-09 09:56:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:43] INFO root fetch - processPackages [webtypy]: Downloading https://files.pythonhosted.org/packages/27/6a/24b2e2f2cccdf669c3f94c9efdcfed5975723fa0c616039a6dc60f732815/webtypy-0.1.2.tar.gz
+[2023-04-09 09:56:43] INFO root fetch - processPackages [parse-it]: New version: [3.8.0] Old Version: [3.7.0]
+[2023-04-09 09:56:43] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-09 09:56:43] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds-stats-0.1.0.tar.gz tmp/hds-stats-0.1.1.tar.gz --markdown 20230409/h/hds-stats/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 09:56:43] INFO root fetch - processPackages [django-admin-rangefilter]: Downloading https://files.pythonhosted.org/packages/7d/f9/79df40d2bc4461d9badb807a90136f5652662831eebd8f2a5a87dcad005f/django-admin-rangefilter-0.9.0.tar.gz
+[2023-04-09 09:56:43] INFO root fetch - processPackages [django-admin-rangefilter]: executing diffoscope
+[2023-04-09 09:56:43] INFO root fetch - processPackages [django-admin-rangefilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-rangefilter-0.8.8.tar.gz tmp/django-admin-rangefilter-0.9.0.tar.gz --markdown 20230409/d/django-admin-rangefilter/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 09:56:43] INFO root fetch - processPackages [parse-it]: executing diffoscope
+[2023-04-09 09:56:43] INFO root fetch - processPackages [parse-it]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parse_it-3.7.0.tar.gz tmp/parse_it-3.8.0.tar.gz --markdown 20230409/p/parse-it/3.7.0-3.8.0/diff.md --exclude *.pyd
+[2023-04-09 09:56:43] INFO root fetch - processPackages [webtypy]: executing diffoscope
+[2023-04-09 09:56:43] INFO root fetch - processPackages [webtypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webtypy-0.1.1.tar.gz tmp/webtypy-0.1.2.tar.gz --markdown 20230409/w/webtypy/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 09:56:43] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:44] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:56:44] INFO root fetch - main [MainThread]: Store serial: [17635196]
