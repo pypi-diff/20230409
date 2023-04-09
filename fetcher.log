@@ -3092,3 +3092,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 09:30:24] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:30:26] INFO root fetch - main [MainThread]: success
 [2023-04-09 09:30:26] INFO root fetch - main [MainThread]: Store serial: [17635040]
+[2023-04-09 09:35:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635040]
+[2023-04-09 09:35:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 09:35:33] INFO root fetch - processPackages [pynball]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-04-09 09:35:33] WARNING root fetch - processPackages [SYSTEM32-Critical]: Skipping, unable to determine old version
+[2023-04-09 09:35:33] INFO root fetch - main [MainThread]: error
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-04-09 09:35:33] INFO root fetch - processPackages [cdk8s]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-09 09:35:33] INFO root fetch - processPackages [quarkstudio]: New version: [6.5.0rc2] Old Version: [6.4.27]
+[2023-04-09 09:35:33] INFO root fetch - processPackages [cdk8s]: executing diffoscope
+[2023-04-09 09:35:33] INFO root fetch - processPackages [cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-2.7.8.tar.gz tmp/cdk8s-2.7.9.tar.gz --markdown 20230409/c/cdk8s/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/9d/6a/76f1164a4da5bb3113aba65f4d31a92a95ed4a244c27258da3f3b3e5e7b1/vandal-4.0.1.tar.gz
+[2023-04-09 09:35:33] INFO root fetch - processPackages [pynball]: Downloading https://files.pythonhosted.org/packages/e7/10/9b8d336b3c93733870c9ee9242aad028b14abe8b71a2d307a389b852f579/pynball-1.5.3.tar.gz
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/9d/6a/76f1164a4da5bb3113aba65f4d31a92a95ed4a244c27258da3f3b3e5e7b1/vandal-4.0.1.tar.gz
+[2023-04-09 09:35:33] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/08/2d/5a18745916c75448e2a0dbcd6caa01eab46c00ec38a02851738f17b7bff8/quarkstudio-6.5.0rc2-cp310-cp310-macosx_10_9_universal2.whl
+[2023-04-09 09:35:33] INFO root fetch - processPackages [pynball]: executing diffoscope
+[2023-04-09 09:35:33] INFO root fetch - processPackages [pynball]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynball-1.5.2.tar.gz tmp/pynball-1.5.3.tar.gz --markdown 20230409/p/pynball/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/a7/29/84370a17c3991aa1c31e1235a3ef950f965b971c7dee035e818c022c7861/vandal-4.0.2.tar.gz
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/a7/29/84370a17c3991aa1c31e1235a3ef950f965b971c7dee035e818c022c7861/vandal-4.0.2.tar.gz
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.1.tar.gz tmp/vandal-4.0.2.tar.gz --markdown 20230409/v/vandal/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 09:35:33] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.1.tar.gz tmp/vandal-4.0.2.tar.gz --markdown 20230409/v/vandal/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-04-09 09:35:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:35:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:35:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:35:35] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:35:36] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2023-04-09 09:35:36] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.4.27-cp311-cp311-win_amd64.whl.zip tmp/quarkstudio-6.5.0rc2-cp310-cp310-macosx_10_9_universal2.whl.zip --markdown 20230409/q/quarkstudio/6.4.27-6.5.0rc2/diff.md --exclude *.pyd
+[2023-04-09 09:35:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 09:35:39] INFO root fetch - main [MainThread]: Store serial: [17635066]
