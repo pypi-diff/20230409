@@ -8948,3 +8948,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:58:15] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:58:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:58:18] INFO root fetch - main [MainThread]: Store serial: [17639205]
+[2023-04-09 22:03:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639205]
+[2023-04-09 22:03:26] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-09 22:03:26] INFO root fetch - processPackages [heart-model]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:03:26] INFO root fetch - processPackages [riscv-isac]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-09 22:03:26] WARNING root fetch - processPackages [katalytic]: Skipping, unable to determine old version
+[2023-04-09 22:03:26] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:03:26] INFO root fetch - processPackages [django-client-whitelist]: New version: [0.2] Old Version: [0.1]
+[2023-04-09 22:03:26] INFO root fetch - processPackages [moontour-common]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-09 22:03:26] INFO root fetch - processPackages [zuela]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-09 22:03:26] INFO root fetch - processPackages [moontour-common]: executing diffoscope
+[2023-04-09 22:03:26] INFO root fetch - processPackages [moontour-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moontour_common-1.0.8.tar.gz tmp/moontour_common-1.0.9.tar.gz --markdown 20230409/m/moontour-common/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:03:26] INFO root fetch - processPackages [django-client-whitelist]: Downloading https://files.pythonhosted.org/packages/13/77/f86bcc1038c5bc6279fe4b7f4ff6015ce0cc28ecc06bf3f3901c7b0925f4/django-client-whitelist-0.1.tar.gz
+[2023-04-09 22:03:26] INFO root fetch - processPackages [riscv-isac]: Downloading https://files.pythonhosted.org/packages/8b/65/93b12fadfd9648bf5e2c1256005a4aff42cbb2c6e7f4ca33953c235af43c/riscv_isac-0.8.0.tar.gz
+[2023-04-09 22:03:26] INFO root fetch - processPackages [zuela]: Downloading https://files.pythonhosted.org/packages/20/31/3d20a5459d052e6a84eb3ef44471a1ea333f7def3b72ca62b38566856adb/zuela-0.6.0.tar.gz
+[2023-04-09 22:03:26] INFO root fetch - processPackages [heart-model]: executing diffoscope
+[2023-04-09 22:03:26] INFO root fetch - processPackages [heart-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heart-model-0.0.8.tar.gz tmp/heart-model-0.0.9.tar.gz --markdown 20230409/h/heart-model/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:03:26] INFO root fetch - processPackages [zuela]: executing diffoscope
+[2023-04-09 22:03:26] INFO root fetch - processPackages [zuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuela-0.5.0.tar.gz tmp/zuela-0.6.0.tar.gz --markdown 20230409/z/zuela/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-09 22:03:27] INFO root fetch - processPackages [django-client-whitelist]: Downloading https://files.pythonhosted.org/packages/6b/c9/eb126a09d446bd097eeb5de45d2083c9b5f3fef32521ceecfc77d3c77f54/django-client-whitelist-0.2.tar.gz
+[2023-04-09 22:03:27] INFO root fetch - processPackages [riscv-isac]: Downloading https://files.pythonhosted.org/packages/2c/73/a498c9b58d2b7b74659234d34c873cf220907cccb42b3092146decc3baae/riscv_isac-0.9.0.tar.gz
+[2023-04-09 22:03:27] INFO root fetch - processPackages [django-client-whitelist]: executing diffoscope
+[2023-04-09 22:03:27] INFO root fetch - processPackages [django-client-whitelist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-client-whitelist-0.1.tar.gz tmp/django-client-whitelist-0.2.tar.gz --markdown 20230409/d/django-client-whitelist/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-09 22:03:27] INFO root fetch - processPackages [riscv-isac]: executing diffoscope
+[2023-04-09 22:03:27] INFO root fetch - processPackages [riscv-isac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riscv_isac-0.8.0.tar.gz tmp/riscv_isac-0.9.0.tar.gz --markdown 20230409/r/riscv-isac/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-09 22:03:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:27] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:03:27] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 22:03:27] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:03:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:28] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:03:28] WARNING root fetch - processPackages [skatepark-lib]: Skipping, unable to determine old version
+[2023-04-09 22:03:28] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:03:28] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 22:03:28] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:03:28] WARNING root fetch - processPackages [lmah88]: Skipping, unable to determine old version
+[2023-04-09 22:03:28] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:03:28] INFO root fetch - processPackages [pdm-conda]: New version: [0.8.0b0] Old Version: [0.7.1b0]
+[2023-04-09 22:03:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:28] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/08/9d/b8b6b67d7029f116c5ee087328847d6499b5dec1e39ecef574c2ab5297ad/pdm_conda-0.7.1b0.tar.gz
+[2023-04-09 22:03:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:28] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/d7/db/b92811c455f0a647abdf54e3c68045bcc7e33c5e4f63e8c2f043875971b0/pdm_conda-0.8.0b0.tar.gz
+[2023-04-09 22:03:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:29] INFO root fetch - processPackages [pdm-conda]: executing diffoscope
+[2023-04-09 22:03:29] INFO root fetch - processPackages [pdm-conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_conda-0.7.1b0.tar.gz tmp/pdm_conda-0.8.0b0.tar.gz --markdown 20230409/p/pdm-conda/0.7.1b0-0.8.0b0/diff.md --exclude *.pyd
+[2023-04-09 22:03:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:03:30] INFO root fetch - main [MainThread]: Store serial: [17639245]
