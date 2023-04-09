@@ -4285,3 +4285,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 12:30:00] INFO root fetch - processPackages [pystencils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystencils-1.1.1.tar.gz tmp/pystencils-1.2.tar.gz --markdown 20230409/p/pystencils/1.1.1-1.2/diff.md --exclude *.pyd
 [2023-04-09 12:30:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 12:30:03] INFO root fetch - main [MainThread]: Store serial: [17635913]
+[2023-04-09 12:35:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635913]
+[2023-04-09 12:35:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 12:35:12] INFO root fetch - processPackages [lbmpy]: New version: [1.2] Old Version: [1.1.1]
+[2023-04-09 12:35:12] INFO root fetch - processPackages [bintropy]: New version: [1.3.7] Old Version: [1.3.6]
+[2023-04-09 12:35:12] WARNING root fetch - processPackages [crsysapi]: Skipping, unable to determine old version
+[2023-04-09 12:35:12] INFO root fetch - processPackages [opensesame-extension-osweb]: New version: [2.0.0.0a8] Old Version: [2.0.0.0a7]
+[2023-04-09 12:35:12] INFO root fetch - main [MainThread]: error
+[2023-04-09 12:35:12] INFO root fetch - processPackages [database-setup-tools]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-09 12:35:12] INFO root fetch - processPackages [lbmpy]: Downloading https://files.pythonhosted.org/packages/b7/f7/24907178288e28f237669ac6919aa4a196664c678251eaaad49583d6b283/lbmpy-1.1.1.tar.gz
+[2023-04-09 12:35:12] WARNING root fetch - processPackages [lbmpy]: Skipping package: exceeds size limit 16283802>=10485760
+[2023-04-09 12:35:12] INFO root fetch - main [MainThread]: error
+[2023-04-09 12:35:12] INFO root fetch - processPackages [database-setup-tools]: Downloading https://files.pythonhosted.org/packages/09/ca/d17f4b389855ac92977a3d77e9ff2c6e1a8938ac87058bb3b0334be98eba/database_setup_tools-1.2.0.tar.gz
+[2023-04-09 12:35:12] INFO root fetch - processPackages [bintropy]: Downloading https://files.pythonhosted.org/packages/72/d5/6c682f30d537473c5bcaf07ed77007dbbf0f29c12ac2c476e9b0fadfea93/bintropy-1.3.6.tar.gz
+[2023-04-09 12:35:12] INFO root fetch - processPackages [opensesame-extension-osweb]: Downloading https://files.pythonhosted.org/packages/2c/ab/aa15ddb5c5f2d8de63578570bbe2554adc1df58ce6d85dcb194f32bc4e45/opensesame_extension_osweb-2.0.0.0a7.tar.gz
+[2023-04-09 12:35:13] INFO root fetch - processPackages [bintropy]: Downloading https://files.pythonhosted.org/packages/bd/ac/9f1c9579ad169df0b49c66a4208ee7d85311acca7b2eb6627c712129cb19/bintropy-1.3.7.tar.gz
+[2023-04-09 12:35:13] INFO root fetch - processPackages [opensesame-extension-osweb]: Downloading https://files.pythonhosted.org/packages/e2/46/ee470f21782300a5123157400f6bdbca9c0563d6d55aa391586b704a810e/opensesame_extension_osweb-2.0.0.0a8.tar.gz
+[2023-04-09 12:35:13] INFO root fetch - processPackages [database-setup-tools]: Downloading https://files.pythonhosted.org/packages/3c/87/4485dc78ad4cf45aae3387957ee47c6bde663501018c2ed9ac0f2abf90cf/database_setup_tools-1.3.0.tar.gz
+[2023-04-09 12:35:13] INFO root fetch - processPackages [bintropy]: executing diffoscope
+[2023-04-09 12:35:13] INFO root fetch - processPackages [bintropy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bintropy-1.3.6.tar.gz tmp/bintropy-1.3.7.tar.gz --markdown 20230409/b/bintropy/1.3.6-1.3.7/diff.md --exclude *.pyd
+[2023-04-09 12:35:13] INFO root fetch - processPackages [database-setup-tools]: executing diffoscope
+[2023-04-09 12:35:13] INFO root fetch - processPackages [database-setup-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_setup_tools-1.2.0.tar.gz tmp/database_setup_tools-1.3.0.tar.gz --markdown 20230409/d/database-setup-tools/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-09 12:35:13] INFO root fetch - processPackages [opensesame-extension-osweb]: executing diffoscope
+[2023-04-09 12:35:13] INFO root fetch - processPackages [opensesame-extension-osweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opensesame_extension_osweb-2.0.0.0a7.tar.gz tmp/opensesame_extension_osweb-2.0.0.0a8.tar.gz --markdown 20230409/o/opensesame-extension-osweb/2.0.0.0a7-2.0.0.0a8/diff.md --exclude *.pyd
+[2023-04-09 12:35:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:35:14] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:35:15] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:35:15] INFO root fetch - main [MainThread]: Store serial: [17635928]
