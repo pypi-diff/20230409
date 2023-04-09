@@ -7292,3 +7292,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 18:54:28] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:54:31] INFO root fetch - main [MainThread]: success
 [2023-04-09 18:54:31] INFO root fetch - main [MainThread]: Store serial: [17638179]
+[2023-04-09 18:59:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17638179]
+[2023-04-09 18:59:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 18:59:39] INFO root fetch - processPackages [vidua]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-09 18:59:39] INFO root fetch - processPackages [pyllicagram]: New version: [1.7.1] Old Version: [1.7]
+[2023-04-09 18:59:39] INFO root fetch - processPackages [griptape-tools]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-09 18:59:39] INFO root fetch - processPackages [Pequena]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 18:59:39] WARNING root fetch - processPackages [tdms]: Skipping, unable to determine old version
+[2023-04-09 18:59:39] INFO root fetch - main [MainThread]: error
+[2023-04-09 18:59:39] INFO root fetch - processPackages [adaptix]: New version: [3.0.0a3] Old Version: [3.0.0a2]
+[2023-04-09 18:59:39] INFO root fetch - processPackages [Pequena]: Downloading https://files.pythonhosted.org/packages/1a/0d/94f7f5ccf3ed4b3b4ce8a71942f7c73192a7e3de437e42b142cc0709e9ff/Pequena-0.0.8.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [pyllicagram]: Downloading https://files.pythonhosted.org/packages/78/f4/b9abb9d22852248ff035dc299c7ebfe72bc569cf75c8dc10d66fa4ddd0df/pyllicagram-1.7.1.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [griptape-tools]: Downloading https://files.pythonhosted.org/packages/30/71/a1c83ecad3b0b454b0e0dbff7737607e0d8ebd7be105d31d1a693ac7a6ae/griptape_tools-0.3.1.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [vidua]: Downloading https://files.pythonhosted.org/packages/74/76/d3f34d7a84a5e1d3f4c124c5740a7e24b530d9d9c5a4aa2bf02487544311/vidua-0.4.4.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [adaptix]: Downloading https://files.pythonhosted.org/packages/50/dd/d71c98a5e8cefb27a74f0b3216f3fc889e74526a3a9547f4babff6d87954/adaptix-3.0.0a2.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [pyllicagram]: executing diffoscope
+[2023-04-09 18:59:39] INFO root fetch - processPackages [pyllicagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllicagram-1.7.tar.gz tmp/pyllicagram-1.7.1.tar.gz --markdown 20230409/p/pyllicagram/1.7-1.7.1/diff.md --exclude *.pyd
+[2023-04-09 18:59:39] INFO root fetch - processPackages [griptape-tools]: executing diffoscope
+[2023-04-09 18:59:39] INFO root fetch - processPackages [griptape-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_tools-0.3.0.tar.gz tmp/griptape_tools-0.3.1.tar.gz --markdown 20230409/g/griptape-tools/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-09 18:59:39] INFO root fetch - processPackages [vidua]: Downloading https://files.pythonhosted.org/packages/f9/dd/a9abf56877143e518bdb3aa780ce1e7835264358ef49031c38342771a71a/vidua-0.4.5.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [adaptix]: Downloading https://files.pythonhosted.org/packages/a1/8c/b3d2b1c8d8a1874063d3e7e7c2bbecd437231bf4cbf042dd0eb28a0dab92/adaptix-3.0.0a3.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [vidua]: executing diffoscope
+[2023-04-09 18:59:39] INFO root fetch - processPackages [vidua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vidua-0.4.4.tar.gz tmp/vidua-0.4.5.tar.gz --markdown 20230409/v/vidua/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-09 18:59:39] INFO root fetch - processPackages [Pequena]: Downloading https://files.pythonhosted.org/packages/a9/29/f92c0e12f19a9e76b3c52185e76befc5bbd8cdaed78b5afcd3f134ba094d/Pequena-0.0.9.tar.gz
+[2023-04-09 18:59:39] INFO root fetch - processPackages [adaptix]: executing diffoscope
+[2023-04-09 18:59:39] INFO root fetch - processPackages [adaptix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adaptix-3.0.0a2.tar.gz tmp/adaptix-3.0.0a3.tar.gz --markdown 20230409/a/adaptix/3.0.0a2-3.0.0a3/diff.md --exclude *.pyd
+[2023-04-09 18:59:39] INFO root fetch - processPackages [Pequena]: executing diffoscope
+[2023-04-09 18:59:39] INFO root fetch - processPackages [Pequena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pequena-0.0.8.tar.gz tmp/Pequena-0.0.9.tar.gz --markdown 20230409/P/Pequena/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 18:59:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:59:40] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 18:59:40] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 18:59:40] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 18:59:40] INFO root fetch - main [MainThread]: error
+[2023-04-09 18:59:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:59:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:59:40] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:59:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 18:59:41] INFO root fetch - main [MainThread]: Store serial: [17638202]
