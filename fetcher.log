@@ -3463,3 +3463,22 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:22:34] INFO root fetch - processPackages [exchange-calendars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exchange_calendars-4.2.5.tar.gz tmp/exchange_calendars-4.2.6.tar.gz --markdown 20230409/e/exchange-calendars/4.2.5-4.2.6/diff.md --exclude *.pyd
 [2023-04-09 10:22:40] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:22:40] INFO root fetch - main [MainThread]: Store serial: [17635302]
+[2023-04-09 10:27:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635302]
+[2023-04-09 10:27:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-09 10:27:47] INFO root fetch - processPackages [vandal]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-04-09 10:27:47] INFO root fetch - processPackages [kindenty-base]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 10:27:47] INFO root fetch - processPackages [test-yolo]: New version: [0.0.14] Old Version: [0.0.12]
+[2023-04-09 10:27:47] INFO root fetch - processPackages [vandal]: Downloading https://files.pythonhosted.org/packages/1e/15/9bbc30dcd1c60db1fa8c7c5192decdeea76c591b082ab9917a92c2334110/vandal-4.0.9.tar.gz
+[2023-04-09 10:27:47] INFO root fetch - processPackages [kindenty-base]: Downloading https://files.pythonhosted.org/packages/d8/f1/25fd412ec34280da66e11935b1afdf4a96d789bb145544262bc9541d69e2/kindenty_base-0.1.8.tar.gz
+[2023-04-09 10:27:47] INFO root fetch - processPackages [test-yolo]: Downloading https://files.pythonhosted.org/packages/b7/58/f07d11bb4dd89fe307153230c0a7bd1d01b3852982ee3c6a3e17fd3ed73f/test_yolo-0.0.14-py3-none-any.whl
+[2023-04-09 10:27:47] INFO root fetch - processPackages [vandal]: executing diffoscope
+[2023-04-09 10:27:47] INFO root fetch - processPackages [vandal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vandal-4.0.8.tar.gz tmp/vandal-4.0.9.tar.gz --markdown 20230409/v/vandal/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-04-09 10:27:47] INFO root fetch - processPackages [test-yolo]: executing diffoscope
+[2023-04-09 10:27:47] INFO root fetch - processPackages [test-yolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_yolo-0.0.12-py3-none-any.whl.zip tmp/test_yolo-0.0.14-py3-none-any.whl.zip --markdown 20230409/t/test-yolo/0.0.12-0.0.14/diff.md --exclude *.pyd
+[2023-04-09 10:27:47] INFO root fetch - processPackages [kindenty-base]: Downloading https://files.pythonhosted.org/packages/7e/3a/fbcbd1cbd8d43f51b059906b8c8f55792fd62ddb6409cc657177f32ac622/kindenty_base-0.1.9.tar.gz
+[2023-04-09 10:27:47] INFO root fetch - processPackages [kindenty-base]: executing diffoscope
+[2023-04-09 10:27:47] INFO root fetch - processPackages [kindenty-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kindenty_base-0.1.8.tar.gz tmp/kindenty_base-0.1.9.tar.gz --markdown 20230409/k/kindenty-base/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 10:27:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:27:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:27:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:27:49] INFO root fetch - main [MainThread]: Store serial: [17635308]
