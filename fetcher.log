@@ -9236,3 +9236,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 22:34:55] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:34:55] INFO root fetch - main [MainThread]: success
 [2023-04-09 22:34:55] INFO root fetch - main [MainThread]: Store serial: [17639448]
+[2023-04-09 22:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639448]
+[2023-04-09 22:40:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 22:40:03] INFO root fetch - processPackages [ogre-python]: New version: [13.6.4] Old Version: [13.6.3]
+[2023-04-09 22:40:03] INFO root fetch - processPackages [hds-stats]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-09 22:40:03] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 22:40:03] INFO root fetch - processPackages [pyvosklivesubtitle]: New version: [0.1.0] Old Version: [0.0.8]
+[2023-04-09 22:40:03] INFO root fetch - processPackages [ogre-python]: Downloading https://files.pythonhosted.org/packages/0b/ac/adb6ef0bd91e33b411e08131be98b04624d749c6891e5d4742b3d6e29c8a/ogre_python-13.6.3-cp310-cp310-win_amd64.whl
+[2023-04-09 22:40:03] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 22:40:03] INFO root fetch - processPackages [mongopersistence]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-09 22:40:03] WARNING root fetch - processPackages [ogre-python]: Skipping package: exceeds size limit 12209673>=10485760
+[2023-04-09 22:40:03] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:40:03] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 22:40:03] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:40:03] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 22:40:03] INFO root fetch - processPackages [graphscope]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-09 22:40:03] INFO root fetch - processPackages [hds-stats]: Downloading https://files.pythonhosted.org/packages/e9/bf/545e65a81fb9da0a02212801b5bbd086da739c67e8e4fcaf24ba47b6c919/hds-stats-0.1.4.tar.gz
+[2023-04-09 22:40:03] INFO root fetch - processPackages [pyvosklivesubtitle]: Downloading https://files.pythonhosted.org/packages/37/8b/5332abc476034596158bf5808bacdb717f69f857c0d912cdae12ac7d8dc3/pyvosklivesubtitle-0.0.8.tar.gz
+[2023-04-09 22:40:03] INFO root fetch - processPackages [hds-stats]: executing diffoscope
+[2023-04-09 22:40:03] INFO root fetch - processPackages [hds-stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hds-stats-0.1.3.tar.gz tmp/hds-stats-0.1.4.tar.gz --markdown 20230409/h/hds-stats/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 22:40:03] INFO root fetch - processPackages [mongopersistence]: Downloading https://files.pythonhosted.org/packages/3a/53/890c28784d2d89e216903b5c0d94cc456d93491b743a937192040423d8c5/mongopersistence-0.1.3.tar.gz
+[2023-04-09 22:40:03] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 22:40:03] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230409/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 22:40:03] INFO root fetch - processPackages [graphscope]: executing diffoscope
+[2023-04-09 22:40:03] INFO root fetch - processPackages [graphscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230409/g/graphscope/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-09 22:40:03] INFO root fetch - processPackages [pyvosklivesubtitle]: Downloading https://files.pythonhosted.org/packages/d3/c6/c81b66ad4db90ae640cb3038cbdb43106d600e6ed4f69d3cb60502d56835/pyvosklivesubtitle-0.1.0.tar.gz
+[2023-04-09 22:40:03] INFO root fetch - processPackages [mongopersistence]: Downloading https://files.pythonhosted.org/packages/f2/01/820e9401bc9636dc81838d77ff859c715bc170ace041d10f072dd90dec6d/mongopersistence-0.2.0.tar.gz
+[2023-04-09 22:40:03] INFO root fetch - processPackages [pyvosklivesubtitle]: executing diffoscope
+[2023-04-09 22:40:03] INFO root fetch - processPackages [pyvosklivesubtitle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvosklivesubtitle-0.0.8.tar.gz tmp/pyvosklivesubtitle-0.1.0.tar.gz --markdown 20230409/p/pyvosklivesubtitle/0.0.8-0.1.0/diff.md --exclude *.pyd
+[2023-04-09 22:40:04] INFO root fetch - processPackages [mongopersistence]: executing diffoscope
+[2023-04-09 22:40:04] INFO root fetch - processPackages [mongopersistence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongopersistence-0.1.3.tar.gz tmp/mongopersistence-0.2.0.tar.gz --markdown 20230409/m/mongopersistence/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-09 22:40:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:40:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:40:04] INFO root fetch - processPackages [vatis-asr-commons]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-09 22:40:04] WARNING root fetch - processPackages [emojichat]: Skipping, unable to determine old version
+[2023-04-09 22:40:04] INFO root fetch - main [MainThread]: error
+[2023-04-09 22:40:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:40:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:40:04] INFO root fetch - processPackages [vatis-asr-commons]: Downloading https://files.pythonhosted.org/packages/ef/ce/66bc3c80762de92221e760732b5c39ccb6156985301680256de7160db983/vatis_asr_commons-1.4.8.tar.gz
+[2023-04-09 22:40:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:40:05] INFO root fetch - processPackages [vatis-asr-commons]: Downloading https://files.pythonhosted.org/packages/e1/03/02401474336ec751533f7d2bf7d5f24448a29105ee09da86ec3c7eeb918f/vatis_asr_commons-1.4.9.tar.gz
+[2023-04-09 22:40:05] INFO root fetch - processPackages [vatis-asr-commons]: executing diffoscope
+[2023-04-09 22:40:05] INFO root fetch - processPackages [vatis-asr-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vatis_asr_commons-1.4.8.tar.gz tmp/vatis_asr_commons-1.4.9.tar.gz --markdown 20230409/v/vatis-asr-commons/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-09 22:40:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 22:40:06] INFO root fetch - main [MainThread]: Store serial: [17639479]
