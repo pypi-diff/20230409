@@ -3522,3 +3522,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 10:32:59] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:33:00] INFO root fetch - main [MainThread]: success
 [2023-04-09 10:33:00] INFO root fetch - main [MainThread]: Store serial: [17635328]
+[2023-04-09 10:38:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635328]
+[2023-04-09 10:38:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 10:38:08] INFO root fetch - processPackages [django-htmx-viewsets]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-09 10:38:08] INFO root fetch - processPackages [citros]: New version: [23.14.5] Old Version: [23.14.4]
+[2023-04-09 10:38:08] INFO root fetch - processPackages [cdk8s-image]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-09 10:38:08] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230408] Old Version: [0.0.1.dev20230407]
+[2023-04-09 10:38:08] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-09 10:38:08] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-09 10:38:08] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230409/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-09 10:38:08] INFO root fetch - processPackages [citros]: Downloading https://files.pythonhosted.org/packages/f4/38/f49a6044ae1a36f7dfd56be668073e48f64dee373e93a73cc2fd5dd829dd/citros-23.14.5.tar.gz
+[2023-04-09 10:38:08] INFO root fetch - processPackages [django-htmx-viewsets]: Downloading https://files.pythonhosted.org/packages/4a/b8/a7326045e015e52629ced822430e1184ca9a48e5240ca37812d18e943641/django-htmx-viewsets-0.0.6.tar.gz
+[2023-04-09 10:38:08] INFO root fetch - processPackages [cdk8s-image]: Downloading https://files.pythonhosted.org/packages/08/4a/4983fe97d4073731fd1258ffef45d7770c72f1de7244a05cdfe1bb68d3b0/cdk8s-image-0.2.98.tar.gz
+[2023-04-09 10:38:08] INFO root fetch - processPackages [citros]: executing diffoscope
+[2023-04-09 10:38:08] INFO root fetch - processPackages [citros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citros-23.14.4.tar.gz tmp/citros-23.14.5.tar.gz --markdown 20230409/c/citros/23.14.4-23.14.5/diff.md --exclude *.pyd
+[2023-04-09 10:38:08] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-04-09 10:38:08] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230407-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230408-py2.py3-none-any.whl.zip --markdown 20230409/t/tff-nightly/0.0.1.dev20230407-0.0.1.dev20230408/diff.md --exclude *.pyd
+[2023-04-09 10:38:08] INFO root fetch - processPackages [django-htmx-viewsets]: executing diffoscope
+[2023-04-09 10:38:08] INFO root fetch - processPackages [django-htmx-viewsets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-htmx-viewsets-0.0.5.tar.gz tmp/django-htmx-viewsets-0.0.6.tar.gz --markdown 20230409/d/django-htmx-viewsets/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-09 10:38:08] INFO root fetch - processPackages [cdk8s-image]: Downloading https://files.pythonhosted.org/packages/fb/19/ce87f85995849eec0b27665fe8c6c59e225f2d99370b1c068893ad31c698/cdk8s-image-0.2.99.tar.gz
+[2023-04-09 10:38:08] INFO root fetch - processPackages [cdk8s-image]: executing diffoscope
+[2023-04-09 10:38:08] INFO root fetch - processPackages [cdk8s-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-image-0.2.98.tar.gz tmp/cdk8s-image-0.2.99.tar.gz --markdown 20230409/c/cdk8s-image/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-09 10:38:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:38:09] INFO root fetch - processPackages [databutton]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-09 10:38:09] INFO root fetch - processPackages [databutton]: Downloading https://files.pythonhosted.org/packages/97/e4/e81aa45e6614cc27e77afdc05bda0df053f47af67b7f10dd3fa7e90977bf/databutton-0.9.1.tar.gz
+[2023-04-09 10:38:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:38:09] INFO root fetch - processPackages [apysc]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-09 10:38:09] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:38:10] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2023-04-09 10:38:10] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-2.7.8.tar.gz tmp/apysc-2.7.9.tar.gz --markdown 20230409/a/apysc/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-09 10:38:10] INFO root fetch - processPackages [databutton]: Downloading https://files.pythonhosted.org/packages/5c/59/3ecc3881c8c0088b35a444d0208f992442d429068966d08be417ede43a72/databutton-0.9.2.tar.gz
+[2023-04-09 10:38:10] INFO root fetch - processPackages [databutton]: executing diffoscope
+[2023-04-09 10:38:10] INFO root fetch - processPackages [databutton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databutton-0.9.1.tar.gz tmp/databutton-0.9.2.tar.gz --markdown 20230409/d/databutton/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-09 10:38:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:38:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:38:11] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:38:18] INFO root fetch - main [MainThread]: success
+[2023-04-09 10:38:18] INFO root fetch - main [MainThread]: Store serial: [17635347]
