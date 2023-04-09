@@ -4486,3 +4486,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:09:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:09:13] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:09:13] INFO root fetch - main [MainThread]: Store serial: [17636089]
+[2023-04-09 13:14:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636089]
+[2023-04-09 13:14:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 13:14:21] WARNING root fetch - processPackages [volha-reader]: Skipping, unable to determine old version
+[2023-04-09 13:14:21] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:14:21] INFO root fetch - processPackages [reacher]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-09 13:14:21] INFO root fetch - processPackages [mdapy]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-04-09 13:14:21] WARNING root fetch - processPackages [bloxlib]: Skipping, unable to determine old version
+[2023-04-09 13:14:21] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:14:21] INFO root fetch - processPackages [df-permission]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-09 13:14:21] INFO root fetch - processPackages [reacher]: Downloading https://files.pythonhosted.org/packages/00/ec/7bd1c7e7824076465da7519aa7da0f04d24ac602ba7d55d676558ad44108/reacher-0.3.3-py2.py3-none-any.whl
+[2023-04-09 13:14:21] INFO root fetch - processPackages [mdapy]: Downloading https://files.pythonhosted.org/packages/c5/c5/894d06011134cd208f37cde1a4d2395b4ab687ea6c07352f2c624e187d82/mdapy-0.8.4-cp39-cp39-win_amd64.whl
+[2023-04-09 13:14:21] INFO root fetch - processPackages [df-permission]: Downloading https://files.pythonhosted.org/packages/bc/b7/dd0c5a9016f4ce6eb2b771b066c3ca9e99f6168d1cc20ea6d934dfdc05df/df-permission-0.1.8.tar.gz
+[2023-04-09 13:14:21] INFO root fetch - processPackages [df-permission]: executing diffoscope
+[2023-04-09 13:14:21] INFO root fetch - processPackages [df-permission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df-permission-0.1.7.tar.gz tmp/df-permission-0.1.8.tar.gz --markdown 20230409/d/df-permission/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-09 13:14:21] INFO root fetch - processPackages [mdapy]: Downloading https://files.pythonhosted.org/packages/3b/b4/0c2318538e96e10e5c5f4fbcbfd350abeec08c6682d020ca31ab8758456f/mdapy-0.8.5-cp39-cp39-win_amd64.whl
+[2023-04-09 13:14:21] INFO root fetch - processPackages [reacher]: Downloading https://files.pythonhosted.org/packages/21/74/01ea800163e5a90edf9ff9829f2b80f4312bf22bf2aed5fb26f94230dbc1/reacher-0.3.4-py2.py3-none-any.whl
+[2023-04-09 13:14:21] INFO root fetch - processPackages [mdapy]: executing diffoscope
+[2023-04-09 13:14:21] INFO root fetch - processPackages [mdapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdapy-0.8.4-cp39-cp39-win_amd64.whl.zip tmp/mdapy-0.8.5-cp39-cp39-win_amd64.whl.zip --markdown 20230409/m/mdapy/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-04-09 13:14:21] INFO root fetch - processPackages [reacher]: executing diffoscope
+[2023-04-09 13:14:21] INFO root fetch - processPackages [reacher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reacher-0.3.3-py2.py3-none-any.whl.zip tmp/reacher-0.3.4-py2.py3-none-any.whl.zip --markdown 20230409/r/reacher/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-09 13:14:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:14:22] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:14:23] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:14:23] INFO root fetch - main [MainThread]: Store serial: [17636117]
