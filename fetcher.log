@@ -4819,3 +4819,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:40:31] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:40:33] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:40:33] INFO root fetch - main [MainThread]: Store serial: [17636288]
+[2023-04-09 13:45:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636288]
+[2023-04-09 13:45:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-09 13:45:40] INFO root fetch - processPackages [margument]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-09 13:45:40] INFO root fetch - processPackages [gigapixel]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-09 13:45:41] INFO root fetch - processPackages [margument]: Downloading https://files.pythonhosted.org/packages/b5/ed/97ec055e5c9e0fea4be7aa83b99dadb07a0c59ceae86c32c785ad49549bb/margument-1.0.3.tar.gz
+[2023-04-09 13:45:41] INFO root fetch - processPackages [gigapixel]: Downloading https://files.pythonhosted.org/packages/f5/8c/46542244a0437a30bda17f9305ec36c4e78a340134f85b086495ce7d1e8c/gigapixel-1.2.0.tar.gz
+[2023-04-09 13:45:41] INFO root fetch - processPackages [gigapixel]: Downloading https://files.pythonhosted.org/packages/42/a6/2caebb02bf2e20a17211694b1da24a36cd6d2b3373f94e8866e2303a82e1/gigapixel-1.3.0.tar.gz
+[2023-04-09 13:45:41] INFO root fetch - processPackages [margument]: Downloading https://files.pythonhosted.org/packages/f3/d5/5f5cb50d2258c671f7cd70b2c5e5cdc20e625b051b08081e34ef564a6264/margument-1.1.0.tar.gz
+[2023-04-09 13:45:41] INFO root fetch - processPackages [gigapixel]: executing diffoscope
+[2023-04-09 13:45:41] INFO root fetch - processPackages [gigapixel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gigapixel-1.2.0.tar.gz tmp/gigapixel-1.3.0.tar.gz --markdown 20230409/g/gigapixel/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-09 13:45:41] INFO root fetch - processPackages [margument]: executing diffoscope
+[2023-04-09 13:45:41] INFO root fetch - processPackages [margument]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/margument-1.0.3.tar.gz tmp/margument-1.1.0.tar.gz --markdown 20230409/m/margument/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-09 13:45:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:45:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:45:42] INFO root fetch - main [MainThread]: Store serial: [17636301]
