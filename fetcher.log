@@ -4866,3 +4866,61 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:50:51] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:50:52] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:50:52] INFO root fetch - main [MainThread]: Store serial: [17636329]
+[2023-04-09 13:55:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636329]
+[2023-04-09 13:55:59] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-09 13:55:59] INFO root fetch - processPackages [kaflow]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-04-09 13:55:59] INFO root fetch - processPackages [torcheval-nightly]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-09 13:55:59] INFO root fetch - processPackages [nonebot-desktop-wing]: New version: [0.1.4] Old Version: [0.1.1]
+[2023-04-09 13:55:59] INFO root fetch - processPackages [pysmells]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-09 13:55:59] INFO root fetch - processPackages [margument]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-09 13:55:59] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2023-04-09 13:55:59] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2023.4.7.tar.gz tmp/torcheval-nightly-2023.4.8.tar.gz --markdown 20230409/t/torcheval-nightly/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-09 13:55:59] INFO root fetch - processPackages [kaflow]: Downloading https://files.pythonhosted.org/packages/6e/c0/fe487f9a92a8e0d9cfe00a61113e6252ae565afe68ee6a765cab6fdf9de9/kaflow-0.0.2.tar.gz
+[2023-04-09 13:55:59] INFO root fetch - processPackages [pysmells]: Downloading https://files.pythonhosted.org/packages/b9/86/32fb2bb8d94c9dfb2de40f7baba489522ce1703e7682efb58f5948b202ea/pysmells-1.0.6.tar.gz
+[2023-04-09 13:55:59] INFO root fetch - processPackages [nonebot-desktop-wing]: Downloading https://files.pythonhosted.org/packages/0b/de/b48cbcb0034c8af9f2c3eebd6abbaf0f45c14c8a9ee6946385ba14134b55/nonebot-desktop-wing-0.1.4.tar.gz
+[2023-04-09 13:55:59] INFO root fetch - processPackages [pysmells]: executing diffoscope
+[2023-04-09 13:55:59] INFO root fetch - processPackages [pysmells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysmells-1.0.5.tar.gz tmp/pysmells-1.0.6.tar.gz --markdown 20230409/p/pysmells/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-09 13:55:59] INFO root fetch - processPackages [margument]: Downloading https://files.pythonhosted.org/packages/fb/d5/2d6b01b0575e6fb915189532ee710f263c0bd5a7e1caa03a22cb01b0f5fd/margument-1.1.1.tar.gz
+[2023-04-09 13:55:59] INFO root fetch - processPackages [nonebot-desktop-wing]: executing diffoscope
+[2023-04-09 13:55:59] INFO root fetch - processPackages [nonebot-desktop-wing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-desktop-wing-0.1.1.tar.gz tmp/nonebot-desktop-wing-0.1.4.tar.gz --markdown 20230409/n/nonebot-desktop-wing/0.1.1-0.1.4/diff.md --exclude *.pyd
+[2023-04-09 13:55:59] INFO root fetch - processPackages [margument]: executing diffoscope
+[2023-04-09 13:55:59] INFO root fetch - processPackages [margument]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/margument-1.1.0.tar.gz tmp/margument-1.1.1.tar.gz --markdown 20230409/m/margument/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-09 13:55:59] INFO root fetch - processPackages [kaflow]: Downloading https://files.pythonhosted.org/packages/b1/51/c3831a6db58edc8b18ff1d7f4eac07f5727ed97227e91194ae6ff1419dcf/kaflow-0.1.0.tar.gz
+[2023-04-09 13:56:00] INFO root fetch - processPackages [kaflow]: executing diffoscope
+[2023-04-09 13:56:00] INFO root fetch - processPackages [kaflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaflow-0.0.2.tar.gz tmp/kaflow-0.1.0.tar.gz --markdown 20230409/k/kaflow/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-04-09 13:56:00] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:00] INFO root fetch - processPackages [metaseg]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-09 13:56:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:01] INFO root fetch - processPackages [oidc-jwt-validation]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-09 13:56:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:01] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/c2/7f/a7661174e76ead9d344754a6d2ea1ebc3e95fde005c5e2f087eed0082017/metaseg-0.3.4.tar.gz
+[2023-04-09 13:56:01] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-09 13:56:01] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.3.3.tar.gz tmp/metaseg-0.3.4.tar.gz --markdown 20230409/m/metaseg/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-09 13:56:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:01] INFO root fetch - processPackages [dxsp]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 13:56:01] INFO root fetch - processPackages [oidc-jwt-validation]: Downloading https://files.pythonhosted.org/packages/4a/66/2f37927b1b57be4ee8c4b17646da084eac1c75a08a69a7ef2af6c64ffe1f/oidc-jwt-validation-0.3.1.tar.gz
+[2023-04-09 13:56:01] INFO root fetch - processPackages [oidc-jwt-validation]: executing diffoscope
+[2023-04-09 13:56:01] INFO root fetch - processPackages [oidc-jwt-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oidc-jwt-validation-0.3.0.tar.gz tmp/oidc-jwt-validation-0.3.1.tar.gz --markdown 20230409/o/oidc-jwt-validation/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-09 13:56:01] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-09 13:56:01] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.2.tar.gz tmp/dxsp-0.0.3.tar.gz --markdown 20230409/d/dxsp/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 13:56:01] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:01] INFO root fetch - processPackages [bigdl-nano]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 13:56:01] INFO root fetch - processPackages [tts-arranger]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-09 13:56:01] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/ed/af/7030ead47ca99608baa93f7228bd6be3f2483145d3d99605b3904305684e/tts_arranger-0.0.3.tar.gz
+[2023-04-09 13:56:01] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/b9/7c/3a53dbe306e8939511f54ec6474f6bd0fc4130e7c0b51e504f60b2639d16/bigdl_nano-2.3.0b20230409-py3-none-win_amd64.whl
+[2023-04-09 13:56:02] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/a4/4c/fb048b88ed929c2e01b4f8b896d0cf18f9503da30b1a983134e11f3b9b51/tts_arranger-0.0.4.tar.gz
+[2023-04-09 13:56:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:02] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.3.0b20230409] Old Version: [2.3.0b20230408]
+[2023-04-09 13:56:03] INFO root fetch - processPackages [tts-arranger]: executing diffoscope
+[2023-04-09 13:56:03] INFO root fetch - processPackages [tts-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tts_arranger-0.0.3.tar.gz tmp/tts_arranger-0.0.4.tar.gz --markdown 20230409/t/tts-arranger/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-09 13:56:03] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/43/60/4e3d7965551fd2b6c89fb58ed55587fbf17a155438ba2b8da7c6faec2171/bigdl_chronos-2.3.0b20230409-py3-none-win_amd64.whl
+[2023-04-09 13:56:03] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-09 13:56:03] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.3.0b20230408-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.3.0b20230409-py3-none-win_amd64.whl.zip --markdown 20230409/b/bigdl-chronos/2.3.0b20230408-2.3.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 13:56:03] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-04-09 13:56:03] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.3.0b20230408-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.3.0b20230409-py3-none-win_amd64.whl.zip --markdown 20230409/b/bigdl-nano/2.3.0b20230408-2.3.0b20230409/diff.md --exclude *.pyd
+[2023-04-09 13:56:05] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:56:06] INFO root fetch - main [MainThread]: Store serial: [17636358]
