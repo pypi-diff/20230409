@@ -5646,3 +5646,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 15:43:34] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:43:37] INFO root fetch - main [MainThread]: success
 [2023-04-09 15:43:37] INFO root fetch - main [MainThread]: Store serial: [17636951]
+[2023-04-09 15:48:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636951]
+[2023-04-09 15:48:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 15:48:44] INFO root fetch - processPackages [clearml-agent]: New version: [1.5.3rc0] Old Version: [1.5.2rc9]
+[2023-04-09 15:48:44] INFO root fetch - processPackages [arraytool]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-09 15:48:44] WARNING root fetch - processPackages [jacktrade]: Skipping, unable to determine old version
+[2023-04-09 15:48:44] INFO root fetch - processPackages [jit-env]: New version: [0.0.dev0] Old Version: [0.0.1a0]
+[2023-04-09 15:48:44] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:48:44] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 15:48:45] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 15:48:45] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 15:48:45] INFO root fetch - main [MainThread]: error
+[2023-04-09 15:48:45] INFO root fetch - processPackages [jit-env]: Downloading https://files.pythonhosted.org/packages/06/bf/dc1e1120c8da115b4e899ae22e7ee0b0d170f4482bb5d2392ee90205162c/jit_env-0.0.1a0.tar.gz
+[2023-04-09 15:48:45] INFO root fetch - processPackages [arraytool]: Downloading https://files.pythonhosted.org/packages/62/92/11c7c80c33c4a1bed9aa6bda973e70234f3f419d08f91f0fc8e1a139fc54/arraytool-0.1.4.tar.gz
+[2023-04-09 15:48:45] INFO root fetch - processPackages [clearml-agent]: Downloading https://files.pythonhosted.org/packages/4c/79/7206052b08598d3f20c5f2854d3495f9facdb908a890d354b524975e9c0e/clearml_agent-1.5.2rc9-py3-none-any.whl
+[2023-04-09 15:48:45] INFO root fetch - processPackages [arraytool]: Downloading https://files.pythonhosted.org/packages/b1/ce/0f28cdef7b0bbb695f2ba0c1ce987b37cd02cc23f3c0d3ec02548914b306/arraytool-0.1.5.tar.gz
+[2023-04-09 15:48:45] INFO root fetch - processPackages [jit-env]: Downloading https://files.pythonhosted.org/packages/a7/2f/5ecae6a3a0f6d56b3c33d9fdb398ab31e39bfd5c96637561bd4a9987830a/jit_env-0.0.dev0.tar.gz
+[2023-04-09 15:48:45] INFO root fetch - processPackages [clearml-agent]: Downloading https://files.pythonhosted.org/packages/77/ec/9d6f77d309e3471e4bf215e4d353761a2e17dd0b194df97b8aef94bfee50/clearml_agent-1.5.3rc0-py3-none-any.whl
+[2023-04-09 15:48:45] INFO root fetch - processPackages [jit-env]: executing diffoscope
+[2023-04-09 15:48:45] INFO root fetch - processPackages [jit-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jit_env-0.0.1a0.tar.gz tmp/jit_env-0.0.dev0.tar.gz --markdown 20230409/j/jit-env/0.0.1a0-0.0.dev0/diff.md --exclude *.pyd
+[2023-04-09 15:48:45] INFO root fetch - processPackages [arraytool]: executing diffoscope
+[2023-04-09 15:48:45] INFO root fetch - processPackages [arraytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraytool-0.1.4.tar.gz tmp/arraytool-0.1.5.tar.gz --markdown 20230409/a/arraytool/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-09 15:48:46] INFO root fetch - processPackages [clearml-agent]: executing diffoscope
+[2023-04-09 15:48:46] INFO root fetch - processPackages [clearml-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clearml_agent-1.5.2rc9-py3-none-any.whl.zip tmp/clearml_agent-1.5.3rc0-py3-none-any.whl.zip --markdown 20230409/c/clearml-agent/1.5.2rc9-1.5.3rc0/diff.md --exclude *.pyd
+[2023-04-09 15:48:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:48:46] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:48:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 15:48:48] INFO root fetch - main [MainThread]: Store serial: [17636968]
