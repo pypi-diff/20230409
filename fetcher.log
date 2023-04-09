@@ -5797,3 +5797,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 16:05:14] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:05:15] INFO root fetch - main [MainThread]: success
 [2023-04-09 16:05:15] INFO root fetch - main [MainThread]: Store serial: [17637041]
+[2023-04-09 16:10:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637041]
+[2023-04-09 16:10:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-09 16:10:23] INFO root fetch - processPackages [piScope]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-09 16:10:23] INFO root fetch - processPackages [gsoup]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-09 16:10:23] INFO root fetch - processPackages [nutikacompile]: New version: [0.12] Old Version: [0.11]
+[2023-04-09 16:10:23] INFO root fetch - processPackages [weaviate-client]: New version: [3.9.0b0] Old Version: [3.9.0.dev2]
+[2023-04-09 16:10:23] INFO root fetch - processPackages [dmp3]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-09 16:10:24] INFO root fetch - processPackages [weaviate-client]: Downloading https://files.pythonhosted.org/packages/a8/cb/8ca3061906481a9a6997baefa6ecc800dcaed0f08e1c84c55c609182fe2b/weaviate-client-3.9.0.dev2.tar.gz
+[2023-04-09 16:10:24] INFO root fetch - processPackages [gsoup]: Downloading https://files.pythonhosted.org/packages/fc/f9/71b6e9b5192ab501414d2f58b9238aef98d77a92041c73f0d4ee8623c3fa/gsoup-0.0.7.tar.gz
+[2023-04-09 16:10:24] INFO root fetch - processPackages [nutikacompile]: Downloading https://files.pythonhosted.org/packages/98/8e/6e7f50c5f1be3370cb3a2851ca49d02e0501ce1893584753056f68a69627/nutikacompile-0.12.tar.gz
+[2023-04-09 16:10:24] INFO root fetch - processPackages [piScope]: Downloading https://files.pythonhosted.org/packages/c0/f6/6d8d3aa912dee4e9ada3a02c24c5b078072f604ea379a2e388651b5f58c6/piScope-1.0.9.tar.gz
+[2023-04-09 16:10:24] INFO root fetch - processPackages [nutikacompile]: executing diffoscope
+[2023-04-09 16:10:24] INFO root fetch - processPackages [nutikacompile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nutikacompile-0.11.tar.gz tmp/nutikacompile-0.12.tar.gz --markdown 20230409/n/nutikacompile/0.11-0.12/diff.md --exclude *.pyd
+[2023-04-09 16:10:24] INFO root fetch - processPackages [dmp3]: Downloading https://files.pythonhosted.org/packages/a3/dd/cee15859eb7e8f9efb4c5e86035c6374cf9e6d8f52ef673983d910b83333/dmp3-0.0.7.tar.gz
+[2023-04-09 16:10:24] INFO root fetch - processPackages [gsoup]: Downloading https://files.pythonhosted.org/packages/fe/9b/153b9913a4b567dd9c8edbb5268c5f168d4c0e71be7650cc2e24097fe2ee/gsoup-0.0.8.tar.gz
+[2023-04-09 16:10:24] INFO root fetch - processPackages [weaviate-client]: Downloading https://files.pythonhosted.org/packages/10/6b/0e242b95dd9ee12ed89f4af97e7bd0c82317c708e5a1de27406f7832d4e2/weaviate-client-3.9.0b0.tar.gz
+[2023-04-09 16:10:24] INFO root fetch - processPackages [dmp3]: executing diffoscope
+[2023-04-09 16:10:24] INFO root fetch - processPackages [dmp3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmp3-0.0.6.tar.gz tmp/dmp3-0.0.7.tar.gz --markdown 20230409/d/dmp3/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-09 16:10:24] INFO root fetch - processPackages [gsoup]: executing diffoscope
+[2023-04-09 16:10:24] INFO root fetch - processPackages [gsoup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gsoup-0.0.7.tar.gz tmp/gsoup-0.0.8.tar.gz --markdown 20230409/g/gsoup/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-09 16:10:24] INFO root fetch - processPackages [weaviate-client]: executing diffoscope
+[2023-04-09 16:10:24] INFO root fetch - processPackages [weaviate-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weaviate-client-3.9.0.dev2.tar.gz tmp/weaviate-client-3.9.0b0.tar.gz --markdown 20230409/w/weaviate-client/3.9.0.dev2-3.9.0b0/diff.md --exclude *.pyd
+[2023-04-09 16:10:25] INFO root fetch - processPackages [piScope]: executing diffoscope
+[2023-04-09 16:10:25] INFO root fetch - processPackages [piScope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piScope-1.0.8.tar.gz tmp/piScope-1.0.9.tar.gz --markdown 20230409/p/piScope/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-09 16:10:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:10:25] INFO root fetch - processPackages [fastencode]: New version: [1.1] Old Version: [1.0]
+[2023-04-09 16:10:25] INFO root fetch - processPackages [fastencode]: Downloading https://files.pythonhosted.org/packages/9b/bc/3710d22dc9d635aecc27b20c653f412527c6b422a2e8de20b7483ef01ba8/fastencode-1.0.tar.gz
+[2023-04-09 16:10:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:10:25] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:10:26] INFO root fetch - processPackages [fastencode]: Downloading https://files.pythonhosted.org/packages/e6/a5/a36f1c1a46ee03098b32afd0c9de3a5ba3156acc0c6085e12ba802fb7052/fastencode-1.1.tar.gz
+[2023-04-09 16:10:26] INFO root fetch - processPackages [fastencode]: executing diffoscope
+[2023-04-09 16:10:26] INFO root fetch - processPackages [fastencode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastencode-1.0.tar.gz tmp/fastencode-1.1.tar.gz --markdown 20230409/f/fastencode/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-09 16:10:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:10:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:10:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 16:10:32] INFO root fetch - main [MainThread]: Store serial: [17637058]
