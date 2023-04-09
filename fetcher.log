@@ -2525,3 +2525,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 08:00:52] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:00:52] INFO root fetch - main [MainThread]: success
 [2023-04-09 08:00:52] INFO root fetch - main [MainThread]: Store serial: [17634651]
+[2023-04-09 08:05:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634651]
+[2023-04-09 08:06:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 08:06:00] WARNING root fetch - processPackages [langchain-utils]: Skipping, unable to determine old version
+[2023-04-09 08:06:00] INFO root fetch - main [MainThread]: error
+[2023-04-09 08:06:00] INFO root fetch - processPackages [parsimonious-lite]: New version: [0.8.0] Old Version: [0.11.0]
+[2023-04-09 08:06:00] INFO root fetch - processPackages [ml-starter]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 08:06:00] INFO root fetch - processPackages [riyazi]: New version: [0.16] Old Version: [0.15]
+[2023-04-09 08:06:00] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230408] Old Version: [2.4.0.dev20230407]
+[2023-04-09 08:06:00] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-04-09 08:06:00] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.8.tar.gz tmp/ml-starter-0.0.9.tar.gz --markdown 20230409/m/ml-starter/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 08:06:00] INFO root fetch - processPackages [parsimonious-lite]: Downloading https://files.pythonhosted.org/packages/6b/8a/a8af5f9a7cfdecae1a22dc5e818438c954b05a1deb7907696490c9d68706/parsimonious-lite-0.11.0.tar.gz
+[2023-04-09 08:06:01] INFO root fetch - processPackages [riyazi]: Downloading https://files.pythonhosted.org/packages/12/f1/81b3478f4df0a6a08146ac1a3b27d097b4afe0dcd90520c61ccfa729398e/riyazi-0.15-py3-none-any.whl
+[2023-04-09 08:06:01] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/49/06/451b4a1ce8197a1e6a84a5b9277e0bac01d6da2a561634a931bdc2d5b261/pyg-nightly-2.4.0.dev20230408.tar.gz
+[2023-04-09 08:06:01] INFO root fetch - processPackages [riyazi]: Downloading https://files.pythonhosted.org/packages/3d/e0/b569f216f6f341061cfff24de95a12c12fd31541f1a0792f4ef8f1680819/riyazi-0.16-py3-none-any.whl
+[2023-04-09 08:06:01] INFO root fetch - processPackages [parsimonious-lite]: Downloading https://files.pythonhosted.org/packages/19/cc/4990ed7f619c6a23af0d33ffabcd59dd5eb40e3ccc3d6a31ff270a6fea95/parsimonious-lite-0.8.0.tar.gz
+[2023-04-09 08:06:01] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-09 08:06:01] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230407.tar.gz tmp/pyg-nightly-2.4.0.dev20230408.tar.gz --markdown 20230409/p/pyg-nightly/2.4.0.dev20230407-2.4.0.dev20230408/diff.md --exclude *.pyd
+[2023-04-09 08:06:01] INFO root fetch - processPackages [parsimonious-lite]: executing diffoscope
+[2023-04-09 08:06:01] INFO root fetch - processPackages [parsimonious-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsimonious-lite-0.11.0.tar.gz tmp/parsimonious-lite-0.8.0.tar.gz --markdown 20230409/p/parsimonious-lite/0.11.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-09 08:06:01] INFO root fetch - processPackages [riyazi]: executing diffoscope
+[2023-04-09 08:06:01] INFO root fetch - processPackages [riyazi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riyazi-0.15-py3-none-any.whl.zip tmp/riyazi-0.16-py3-none-any.whl.zip --markdown 20230409/r/riyazi/0.15-0.16/diff.md --exclude *.pyd
+[2023-04-09 08:06:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:06:02] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:06:04] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:06:06] INFO root fetch - main [MainThread]: success
+[2023-04-09 08:06:06] INFO root fetch - main [MainThread]: Store serial: [17634699]
