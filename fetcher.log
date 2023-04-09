@@ -4510,3 +4510,23 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:14:22] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:14:23] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:14:23] INFO root fetch - main [MainThread]: Store serial: [17636117]
+[2023-04-09 13:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636117]
+[2023-04-09 13:19:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 13:19:30] INFO root fetch - processPackages [k-amino.py]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-09 13:19:30] WARNING root fetch - processPackages [arrendatools-ipc]: Skipping, unable to determine old version
+[2023-04-09 13:19:30] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:19:30] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.8] Old Version: [2023.4.7]
+[2023-04-09 13:19:30] WARNING root fetch - processPackages [aioantipublic]: Skipping, unable to determine old version
+[2023-04-09 13:19:30] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:19:30] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-04-09 13:19:30] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-09 13:19:30] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.7.tar.gz tmp/torchtnt-nightly-2023.4.8.tar.gz --markdown 20230409/t/torchtnt-nightly/2023.4.7-2023.4.8/diff.md --exclude *.pyd
+[2023-04-09 13:19:30] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-04-09 13:19:30] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230409/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-04-09 13:19:30] INFO root fetch - processPackages [k-amino.py]: Downloading https://files.pythonhosted.org/packages/a9/4c/147763afb28c723e477c48809458eba19017f382d1b9633a095a99f244b4/k-amino.py-1.1.2.tar.gz
+[2023-04-09 13:19:31] INFO root fetch - processPackages [k-amino.py]: executing diffoscope
+[2023-04-09 13:19:31] INFO root fetch - processPackages [k-amino.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/k-amino.py-1.1.1.tar.gz tmp/k-amino.py-1.1.2.tar.gz --markdown 20230409/k/k-amino.py/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-09 13:19:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:19:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:19:37] INFO root fetch - main [MainThread]: Store serial: [17636134]
