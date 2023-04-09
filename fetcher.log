@@ -2474,3 +2474,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 07:50:31] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.4.4.tar.gz tmp/nonebot_plugin_l4d2_server-0.4.5.tar.gz --markdown 20230409/n/nonebot-plugin-l4d2-server/0.4.4-0.4.5/diff.md --exclude *.pyd
 [2023-04-09 07:50:33] INFO root fetch - main [MainThread]: success
 [2023-04-09 07:50:33] INFO root fetch - main [MainThread]: Store serial: [17634583]
+[2023-04-09 07:55:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17634583]
+[2023-04-09 07:55:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-09 07:55:40] INFO root fetch - processPackages [pynecone]: New version: [0.1.22a0] Old Version: [0.1.21a0]
+[2023-04-09 07:55:40] WARNING root fetch - processPackages [nlterm]: Skipping, unable to determine old version
+[2023-04-09 07:55:40] INFO root fetch - main [MainThread]: error
+[2023-04-09 07:55:40] INFO root fetch - processPackages [lsHotword]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-09 07:55:40] INFO root fetch - processPackages [pynecone]: Downloading https://files.pythonhosted.org/packages/95/4c/9cc1ff7b214a1b72caf590462901b522bb543cabd58d69cf7501e853255c/pynecone-0.1.21a0.tar.gz
+[2023-04-09 07:55:40] INFO root fetch - processPackages [lsHotword]: Downloading https://files.pythonhosted.org/packages/73/bc/024fd23517bc4ead15e01fddcaad9e9a916191d3313c2cd2e5e7d722b9ea/lsHotword-1.2.2.tar.gz
+[2023-04-09 07:55:40] INFO root fetch - processPackages [pynecone]: Downloading https://files.pythonhosted.org/packages/77/ad/191a72f595668c8d644b811bd3ca543af598023db095c3e5577b08225251/pynecone-0.1.22a0.tar.gz
+[2023-04-09 07:55:41] INFO root fetch - processPackages [lsHotword]: Downloading https://files.pythonhosted.org/packages/3f/c5/a0adbf40172d134ac1b54faf1598e07c14604b120bcd7e54dcf467702079/lsHotword-1.2.3.tar.gz
+[2023-04-09 07:55:41] INFO root fetch - processPackages [lsHotword]: executing diffoscope
+[2023-04-09 07:55:41] INFO root fetch - processPackages [lsHotword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsHotword-1.2.2.tar.gz tmp/lsHotword-1.2.3.tar.gz --markdown 20230409/l/lsHotword/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-09 07:55:41] INFO root fetch - processPackages [pynecone]: executing diffoscope
+[2023-04-09 07:55:41] INFO root fetch - processPackages [pynecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynecone-0.1.21a0.tar.gz tmp/pynecone-0.1.22a0.tar.gz --markdown 20230409/p/pynecone/0.1.21a0-0.1.22a0/diff.md --exclude *.pyd
+[2023-04-09 07:55:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:55:42] INFO root fetch - main [MainThread]: success
+[2023-04-09 07:55:42] INFO root fetch - main [MainThread]: Store serial: [17634595]
