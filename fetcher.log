@@ -8791,3 +8791,19 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 21:32:07] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:32:07] INFO root fetch - main [MainThread]: success
 [2023-04-09 21:32:07] INFO root fetch - main [MainThread]: Store serial: [17639059]
+[2023-04-09 21:37:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639059]
+[2023-04-09 21:37:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-09 21:37:15] INFO root fetch - processPackages [connectome]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-04-09 21:37:15] INFO root fetch - processPackages [pygwalker]: New version: [0.1.7a3] Old Version: [0.1.7a2]
+[2023-04-09 21:37:15] WARNING root fetch - processPackages [DataStructuresLiamTheodore]: Skipping, unable to determine old version
+[2023-04-09 21:37:15] INFO root fetch - main [MainThread]: error
+[2023-04-09 21:37:15] INFO root fetch - processPackages [connectome]: Downloading https://files.pythonhosted.org/packages/0e/23/9ee35c09f921dad80c08ef6638b1668dd2bec48ec485031508fe5ddc60e1/connectome-0.5.1.tar.gz
+[2023-04-09 21:37:15] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/1e/52/1ac10ae4d320804d02e153d89654e68152cf3181148d8842adc1e40335c6/pygwalker-0.1.7a3.tar.gz
+[2023-04-09 21:37:15] INFO root fetch - processPackages [connectome]: Downloading https://files.pythonhosted.org/packages/c3/7e/76c1a949a14fa4ce1c4c12644d290664ded0b53f4a8e5d47ee7ea30cfbeb/connectome-0.6.0.tar.gz
+[2023-04-09 21:37:15] INFO root fetch - processPackages [pygwalker]: executing diffoscope
+[2023-04-09 21:37:15] INFO root fetch - processPackages [pygwalker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygwalker-0.1.7a2.tar.gz tmp/pygwalker-0.1.7a3.tar.gz --markdown 20230409/p/pygwalker/0.1.7a2-0.1.7a3/diff.md --exclude *.pyd
+[2023-04-09 21:37:16] INFO root fetch - processPackages [connectome]: executing diffoscope
+[2023-04-09 21:37:16] INFO root fetch - processPackages [connectome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome-0.5.1.tar.gz tmp/connectome-0.6.0.tar.gz --markdown 20230409/c/connectome/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-04-09 21:37:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:37:17] INFO root fetch - main [MainThread]: success
+[2023-04-09 21:37:17] INFO root fetch - main [MainThread]: Store serial: [17639067]
