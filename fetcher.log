@@ -4463,3 +4463,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:04:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:04:03] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:04:03] INFO root fetch - main [MainThread]: Store serial: [17636075]
+[2023-04-09 13:09:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636075]
+[2023-04-09 13:09:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 13:09:10] INFO root fetch - processPackages [pooled-pika]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-09 13:09:10] WARNING root fetch - processPackages [aiohelpersms]: Skipping, unable to determine old version
+[2023-04-09 13:09:10] INFO root fetch - processPackages [selenium-injector]: New version: [1.1] Old Version: [1.0.2]
+[2023-04-09 13:09:10] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:09:10] INFO root fetch - processPackages [phasty]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-09 13:09:10] INFO root fetch - processPackages [pooled-pika]: Downloading https://files.pythonhosted.org/packages/2c/17/0782ffd1b1bb8d5159f2b232581afd2458bbb8228f9fcf334ac60f422fdb/pooled-pika-0.2.1.tar.gz
+[2023-04-09 13:09:10] INFO root fetch - processPackages [selenium-injector]: Downloading https://files.pythonhosted.org/packages/f4/76/376f36853b72e622e827493c92378414e5655cf7c86c242cae2d02f814d4/selenium_injector-1.0.2.tar.gz
+[2023-04-09 13:09:10] INFO root fetch - processPackages [phasty]: Downloading https://files.pythonhosted.org/packages/02/df/94e935459ec37183f184a51de4a2997228965bbeeae73bf0e0a1ffa5f284/phasty-0.5.0.tar.gz
+[2023-04-09 13:09:11] INFO root fetch - processPackages [selenium-injector]: Downloading https://files.pythonhosted.org/packages/9f/d2/46597ae1b98a07d43ab1306d38e4757b8b558f7ba4b3f936eea7bf729964/selenium_injector-1.1.tar.gz
+[2023-04-09 13:09:11] INFO root fetch - processPackages [pooled-pika]: Downloading https://files.pythonhosted.org/packages/7b/80/1e174cd913c378a338e862ae8a7f3e69c688119095a485732cefd532d3ae/pooled-pika-0.3.0.tar.gz
+[2023-04-09 13:09:11] INFO root fetch - processPackages [phasty]: Downloading https://files.pythonhosted.org/packages/a1/77/1873932ed978e28409f370cbd203649c90f06ff1db01a097d191b296f6c0/phasty-0.5.1.tar.gz
+[2023-04-09 13:09:11] INFO root fetch - processPackages [pooled-pika]: executing diffoscope
+[2023-04-09 13:09:11] INFO root fetch - processPackages [pooled-pika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pooled-pika-0.2.1.tar.gz tmp/pooled-pika-0.3.0.tar.gz --markdown 20230409/p/pooled-pika/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-09 13:09:11] INFO root fetch - processPackages [selenium-injector]: executing diffoscope
+[2023-04-09 13:09:11] INFO root fetch - processPackages [selenium-injector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium_injector-1.0.2.tar.gz tmp/selenium_injector-1.1.tar.gz --markdown 20230409/s/selenium-injector/1.0.2-1.1/diff.md --exclude *.pyd
+[2023-04-09 13:09:11] INFO root fetch - processPackages [phasty]: executing diffoscope
+[2023-04-09 13:09:11] INFO root fetch - processPackages [phasty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phasty-0.5.0.tar.gz tmp/phasty-0.5.1.tar.gz --markdown 20230409/p/phasty/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-09 13:09:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:09:12] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:09:13] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:09:13] INFO root fetch - main [MainThread]: Store serial: [17636089]
