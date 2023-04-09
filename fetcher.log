@@ -3734,3 +3734,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-09 11:04:25] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:04:27] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:04:27] INFO root fetch - main [MainThread]: Store serial: [17635467]
+[2023-04-09 11:09:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635467]
+[2023-04-09 11:09:34] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-09 11:09:34] INFO root fetch - processPackages [pyCryptomusAPI]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 11:09:34] INFO root fetch - processPackages [pyrekordbox]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-09 11:09:34] INFO root fetch - processPackages [kiwigrad]: New version: [0.13] Old Version: [0.12]
+[2023-04-09 11:09:34] INFO root fetch - processPackages [wcferry]: New version: [3.7.0.30.22] Old Version: [3.7.0.30.21]
+[2023-04-09 11:09:34] INFO root fetch - processPackages [onnx2tf]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-09 11:09:34] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-04-09 11:09:34] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.8.8.tar.gz tmp/onnx2tf-1.8.9.tar.gz --markdown 20230409/o/onnx2tf/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-09 11:09:34] INFO root fetch - processPackages [kiwigrad]: Downloading https://files.pythonhosted.org/packages/3d/a0/b304721d53cc53e770e5464cb4df274b15710b16e01a9e1e77f0b192ccc7/kiwigrad-0.12.tar.gz
+[2023-04-09 11:09:35] INFO root fetch - processPackages [pyCryptomusAPI]: Downloading https://files.pythonhosted.org/packages/ce/e4/03d71a4554a2eef9056f8a76c56cd36e133025c7eb561b94462edc5d19eb/pyCryptomusAPI-0.0.2.tar.gz
+[2023-04-09 11:09:35] INFO root fetch - processPackages [pyrekordbox]: Downloading https://files.pythonhosted.org/packages/e1/f0/135b7598b13ddac8314f6cbf53cc4e92552a8e4ac03d352104532edb8e58/pyrekordbox-0.1.4.tar.gz
+[2023-04-09 11:09:35] INFO root fetch - processPackages [wcferry]: Downloading https://files.pythonhosted.org/packages/9e/f1/ddb787d4e1aff41cedf8a26b98ecb4399ca06c883313f5565ea89817402e/wcferry-3.7.0.30.21.tar.gz
+[2023-04-09 11:09:35] INFO root fetch - processPackages [kiwigrad]: Downloading https://files.pythonhosted.org/packages/91/e5/f9b5d8aaaae155774b03d03c02e16f2b7e4e7d52c95af9c5646b31b8dc0c/kiwigrad-0.13.tar.gz
+[2023-04-09 11:09:35] INFO root fetch - processPackages [kiwigrad]: executing diffoscope
+[2023-04-09 11:09:35] INFO root fetch - processPackages [kiwigrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwigrad-0.12.tar.gz tmp/kiwigrad-0.13.tar.gz --markdown 20230409/k/kiwigrad/0.12-0.13/diff.md --exclude *.pyd
+[2023-04-09 11:09:35] INFO root fetch - processPackages [pyCryptomusAPI]: Downloading https://files.pythonhosted.org/packages/93/0d/30c227426e2e7357a226da1d2428018c378af25ad3fd9c95693a36f7c3d8/pyCryptomusAPI-0.0.3.tar.gz
+[2023-04-09 11:09:35] INFO root fetch - processPackages [pyCryptomusAPI]: executing diffoscope
+[2023-04-09 11:09:35] INFO root fetch - processPackages [pyCryptomusAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyCryptomusAPI-0.0.2.tar.gz tmp/pyCryptomusAPI-0.0.3.tar.gz --markdown 20230409/p/pyCryptomusAPI/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 11:09:35] INFO root fetch - processPackages [wcferry]: Downloading https://files.pythonhosted.org/packages/9b/2a/30eac8e59e7d5c1a9a3ae046aff1a377944e1e3adb90290e1d338b5de354/wcferry-3.7.0.30.22.tar.gz
+[2023-04-09 11:09:36] INFO root fetch - processPackages [wcferry]: executing diffoscope
+[2023-04-09 11:09:36] INFO root fetch - processPackages [wcferry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wcferry-3.7.0.30.21.tar.gz tmp/wcferry-3.7.0.30.22.tar.gz --markdown 20230409/w/wcferry/3.7.0.30.21-3.7.0.30.22/diff.md --exclude *.pyd
+[2023-04-09 11:09:36] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:36] INFO root fetch - processPackages [pysqream-blue]: New version: [1.0.3] Old Version: [1.0.25]
+[2023-04-09 11:09:36] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:36] INFO root fetch - processPackages [pysqream-blue]: Downloading https://files.pythonhosted.org/packages/97/5f/26fb52334821f1ea68daa4663f50abc6f7a72ee5eab2b232779901460a71/pysqream-blue-1.0.25.tar.gz
+[2023-04-09 11:09:36] INFO root fetch - processPackages [kiwigrad]: New version: [0.13] Old Version: [0.12]
+[2023-04-09 11:09:36] INFO root fetch - processPackages [kiwigrad]: executing diffoscope
+[2023-04-09 11:09:36] INFO root fetch - processPackages [kiwigrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwigrad-0.12.tar.gz tmp/kiwigrad-0.13.tar.gz --markdown 20230409/k/kiwigrad/0.12-0.13/diff.md --exclude *.pyd
+[2023-04-09 11:09:36] INFO root fetch - processPackages [pysqream-blue]: Downloading https://files.pythonhosted.org/packages/07/8a/1682c765da1564d49da4144b4c5ce03bac1d60c0379d33a352c682c9ab4c/pysqream-blue-1.0.3.tar.gz
+[2023-04-09 11:09:36] INFO root fetch - processPackages [pysqream-blue]: executing diffoscope
+[2023-04-09 11:09:36] INFO root fetch - processPackages [pysqream-blue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysqream-blue-1.0.25.tar.gz tmp/pysqream-blue-1.0.3.tar.gz --markdown 20230409/p/pysqream-blue/1.0.25-1.0.3/diff.md --exclude *.pyd
+[2023-04-09 11:09:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pyevsim]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pyevsim]: Downloading https://files.pythonhosted.org/packages/ef/10/c3929b980eab30d1a627105281270088edba2542b82db1876b793e9b7765/pyevsim-1.1.4.tar.gz
+[2023-04-09 11:09:37] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pydataanalysis]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pydataanalysis]: Downloading https://files.pythonhosted.org/packages/1d/d9/326ea5e670cb8a951168addec25ad7f7cc934fe117d9352dfd7d399b25c0/pydataanalysis-0.0.2.tar.gz
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pyevsim]: Downloading https://files.pythonhosted.org/packages/9f/12/dd4350ee610e0d3ea7db3eb03ade516b943056a48f9a97889b987aa50a0f/pyevsim-1.1.5.tar.gz
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pyevsim]: executing diffoscope
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pyevsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyevsim-1.1.4.tar.gz tmp/pyevsim-1.1.5.tar.gz --markdown 20230409/p/pyevsim/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pydataanalysis]: Downloading https://files.pythonhosted.org/packages/d9/1e/e5600696e8cc519277a29e33c8af25f390f6c4ba8557a5d5658cea0a0fb4/pydataanalysis-0.0.3.tar.gz
+[2023-04-09 11:09:37] INFO root fetch - processPackages [pyrekordbox]: Downloading https://files.pythonhosted.org/packages/3c/9a/3a5eda0a4971416714a3e1abe92fcdb45d575b5c96dbc1aa2f688184fdee/pyrekordbox-0.1.5.tar.gz
+[2023-04-09 11:09:38] INFO root fetch - processPackages [pyrekordbox]: executing diffoscope
+[2023-04-09 11:09:38] INFO root fetch - processPackages [pyrekordbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrekordbox-0.1.4.tar.gz tmp/pyrekordbox-0.1.5.tar.gz --markdown 20230409/p/pyrekordbox/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-09 11:09:38] INFO root fetch - processPackages [pydataanalysis]: executing diffoscope
+[2023-04-09 11:09:38] INFO root fetch - processPackages [pydataanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydataanalysis-0.0.2.tar.gz tmp/pydataanalysis-0.0.3.tar.gz --markdown 20230409/p/pydataanalysis/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-09 11:09:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:38] INFO root fetch - processPackages [datagen-tech]: New version: [1.9.0rc2] Old Version: [1.9.0rc1]
+[2023-04-09 11:09:38] INFO root fetch - processPackages [datagen-tech]: Downloading https://files.pythonhosted.org/packages/cc/d6/c742ea28a1d44f1e61fe07c6a5edd9477e0c4ad9486ff64894d9d6e01887/datagen_tech-1.9.0rc1.tar.gz
+[2023-04-09 11:09:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:38] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:39] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:41] INFO root fetch - processPackages [datagen-tech]: Downloading https://files.pythonhosted.org/packages/ca/bc/0d1aa80739e4facd0429f21799f823c31d0198792cd0b543ca8d16c0eace/datagen_tech-1.9.0rc2.tar.gz
+[2023-04-09 11:09:41] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:43] INFO root fetch - processPackages [datagen-tech]: executing diffoscope
+[2023-04-09 11:09:43] INFO root fetch - processPackages [datagen-tech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_tech-1.9.0rc1.tar.gz tmp/datagen_tech-1.9.0rc2.tar.gz --markdown 20230409/d/datagen-tech/1.9.0rc1-1.9.0rc2/diff.md --exclude *.pyd
+[2023-04-09 11:09:48] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:09:48] INFO root fetch - main [MainThread]: Store serial: [17635495]
