@@ -4360,3 +4360,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 12:43:23] ERROR root fetch - processPackages [zadarapyV2]: Timeout during execution of pkgdiff
 [2023-04-09 12:43:23] INFO root fetch - main [MainThread]: error
 [2023-04-09 12:43:23] INFO root fetch - main [MainThread]: Store serial: [17635956]
+[2023-04-09 12:48:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635956]
+[2023-04-09 12:48:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-09 12:48:31] INFO root fetch - processPackages [spdx-matcher]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 12:48:31] INFO root fetch - processPackages [df-permission]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-09 12:48:31] INFO root fetch - processPackages [pytip]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 12:48:31] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-09 12:48:31] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.1.5] Old Version: [3.1.4]
+[2023-04-09 12:48:31] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/2c/94/0d2f0fc5459246ebbaf3cbc4fddcbc5390faf8aad0e4b62eeb70d3e28a9f/so_vits_svc_fork-3.1.5.tar.gz
+[2023-04-09 12:48:31] INFO root fetch - processPackages [spdx-matcher]: Downloading https://files.pythonhosted.org/packages/c7/34/dde71cb416df8a0914b208ab843b96f47742c7ea5d63a7dc3a7ec7f87569/spdx_matcher-0.0.8.tar.gz
+[2023-04-09 12:48:31] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/51/07/7a89d8ae81152e2f2c0bc59916ba21415a49f4a5c88ecfabe5392985e26d/nonebot_plugin_bilichat-1.1.0.tar.gz
+[2023-04-09 12:48:31] INFO root fetch - processPackages [df-permission]: Downloading https://files.pythonhosted.org/packages/f1/3b/f3ef1bc380f9edb6d2243680f2a963983233291fa555ce2a3fff21d84eac/df-permission-0.1.7.tar.gz
+[2023-04-09 12:48:31] INFO root fetch - processPackages [pytip]: Downloading https://files.pythonhosted.org/packages/03/c5/afd59ffe426bbd1757ae0225cab02d87cc479242a96691dad6ba70c64462/pytip-0.1.1-py2.py3-none-any.whl
+[2023-04-09 12:48:31] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-09 12:48:31] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.4.tar.gz tmp/so_vits_svc_fork-3.1.5.tar.gz --markdown 20230409/s/so-vits-svc-fork/3.1.4-3.1.5/diff.md --exclude *.pyd
+[2023-04-09 12:48:31] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-04-09 12:48:31] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-1.0.1.tar.gz tmp/nonebot_plugin_bilichat-1.1.0.tar.gz --markdown 20230409/n/nonebot-plugin-bilichat/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-09 12:48:31] INFO root fetch - processPackages [df-permission]: executing diffoscope
+[2023-04-09 12:48:31] INFO root fetch - processPackages [df-permission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df-permission-0.1.6.tar.gz tmp/df-permission-0.1.7.tar.gz --markdown 20230409/d/df-permission/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-09 12:48:31] INFO root fetch - processPackages [pytip]: executing diffoscope
+[2023-04-09 12:48:31] INFO root fetch - processPackages [pytip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytip-0.1.0-py2.py3-none-any.whl.zip tmp/pytip-0.1.1-py2.py3-none-any.whl.zip --markdown 20230409/p/pytip/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 12:48:32] INFO root fetch - processPackages [spdx-matcher]: Downloading https://files.pythonhosted.org/packages/5f/5d/6bcff994410337f483cc3236ef30b0f3d774eaf70f368c17e74a4678563d/spdx_matcher-0.0.9.tar.gz
+[2023-04-09 12:48:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:48:32] INFO root fetch - processPackages [nbsite]: New version: [0.8.0rc9] Old Version: [0.8.0rc8]
+[2023-04-09 12:48:32] INFO root fetch - processPackages [nbsite]: executing diffoscope
+[2023-04-09 12:48:32] INFO root fetch - processPackages [nbsite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbsite-0.8.0rc8.tar.gz tmp/nbsite-0.8.0rc9.tar.gz --markdown 20230409/n/nbsite/0.8.0rc8-0.8.0rc9/diff.md --exclude *.pyd
+[2023-04-09 12:48:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:48:32] INFO root fetch - processPackages [ChatDBG]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-09 12:48:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:48:32] INFO root fetch - processPackages [spdx-matcher]: executing diffoscope
+[2023-04-09 12:48:32] INFO root fetch - processPackages [spdx-matcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spdx_matcher-0.0.8.tar.gz tmp/spdx_matcher-0.0.9.tar.gz --markdown 20230409/s/spdx-matcher/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 12:48:32] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:48:33] INFO root fetch - processPackages [ChatDBG]: Downloading https://files.pythonhosted.org/packages/0d/35/ba9cd26fc6e16a9dae74be714aa2930fa99384796cf0156a868976228b7d/ChatDBG-0.0.8.tar.gz
+[2023-04-09 12:48:33] INFO root fetch - processPackages [ChatDBG]: Downloading https://files.pythonhosted.org/packages/b3/a2/dc074fa985998d1ca66f12b7f39d82dc1089e7942bfb9e5c6a6c71d7629e/ChatDBG-0.0.9.tar.gz
+[2023-04-09 12:48:33] INFO root fetch - processPackages [ChatDBG]: executing diffoscope
+[2023-04-09 12:48:33] INFO root fetch - processPackages [ChatDBG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatDBG-0.0.8.tar.gz tmp/ChatDBG-0.0.9.tar.gz --markdown 20230409/C/ChatDBG/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-09 12:48:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:48:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:48:34] INFO root fetch - main [MainThread]: success
+[2023-04-09 12:48:34] INFO root fetch - main [MainThread]: Store serial: [17635985]
