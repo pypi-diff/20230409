@@ -9692,3 +9692,32 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 23:43:40] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:43:40] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:43:40] INFO root fetch - main [MainThread]: Store serial: [17639760]
+[2023-04-09 23:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639760]
+[2023-04-09 23:48:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-09 23:48:48] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.18] Old Version: [0.1.17]
+[2023-04-09 23:48:48] INFO root fetch - processPackages [pyextremes]: New version: [2.3.0] Old Version: [2.2.7]
+[2023-04-09 23:48:48] INFO root fetch - processPackages [datastructuresLionelEric]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-09 23:48:48] INFO root fetch - processPackages [ethyca-fides]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-04-09 23:48:48] INFO root fetch - processPackages [roboweb-extension]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-09 23:48:48] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a5/ce/6ad04dd381854d1db26960c5cc1e174a086becd7eea9daa2b89a8dde7a70/ethyca-fides-2.9.1.tar.gz
+[2023-04-09 23:48:48] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/d7/a3/747fb36b3a2e92d9af0bd8adb1f1760cd441642da2cdff9fd8781e6992c1/roboweb_server-0.1.18.tar.gz
+[2023-04-09 23:48:48] INFO root fetch - processPackages [pyextremes]: Downloading https://files.pythonhosted.org/packages/c4/d5/5d09c128a42b89279c8208188d00547f8c2bcfb76db7063d1711fa8f6286/pyextremes-2.2.7.tar.gz
+[2023-04-09 23:48:48] INFO root fetch - processPackages [datastructuresLionelEric]: Downloading https://files.pythonhosted.org/packages/67/54/d4723388f50857d780ce176cc497bbd91dc1633316e3c55b20ebd65e6b5b/datastructuresLionelEric-1.0.5.tar.gz
+[2023-04-09 23:48:48] INFO root fetch - processPackages [roboweb-extension]: executing diffoscope
+[2023-04-09 23:48:48] INFO root fetch - processPackages [roboweb-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb-extension-0.1.8.tar.gz tmp/roboweb_extension-0.1.9.tar.gz --markdown 20230409/r/roboweb-extension/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-09 23:48:48] INFO root fetch - processPackages [datastructuresLionelEric]: executing diffoscope
+[2023-04-09 23:48:48] INFO root fetch - processPackages [datastructuresLionelEric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastructuresLionelEric-1.0.4.tar.gz tmp/datastructuresLionelEric-1.0.5.tar.gz --markdown 20230409/d/datastructuresLionelEric/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-09 23:48:49] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a3/0c/e979f7bc3c1a405c539d4df6c4c75896975e70d6b87777b8378ea071da2c/ethyca-fides-2.9.2.tar.gz
+[2023-04-09 23:48:49] INFO root fetch - processPackages [pyextremes]: Downloading https://files.pythonhosted.org/packages/81/eb/966c164625b2862c5df2689320acfd86aac93f027234f141880191502b1e/pyextremes-2.3.0.tar.gz
+[2023-04-09 23:48:49] INFO root fetch - processPackages [pyextremes]: executing diffoscope
+[2023-04-09 23:48:49] INFO root fetch - processPackages [pyextremes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyextremes-2.2.7.tar.gz tmp/pyextremes-2.3.0.tar.gz --markdown 20230409/p/pyextremes/2.2.7-2.3.0/diff.md --exclude *.pyd
+[2023-04-09 23:48:49] INFO root fetch - processPackages [ethyca-fides]: executing diffoscope
+[2023-04-09 23:48:49] INFO root fetch - processPackages [ethyca-fides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethyca-fides-2.9.1.tar.gz tmp/ethyca-fides-2.9.2.tar.gz --markdown 20230409/e/ethyca-fides/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-04-09 23:48:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:48:49] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:48:50] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:48:50] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-09 23:48:50] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.17.tar.gz tmp/roboweb_server-0.1.18.tar.gz --markdown 20230409/r/roboweb-server/0.1.17-0.1.18/diff.md --exclude *.pyd
+[2023-04-09 23:48:53] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:48:59] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:48:59] INFO root fetch - main [MainThread]: Store serial: [17639779]
