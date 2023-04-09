@@ -9627,3 +9627,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 23:33:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:33:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 23:33:18] INFO root fetch - main [MainThread]: Store serial: [17639714]
+[2023-04-09 23:38:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17639714]
+[2023-04-09 23:38:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-09 23:38:26] INFO root fetch - processPackages [promtstd]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-09 23:38:26] INFO root fetch - processPackages [dauth]: New version: [0.0.dev2] Old Version: [0.0.1]
+[2023-04-09 23:38:26] INFO root fetch - processPackages [fastq-handler]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 23:38:26] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-09 23:38:26] INFO root fetch - processPackages [fastq-handler]: Downloading https://files.pythonhosted.org/packages/4f/25/86d9990b8144333c8a2c9399980506b74cabf12eee64574e9a6d38b393c9/fastq_handler-0.1.0.tar.gz
+[2023-04-09 23:38:26] INFO root fetch - processPackages [dauth]: Downloading https://files.pythonhosted.org/packages/c9/58/52b0e2969864acbdce702c5ab137bcc7c3e1ff538791448924cf82fbbe45/dauth-0.0.1.tar.gz
+[2023-04-09 23:38:26] INFO root fetch - processPackages [promtstd]: Downloading https://files.pythonhosted.org/packages/61/de/ca2a927bc4cdb237333d9366bda227033d0f8910a3b6bd3d94d2ab362846/promtstd-0.1.2.tar.gz
+[2023-04-09 23:38:26] INFO root fetch - processPackages [promtstd]: executing diffoscope
+[2023-04-09 23:38:26] INFO root fetch - processPackages [promtstd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promtstd-0.1.1.tar.gz tmp/promtstd-0.1.2.tar.gz --markdown 20230409/p/promtstd/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-09 23:38:26] INFO root fetch - processPackages [dauth]: Downloading https://files.pythonhosted.org/packages/2a/50/362349d9677214b4b95f4116a6bf56ff289d2448188959aa3291a16d6093/dauth-0.0.dev2.tar.gz
+[2023-04-09 23:38:26] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2023-04-09 23:38:26] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20230409/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-09 23:38:26] INFO root fetch - processPackages [fastq-handler]: Downloading https://files.pythonhosted.org/packages/38/ac/4b0a5fb53bb2f39e468bce3e7a6f8da93e7b0655b2c432954c1aa5765626/fastq_handler-0.1.1.tar.gz
+[2023-04-09 23:38:27] INFO root fetch - processPackages [fastq-handler]: executing diffoscope
+[2023-04-09 23:38:27] INFO root fetch - processPackages [fastq-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastq_handler-0.1.0.tar.gz tmp/fastq_handler-0.1.1.tar.gz --markdown 20230409/f/fastq-handler/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 23:38:27] INFO root fetch - processPackages [dauth]: executing diffoscope
+[2023-04-09 23:38:27] INFO root fetch - processPackages [dauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dauth-0.0.1.tar.gz tmp/dauth-0.0.dev2.tar.gz --markdown 20230409/d/dauth/0.0.1-0.0.dev2/diff.md --exclude *.pyd
+[2023-04-09 23:38:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:38:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:38:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:38:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 23:38:29] INFO root fetch - main [MainThread]: Store serial: [17639725]
