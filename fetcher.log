@@ -4082,3 +4082,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 11:42:12] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:42:15] INFO root fetch - main [MainThread]: success
 [2023-04-09 11:42:15] INFO root fetch - main [MainThread]: Store serial: [17635751]
+[2023-04-09 11:47:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17635751]
+[2023-04-09 11:47:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-09 11:47:25] INFO root fetch - processPackages [fastapi-pagination]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-09 11:47:25] INFO root fetch - processPackages [PyPtt]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-09 11:47:25] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/7a/b9/03a92d570456e6fdc115107dd8489a9d9d5414dc360ef8aabed9d1bddf10/PyPtt-1.0.6.tar.gz
+[2023-04-09 11:47:25] INFO root fetch - processPackages [fastapi-pagination]: Downloading https://files.pythonhosted.org/packages/54/38/52db6bdf19417602084dfda74d5caf2af9752242fa29fcc26a8c8d55668c/fastapi-pagination-0.9.2.tar.gz
+[2023-04-09 11:47:25] INFO root fetch - processPackages [PyPtt]: Downloading https://files.pythonhosted.org/packages/d8/2f/fc4838cf40b6c6d247f1137e30c7161a11ddcf642ef73934031c35d80b73/PyPtt-1.0.7.tar.gz
+[2023-04-09 11:47:25] INFO root fetch - processPackages [fastapi-pagination]: Downloading https://files.pythonhosted.org/packages/ae/72/c53269908968568bb661a08b6faf00ce7b8219af0f9541920ed5bcd83724/fastapi-pagination-0.9.3.tar.gz
+[2023-04-09 11:47:25] INFO root fetch - processPackages [PyPtt]: executing diffoscope
+[2023-04-09 11:47:25] INFO root fetch - processPackages [PyPtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPtt-1.0.6.tar.gz tmp/PyPtt-1.0.7.tar.gz --markdown 20230409/P/PyPtt/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-09 11:47:25] INFO root fetch - processPackages [fastapi-pagination]: executing diffoscope
+[2023-04-09 11:47:25] INFO root fetch - processPackages [fastapi-pagination]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-pagination-0.9.2.tar.gz tmp/fastapi-pagination-0.9.3.tar.gz --markdown 20230409/f/fastapi-pagination/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-09 11:47:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:47:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 11:47:27] INFO root fetch - main [MainThread]: Store serial: [17635758]
