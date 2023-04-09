@@ -4726,3 +4726,96 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 13:35:16] INFO root fetch - processPackages [dbnd-luigi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-luigi-1.0.8.1.tar.gz tmp/dbnd-luigi-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-luigi/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
 [2023-04-09 13:35:18] INFO root fetch - main [MainThread]: success
 [2023-04-09 13:35:18] INFO root fetch - main [MainThread]: Store serial: [17636220]
+[2023-04-09 13:40:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17636220]
+[2023-04-09 13:40:25] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-luigi]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-postgres]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-redshift]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-qubole]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-mlflow]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-luigi]: executing diffoscope
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-luigi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-luigi-1.0.8.1.tar.gz tmp/dbnd-luigi-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-luigi/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-postgres]: Downloading https://files.pythonhosted.org/packages/c3/4f/b46a829873a6d49cc276a40c081f797c455e93c958746e8db75d8b2f08d0/dbnd-postgres-1.0.8.1.tar.gz
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-redshift]: Downloading https://files.pythonhosted.org/packages/92/41/d862f80e7a749a5d410705a1aefd30679be6130a9fea54bc1aa04e65816c/dbnd-redshift-1.0.8.1.tar.gz
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-qubole]: Downloading https://files.pythonhosted.org/packages/e6/93/08cb443771abf10a0276ce844c2e4b6fb89fbe3bd6b78fab44b2b1b88738/dbnd-qubole-1.0.8.1.tar.gz
+[2023-04-09 13:40:25] INFO root fetch - processPackages [dbnd-mlflow]: Downloading https://files.pythonhosted.org/packages/8f/0f/037a775156c6e7474afe0c5af0c291808a7cff050e7754bb4afdc5872b43/dbnd-mlflow-1.0.8.1.tar.gz
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-qubole]: Downloading https://files.pythonhosted.org/packages/94/f8/32032cedd805b9812c8d840be1ee151a7b7deb002145f73585a53d3ce155/dbnd-qubole-1.0.9.1.tar.gz
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-postgres]: Downloading https://files.pythonhosted.org/packages/2f/1e/b5992589e1168360981a64b9acd43e19964444193751f3d0ff0c18fca48a/dbnd-postgres-1.0.9.1.tar.gz
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-mlflow]: Downloading https://files.pythonhosted.org/packages/65/d5/2f9f2560e295fa45f4fb92f872010772cc2d66abd56ede2452983aff14f3/dbnd-mlflow-1.0.9.1.tar.gz
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-qubole]: executing diffoscope
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-qubole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-qubole-1.0.8.1.tar.gz tmp/dbnd-qubole-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-qubole/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-postgres]: executing diffoscope
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-postgres-1.0.8.1.tar.gz tmp/dbnd-postgres-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-postgres/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-redshift]: Downloading https://files.pythonhosted.org/packages/b2/bd/8c24bef2e6b190296953f3b63896809b1a126587fb83728f60f0f0726867/dbnd-redshift-1.0.9.1.tar.gz
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-mlflow]: executing diffoscope
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-mlflow-1.0.8.1.tar.gz tmp/dbnd-mlflow-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-mlflow/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-redshift]: executing diffoscope
+[2023-04-09 13:40:26] INFO root fetch - processPackages [dbnd-redshift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-redshift-1.0.8.1.tar.gz tmp/dbnd-redshift-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-redshift/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-snowflake]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-snowflake]: Downloading https://files.pythonhosted.org/packages/96/c1/70a88fa5dbfd582bc264549de3a419b373a66a808300fd259ce5774d1602/dbnd-snowflake-1.0.8.1.tar.gz
+[2023-04-09 13:40:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-spark]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:27] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-tensorflow]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-spark]: Downloading https://files.pythonhosted.org/packages/9d/e0/e23a5ed3e6840ff47fc7ebb383bd7f7e97885e4dba456aa126fe1e253d90/dbnd-spark-1.0.8.1.tar.gz
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-tensorflow]: Downloading https://files.pythonhosted.org/packages/10/c7/4473532ddc181021eb0c3fb1fa5621f2b066ce3d13ad2c808db8372c1c8d/dbnd-tensorflow-1.0.8.1.tar.gz
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-snowflake]: Downloading https://files.pythonhosted.org/packages/f2/b6/94516ff6eb64b455e3af5f0c6ac134264e4b0daa3886c32c7cfd95e780b4/dbnd-snowflake-1.0.9.1.tar.gz
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-snowflake]: executing diffoscope
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-snowflake-1.0.8.1.tar.gz tmp/dbnd-snowflake-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-snowflake/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-tensorflow]: Downloading https://files.pythonhosted.org/packages/0d/eb/072d1fa5da5adf5422730d9c4b31fcaa29e3a6ea1ff94b6e35324449109d/dbnd-tensorflow-1.0.9.1.tar.gz
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-tensorflow]: executing diffoscope
+[2023-04-09 13:40:27] INFO root fetch - processPackages [dbnd-tensorflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-tensorflow-1.0.8.1.tar.gz tmp/dbnd-tensorflow-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-tensorflow/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-test-scenarios]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-spark]: Downloading https://files.pythonhosted.org/packages/ce/3f/1cf037ce334c2e808ecf7876102cc71199c72d8cb954ae07bd980e8606d0/dbnd-spark-1.0.9.1.tar.gz
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-test-scenarios]: Downloading https://files.pythonhosted.org/packages/7b/14/6efb90ced8cd62e16e0b989580f108e6e8bb12d952345b70735da48898fb/dbnd-test-scenarios-1.0.8.1.tar.gz
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-spark]: executing diffoscope
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-spark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-spark-1.0.8.1.tar.gz tmp/dbnd-spark-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-spark/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-test-scenarios]: Downloading https://files.pythonhosted.org/packages/39/0b/3e14adfe23ddd29263e1be218e8ea86bf29e0f9f05b6c8c880403adf68fc/dbnd-test-scenarios-1.0.9.1.tar.gz
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-test-scenarios]: executing diffoscope
+[2023-04-09 13:40:28] INFO root fetch - processPackages [dbnd-test-scenarios]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-test-scenarios-1.0.8.1.tar.gz tmp/dbnd-test-scenarios-1.0.9.1.tar.gz --markdown 20230409/d/dbnd-test-scenarios/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:28] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:28] INFO root fetch - processPackages [HELML]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-09 13:40:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:29] INFO root fetch - processPackages [HELML]: Downloading https://files.pythonhosted.org/packages/f7/00/e9c6f5a7e09a2de4a778d9684cb1cca550b18167357d5d646d578cdf1c0a/HELML-0.1.7.tar.gz
+[2023-04-09 13:40:29] INFO root fetch - processPackages [toad]: New version: [0.1.2rc0] Old Version: [0.1.2]
+[2023-04-09 13:40:29] INFO root fetch - processPackages [toad]: Downloading https://files.pythonhosted.org/packages/64/c5/e6625d34cb72c1fbf1fa4ce70f8abc0be12c67f4c4a577bbedb5addc12c3/toad-0.1.2-cp39-cp39-macosx_11_0_x86_64.whl
+[2023-04-09 13:40:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:29] INFO root fetch - processPackages [topologicpy]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-09 13:40:29] WARNING root fetch - processPackages [toad]: Skipping package: exceeds size limit 14187358>=10485760
+[2023-04-09 13:40:29] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:40:29] INFO root fetch - processPackages [coolmongo]: New version: [1.2.1] Old Version: [1.2]
+[2023-04-09 13:40:29] INFO root fetch - processPackages [HELML]: Downloading https://files.pythonhosted.org/packages/34/02/6458c66124c3139fef579e8ef89b919654d49c146e261b210878b0d45323/HELML-0.1.8.tar.gz
+[2023-04-09 13:40:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:29] INFO root fetch - processPackages [coolmysql]: New version: [1.2.1] Old Version: [1.2]
+[2023-04-09 13:40:29] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/25/05/8bf481ca9e0acec3658d46425af27a9686c62649aad901b6feda9599fbcb/topologicpy-0.3.9.tar.gz
+[2023-04-09 13:40:29] INFO root fetch - processPackages [coolmongo]: Downloading https://files.pythonhosted.org/packages/fa/2f/3e6ea5bfba3914455daebc0f2d9aac9055a4834193db26225be895143281/coolmongo-1.2.tar.gz
+[2023-04-09 13:40:29] INFO root fetch - processPackages [coolmysql]: Downloading https://files.pythonhosted.org/packages/16/e0/e553f93246c56b4c8abe47d8fda302c54aae80f8d9f8ae9a5c43024a6725/coolmysql-1.2.tar.gz
+[2023-04-09 13:40:29] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34006738>=10485760
+[2023-04-09 13:40:29] INFO root fetch - main [MainThread]: error
+[2023-04-09 13:40:29] INFO root fetch - processPackages [HELML]: executing diffoscope
+[2023-04-09 13:40:29] INFO root fetch - processPackages [HELML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HELML-0.1.7.tar.gz tmp/HELML-0.1.8.tar.gz --markdown 20230409/H/HELML/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-09 13:40:29] INFO root fetch - processPackages [openai2]: New version: [1.5.1] Old Version: [1.5]
+[2023-04-09 13:40:29] INFO root fetch - processPackages [coolmongo]: Downloading https://files.pythonhosted.org/packages/8d/e8/c0560e9ea3d1d6e1f74a4011c1be99c353c26294f703eb49ac7b227aeb74/coolmongo-1.2.1.tar.gz
+[2023-04-09 13:40:29] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:29] INFO root fetch - processPackages [coolmysql]: Downloading https://files.pythonhosted.org/packages/b1/41/7e15949f807cb5247b7fd39501a93db611c3cebd51899de7a6ca60e0dd84/coolmysql-1.2.1.tar.gz
+[2023-04-09 13:40:29] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/bd/02/d4f4f427332b14fb7772c8180f50b734fba7b9d28259998a0550b0ef18ee/openai2-1.5.tar.gz
+[2023-04-09 13:40:30] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.4.9] Old Version: [2023.4.7]
+[2023-04-09 13:40:30] INFO root fetch - processPackages [coolmongo]: executing diffoscope
+[2023-04-09 13:40:30] INFO root fetch - processPackages [coolmongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolmongo-1.2.tar.gz tmp/coolmongo-1.2.1.tar.gz --markdown 20230409/c/coolmongo/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:30] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/b7/5d/79acde274fa41b55152ab991ed1b0a2e717a54fb40728c016f1ac03af6b8/openai2-1.5.1.tar.gz
+[2023-04-09 13:40:30] INFO root fetch - processPackages [coolmysql]: executing diffoscope
+[2023-04-09 13:40:30] INFO root fetch - processPackages [coolmysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolmysql-1.2.tar.gz tmp/coolmysql-1.2.1.tar.gz --markdown 20230409/c/coolmysql/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:30] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/d2/70/a665f40750f8d312a1e519feaa9e38de37072db6c5a1702fdf7869bfcc44/torchrec_nightly-2023.4.7-py39-none-any.whl
+[2023-04-09 13:40:30] INFO root fetch - processPackages [openai2]: executing diffoscope
+[2023-04-09 13:40:30] INFO root fetch - processPackages [openai2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai2-1.5.tar.gz tmp/openai2-1.5.1.tar.gz --markdown 20230409/o/openai2/1.5-1.5.1/diff.md --exclude *.pyd
+[2023-04-09 13:40:30] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/72/b9/0b521c1a1a6fd45f1f49ab8405816497f31b06233ded2dfc7aff870ed898/torchrec_nightly-2023.4.9-py39-none-any.whl
+[2023-04-09 13:40:30] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-04-09 13:40:30] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.4.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.4.9-py39-none-any.whl.zip --markdown 20230409/t/torchrec-nightly/2023.4.7-2023.4.9/diff.md --exclude *.pyd
+[2023-04-09 13:40:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:33] INFO root fetch - main [MainThread]: success
+[2023-04-09 13:40:33] INFO root fetch - main [MainThread]: Store serial: [17636288]
