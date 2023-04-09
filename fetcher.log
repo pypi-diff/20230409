@@ -6530,3 +6530,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-09 17:34:44] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:35:19] INFO root fetch - main [MainThread]: success
 [2023-04-09 17:35:19] INFO root fetch - main [MainThread]: Store serial: [17637570]
+[2023-04-09 17:40:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17637570]
+[2023-04-09 17:40:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-09 17:40:28] INFO root fetch - processPackages [qtpy-frameless-window]: New version: [0.0.2.dev0] Old Version: [0.0.1]
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-09 17:40:28] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.1.6] Old Version: [3.1.5]
+[2023-04-09 17:40:28] INFO root fetch - processPackages [vollseg]: New version: [8.2.2] Old Version: [8.2.1]
+[2023-04-09 17:40:28] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/11/79/ffbdcd8c463a91edd491a203788243ab6e89543e17bf760697ed5f9eac6d/vollseg-8.2.1.tar.gz
+[2023-04-09 17:40:28] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29984448>=10485760
+[2023-04-09 17:40:28] INFO root fetch - main [MainThread]: error
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/b9/02/429095dc87fddeae17a0c2971264b0a4fd6cbacce1e6cde101dfb90f14ef/tulp-0.3.1.tar.gz
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/b9/02/429095dc87fddeae17a0c2971264b0a4fd6cbacce1e6cde101dfb90f14ef/tulp-0.3.1.tar.gz
+[2023-04-09 17:40:28] INFO root fetch - processPackages [aiohelpersms]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-09 17:40:28] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/b2/08/593c53892cd38c133f3e335226b9e7430de9b410f857f5b17672682ea4ce/QtPy-Frameless-Window-0.0.1.tar.gz
+[2023-04-09 17:40:28] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/16/a4/ab55f8fada964ec698a054234a72a2d740094492f59e0a53a25a7fe2f798/so_vits_svc_fork-3.1.6.tar.gz
+[2023-04-09 17:40:28] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-09 17:40:28] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.5.tar.gz tmp/so_vits_svc_fork-3.1.6.tar.gz --markdown 20230409/s/so-vits-svc-fork/3.1.5-3.1.6/diff.md --exclude *.pyd
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/73/7c/1dc674381443e49ff56f3dc5d9e539d246b6b2fb7a8164ae2e85cab2f437/tulp-0.3.2.tar.gz
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: Downloading https://files.pythonhosted.org/packages/73/7c/1dc674381443e49ff56f3dc5d9e539d246b6b2fb7a8164ae2e85cab2f437/tulp-0.3.2.tar.gz
+[2023-04-09 17:40:28] INFO root fetch - processPackages [aiohelpersms]: Downloading https://files.pythonhosted.org/packages/5a/68/80fc5d95a7537d6922d532f622cad917e6950b883237df26a780f5b935e8/aiohelpersms-0.1.0.tar.gz
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: executing diffoscope
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulp-0.3.1.tar.gz tmp/tulp-0.3.2.tar.gz --markdown 20230409/t/tulp/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: executing diffoscope
+[2023-04-09 17:40:28] INFO root fetch - processPackages [tulp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulp-0.3.1.tar.gz tmp/tulp-0.3.2.tar.gz --markdown 20230409/t/tulp/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-09 17:40:29] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/28/34/f644501ee6d1ff272f4a4295e1a27c09022645548aaaf976c8f313549498/QtPy-Frameless-Window-0.0.2.dev0.tar.gz
+[2023-04-09 17:40:29] INFO root fetch - processPackages [aiohelpersms]: Downloading https://files.pythonhosted.org/packages/ef/db/609c59ff698c4a9b21d4e4ba34df8e747275c7424df0bdc6215a4142957a/aiohelpersms-0.1.1.tar.gz
+[2023-04-09 17:40:29] INFO root fetch - processPackages [qtpy-frameless-window]: executing diffoscope
+[2023-04-09 17:40:29] INFO root fetch - processPackages [qtpy-frameless-window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtPy-Frameless-Window-0.0.1.tar.gz tmp/QtPy-Frameless-Window-0.0.2.dev0.tar.gz --markdown 20230409/q/qtpy-frameless-window/0.0.1-0.0.2.dev0/diff.md --exclude *.pyd
+[2023-04-09 17:40:29] INFO root fetch - processPackages [aiohelpersms]: executing diffoscope
+[2023-04-09 17:40:29] INFO root fetch - processPackages [aiohelpersms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiohelpersms-0.1.0.tar.gz tmp/aiohelpersms-0.1.1.tar.gz --markdown 20230409/a/aiohelpersms/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-09 17:40:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:30] INFO root fetch - processPackages [cnd-cr-obj-naming]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-04-09 17:40:30] INFO root fetch - processPackages [database-setup-tools]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-09 17:40:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:30] INFO root fetch - processPackages [cnd-cr-obj-naming]: Downloading https://files.pythonhosted.org/packages/22/e5/53c829ce28ea9cc3c499ac5342bed8a8b5de4f3a7eae92f625648cf50802/cnd_cr_obj_naming-0.1.0-py3-none-any.whl
+[2023-04-09 17:40:30] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: New version: [1.7.4] Old Version: [1.7.3]
+[2023-04-09 17:40:30] INFO root fetch - processPackages [database-setup-tools]: Downloading https://files.pythonhosted.org/packages/1a/2a/b636cd37e2fd77df83d38f8b6624a8a6a2ffa69f338da49cd90e3e304bdb/database_setup_tools-1.3.1.tar.gz
+[2023-04-09 17:40:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:30] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:30] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: executing diffoscope
+[2023-04-09 17:40:30] INFO root fetch - processPackages [nonebot-plugin-searchbiliinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_searchbiliinfo-1.7.3.tar.gz tmp/nonebot_plugin_searchbiliinfo-1.7.4.tar.gz --markdown 20230409/n/nonebot-plugin-searchbiliinfo/1.7.3-1.7.4/diff.md --exclude *.pyd
+[2023-04-09 17:40:30] INFO root fetch - processPackages [cnd-cr-obj-naming]: Downloading https://files.pythonhosted.org/packages/ed/30/222cd38d440cdc21aac2a04b7d4a85ed200fa161bb8e83fe3412f5f442fc/cnd_cr_obj_naming-0.2.1-py3-none-any.whl
+[2023-04-09 17:40:30] INFO root fetch - processPackages [database-setup-tools]: executing diffoscope
+[2023-04-09 17:40:30] INFO root fetch - processPackages [database-setup-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database_setup_tools-1.3.0.tar.gz tmp/database_setup_tools-1.3.1.tar.gz --markdown 20230409/d/database-setup-tools/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-09 17:40:30] INFO root fetch - processPackages [cnd-cr-obj-naming]: executing diffoscope
+[2023-04-09 17:40:30] INFO root fetch - processPackages [cnd-cr-obj-naming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230409:/home/abi/fetcher/20230409:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnd_cr_obj_naming-0.1.0-py3-none-any.whl.zip tmp/cnd_cr_obj_naming-0.2.1-py3-none-any.whl.zip --markdown 20230409/c/cnd-cr-obj-naming/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-09 17:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:31] INFO root fetch - main [MainThread]: success
+[2023-04-09 17:40:31] INFO root fetch - main [MainThread]: Store serial: [17637595]
